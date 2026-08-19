@@ -55,7 +55,7 @@ jobs:
             --verify "dist/rhetorilex-plugin-$VERSION.zip"
 
       - name: Upload workflow artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: rhetorilex-plugin-${{ steps.version.outputs.version }}
           if-no-files-found: error
