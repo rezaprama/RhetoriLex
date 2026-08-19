@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "scope": "Visible site copy",
+  "forbidden_phrases": [
+    "cutting-edge",
+    "elevate your",
+    "game-changing",
+    "next-gen",
+    "revolutionize",
+    "seamless experience",
+    "supercharge",
+    "unlock your potential",
+    "unleash",
+    "transform your writing journey"
+  ],
+  "technical_context_allowlist": [],
+  "allowlist_contract": {
+    "required_fields": ["path", "phrase", "reason"],
+    "rule": "Exceptions must name an exact technical use and a human-reviewed reason."
+  }
+}

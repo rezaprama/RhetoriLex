@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Writing skills for scientific rationale, hypotheses, estimands, study objectives, design fit, populations, and outcomes.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/perumusan-studi-ilmiah/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Scientific Study Framing Skills | RhetoriLex">
+<meta property="og:description" content="Writing skills for scientific rationale, hypotheses, estimands, study objectives, design fit, populations, and outcomes.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scientific Study Framing Skills | RhetoriLex">
+<meta name="twitter:description" content="Writing skills for scientific rationale, hypotheses, estimands, study objectives, design fit, populations, and outcomes.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Scientific Study Framing Skills | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/#page","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/","name":"Scientific study framing skills","headline":"Scientific study framing skills","description":"Writing skills for scientific rationale, hypotheses, estimands, study objectives, design fit, populations, and outcomes.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"},"mainEntity":{"@type":"ItemList","numberOfItems":6,"itemListElement":[{"@type":"ListItem","position":1,"name":"Scientific background","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/#scientific-background"},{"@type":"ListItem","position":2,"name":"Scientific rationale","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/#scientific-rationale"},{"@type":"ListItem","position":3,"name":"Research objective","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/#research-objective"},{"@type":"ListItem","position":4,"name":"Hypothesis language","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/#hypothesis-language"},{"@type":"ListItem","position":5,"name":"Knowledge gap","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/#knowledge-gap"},{"@type":"ListItem","position":6,"name":"Scientific contribution","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/#scientific-contribution"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Scientific Study Framing Skills","item":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../../academic-writing/">Academic Writing</a><a href="../../scientific-writing/">Scientific Writing</a><a href="../../phrase-explorer/">Phrase Explorer</a><a href="../../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../../academic-writing/">Academic Writing</a><a href="../../scientific-writing/">Scientific Writing</a><a href="../../phrase-explorer/">Phrase Explorer</a><a href="../../paraphrasing/">Paraphrasing</a><a href="../../rhetorical-moves/">Rhetorical Moves</a><a href="../../research-writing-guides/">Research Writing Guides</a><a href="../../agent-skills/">Agent Skills</a><a href="../../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../id/skill-penulisan/perumusan-studi-ilmiah/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Home</a></li>
+    <li aria-current="page">Scientific Study Framing Skills</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Scientific study framing skills</h1>
+      <p class="lede">Define the target question, population, contrast, outcome, time, and design before interpreting evidence.</p>
+      <p class="catalog-count">6 writing skills</p>
+      
+    </header>
+    <nav class="skill-page-index" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol><li><a href="#scientific-background">Scientific background</a></li><li><a href="#scientific-rationale">Scientific rationale</a></li><li><a href="#research-objective">Research objective</a></li><li><a href="#hypothesis-language">Hypothesis language</a></li><li><a href="#knowledge-gap">Knowledge gap</a></li><li><a href="#scientific-contribution">Scientific contribution</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="scientific-background">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_study_framing.scientific_background</code><span>scientific</span></div>
+    <h2>Scientific background</h2>
+    <a href="#scientific-background">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to summarise the established scientific conditions needed to understand the study, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Seasonal oxygen depletion alters nutrient cycling in many shallow freshwater systems.</p><button class="copy-button" type="button" data-copy-value="Seasonal oxygen depletion alters nutrient cycling in many shallow freshwater systems.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Summarise the established scientific conditions needed to understand the study.</dd></div><div><dt>Use cases</dt><dd><ul><li>scientific introductions</li><li>study protocols</li><li>registered reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>establish_context, introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#scientific-rationale">Scientific rationale</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study&#x27;s results.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="scientific-rationale">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_study_framing.scientific_rationale</code><span>scientific</span></div>
+    <h2>Scientific rationale</h2>
+    <a href="#scientific-rationale">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to explain why a specific design or test can address the stated scientific uncertainty, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Repeated within-site measurements are needed to separate short-lived fluctuations from persistent change.</p><button class="copy-button" type="button" data-copy-value="Repeated within-site measurements are needed to separate short-lived fluctuations from persistent change.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Explain why a specific design or test can address the stated scientific uncertainty.</dd></div><div><dt>Use cases</dt><dd><ul><li>scientific introductions</li><li>study protocols</li><li>registered reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>justify_method, identify_gap</dd></div><div><dt>Related skills</dt><dd><a href="./#scientific-background">Scientific background</a>, <a href="./#research-objective">Research objective</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study&#x27;s results.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="research-objective">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_study_framing.research_objective</code><span>scientific</span></div>
+    <h2>Research objective</h2>
+    <a href="#research-objective">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to state the scientific quantity, mechanism, comparison, or phenomenon to be investigated, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The objective was to estimate the change in tensile strength after repeated thermal cycling.</p><button class="copy-button" type="button" data-copy-value="The objective was to estimate the change in tensile strength after repeated thermal cycling.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>State the scientific quantity, mechanism, comparison, or phenomenon to be investigated.</dd></div><div><dt>Use cases</dt><dd><ul><li>scientific introductions</li><li>study protocols</li><li>registered reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>define_scope, position_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#scientific-rationale">Scientific rationale</a>, <a href="./#hypothesis-language">Hypothesis language</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study&#x27;s results.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="hypothesis-language">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_study_framing.hypothesis_language</code><span>scientific</span></div>
+    <h2>Hypothesis language</h2>
+    <a href="#hypothesis-language">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to state a directional or non-directional scientific expectation before examining results, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">We predicted that lower salinity would delay larval development relative to the reference condition.</p><button class="copy-button" type="button" data-copy-value="We predicted that lower salinity would delay larval development relative to the reference condition.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>State a directional or non-directional scientific expectation before examining results.</dd></div><div><dt>Use cases</dt><dd><ul><li>scientific introductions</li><li>study protocols</li><li>registered reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>position_claim, describe_association</dd></div><div><dt>Related skills</dt><dd><a href="./#research-objective">Research objective</a>, <a href="./#knowledge-gap">Knowledge gap</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study&#x27;s results.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="knowledge-gap">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_study_framing.knowledge_gap</code><span>scientific</span></div>
+    <h2>Knowledge gap</h2>
+    <a href="#knowledge-gap">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to identify a precise scientific uncertainty grounded in the existing evidence base, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">It remains uncertain whether the catalyst retains activity when sulphur compounds are present.</p><button class="copy-button" type="button" data-copy-value="It remains uncertain whether the catalyst retains activity when sulphur compounds are present.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Identify a precise scientific uncertainty grounded in the existing evidence base.</dd></div><div><dt>Use cases</dt><dd><ul><li>scientific introductions</li><li>study protocols</li><li>registered reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>identify_gap, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#hypothesis-language">Hypothesis language</a>, <a href="./#scientific-contribution">Scientific contribution</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study&#x27;s results.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="scientific-contribution">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_study_framing.scientific_contribution</code><span>scientific</span></div>
+    <h2>Scientific contribution</h2>
+    <a href="#scientific-contribution">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to describe the empirical, methodological, or theoretical addition made by the study, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">This work provides an independently validated calibration curve for low-cost particulate sensors.</p><button class="copy-button" type="button" data-copy-value="This work provides an independently validated calibration curve for low-cost particulate sensors.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Describe the empirical, methodological, or theoretical addition made by the study.</dd></div><div><dt>Use cases</dt><dd><ul><li>scientific introductions</li><li>study protocols</li><li>registered reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>state_contribution</dd></div><div><dt>Related skills</dt><dd><a href="./#knowledge-gap">Knowledge gap</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study&#x27;s results.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Frame the estimand, not only the topic</h2><p>Scientific framing should identify what quantity or relation the study aims to learn, in which population, under which comparison, and over what time. The design must fit that target. Use <a href="../../scientific-writing/">Scientific Writing</a> for section-level guidance.</p></section>
+<aside class="article-note"><h2>Design boundary</h2><p>A hypothesis does not create identification. State design assumptions and avoid causal objectives when the study can estimate association only.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../../academic-writing/">Academic Writing</a></li><li><a href="../../scientific-writing/">Scientific Writing</a></li><li><a href="../../phrase-explorer/">Phrase Explorer</a></li><li><a href="../../paraphrasing/">Paraphrasing</a></li><li><a href="../../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../../research-writing-guides/">Research Writing Guides</a></li><li><a href="../../agent-skills/">Agent Skills</a></li><li><a href="../../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

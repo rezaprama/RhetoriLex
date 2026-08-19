@@ -1,26 +1,36 @@
 # RhetoriLex
 
-**Evidence-calibrated rhetorical moves for academic writing. Offline, inspectable, and clean-room by design.**
+**Offline, evidence-calibrated rhetorical moves and academic writing patterns for researchers, editors, and AI agents.**
 
 [![CI](https://github.com/rezaprama/RhetoriLex/actions/workflows/ci.yml/badge.svg)](https://github.com/rezaprama/RhetoriLex/actions/workflows/ci.yml)
 [![Pages](https://github.com/rezaprama/RhetoriLex/actions/workflows/pages.yml/badge.svg)](https://github.com/rezaprama/RhetoriLex/actions/workflows/pages.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-0f766e.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-0f766e.svg)](LICENSES/CC-BY-4.0.txt)
 
-[Explore the catalog](https://rezaprama.github.io/RhetoriLex/) · [Bahasa Indonesia](README.id.md) · [Agent Skill](skills/rhetorilex/SKILL.md) · [Provenance](PROVENANCE.md)
+[Explore the catalog](https://rezaprama.github.io/RhetoriLex/) · [Bahasa Indonesia](README.id.md) · [Agent Skill](skills/rhetorilex/SKILL.md) · [Research](docs/discovery-research.md) · [Provenance](PROVENANCE.md)
 
-RhetoriLex helps a writer choose language from communicative purpose and evidence, not from how academic it sounds. Its initial release contains 48 independently authored templates across 12 rhetorical functions, with explicit claim strength, evidence requirements, causal-design guards, risk, slots, and provenance.
+RhetoriLex helps writers choose language from communicative purpose and evidence, not
+from how academic it sounds. Version 0.2.0 contains 96 independently authored patterns
+across 24 rhetorical functions, with explicit claim strength, evidence requirements,
+causal-design guards, risk, named slots, and provenance.
 
-It does not write evidence for you. It does not invent citations. It does not turn an association into a cause.
+It does not write evidence for you. It does not invent citations. It does not turn an
+association into a cause.
 
 ## Why it is different
 
-- **Evidence before polish.** Every pattern declares the minimum evidence and strongest compatible claim.
-- **Meaning-preserving.** The Agent Skill protects citations, numbers, units, populations, negation, uncertainty, and causal status during rewriting.
-- **Clean-room catalog.** Released wording is original editorial work with `source_reuse: false`. Restricted source inventories are excluded.
-- **Offline core.** Search, filters, validation, builds, and the Skill helper use Python's standard library only.
-- **One source of truth.** Canonical JSONL deterministically produces JSON, CSV, SQLite, Markdown, package resources, Skill assets, and checksums.
-- **Three useful surfaces.** Use the Python API/CLI, portable Agent Skill/plugin, or static browser explorer.
+- **Evidence before polish.** Every pattern declares the minimum evidence and strongest
+  compatible claim.
+- **Meaning-preserving.** The Agent Skill protects citations, numbers, units,
+  populations, negation, uncertainty, and causal status during rewriting.
+- **Clean-room catalog.** Released wording is original editorial work with
+  `source_reuse: false`; restricted source inventories are excluded.
+- **Offline core.** Search, filters, validation, builds, and the Skill helper use only
+  Python's standard library.
+- **One source of truth.** Canonical JSONL deterministically produces JSON, CSV, SQLite,
+  Markdown, package resources, Skill assets, and checksums.
+- **Four useful surfaces.** Use the Python API/CLI, portable Agent Skill/plugin, static
+  browser explorer, or generated data artifacts.
 
 ## Try it
 
@@ -45,7 +55,7 @@ Inspect one pattern or the full contract health:
 ```bash
 rhetorilex explain RLX-QUA-001
 rhetorilex inspect --validate
-rhetorilex taxonomy rhetorical_functions
+rhetorilex taxonomy
 ```
 
 Python API:
@@ -67,7 +77,8 @@ for result in results:
 
 ## Install the Agent Skill
 
-For one repository, copy `skills/rhetorilex` to `.agents/skills/rhetorilex`. For personal use across projects, copy it to `~/.codex/skills/rhetorilex`.
+For one repository, copy `skills/rhetorilex` to `.agents/skills/rhetorilex`. For personal
+use across projects, copy it to `~/.codex/skills/rhetorilex`.
 
 The Skill can route requests such as:
 
@@ -76,7 +87,9 @@ The Skill can route requests such as:
 - “Compare options for stating a bounded research gap.”
 - “Audit this sentence for causal overclaiming.”
 
-It intentionally refuses citation fabrication, plagiarism disguise, synonym spinning, detector evasion, and unsupported claim upgrades. A release-ready plugin archive is also published from the repository manifest at [.codex-plugin/plugin.json](.codex-plugin/plugin.json).
+It intentionally refuses citation fabrication, plagiarism disguise, synonym spinning,
+detector evasion, and unsupported claim upgrades. A release-ready plugin archive can be
+built from [.codex-plugin/plugin.json](.codex-plugin/plugin.json).
 
 ## Catalog model
 
@@ -93,7 +106,27 @@ Each canonical entry includes:
 | `risk` | Editorial review level: `low`, `medium`, or `high` |
 | `provenance` | Required `original_editorial` and `source_reuse: false` record |
 
-See [data/taxonomy/taxonomy.v1.json](data/taxonomy/taxonomy.v1.json), [data/contracts/evidence-claim.v1.json](data/contracts/evidence-claim.v1.json), and [docs/data-model.md](docs/data-model.md).
+See [data/taxonomy/taxonomy.v1.json](data/taxonomy/taxonomy.v1.json),
+[data/contracts/evidence-claim.v1.json](data/contracts/evidence-claim.v1.json), and
+[docs/data-model.md](docs/data-model.md).
+
+## Research and discovery
+
+The model is informed by research on genre and rhetorical moves
+([10.1017/CBO9781139524827](https://doi.org/10.1017/CBO9781139524827)), stance and reader
+interaction ([10.1177/1461445605050365](https://doi.org/10.1177/1461445605050365)),
+and corpus phraseology and disciplinary variation
+([10.1016/j.jeap.2019.01.003](https://doi.org/10.1016/j.jeap.2019.01.003)). These sources
+orient original design; their prose, examples, and inventories are not incorporated.
+Full research provenance is in [PROVENANCE.md](PROVENANCE.md).
+
+Public positioning is also measured, not guessed. The
+[discovery study](docs/discovery-research.md) and
+[GitHub landscape](docs/github-landscape.md) record queries, metrics, timestamps,
+interpretation limits, and structured evidence under [data/discovery](data/discovery/).
+GitHub repository counts are supply/index signals—not web-search volume, user demand,
+adoption, or quality. Direct Google Trends measurement was unavailable, so its recorded
+values are explicit `null`; no proxy volume was invented.
 
 ## Build and verify
 
@@ -104,7 +137,10 @@ python -m unittest discover -s tests -v
 python scripts/package_plugin.py --output dist/rhetorilex-plugin.zip
 ```
 
-The test suite checks schemas, provenance, slot equality, evidence requirements, causal guards, deterministic builds, retrieval behavior, frozen benchmark routing, CLI behavior, and contract safety. Continuous integration repeats builds and compares checksums.
+The test suite checks schemas, provenance, slot equality, evidence requirements, causal
+guards, deterministic builds, retrieval behavior, frozen benchmark routing, CLI
+behavior, and contract safety. Continuous integration repeats builds and compares
+checksums.
 
 ## Architecture
 
@@ -121,22 +157,48 @@ taxonomy + JSON Schema + evidence contract
           +--> validator --> tests --> deterministic release gate
 ```
 
-The browser explorer is static HTML, CSS, and JavaScript. It has no account, backend, CDN dependency, or telemetry.
+The browser explorer is static HTML, CSS, and JavaScript. It has no account, backend,
+CDN dependency, or telemetry.
 
 ## Source and rights boundary
 
-The private workbook supplied for this project carries an academic-use and no-redistribution notice. It was inspected locally only for non-expressive aggregate structure and quality signals. It is ignored by Git, its cells and labels are absent from this repository, every migration candidate remains unresolved, and **zero source-derived items were promoted**.
+The private workbook supplied for this project carries an academic-use and
+no-redistribution notice. It was inspected locally only for non-expressive aggregate
+structure and quality signals. It is ignored by Git, its cells and labels are absent
+from this repository, every migration candidate remains unresolved, and **zero
+source-derived items were promoted**.
 
-Manchester Academic Phrasebank is citation/conceptual context only; its phrase inventory was not imported or rewritten. BAWE is excluded. The Elsevier OA CC-BY Corpus v3 is registered only as a possible future aggregate-validation source and was not ingested. Full decisions, source links, and review rules are in [PROVENANCE.md](PROVENANCE.md), [data/sources/source-registry.yaml](data/sources/source-registry.yaml), and [reports/xlsx-audit.md](reports/xlsx-audit.md).
+Manchester Academic Phrasebank is citation/conceptual context only; its phrase inventory
+was not imported or rewritten. BAWE is excluded. The Elsevier OA CC-BY Corpus v3 is
+registered only as a possible future aggregate-validation source and was not ingested.
+Full decisions, source links, and review rules are in [PROVENANCE.md](PROVENANCE.md),
+[data/sources/source-registry.yaml](data/sources/source-registry.yaml), and
+[reports/xlsx-audit.md](reports/xlsx-audit.md).
 
 ## Contributing
 
-Contributions are welcome when wording is independently authored and evidence-safe. Start with [CONTRIBUTING.md](CONTRIBUTING.md). New patterns require provenance, named slots, taxonomy compatibility, evidence metadata, originality review, and tests. Never attach a restricted workbook, source inventory, manuscript, or corpus excerpt to an issue or pull request.
+Contributions are welcome when wording is independently authored and evidence-safe.
+Start with [CONTRIBUTING.md](CONTRIBUTING.md). New patterns require provenance, named
+slots, taxonomy compatibility, evidence metadata, originality review, and tests. Never
+attach a restricted workbook, source inventory, manuscript, or corpus excerpt to an
+issue or pull request.
 
-Security, confidential-draft, provenance, and rights concerns belong in the private process described by [SECURITY.md](SECURITY.md). Project decisions are recorded in [GOVERNANCE.md](GOVERNANCE.md) and [IMPLEMENTATION_LOG.md](IMPLEMENTATION_LOG.md).
+Security, confidential-draft, provenance, and rights concerns belong in the private
+process described by [SECURITY.md](SECURITY.md). Project decisions are recorded in
+[GOVERNANCE.md](GOVERNANCE.md) and [IMPLEMENTATION_LOG.md](IMPLEMENTATION_LOG.md).
+
+## Project and creator
+
+RhetoriLex is created and maintained by
+[Reza Prama Arviandi](https://rezaprama.com). Release history is in
+[CHANGELOG.md](CHANGELOG.md); the public roadmap is in [ROADMAP.md](ROADMAP.md).
 
 ## License and citation
 
-Software, configuration, tests, and Agent Skill code are Apache-2.0. Original data, reports, benchmarks, assets, and documentation are CC BY 4.0. Machine-readable path mapping lives in [REUSE.toml](REUSE.toml); third-party status lives in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Software, configuration, tests, and Agent Skill code are Apache-2.0. Original data,
+reports, benchmarks, assets, and documentation are CC BY 4.0. Machine-readable path
+mapping lives in [REUSE.toml](REUSE.toml); third-party status lives in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-Citation metadata is available in [CITATION.cff](CITATION.cff). Licensing documents state project policy, not legal advice.
+Citation metadata for version 0.2.0 is available in [CITATION.cff](CITATION.cff).
+Licensing documents state project policy, not legal advice.

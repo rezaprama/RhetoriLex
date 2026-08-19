@@ -4,21 +4,30 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rhetorilex"
-version = "0.1.0"
-description = "Offline, evidence-aware academic rhetoric templates"
+version = "0.2.0"
+description = "Offline, evidence-calibrated academic writing patterns for researchers and AI agents"
 requires-python = ">=3.10"
 dependencies = []
 readme = "README.md"
 license = { text = "Apache-2.0" }
-authors = [{ name = "Reza Prama" }]
-keywords = ["academic-writing", "rhetoric", "phrasebank", "offline"]
+authors = [{ name = "Reza Prama Arviandi" }]
+keywords = ["academic-writing", "scientific-writing", "research-writing", "academic-english", "phrasebank", "rhetorical-moves", "literature-review", "research-tools", "agent-skills", "codex", "evidence-calibration", "offline"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Topic :: Text Processing :: Linguistic",
   "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
 ]
+
+[project.urls]
+Homepage = "https://rezaprama.github.io/RhetoriLex/"
+Repository = "https://github.com/rezaprama/RhetoriLex"
+Documentation = "https://rezaprama.github.io/RhetoriLex/"
+Research = "https://github.com/rezaprama/RhetoriLex/blob/main/docs/discovery-research.md"
+Changelog = "https://github.com/rezaprama/RhetoriLex/blob/main/CHANGELOG.md"
 
 [project.scripts]
 rhetorilex = "rhetorilex.cli:main"

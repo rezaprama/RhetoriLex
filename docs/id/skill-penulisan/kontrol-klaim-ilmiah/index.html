@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Skill untuk kekuatan klaim, ketidakpastian, asosiasi, kausalitas, cakupan, hasil nol, keterbatasan, dan keselarasan bukti.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-claim-control/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-claim-control/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Skill Kontrol Klaim Ilmiah | RhetoriLex">
+<meta property="og:description" content="Skill untuk kekuatan klaim, ketidakpastian, asosiasi, kausalitas, cakupan, hasil nol, keterbatasan, dan keselarasan bukti.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skill Kontrol Klaim Ilmiah | RhetoriLex">
+<meta name="twitter:description" content="Skill untuk kekuatan klaim, ketidakpastian, asosiasi, kausalitas, cakupan, hasil nol, keterbatasan, dan keselarasan bukti.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Skill Kontrol Klaim Ilmiah | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#page","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/","name":"Skill kontrol klaim ilmiah","headline":"Skill kontrol klaim ilmiah","description":"Skill untuk kekuatan klaim, ketidakpastian, asosiasi, kausalitas, cakupan, hasil nol, keterbatasan, dan keselarasan bukti.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"},"mainEntity":{"@type":"ItemList","numberOfItems":11,"itemListElement":[{"@type":"ListItem","position":1,"name":"Asosiasi dan kausalitas","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#association-vs-causation"},{"@type":"ListItem","position":2,"name":"Bahasa korelasi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#correlation-language"},{"@type":"ListItem","position":3,"name":"Bahasa prediksi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#prediction-language"},{"@type":"ListItem","position":4,"name":"Bahasa kausal","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#causal-language"},{"@type":"ListItem","position":5,"name":"Kekuatan bukti","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#evidence-strength"},{"@type":"ListItem","position":6,"name":"Membatasi klaim ilmiah","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#hedging-scientific-claims"},{"@type":"ListItem","position":7,"name":"Menghindari klaim berlebihan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#avoiding-overclaiming"},{"@type":"ListItem","position":8,"name":"Menafsirkan hasil nol","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#interpreting-null-results"},{"@type":"ListItem","position":9,"name":"Bahasa ukuran efek","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#effect-size-language"},{"@type":"ListItem","position":10,"name":"Bahasa ketidakpastian","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#uncertainty-language"},{"@type":"ListItem","position":11,"name":"Cakupan dan generalisasi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/#scope-and-generalisation"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Skill Kontrol Klaim Ilmiah","item":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../parafrasa/">Parafrasa</a><a href="../../gerakan-retoris/">Gerakan Retoris</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../../skill-agen/">Skill Agen</a><a href="../../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../en/writing-skills/scientific-claim-control/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Beranda</a></li>
+    <li aria-current="page">Skill Kontrol Klaim Ilmiah</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Skill kontrol klaim ilmiah</h1>
+      <p class="lede">Cocokkan klaim deskriptif, komparatif, eksplanatif, dan kausal dengan desain serta bukti.</p>
+      <p class="catalog-count">11 skill penulisan</p>
+      <p class="pattern-language">Nama dan definisi tersedia dalam Bahasa Indonesia. Contoh pola, tujuan teknis, dan peringatan tetap dalam bahasa Inggris untuk menjaga kontrak canonical.</p>
+    </header>
+    <nav class="skill-page-index" aria-label="Dalam halaman ini">
+      <h2>Dalam halaman ini</h2>
+      <ol><li><a href="#association-vs-causation">Asosiasi dan kausalitas</a></li><li><a href="#correlation-language">Bahasa korelasi</a></li><li><a href="#prediction-language">Bahasa prediksi</a></li><li><a href="#causal-language">Bahasa kausal</a></li><li><a href="#evidence-strength">Kekuatan bukti</a></li><li><a href="#hedging-scientific-claims">Membatasi klaim ilmiah</a></li><li><a href="#avoiding-overclaiming">Menghindari klaim berlebihan</a></li><li><a href="#interpreting-null-results">Menafsirkan hasil nol</a></li><li><a href="#effect-size-language">Bahasa ukuran efek</a></li><li><a href="#uncertainty-language">Bahasa ketidakpastian</a></li><li><a href="#scope-and-generalisation">Cakupan dan generalisasi</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="association-vs-causation">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.association_vs_causation</code><span>scientific</span></div>
+    <h2>Asosiasi dan kausalitas</h2>
+    <a href="#association-vs-causation">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan asosiasi dan kausalitas agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Income and tree cover were associated in the survey; the analysis does not establish that income caused the observed difference.</p><button class="copy-button" type="button" data-copy-value="Income and tree cover were associated in the survey; the analysis does not establish that income caused the observed difference.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Distinguish observed covariation from evidence that changing one factor changes another.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">distinguish_causation, describe_association</dd></div><div><dt>Skill terkait</dt><dd><a href="./#correlation-language">Bahasa korelasi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="correlation-language">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.correlation_language</code><span>scientific</span></div>
+    <h2>Bahasa korelasi</h2>
+    <a href="#correlation-language">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan bahasa korelasi agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Signal variability was positively correlated with distance from the transmitter.</p><button class="copy-button" type="button" data-copy-value="Signal variability was positively correlated with distance from the transmitter.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe the direction and strength of correlation without causal verbs.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_association</dd></div><div><dt>Skill terkait</dt><dd><a href="./#association-vs-causation">Asosiasi dan kausalitas</a>, <a href="./#prediction-language">Bahasa prediksi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="prediction-language">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.prediction_language</code><span>scientific</span></div>
+    <h2>Bahasa prediksi</h2>
+    <a href="#prediction-language">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan bahasa prediksi agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The model predicted readmission within 30 days but did not identify which factors would reduce readmission.</p><button class="copy-button" type="button" data-copy-value="The model predicted readmission within 30 days but did not identify which factors would reduce readmission.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe predictive performance separately from explanation or intervention effects.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_association, distinguish_causation</dd></div><div><dt>Skill terkait</dt><dd><a href="./#correlation-language">Bahasa korelasi</a>, <a href="./#causal-language">Bahasa kausal</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="causal-language">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.causal_language</code><span>scientific</span></div>
+    <h2>Bahasa kausal</h2>
+    <a href="#causal-language">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan bahasa kausal agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Random assignment supports the conclusion that the reminder increased appointment attendance in this trial.</p><button class="copy-button" type="button" data-copy-value="Random assignment supports the conclusion that the reminder increased appointment attendance in this trial.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Reserve causal wording for a design and analysis that identify the stated intervention or exposure effect.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">causal_claim, distinguish_causation</dd></div><div><dt>Skill terkait</dt><dd><a href="./#prediction-language">Bahasa prediksi</a>, <a href="./#evidence-strength">Kekuatan bukti</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="evidence-strength">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.evidence_strength</code><span>scientific</span></div>
+    <h2>Kekuatan bukti</h2>
+    <a href="#evidence-strength">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan kekuatan bukti agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The converging laboratory and field results provide moderate support for the proposed degradation pathway.</p><button class="copy-button" type="button" data-copy-value="The converging laboratory and field results provide moderate support for the proposed degradation pathway.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Calibrate wording to relevance, directness, precision, consistency, and design quality.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">interpret_evidence, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#causal-language">Bahasa kausal</a>, <a href="./#hedging-scientific-claims">Membatasi klaim ilmiah</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="hedging-scientific-claims">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.hedging_scientific_claims</code><span>scientific</span></div>
+    <h2>Membatasi klaim ilmiah</h2>
+    <a href="#hedging-scientific-claims">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan membatasi klaim ilmiah agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The observed pattern may reflect a threshold response, although gradual change cannot be excluded.</p><button class="copy-button" type="button" data-copy-value="The observed pattern may reflect a threshold response, although gradual change cannot be excluded.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Use precise uncertainty markers that identify what is possible, estimated, or not resolved.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">qualify_claim, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#evidence-strength">Kekuatan bukti</a>, <a href="./#avoiding-overclaiming">Menghindari klaim berlebihan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="avoiding-overclaiming">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.avoiding_overclaiming</code><span>scientific</span></div>
+    <h2>Menghindari klaim berlebihan</h2>
+    <a href="#avoiding-overclaiming">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menghindari klaim berlebihan agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The data support improved short-term detection, not the claim that the method is universally superior.</p><button class="copy-button" type="button" data-copy-value="The data support improved short-term detection, not the claim that the method is universally superior.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Remove claims of proof, universality, or importance that the evidence does not warrant.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">qualify_claim, state_limitation</dd></div><div><dt>Skill terkait</dt><dd><a href="./#hedging-scientific-claims">Membatasi klaim ilmiah</a>, <a href="./#interpreting-null-results">Menafsirkan hasil nol</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="interpreting-null-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.interpreting_null_results</code><span>scientific</span></div>
+    <h2>Menafsirkan hasil nol</h2>
+    <a href="#interpreting-null-results">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menafsirkan hasil nol agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The non-significant estimate is inconclusive because the interval includes effects in both directions.</p><button class="copy-button" type="button" data-copy-value="The non-significant estimate is inconclusive because the interval includes effects in both directions.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Separate failure to detect a clear effect from evidence of equivalence or absence.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">report_null_result, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#avoiding-overclaiming">Menghindari klaim berlebihan</a>, <a href="./#effect-size-language">Bahasa ukuran efek</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="effect-size-language">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.effect_size_language</code><span>scientific</span></div>
+    <h2>Bahasa ukuran efek</h2>
+    <a href="#effect-size-language">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan bahasa ukuran efek agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The intervention changed the mean score by 0.18 standard deviations, a small effect on the prespecified scale.</p><button class="copy-button" type="button" data-copy-value="The intervention changed the mean score by 0.18 standard deviations, a small effect on the prespecified scale.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe magnitude on an interpretable scale and distinguish it from statistical significance.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#interpreting-null-results">Menafsirkan hasil nol</a>, <a href="./#uncertainty-language">Bahasa ketidakpastian</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="uncertainty-language">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.uncertainty_language</code><span>scientific</span></div>
+    <h2>Bahasa ketidakpastian</h2>
+    <a href="#uncertainty-language">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan bahasa ketidakpastian agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The point estimate favours treatment, but substantial benefit and no effect are both compatible with the interval.</p><button class="copy-button" type="button" data-copy-value="The point estimate favours treatment, but substantial benefit and no effect are both compatible with the interval.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Attach uncertainty to the exact estimate, inference, or explanation it qualifies.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">report_uncertainty, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#effect-size-language">Bahasa ukuran efek</a>, <a href="./#scope-and-generalisation">Cakupan dan generalisasi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="scope-and-generalisation">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.scientific_claim_control.scope_and_generalisation</code><span>scientific</span></div>
+    <h2>Cakupan dan generalisasi</h2>
+    <a href="#scope-and-generalisation">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan cakupan dan generalisasi agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">These results concern supervised laboratory operation and should not be generalised to unattended field deployment.</p><button class="copy-button" type="button" data-copy-value="These results concern supervised laboratory operation and should not be generalised to unattended field deployment.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Limit conclusions to populations, settings, outcomes, and time horizons supported by the study.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results interpretation</li><li>abstracts</li><li>press-facing summaries</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">define_scope, state_limitation</dd></div><div><dt>Skill terkait</dt><dd><a href="./#uncertainty-language">Bahasa ketidakpastian</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Kendalikan proposisi, bukan hanya nada</h2><p>Kontrol klaim melindungi cakupan, modalitas, frekuensi, perbandingan, ketidakpastian, dan status kausal. Hedge tidak memperbaiki relasi yang salah. Baca <a href="../../asosiasi-vs-kausalitas/">Asosiasi vs Kausalitas</a> dan <a href="../../pertahankan-kekuatan-klaim/">Pertahankan Kekuatan Klaim</a>.</p></section>
+<aside class="article-note"><h2>Batas kausal</h2><p>May cause tetap kausal. Gunakan bahasa kausal hanya ketika desain dan asumsi identifikasi mendukung klaim kontrafaktual.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../../parafrasa/">Parafrasa</a></li><li><a href="../../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../../skill-agen/">Skill Agen</a></li><li><a href="../../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

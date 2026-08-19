@@ -1,0 +1,26 @@
+{
+  "contract": "../contracts/evidence-claim.v1.json",
+  "editorial": {
+    "method": "original_editorial",
+    "review_status": "contract_validated",
+    "source_reuse": false
+  },
+  "editorial_manifest": "../editorial/manifest.v2.json",
+  "entry_count": 96,
+  "format": "rhetorilex-canonical-manifest",
+  "format_version": "2.0.0",
+  "language": "en",
+  "release_version": "0.2.0",
+  "schema": "../schema/canonical-entry.v1.1.schema.json",
+  "shards": [
+    "catalog.v1.jsonl",
+    "catalog.phase2.jsonl"
+  ],
+  "taxonomy": "../taxonomy/taxonomy.v1.1.json",
+  "translation_manifest": "../translations/manifest.v2.json",
+  "translations": {
+    "available_languages": [],
+    "policy": "A translation must preserve IDs, placeholders, evidence conditions, and claim strength without replacing the English canonical text.",
+    "storage": "separate_from_canonical"
+  }
+}

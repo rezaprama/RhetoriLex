@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-08-19T12:16:17Z",
+  "source": "GitHub REST Git Trees API",
+  "source_documentation": "https://docs.github.com/en/rest/git/trees#get-a-tree",
+  "method": "Resolve the default-branch head commit, request its recursive Git tree, require tree_truncated=false, and count blobs whose path is SKILL.md or ends with /SKILL.md.",
+  "metric": "skill_md_file_count",
+  "limitations": "File count is not a count of distinct capabilities, validated skills, quality, users, or installations. Repository structures differ.",
+  "repositories": [
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "default_branch": "main",
+      "commit_sha": "5714f3a3eb837a66514d2d3e6cf460df95b72a7f",
+      "tree_truncated": false,
+      "skill_md_file_count": 4
+    },
+    {
+      "full_name": "K-Dense-AI/scientific-agent-skills",
+      "default_branch": "main",
+      "commit_sha": "48dc1cf173f01aea114a62d634066f6b272aaaf1",
+      "tree_truncated": false,
+      "skill_md_file_count": 163
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills-codex",
+      "default_branch": "main",
+      "commit_sha": "d5e66fb0d9e4a5bc44f26e9a619fa0e4455ba79c",
+      "tree_truncated": false,
+      "skill_md_file_count": 2
+    },
+    {
+      "full_name": "Chen-ShiRui/claude-academic-skills",
+      "default_branch": "main",
+      "commit_sha": "7ed6377f0efb6a38951b48ef03b19d996e454b1f",
+      "tree_truncated": false,
+      "skill_md_file_count": 24
+    },
+    {
+      "full_name": "FabianRitter/paper-writing-agents",
+      "default_branch": "main",
+      "commit_sha": "96921148976a49d84236586a8a71becf1a67fce4",
+      "tree_truncated": false,
+      "skill_md_file_count": 3
+    },
+    {
+      "full_name": "HZ-KMNO/top-journal-manuscript-skill",
+      "default_branch": "main",
+      "commit_sha": "426b50f668d3178e3529d67d6fcc57a755149a34",
+      "tree_truncated": false,
+      "skill_md_file_count": 1
+    }
+  ]
+}

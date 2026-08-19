@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Writing skills for study design, sampling, materials, measures, procedures, exclusions, models, missing data, ethics, and reproducibility.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Scientific Methods Writing Skills | RhetoriLex">
+<meta property="og:description" content="Writing skills for study design, sampling, materials, measures, procedures, exclusions, models, missing data, ethics, and reproducibility.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scientific Methods Writing Skills | RhetoriLex">
+<meta name="twitter:description" content="Writing skills for study design, sampling, materials, measures, procedures, exclusions, models, missing data, ethics, and reproducibility.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Scientific Methods Writing Skills | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#page","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/","name":"Scientific methods writing skills","headline":"Scientific methods writing skills","description":"Writing skills for study design, sampling, materials, measures, procedures, exclusions, models, missing data, ethics, and reproducibility.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"},"mainEntity":{"@type":"ItemList","numberOfItems":19,"itemListElement":[{"@type":"ListItem","position":1,"name":"Study design","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#study-design"},{"@type":"ListItem","position":2,"name":"Study setting","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#study-setting"},{"@type":"ListItem","position":3,"name":"Participants","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#participants"},{"@type":"ListItem","position":4,"name":"Sampling","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#sampling"},{"@type":"ListItem","position":5,"name":"Inclusion criteria","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#inclusion-criteria"},{"@type":"ListItem","position":6,"name":"Exclusion criteria","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#exclusion-criteria"},{"@type":"ListItem","position":7,"name":"Materials","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#materials"},{"@type":"ListItem","position":8,"name":"Instruments","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#instruments"},{"@type":"ListItem","position":9,"name":"Experimental procedures","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#experimental-procedures"},{"@type":"ListItem","position":10,"name":"Variables","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#variables"},{"@type":"ListItem","position":11,"name":"Measurements","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#measurements"},{"@type":"ListItem","position":12,"name":"Data collection","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#data-collection"},{"@type":"ListItem","position":13,"name":"Statistical methods","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#statistical-methods"},{"@type":"ListItem","position":14,"name":"Qualitative methods","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#qualitative-methods"},{"@type":"ListItem","position":15,"name":"Model specification","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#model-specification"},{"@type":"ListItem","position":16,"name":"Sensitivity analysis","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#sensitivity-analysis"},{"@type":"ListItem","position":17,"name":"Validation","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#validation"},{"@type":"ListItem","position":18,"name":"Reproducibility","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#reproducibility"},{"@type":"ListItem","position":19,"name":"Ethical approval","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/#ethical-approval"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Methods Writing Skills","item":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../../academic-writing/">Academic Writing</a><a href="../../scientific-writing/">Scientific Writing</a><a href="../../phrase-explorer/">Phrase Explorer</a><a href="../../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../../academic-writing/">Academic Writing</a><a href="../../scientific-writing/">Scientific Writing</a><a href="../../phrase-explorer/">Phrase Explorer</a><a href="../../paraphrasing/">Paraphrasing</a><a href="../../rhetorical-moves/">Rhetorical Moves</a><a href="../../research-writing-guides/">Research Writing Guides</a><a href="../../agent-skills/">Agent Skills</a><a href="../../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../id/skill-penulisan/penulisan-metode/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Home</a></li>
+    <li aria-current="page">Methods Writing Skills</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Scientific methods writing skills</h1>
+      <p class="lede">Document the decisions readers need to understand, evaluate, and reproduce the analysis.</p>
+      <p class="catalog-count">19 writing skills</p>
+      
+    </header>
+    <nav class="skill-page-index" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol><li><a href="#study-design">Study design</a></li><li><a href="#study-setting">Study setting</a></li><li><a href="#participants">Participants</a></li><li><a href="#sampling">Sampling</a></li><li><a href="#inclusion-criteria">Inclusion criteria</a></li><li><a href="#exclusion-criteria">Exclusion criteria</a></li><li><a href="#materials">Materials</a></li><li><a href="#instruments">Instruments</a></li><li><a href="#experimental-procedures">Experimental procedures</a></li><li><a href="#variables">Variables</a></li><li><a href="#measurements">Measurements</a></li><li><a href="#data-collection">Data collection</a></li><li><a href="#statistical-methods">Statistical methods</a></li><li><a href="#qualitative-methods">Qualitative methods</a></li><li><a href="#model-specification">Model specification</a></li><li><a href="#sensitivity-analysis">Sensitivity analysis</a></li><li><a href="#validation">Validation</a></li><li><a href="#reproducibility">Reproducibility</a></li><li><a href="#ethical-approval">Ethical approval</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="study-design">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.study_design</code><span>scientific</span></div>
+    <h2>Study design</h2>
+    <a href="#study-design">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to name the design and connect it to the unit, timing, comparison, and inferential goal, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">We conducted a preregistered, parallel-group experiment with measurements at baseline and four weeks.</p><button class="copy-button" type="button" data-copy-value="We conducted a preregistered, parallel-group experiment with measurements at baseline and four weeks.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Name the design and connect it to the unit, timing, comparison, and inferential goal.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, define_scope</dd></div><div><dt>Related skills</dt><dd><a href="./#study-setting">Study setting</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="study-setting">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.study_setting</code><span>scientific</span></div>
+    <h2>Study setting</h2>
+    <a href="#study-setting">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to describe where and under what conditions the research took place, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The study was conducted in six primary-care clinics serving rural districts in northern Java.</p><button class="copy-button" type="button" data-copy-value="The study was conducted in six primary-care clinics serving rural districts in northern Java.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Describe where and under what conditions the research took place.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, define_scope</dd></div><div><dt>Related skills</dt><dd><a href="./#study-design">Study design</a>, <a href="./#participants">Participants</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="participants">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.participants</code><span>scientific</span></div>
+    <h2>Participants</h2>
+    <a href="#participants">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to define who or what was studied and report relevant recruitment characteristics, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Participants were adults receiving their first hypertension consultation during the recruitment period.</p><button class="copy-button" type="button" data-copy-value="Participants were adults receiving their first hypertension consultation during the recruitment period.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Define who or what was studied and report relevant recruitment characteristics.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, define_scope</dd></div><div><dt>Related skills</dt><dd><a href="./#study-setting">Study setting</a>, <a href="./#sampling">Sampling</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="sampling">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.sampling</code><span>scientific</span></div>
+    <h2>Sampling</h2>
+    <a href="#sampling">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to explain how units entered the sample and what selection process was used, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Households were selected through stratified random sampling within each flood-risk zone.</p><button class="copy-button" type="button" data-copy-value="Households were selected through stratified random sampling within each flood-risk zone.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Explain how units entered the sample and what selection process was used.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method</dd></div><div><dt>Related skills</dt><dd><a href="./#participants">Participants</a>, <a href="./#inclusion-criteria">Inclusion criteria</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="inclusion-criteria">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.inclusion_criteria</code><span>scientific</span></div>
+    <h2>Inclusion criteria</h2>
+    <a href="#inclusion-criteria">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to state the prespecified conditions required for a unit to enter the analysis, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Eligible records contained at least twelve consecutive monthly observations and a verified location code.</p><button class="copy-button" type="button" data-copy-value="Eligible records contained at least twelve consecutive monthly observations and a verified location code.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>State the prespecified conditions required for a unit to enter the analysis.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>define_scope, describe_method</dd></div><div><dt>Related skills</dt><dd><a href="./#sampling">Sampling</a>, <a href="./#exclusion-criteria">Exclusion criteria</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="exclusion-criteria">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.exclusion_criteria</code><span>scientific</span></div>
+    <h2>Exclusion criteria</h2>
+    <a href="#exclusion-criteria">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to state prespecified reasons for removing units and distinguish them from post hoc attrition, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">We excluded sensors that failed calibration before deployment; no devices were excluded on the basis of observed outcomes.</p><button class="copy-button" type="button" data-copy-value="We excluded sensors that failed calibration before deployment; no devices were excluded on the basis of observed outcomes.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>State prespecified reasons for removing units and distinguish them from post hoc attrition.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>define_scope, describe_method</dd></div><div><dt>Related skills</dt><dd><a href="./#inclusion-criteria">Inclusion criteria</a>, <a href="./#materials">Materials</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="materials">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.materials</code><span>scientific</span></div>
+    <h2>Materials</h2>
+    <a href="#materials">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to identify materials with enough specification for appraisal or replication, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Samples were stored in 15-millilitre polypropylene tubes from the same manufacturing lot.</p><button class="copy-button" type="button" data-copy-value="Samples were stored in 15-millilitre polypropylene tubes from the same manufacturing lot.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Identify materials with enough specification for appraisal or replication.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method</dd></div><div><dt>Related skills</dt><dd><a href="./#exclusion-criteria">Exclusion criteria</a>, <a href="./#instruments">Instruments</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="instruments">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.instruments</code><span>scientific</span></div>
+    <h2>Instruments</h2>
+    <a href="#instruments">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to name instruments, versions, settings, and calibration procedures relevant to measurement, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Temperature was recorded with calibrated T-type thermocouples at one-second intervals.</p><button class="copy-button" type="button" data-copy-value="Temperature was recorded with calibrated T-type thermocouples at one-second intervals.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Name instruments, versions, settings, and calibration procedures relevant to measurement.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, report_uncertainty</dd></div><div><dt>Related skills</dt><dd><a href="./#materials">Materials</a>, <a href="./#experimental-procedures">Experimental procedures</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="experimental-procedures">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.experimental_procedures</code><span>scientific</span></div>
+    <h2>Experimental procedures</h2>
+    <a href="#experimental-procedures">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report the ordered intervention, exposure, or laboratory steps without omitting consequential choices, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Each specimen underwent 50 heating cycles, cooled to room temperature, and was then tested under a constant loading rate.</p><button class="copy-button" type="button" data-copy-value="Each specimen underwent 50 heating cycles, cooled to room temperature, and was then tested under a constant loading rate.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report the ordered intervention, exposure, or laboratory steps without omitting consequential choices.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method</dd></div><div><dt>Related skills</dt><dd><a href="./#instruments">Instruments</a>, <a href="./#variables">Variables</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="variables">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.variables</code><span>scientific</span></div>
+    <h2>Variables</h2>
+    <a href="#variables">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to define outcomes, predictors, exposures, covariates, and derived variables operationally, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The primary outcome was seven-day retention, defined as any verified session after enrolment.</p><button class="copy-button" type="button" data-copy-value="The primary outcome was seven-day retention, defined as any verified session after enrolment.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Define outcomes, predictors, exposures, covariates, and derived variables operationally.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>define_scope, describe_method</dd></div><div><dt>Related skills</dt><dd><a href="./#experimental-procedures">Experimental procedures</a>, <a href="./#measurements">Measurements</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="measurements">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.measurements</code><span>scientific</span></div>
+    <h2>Measurements</h2>
+    <a href="#measurements">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to describe how constructs or physical quantities were measured and scored, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Leaf area was estimated from calibrated images and expressed in square centimetres.</p><button class="copy-button" type="button" data-copy-value="Leaf area was estimated from calibrated images and expressed in square centimetres.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Describe how constructs or physical quantities were measured and scored.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, report_uncertainty</dd></div><div><dt>Related skills</dt><dd><a href="./#variables">Variables</a>, <a href="./#data-collection">Data collection</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="data-collection">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.data_collection</code><span>scientific</span></div>
+    <h2>Data collection</h2>
+    <a href="#data-collection">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report when, by whom, and through which procedure data were obtained, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Two trained observers independently coded each recording using the prespecified rubric.</p><button class="copy-button" type="button" data-copy-value="Two trained observers independently coded each recording using the prespecified rubric.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report when, by whom, and through which procedure data were obtained.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method</dd></div><div><dt>Related skills</dt><dd><a href="./#measurements">Measurements</a>, <a href="./#statistical-methods">Statistical methods</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="statistical-methods">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.statistical_methods</code><span>scientific</span></div>
+    <h2>Statistical methods</h2>
+    <a href="#statistical-methods">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to name the estimand, model, uncertainty procedure, and decision rules relevant to analysis, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">We estimated adjusted mean differences with cluster-robust standard errors and 95% confidence intervals.</p><button class="copy-button" type="button" data-copy-value="We estimated adjusted mean differences with cluster-robust standard errors and 95% confidence intervals.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Name the estimand, model, uncertainty procedure, and decision rules relevant to analysis.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, report_uncertainty</dd></div><div><dt>Related skills</dt><dd><a href="./#data-collection">Data collection</a>, <a href="./#qualitative-methods">Qualitative methods</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="qualitative-methods">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.qualitative_methods</code><span>scientific</span></div>
+    <h2>Qualitative methods</h2>
+    <a href="#qualitative-methods">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to explain how qualitative material was sampled, coded, compared, and interpreted, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Interview transcripts were coded iteratively, with deviant cases reviewed before themes were finalised.</p><button class="copy-button" type="button" data-copy-value="Interview transcripts were coded iteratively, with deviant cases reviewed before themes were finalised.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Explain how qualitative material was sampled, coded, compared, and interpreted.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, interpret_qualitative_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#statistical-methods">Statistical methods</a>, <a href="./#model-specification">Model specification</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="model-specification">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.model_specification</code><span>scientific</span></div>
+    <h2>Model specification</h2>
+    <a href="#model-specification">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to state the model form, included terms, reference categories, and prespecified interactions, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The model included site fixed effects, calendar month, baseline score, and a prespecified treatment-by-time interaction.</p><button class="copy-button" type="button" data-copy-value="The model included site fixed effects, calendar month, baseline score, and a prespecified treatment-by-time interaction.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>State the model form, included terms, reference categories, and prespecified interactions.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, define_scope</dd></div><div><dt>Related skills</dt><dd><a href="./#qualitative-methods">Qualitative methods</a>, <a href="./#sensitivity-analysis">Sensitivity analysis</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="sensitivity-analysis">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.sensitivity_analysis</code><span>scientific</span></div>
+    <h2>Sensitivity analysis</h2>
+    <a href="#sensitivity-analysis">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to describe an alternative defensible analysis used to test dependence on assumptions or choices, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">We repeated the analysis after excluding imputed outcomes and after varying the exposure threshold.</p><button class="copy-button" type="button" data-copy-value="We repeated the analysis after excluding imputed outcomes and after varying the exposure threshold.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Describe an alternative defensible analysis used to test dependence on assumptions or choices.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, report_uncertainty</dd></div><div><dt>Related skills</dt><dd><a href="./#model-specification">Model specification</a>, <a href="./#validation">Validation</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="validation">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.validation</code><span>scientific</span></div>
+    <h2>Validation</h2>
+    <a href="#validation">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report how a measure, model, or procedure was checked against independent or held-out information, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Performance was evaluated on a temporally separated test set that was not used during model selection.</p><button class="copy-button" type="button" data-copy-value="Performance was evaluated on a temporally separated test set that was not used during model selection.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report how a measure, model, or procedure was checked against independent or held-out information.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#sensitivity-analysis">Sensitivity analysis</a>, <a href="./#reproducibility">Reproducibility</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reproducibility">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.reproducibility</code><span>scientific</span></div>
+    <h2>Reproducibility</h2>
+    <a href="#reproducibility">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to provide the procedural and computational details needed to reproduce the analysis, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Analysis scripts, environment files, and a synthetic test dataset are archived with versioned release tags.</p><button class="copy-button" type="button" data-copy-value="Analysis scripts, environment files, and a synthetic test dataset are archived with versioned release tags.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Provide the procedural and computational details needed to reproduce the analysis.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_method, state_contribution</dd></div><div><dt>Related skills</dt><dd><a href="./#validation">Validation</a>, <a href="./#ethical-approval">Ethical approval</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="ethical-approval">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.ethical_approval</code><span>scientific</span></div>
+    <h2>Ethical approval</h2>
+    <a href="#ethical-approval">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report the approving body, decision identifier, consent process, and relevant safeguards, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The institutional review board approved the protocol under reference 24-118, and participants gave written consent.</p><button class="copy-button" type="button" data-copy-value="The institutional review board approved the protocol under reference 24-118, and participants gave written consent.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report the approving body, decision identifier, consent process, and relevant safeguards.</dd></div><div><dt>Use cases</dt><dd><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>introduce_evidence, define_scope</dd></div><div><dt>Related skills</dt><dd><a href="./#reproducibility">Reproducibility</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Make choices and sequence traceable</h2><p>Methods writing should connect design, population, measures, procedures, exclusions, and models to the target analysis. Name prespecified and data-informed decisions. Read <a href="../../methods/">Methods Writing</a> for a reproducibility audit.</p></section>
+<aside class="article-note"><h2>Reporting boundary</h2><p>Do not hide subjective decisions in passive voice or label work reproducible without providing the detail and materials that the claim requires.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../../academic-writing/">Academic Writing</a></li><li><a href="../../scientific-writing/">Scientific Writing</a></li><li><a href="../../phrase-explorer/">Phrase Explorer</a></li><li><a href="../../paraphrasing/">Paraphrasing</a></li><li><a href="../../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../../research-writing-guides/">Research Writing Guides</a></li><li><a href="../../agent-skills/">Agent Skills</a></li><li><a href="../../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

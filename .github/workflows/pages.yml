@@ -39,6 +39,9 @@ jobs:
           python scripts/validate_data.py
           python scripts/build_data.py
 
+      - name: Build bilingual static site
+        run: python docs/build_site.py
+
       - name: Copy phrases into Pages artifact
         run: python .github/scripts/prepare_pages.py
 

@@ -1,0 +1,62 @@
+{
+  "format": "rhetorilex-search-aliases",
+  "version": "1.0.0",
+  "function_aliases": {
+    "position_claim": ["thesis statement","main argument","take a position"],
+    "qualify_claim": ["hedge a claim","add caution","limit certainty"],
+    "introduce_evidence": ["present evidence","report data","introduce a result"],
+    "interpret_evidence": ["explain a finding","meaning of results","interpret data"],
+    "compare_findings": ["similar results","compare studies","agreement with prior work"],
+    "contrast_findings": ["different results","disagree with literature","contrast studies"],
+    "synthesize_sources": ["literature synthesis","combine sources","integrate studies"],
+    "identify_gap": ["research gap","knowledge deficit","unanswered question"],
+    "state_limitation": ["study weakness","caveat","boundary of inference"],
+    "recommend_action": ["future research","practical implication","next step"],
+    "causal_claim": ["cause and effect","treatment effect","causal inference"],
+    "define_scope": ["set boundaries","define population","delimit study","delimit study population"],
+    "establish_context": ["research background","problem statement","motivate study"],
+    "describe_method": ["methodology wording","report procedure","describe analysis"],
+    "justify_method": ["method rationale","why this method","design choice"],
+    "report_null_result": ["non significant finding","no detected difference","inconclusive result"],
+    "describe_association": ["correlation wording","relationship between variables","non causal link"],
+    "distinguish_causation": ["association not causation","causal caution","avoid causal language"],
+    "attribute_source": ["authors argue","according to source","citation boundary"],
+    "paraphrase_with_attribution": ["ethical paraphrase","rewrite source with citation","avoid patchwriting"],
+    "report_uncertainty": ["confidence interval","precision wording","sensitivity range"],
+    "interpret_qualitative_evidence": ["interpret interview theme","qualitative finding","deviant case"],
+    "respond_reviewer": ["reply to peer review","response letter","address reviewer comment"],
+    "state_contribution": ["research contribution","what study adds","thesis contribution"]
+  },
+  "stage_aliases": {
+    "abstract": ["summary","structured abstract"],
+    "introduction": ["opening section","research framing"],
+    "literature_review": ["related work","background literature"],
+    "methods": ["methodology","materials and methods"],
+    "results": ["findings","analysis output"],
+    "discussion": ["interpretation section","meaning of findings"],
+    "limitations": ["study limitations","caveats"],
+    "conclusion": ["closing section","takeaway"],
+    "peer_review_response": ["rebuttal letter","review response"]
+  },
+  "discipline_aliases": {
+    "humanities": ["interpretive scholarship","textual analysis"],
+    "social_sciences": ["social research","behavioral research"],
+    "sciences": ["natural science","experimental research"],
+    "engineering": ["technical design","system evaluation"],
+    "health_sciences": ["health research","biomedical writing"],
+    "quantitative_research": ["statistical analysis","empirical quantitative"],
+    "qualitative_research": ["interviews","thematic analysis"],
+    "clinical_research": ["clinical study","trial reporting"],
+    "computer_science": ["algorithm evaluation","machine learning paper"],
+    "law": ["legal scholarship","doctrinal analysis"],
+    "business": ["management research","business study"]
+  },
+  "concept_groups": [
+    {"id":"association_causation","terms":["association versus causation","correlation is not causation","causal overclaim"],"functions":["describe_association","distinguish_causation","causal_claim","qualify_claim"]},
+    {"id":"evidential_force","terms":["suggests indicates supports demonstrates confirms","evidential verb strength","calibrate evidence verb"],"functions":["introduce_evidence","interpret_evidence","qualify_claim","attribute_source"]},
+    {"id":"null_evidence","terms":["absence of evidence","evidence of absence","non significance","equivalence"],"functions":["report_null_result","report_uncertainty","qualify_claim"]},
+    {"id":"integrity_paraphrase","terms":["preserve citation","meaning preserving rewrite","structural paraphrase","plagiarism safe"],"functions":["paraphrase_with_attribution","attribute_source"]},
+    {"id":"publication_response","terms":["reviewer rebuttal","revise manuscript","answer peer review"],"functions":["respond_reviewer"]},
+    {"id":"paper_navigation","terms":["paper section","chapter writing","browse manuscript moves"],"functions":["establish_context","describe_method","introduce_evidence","interpret_evidence","state_contribution"]}
+  ]
+}

@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Skill untuk alur peserta, hasil deskriptif, estimasi, interval, perbandingan, hasil nol, sensitivitas, tabel, dan gambar.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Skill Penulisan Hasil Ilmiah | RhetoriLex">
+<meta property="og:description" content="Skill untuk alur peserta, hasil deskriptif, estimasi, interval, perbandingan, hasil nol, sensitivitas, tabel, dan gambar.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skill Penulisan Hasil Ilmiah | RhetoriLex">
+<meta name="twitter:description" content="Skill untuk alur peserta, hasil deskriptif, estimasi, interval, perbandingan, hasil nol, sensitivitas, tabel, dan gambar.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Skill Penulisan Hasil Ilmiah | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#page","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/","name":"Skill penulisan hasil ilmiah","headline":"Skill penulisan hasil ilmiah","description":"Skill untuk alur peserta, hasil deskriptif, estimasi, interval, perbandingan, hasil nol, sensitivitas, tabel, dan gambar.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"},"mainEntity":{"@type":"ItemList","numberOfItems":17,"itemListElement":[{"@type":"ListItem","position":1,"name":"Memperkenalkan hasil","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#introducing-results"},{"@type":"ListItem","position":2,"name":"Melaporkan statistik deskriptif","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#reporting-descriptive-statistics"},{"@type":"ListItem","position":3,"name":"Melaporkan perbandingan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#reporting-comparisons"},{"@type":"ListItem","position":4,"name":"Melaporkan asosiasi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#reporting-associations"},{"@type":"ListItem","position":5,"name":"Melaporkan efek","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#reporting-effects"},{"@type":"ListItem","position":6,"name":"Melaporkan ketidakpastian","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#reporting-uncertainty"},{"@type":"ListItem","position":7,"name":"Interval kepercayaan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#confidence-intervals"},{"@type":"ListItem","position":8,"name":"Signifikansi statistik","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#statistical-significance"},{"@type":"ListItem","position":9,"name":"Temuan tidak signifikan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#non-significant-findings"},{"@type":"ListItem","position":10,"name":"Temuan nol","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#null-findings"},{"@type":"ListItem","position":11,"name":"Tren","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#trends"},{"@type":"ListItem","position":12,"name":"Hasil subkelompok","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#subgroup-results"},{"@type":"ListItem","position":13,"name":"Hasil analisis sensitivitas","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#sensitivity-results"},{"@type":"ListItem","position":14,"name":"Hasil uji ketahanan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#robustness-results"},{"@type":"ListItem","position":15,"name":"Temuan tak terduga","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#unexpected-findings"},{"@type":"ListItem","position":16,"name":"Merujuk tabel","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#referring-to-tables"},{"@type":"ListItem","position":17,"name":"Merujuk gambar","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/#referring-to-figures"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Skill Penulisan Hasil","item":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../parafrasa/">Parafrasa</a><a href="../../gerakan-retoris/">Gerakan Retoris</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../../skill-agen/">Skill Agen</a><a href="../../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../en/writing-skills/results-writing/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Beranda</a></li>
+    <li aria-current="page">Skill Penulisan Hasil</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Skill penulisan hasil ilmiah</h1>
+      <p class="lede">Laporkan perbandingan, estimasi, arah, satuan, ketidakpastian, dan populasi analisis tanpa pergeseran interpretasi.</p>
+      <p class="catalog-count">17 skill penulisan</p>
+      <p class="pattern-language">Nama dan definisi tersedia dalam Bahasa Indonesia. Contoh pola, tujuan teknis, dan peringatan tetap dalam bahasa Inggris untuk menjaga kontrak canonical.</p>
+    </header>
+    <nav class="skill-page-index" aria-label="Dalam halaman ini">
+      <h2>Dalam halaman ini</h2>
+      <ol><li><a href="#introducing-results">Memperkenalkan hasil</a></li><li><a href="#reporting-descriptive-statistics">Melaporkan statistik deskriptif</a></li><li><a href="#reporting-comparisons">Melaporkan perbandingan</a></li><li><a href="#reporting-associations">Melaporkan asosiasi</a></li><li><a href="#reporting-effects">Melaporkan efek</a></li><li><a href="#reporting-uncertainty">Melaporkan ketidakpastian</a></li><li><a href="#confidence-intervals">Interval kepercayaan</a></li><li><a href="#statistical-significance">Signifikansi statistik</a></li><li><a href="#non-significant-findings">Temuan tidak signifikan</a></li><li><a href="#null-findings">Temuan nol</a></li><li><a href="#trends">Tren</a></li><li><a href="#subgroup-results">Hasil subkelompok</a></li><li><a href="#sensitivity-results">Hasil analisis sensitivitas</a></li><li><a href="#robustness-results">Hasil uji ketahanan</a></li><li><a href="#unexpected-findings">Temuan tak terduga</a></li><li><a href="#referring-to-tables">Merujuk tabel</a></li><li><a href="#referring-to-figures">Merujuk gambar</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="introducing-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.introducing_results</code><span>scientific</span></div>
+    <h2>Memperkenalkan hasil</h2>
+    <a href="#introducing-results">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan memperkenalkan hasil secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">We first report changes in the primary outcome, followed by prespecified subgroup estimates.</p><button class="copy-button" type="button" data-copy-value="We first report changes in the primary outcome, followed by prespecified subgroup estimates.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Orient the reader to the analysis or outcome being reported before presenting values.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#reporting-descriptive-statistics">Melaporkan statistik deskriptif</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-descriptive-statistics">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_descriptive_statistics</code><span>scientific</span></div>
+    <h2>Melaporkan statistik deskriptif</h2>
+    <a href="#reporting-descriptive-statistics">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan melaporkan statistik deskriptif secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Median follow-up was 14 months, with an interquartile range of 11 to 18 months.</p><button class="copy-button" type="button" data-copy-value="Median follow-up was 14 months, with an interquartile range of 11 to 18 months.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Summarise the observed sample or distribution with appropriate quantities and units.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#introducing-results">Memperkenalkan hasil</a>, <a href="./#reporting-comparisons">Melaporkan perbandingan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-comparisons">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_comparisons</code><span>scientific</span></div>
+    <h2>Melaporkan perbandingan</h2>
+    <a href="#reporting-comparisons">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan melaporkan perbandingan secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Mean recovery time was 1.8 days shorter in the guided group than in the standard-care group.</p><button class="copy-button" type="button" data-copy-value="Mean recovery time was 1.8 days shorter in the guided group than in the standard-care group.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report a difference or ratio while naming the groups, reference, and uncertainty.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">compare_findings, introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#reporting-descriptive-statistics">Melaporkan statistik deskriptif</a>, <a href="./#reporting-associations">Melaporkan asosiasi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-associations">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_associations</code><span>scientific</span></div>
+    <h2>Melaporkan asosiasi</h2>
+    <a href="#reporting-associations">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan melaporkan asosiasi secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Higher canopy cover was associated with lower afternoon surface temperature after adjustment for elevation.</p><button class="copy-button" type="button" data-copy-value="Higher canopy cover was associated with lower afternoon surface temperature after adjustment for elevation.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe covariation without implying that one variable caused the other.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_association, introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#reporting-comparisons">Melaporkan perbandingan</a>, <a href="./#reporting-effects">Melaporkan efek</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-effects">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_effects</code><span>scientific</span></div>
+    <h2>Melaporkan efek</h2>
+    <a href="#reporting-effects">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan melaporkan efek secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Assignment to the reminder condition increased verified attendance by 6 percentage points.</p><button class="copy-button" type="button" data-copy-value="Assignment to the reminder condition increased verified attendance by 6 percentage points.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report an estimated intervention or exposure effect only in terms supported by the design.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">causal_claim, introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#reporting-associations">Melaporkan asosiasi</a>, <a href="./#reporting-uncertainty">Melaporkan ketidakpastian</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-uncertainty">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_uncertainty</code><span>scientific</span></div>
+    <h2>Melaporkan ketidakpastian</h2>
+    <a href="#reporting-uncertainty">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan melaporkan ketidakpastian secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The estimated reduction was 4.2 units, with a 95% interval from 1.1 to 7.0 units.</p><button class="copy-button" type="button" data-copy-value="The estimated reduction was 4.2 units, with a 95% interval from 1.1 to 7.0 units.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Present intervals, variability, or model uncertainty alongside the estimate it qualifies.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">report_uncertainty, introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#reporting-effects">Melaporkan efek</a>, <a href="./#confidence-intervals">Interval kepercayaan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="confidence-intervals">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.confidence_intervals</code><span>scientific</span></div>
+    <h2>Interval kepercayaan</h2>
+    <a href="#confidence-intervals">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan interval kepercayaan secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The odds ratio was 1.32 (95% confidence interval 1.08 to 1.61).</p><button class="copy-button" type="button" data-copy-value="The odds ratio was 1.32 (95% confidence interval 1.08 to 1.61).">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report an interval with its confidence level, scale, and corresponding estimate.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">report_uncertainty, introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#reporting-uncertainty">Melaporkan ketidakpastian</a>, <a href="./#statistical-significance">Signifikansi statistik</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="statistical-significance">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.statistical_significance</code><span>scientific</span></div>
+    <h2>Signifikansi statistik</h2>
+    <a href="#statistical-significance">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan signifikansi statistik secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The difference crossed the prespecified significance threshold, although its absolute magnitude was small.</p><button class="copy-button" type="button" data-copy-value="The difference crossed the prespecified significance threshold, although its absolute magnitude was small.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report the prespecified statistical decision without equating it with importance or truth.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#confidence-intervals">Interval kepercayaan</a>, <a href="./#non-significant-findings">Temuan tidak signifikan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="non-significant-findings">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.non_significant_findings</code><span>scientific</span></div>
+    <h2>Temuan tidak signifikan</h2>
+    <a href="#non-significant-findings">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan temuan tidak signifikan secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The estimate did not meet the prespecified significance threshold, and the interval included both modest benefit and modest harm.</p><button class="copy-button" type="button" data-copy-value="The estimate did not meet the prespecified significance threshold, and the interval included both modest benefit and modest harm.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report imprecise or threshold-crossing results without claiming equality or no effect.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">report_null_result, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#statistical-significance">Signifikansi statistik</a>, <a href="./#null-findings">Temuan nol</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="null-findings">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.null_findings</code><span>scientific</span></div>
+    <h2>Temuan nol</h2>
+    <a href="#null-findings">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan temuan nol secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">We detected no clear difference between groups, but the interval was too wide to rule out a meaningful effect.</p><button class="copy-button" type="button" data-copy-value="We detected no clear difference between groups, but the interval was too wide to rule out a meaningful effect.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe the absence of a detected difference while preserving what the data still permit.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">report_null_result, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#non-significant-findings">Temuan tidak signifikan</a>, <a href="./#trends">Tren</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="trends">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.trends</code><span>scientific</span></div>
+    <h2>Tren</h2>
+    <a href="#trends">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan tren secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Concentration declined over the first three sampling rounds and then remained broadly stable.</p><button class="copy-button" type="button" data-copy-value="Concentration declined over the first three sampling rounds and then remained broadly stable.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe an ordered pattern across time or levels without overstating its regularity.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#null-findings">Temuan nol</a>, <a href="./#subgroup-results">Hasil subkelompok</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="subgroup-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.subgroup_results</code><span>scientific</span></div>
+    <h2>Hasil subkelompok</h2>
+    <a href="#subgroup-results">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan hasil subkelompok secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The association was stronger in the prespecified rural subgroup; the interaction estimate remained imprecise.</p><button class="copy-button" type="button" data-copy-value="The association was stronger in the prespecified rural subgroup; the interaction estimate remained imprecise.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report subgroup estimates as prespecified or exploratory and avoid unsupported between-group claims.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">compare_findings, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#trends">Tren</a>, <a href="./#sensitivity-results">Hasil analisis sensitivitas</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="sensitivity-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.sensitivity_results</code><span>scientific</span></div>
+    <h2>Hasil analisis sensitivitas</h2>
+    <a href="#sensitivity-results">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan hasil analisis sensitivitas secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Estimates were similar after complete-case analysis and after excluding the two smallest sites.</p><button class="copy-button" type="button" data-copy-value="Estimates were similar after complete-case analysis and after excluding the two smallest sites.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">State whether conclusions changed under alternative defensible specifications.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">report_uncertainty, compare_findings</dd></div><div><dt>Skill terkait</dt><dd><a href="./#subgroup-results">Hasil subkelompok</a>, <a href="./#robustness-results">Hasil uji ketahanan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="robustness-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.robustness_results</code><span>scientific</span></div>
+    <h2>Hasil uji ketahanan</h2>
+    <a href="#robustness-results">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan hasil uji ketahanan secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The direction and approximate magnitude were retained across all three alternative outcome definitions.</p><button class="copy-button" type="button" data-copy-value="The direction and approximate magnitude were retained across all three alternative outcome definitions.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report consistency across checks while naming which assumptions were varied.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">report_uncertainty, compare_findings</dd></div><div><dt>Skill terkait</dt><dd><a href="./#sensitivity-results">Hasil analisis sensitivitas</a>, <a href="./#unexpected-findings">Temuan tak terduga</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="unexpected-findings">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.unexpected_findings</code><span>scientific</span></div>
+    <h2>Temuan tak terduga</h2>
+    <a href="#unexpected-findings">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan temuan tak terduga secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Contrary to the prespecified hypothesis, response time increased during the second observation period.</p><button class="copy-button" type="button" data-copy-value="Contrary to the prespecified hypothesis, response time increased during the second observation period.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report an unanticipated result distinctly from prespecified evidence and interpretation.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">contrast_findings, introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#robustness-results">Hasil uji ketahanan</a>, <a href="./#referring-to-tables">Merujuk tabel</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="referring-to-tables">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.referring_to_tables</code><span>scientific</span></div>
+    <h2>Merujuk tabel</h2>
+    <a href="#referring-to-tables">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan merujuk tabel secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Baseline characteristics and missingness by group are reported in Table 1.</p><button class="copy-button" type="button" data-copy-value="Baseline characteristics and missingness by group are reported in Table 1.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Direct readers to tabulated evidence while stating the result in prose.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#unexpected-findings">Temuan tak terduga</a>, <a href="./#referring-to-figures">Merujuk gambar</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="referring-to-figures">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.referring_to_figures</code><span>scientific</span></div>
+    <h2>Merujuk gambar</h2>
+    <a href="#referring-to-figures">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan merujuk gambar secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Figure 3 shows the widening separation between trajectories after week eight.</p><button class="copy-button" type="button" data-copy-value="Figure 3 shows the widening separation between trajectories after week eight.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Direct readers to a figure and describe the feature relevant to the argument.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence, compare_findings</dd></div><div><dt>Skill terkait</dt><dd><a href="./#referring-to-tables">Merujuk tabel</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Buat setiap estimasi dapat ditafsirkan</h2><p>Hasil memerlukan outcome, perbandingan, magnitudo, arah, satuan, waktu, populasi, dan ketidakpastian. Teks mengarahkan pembaca ke temuan yang menjawab pertanyaan. Baca <a href="../../hasil/">Penulisan Hasil</a>.</p></section>
+<aside class="article-note"><h2>Batas inferensi</h2><p>Signifikansi tidak menggantikan estimasi, sedangkan hasil tidak signifikan tidak membuktikan ketiadaan efek. Laporkan perbandingan langsung dan nilai yang kompatibel.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../../parafrasa/">Parafrasa</a></li><li><a href="../../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../../skill-agen/">Skill Agen</a></li><li><a href="../../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

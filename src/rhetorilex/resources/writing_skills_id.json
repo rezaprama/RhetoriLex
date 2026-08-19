@@ -1,0 +1,789 @@
+{
+  "$schema": "../schema/writing-skills-translation.v1.schema.json",
+  "canonical_language": "en",
+  "count": 144,
+  "format": "rhetorilex-writing-skills-translation",
+  "format_version": "1.0.0",
+  "groups": [
+    {
+      "description": "Menyusun masalah penelitian dari konteks umum hingga kontribusi yang terukur dan dapat dipertanggungjawabkan.",
+      "id": "research-framing",
+      "name": "Kerangka Penelitian"
+    },
+    {
+      "description": "Merepresentasikan, membandingkan, dan menyintesis literatur dengan menjaga setiap klaim tetap terhubung pada sumbernya.",
+      "id": "literature-writing",
+      "name": "Penulisan Literatur"
+    },
+    {
+      "description": "Membangun argumentasi akademik yang dapat ditelusuri melalui klaim, pembedaan, konsesi, dan implikasi yang terukur.",
+      "id": "argumentation",
+      "name": "Argumentasi Akademik"
+    },
+    {
+      "description": "Mengoordinasikan bab penelitian panjang agar setiap bagian menjalankan peran yang jelas dalam keseluruhan argumen.",
+      "id": "thesis-and-dissertation",
+      "name": "Penulisan Tesis dan Disertasi"
+    },
+    {
+      "description": "Menyesuaikan isi penelitian untuk genre publikasi, komunikasi editorial, dan pernyataan transparansi.",
+      "id": "publication-writing",
+      "name": "Penulisan Publikasi"
+    },
+    {
+      "description": "Menghubungkan pertanyaan ilmiah dengan bukti terdahulu, ekspektasi yang dapat diuji, dan kontribusi yang terukur.",
+      "id": "scientific-study-framing",
+      "name": "Kerangka Studi Ilmiah"
+    },
+    {
+      "description": "Melaporkan rancangan, pelaksanaan, analisis, dan tata kelola studi dengan rincian yang memadai untuk penilaian.",
+      "id": "methods-writing",
+      "name": "Penulisan Metode"
+    },
+    {
+      "description": "Melaporkan observasi dan estimasi secara presisi sebelum beralih ke interpretasi.",
+      "id": "results-writing",
+      "name": "Penulisan Hasil"
+    },
+    {
+      "description": "Menafsirkan temuan dengan mempertimbangkan rancangan, ketidakpastian, literatur terdahulu, dan penjelasan alternatif.",
+      "id": "discussion-writing",
+      "name": "Penulisan Pembahasan"
+    },
+    {
+      "description": "Menyesuaikan bahasa ilmiah dengan rancangan, kekuatan bukti, ketidakpastian, dan cakupan.",
+      "id": "scientific-claim-control",
+      "name": "Pengendalian Klaim Ilmiah"
+    },
+    {
+      "description": "Menulis ulang materi akademik dengan mempertahankan makna, atribusi, angka, dan kekuatan inferensi.",
+      "id": "paraphrasing",
+      "name": "Parafrasa"
+    }
+  ],
+  "language": "id",
+  "release": "0.2.0",
+  "skills": [
+    {
+      "description": "Panduan membangun konteks penelitian agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.establishing_a_research_context",
+      "name": "Membangun konteks penelitian"
+    },
+    {
+      "description": "Panduan memperkenalkan topik agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.introducing_a_topic",
+      "name": "Memperkenalkan topik"
+    },
+    {
+      "description": "Panduan menegaskan signifikansi agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.establishing_significance",
+      "name": "Menegaskan signifikansi"
+    },
+    {
+      "description": "Panduan mendefinisikan masalah penelitian agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.defining_a_research_problem",
+      "name": "Mendefinisikan masalah penelitian"
+    },
+    {
+      "description": "Panduan mengidentifikasi kesenjangan penelitian agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.identifying_a_research_gap",
+      "name": "Mengidentifikasi kesenjangan penelitian"
+    },
+    {
+      "description": "Panduan menyatakan tujuan penelitian agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.stating_research_aims",
+      "name": "Menyatakan tujuan penelitian"
+    },
+    {
+      "description": "Panduan menulis pertanyaan penelitian agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.writing_research_questions",
+      "name": "Menulis pertanyaan penelitian"
+    },
+    {
+      "description": "Panduan menyatakan hipotesis agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.stating_hypotheses",
+      "name": "Menyatakan hipotesis"
+    },
+    {
+      "description": "Panduan menjelaskan cakupan agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.describing_scope",
+      "name": "Menjelaskan cakupan"
+    },
+    {
+      "description": "Panduan menyatakan kontribusi agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.stating_contributions",
+      "name": "Menyatakan kontribusi"
+    },
+    {
+      "description": "Panduan menjelaskan kebaruan secara hati-hati agar konteks, batas, dan kontribusi penelitian dinyatakan secara jelas serta sesuai bukti.",
+      "id": "writing.academic.research_framing.describing_novelty_cautiously",
+      "name": "Menjelaskan kebaruan secara hati-hati"
+    },
+    {
+      "description": "Panduan memperkenalkan studi terdahulu dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.introducing_previous_studies",
+      "name": "Memperkenalkan studi terdahulu"
+    },
+    {
+      "description": "Panduan menyintesis literatur dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.synthesising_literature",
+      "name": "Menyintesis literatur"
+    },
+    {
+      "description": "Panduan membandingkan studi dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.comparing_studies",
+      "name": "Membandingkan studi"
+    },
+    {
+      "description": "Panduan mengontraskan studi dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.contrasting_studies",
+      "name": "Mengontraskan studi"
+    },
+    {
+      "description": "Panduan menjelaskan konsensus ilmiah dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.describing_scholarly_consensus",
+      "name": "Menjelaskan konsensus ilmiah"
+    },
+    {
+      "description": "Panduan menjelaskan perbedaan pendapat ilmiah dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.describing_scholarly_disagreement",
+      "name": "Menjelaskan perbedaan pendapat ilmiah"
+    },
+    {
+      "description": "Panduan mengidentifikasi keterbatasan penelitian terdahulu dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.identifying_limitations_in_prior_work",
+      "name": "Mengidentifikasi keterbatasan penelitian terdahulu"
+    },
+    {
+      "description": "Panduan mengkritik penelitian terdahulu dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.critiquing_previous_research",
+      "name": "Mengkritik penelitian terdahulu"
+    },
+    {
+      "description": "Panduan membatasi kritik dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.qualifying_criticism",
+      "name": "Membatasi kritik"
+    },
+    {
+      "description": "Panduan menetapkan kesenjangan literatur dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.establishing_a_literature_gap",
+      "name": "Menetapkan kesenjangan literatur"
+    },
+    {
+      "description": "Panduan menulis bagian karya terkait dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.writing_related_work",
+      "name": "Menulis bagian karya terkait"
+    },
+    {
+      "description": "Panduan beralih antarsumber dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.transitioning_between_sources",
+      "name": "Beralih antarsumber"
+    },
+    {
+      "description": "Panduan menulis dengan sitasi terpadu dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.",
+      "id": "writing.academic.literature_writing.citation_integrated_writing",
+      "name": "Menulis dengan sitasi terpadu"
+    },
+    {
+      "description": "Panduan menyusun klaim akademik untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.making_an_academic_claim",
+      "name": "Menyusun klaim akademik"
+    },
+    {
+      "description": "Panduan mendukung klaim untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.supporting_a_claim",
+      "name": "Mendukung klaim"
+    },
+    {
+      "description": "Panduan membatasi klaim untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.qualifying_a_claim",
+      "name": "Membatasi klaim"
+    },
+    {
+      "description": "Panduan menggunakan bahasa berhati-hati untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.hedging",
+      "name": "Menggunakan bahasa berhati-hati"
+    },
+    {
+      "description": "Panduan memberi penekanan secara hati-hati untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.emphasising_cautiously",
+      "name": "Memberi penekanan secara hati-hati"
+    },
+    {
+      "description": "Panduan mengakui suatu poin untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.conceding_a_point",
+      "name": "Mengakui suatu poin"
+    },
+    {
+      "description": "Panduan menyajikan argumen tandingan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.presenting_counterarguments",
+      "name": "Menyajikan argumen tandingan"
+    },
+    {
+      "description": "Panduan membuat pembedaan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.drawing_distinctions",
+      "name": "Membuat pembedaan"
+    },
+    {
+      "description": "Panduan menyatakan persetujuan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.expressing_agreement",
+      "name": "Menyatakan persetujuan"
+    },
+    {
+      "description": "Panduan menyatakan ketidaksetujuan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.expressing_disagreement",
+      "name": "Menyatakan ketidaksetujuan"
+    },
+    {
+      "description": "Panduan mendefinisikan konsep untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.defining_concepts",
+      "name": "Mendefinisikan konsep"
+    },
+    {
+      "description": "Panduan mengklasifikasikan konsep untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.classifying_concepts",
+      "name": "Mengklasifikasikan konsep"
+    },
+    {
+      "description": "Panduan memberikan contoh untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.giving_examples",
+      "name": "Memberikan contoh"
+    },
+    {
+      "description": "Panduan menarik perbandingan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.drawing_comparisons",
+      "name": "Menarik perbandingan"
+    },
+    {
+      "description": "Panduan menjelaskan implikasi untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.",
+      "id": "writing.academic.argumentation.explaining_implications",
+      "name": "Menjelaskan implikasi"
+    },
+    {
+      "description": "Panduan pendahuluan tesis agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.thesis_introduction",
+      "name": "Pendahuluan tesis"
+    },
+    {
+      "description": "Panduan pendahuluan bab agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.chapter_introduction",
+      "name": "Pendahuluan bab"
+    },
+    {
+      "description": "Panduan tinjauan pustaka agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.literature_review",
+      "name": "Tinjauan pustaka"
+    },
+    {
+      "description": "Panduan kerangka konseptual agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.conceptual_framework",
+      "name": "Kerangka konseptual"
+    },
+    {
+      "description": "Panduan kerangka teoretis agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.theoretical_framework",
+      "name": "Kerangka teoretis"
+    },
+    {
+      "description": "Panduan bab metodologi agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.methodology_chapter",
+      "name": "Bab metodologi"
+    },
+    {
+      "description": "Panduan bab temuan agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.findings_chapter",
+      "name": "Bab temuan"
+    },
+    {
+      "description": "Panduan bab pembahasan agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.discussion_chapter",
+      "name": "Bab pembahasan"
+    },
+    {
+      "description": "Panduan ringkasan bab agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.chapter_summary",
+      "name": "Ringkasan bab"
+    },
+    {
+      "description": "Panduan kesimpulan umum agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.general_conclusion",
+      "name": "Kesimpulan umum"
+    },
+    {
+      "description": "Panduan rekomendasi agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.recommendations",
+      "name": "Rekomendasi"
+    },
+    {
+      "description": "Panduan penelitian selanjutnya agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.future_research",
+      "name": "Penelitian selanjutnya"
+    },
+    {
+      "description": "Panduan keterbatasan tesis agar bagian tesis atau disertasi menjalankan fungsi retoris yang jelas dalam argumen keseluruhan.",
+      "id": "writing.academic.thesis_and_dissertation.thesis_limitations",
+      "name": "Keterbatasan tesis"
+    },
+    {
+      "description": "Panduan abstrak akademik yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.academic_abstract",
+      "name": "Abstrak akademik"
+    },
+    {
+      "description": "Panduan proposal penelitian yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.research_proposal",
+      "name": "Proposal penelitian"
+    },
+    {
+      "description": "Panduan naskah jurnal yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.journal_manuscript",
+      "name": "Naskah jurnal"
+    },
+    {
+      "description": "Panduan makalah konferensi yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.conference_paper",
+      "name": "Makalah konferensi"
+    },
+    {
+      "description": "Panduan surat pengantar yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.cover_letter",
+      "name": "Surat pengantar"
+    },
+    {
+      "description": "Panduan tanggapan kepada penelaah yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.reviewer_response",
+      "name": "Tanggapan kepada penelaah"
+    },
+    {
+      "description": "Panduan tanggapan revisi yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.revision_response",
+      "name": "Tanggapan revisi"
+    },
+    {
+      "description": "Panduan pernyataan kontribusi penulis yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.author_contribution_statement",
+      "name": "Pernyataan kontribusi penulis"
+    },
+    {
+      "description": "Panduan pernyataan ketersediaan data yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.data_availability_language",
+      "name": "Pernyataan ketersediaan data"
+    },
+    {
+      "description": "Panduan pernyataan etika yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.ethics_statement_language",
+      "name": "Pernyataan etika"
+    },
+    {
+      "description": "Panduan pernyataan konflik kepentingan yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.conflict_of_interest_language",
+      "name": "Pernyataan konflik kepentingan"
+    },
+    {
+      "description": "Panduan ucapan terima kasih yang akurat, transparan, dan sesuai dengan tujuan komunikasi publikasi ilmiah.",
+      "id": "writing.academic.publication_writing.acknowledgements",
+      "name": "Ucapan terima kasih"
+    },
+    {
+      "description": "Panduan latar belakang ilmiah dengan pertanyaan, ekspektasi, dan kontribusi ilmiah yang terukur.",
+      "id": "writing.scientific.scientific_study_framing.scientific_background",
+      "name": "Latar belakang ilmiah"
+    },
+    {
+      "description": "Panduan rasional ilmiah dengan pertanyaan, ekspektasi, dan kontribusi ilmiah yang terukur.",
+      "id": "writing.scientific.scientific_study_framing.scientific_rationale",
+      "name": "Rasional ilmiah"
+    },
+    {
+      "description": "Panduan tujuan penelitian dengan pertanyaan, ekspektasi, dan kontribusi ilmiah yang terukur.",
+      "id": "writing.scientific.scientific_study_framing.research_objective",
+      "name": "Tujuan penelitian"
+    },
+    {
+      "description": "Panduan bahasa hipotesis dengan pertanyaan, ekspektasi, dan kontribusi ilmiah yang terukur.",
+      "id": "writing.scientific.scientific_study_framing.hypothesis_language",
+      "name": "Bahasa hipotesis"
+    },
+    {
+      "description": "Panduan kesenjangan pengetahuan dengan pertanyaan, ekspektasi, dan kontribusi ilmiah yang terukur.",
+      "id": "writing.scientific.scientific_study_framing.knowledge_gap",
+      "name": "Kesenjangan pengetahuan"
+    },
+    {
+      "description": "Panduan kontribusi ilmiah dengan pertanyaan, ekspektasi, dan kontribusi ilmiah yang terukur.",
+      "id": "writing.scientific.scientific_study_framing.scientific_contribution",
+      "name": "Kontribusi ilmiah"
+    },
+    {
+      "description": "Panduan rancangan studi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.study_design",
+      "name": "Rancangan studi"
+    },
+    {
+      "description": "Panduan lokasi dan konteks studi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.study_setting",
+      "name": "Lokasi dan konteks studi"
+    },
+    {
+      "description": "Panduan partisipan secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.participants",
+      "name": "Partisipan"
+    },
+    {
+      "description": "Panduan pengambilan sampel secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.sampling",
+      "name": "Pengambilan sampel"
+    },
+    {
+      "description": "Panduan kriteria inklusi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.inclusion_criteria",
+      "name": "Kriteria inklusi"
+    },
+    {
+      "description": "Panduan kriteria eksklusi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.exclusion_criteria",
+      "name": "Kriteria eksklusi"
+    },
+    {
+      "description": "Panduan bahan secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.materials",
+      "name": "Bahan"
+    },
+    {
+      "description": "Panduan instrumen secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.instruments",
+      "name": "Instrumen"
+    },
+    {
+      "description": "Panduan prosedur eksperimen secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.experimental_procedures",
+      "name": "Prosedur eksperimen"
+    },
+    {
+      "description": "Panduan variabel secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.variables",
+      "name": "Variabel"
+    },
+    {
+      "description": "Panduan pengukuran secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.measurements",
+      "name": "Pengukuran"
+    },
+    {
+      "description": "Panduan pengumpulan data secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.data_collection",
+      "name": "Pengumpulan data"
+    },
+    {
+      "description": "Panduan metode statistik secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.statistical_methods",
+      "name": "Metode statistik"
+    },
+    {
+      "description": "Panduan metode kualitatif secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.qualitative_methods",
+      "name": "Metode kualitatif"
+    },
+    {
+      "description": "Panduan spesifikasi model secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.model_specification",
+      "name": "Spesifikasi model"
+    },
+    {
+      "description": "Panduan analisis sensitivitas secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.sensitivity_analysis",
+      "name": "Analisis sensitivitas"
+    },
+    {
+      "description": "Panduan validasi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.validation",
+      "name": "Validasi"
+    },
+    {
+      "description": "Panduan reprodusibilitas secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.reproducibility",
+      "name": "Reprodusibilitas"
+    },
+    {
+      "description": "Panduan persetujuan etik secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.",
+      "id": "writing.scientific.methods_writing.ethical_approval",
+      "name": "Persetujuan etik"
+    },
+    {
+      "description": "Panduan memperkenalkan hasil secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.introducing_results",
+      "name": "Memperkenalkan hasil"
+    },
+    {
+      "description": "Panduan melaporkan statistik deskriptif secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.reporting_descriptive_statistics",
+      "name": "Melaporkan statistik deskriptif"
+    },
+    {
+      "description": "Panduan melaporkan perbandingan secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.reporting_comparisons",
+      "name": "Melaporkan perbandingan"
+    },
+    {
+      "description": "Panduan melaporkan asosiasi secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.reporting_associations",
+      "name": "Melaporkan asosiasi"
+    },
+    {
+      "description": "Panduan melaporkan efek secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.reporting_effects",
+      "name": "Melaporkan efek"
+    },
+    {
+      "description": "Panduan melaporkan ketidakpastian secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.reporting_uncertainty",
+      "name": "Melaporkan ketidakpastian"
+    },
+    {
+      "description": "Panduan interval kepercayaan secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.confidence_intervals",
+      "name": "Interval kepercayaan"
+    },
+    {
+      "description": "Panduan signifikansi statistik secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.statistical_significance",
+      "name": "Signifikansi statistik"
+    },
+    {
+      "description": "Panduan temuan tidak signifikan secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.non_significant_findings",
+      "name": "Temuan tidak signifikan"
+    },
+    {
+      "description": "Panduan temuan nol secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.null_findings",
+      "name": "Temuan nol"
+    },
+    {
+      "description": "Panduan tren secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.trends",
+      "name": "Tren"
+    },
+    {
+      "description": "Panduan hasil subkelompok secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.subgroup_results",
+      "name": "Hasil subkelompok"
+    },
+    {
+      "description": "Panduan hasil analisis sensitivitas secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.sensitivity_results",
+      "name": "Hasil analisis sensitivitas"
+    },
+    {
+      "description": "Panduan hasil uji ketahanan secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.robustness_results",
+      "name": "Hasil uji ketahanan"
+    },
+    {
+      "description": "Panduan temuan tak terduga secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.unexpected_findings",
+      "name": "Temuan tak terduga"
+    },
+    {
+      "description": "Panduan merujuk tabel secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.referring_to_tables",
+      "name": "Merujuk tabel"
+    },
+    {
+      "description": "Panduan merujuk gambar secara presisi dengan tetap menjaga angka, ketidakpastian, dan batas interpretasi.",
+      "id": "writing.scientific.results_writing.referring_to_figures",
+      "name": "Merujuk gambar"
+    },
+    {
+      "description": "Panduan merangkum temuan utama dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.summarising_principal_findings",
+      "name": "Merangkum temuan utama"
+    },
+    {
+      "description": "Panduan menafsirkan temuan dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.interpreting_findings",
+      "name": "Menafsirkan temuan"
+    },
+    {
+      "description": "Panduan membandingkan temuan dengan literatur dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.comparing_findings_with_literature",
+      "name": "Membandingkan temuan dengan literatur"
+    },
+    {
+      "description": "Panduan menjelaskan mekanisme yang mungkin dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.explaining_possible_mechanisms",
+      "name": "Menjelaskan mekanisme yang mungkin"
+    },
+    {
+      "description": "Panduan menyajikan penjelasan alternatif dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.presenting_competing_explanations",
+      "name": "Menyajikan penjelasan alternatif"
+    },
+    {
+      "description": "Panduan membahas ketidakpastian dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.discussing_uncertainty",
+      "name": "Membahas ketidakpastian"
+    },
+    {
+      "description": "Panduan membahas keterbatasan dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.discussing_limitations",
+      "name": "Membahas keterbatasan"
+    },
+    {
+      "description": "Panduan membahas kekuatan dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.discussing_strengths",
+      "name": "Membahas kekuatan"
+    },
+    {
+      "description": "Panduan membahas generalisasi dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.discussing_generalisability",
+      "name": "Membahas generalisasi"
+    },
+    {
+      "description": "Panduan implikasi teoretis dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.theoretical_implications",
+      "name": "Implikasi teoretis"
+    },
+    {
+      "description": "Panduan implikasi praktis dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.practical_implications",
+      "name": "Implikasi praktis"
+    },
+    {
+      "description": "Panduan implikasi kebijakan dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.policy_implications",
+      "name": "Implikasi kebijakan"
+    },
+    {
+      "description": "Panduan penelitian ilmiah selanjutnya dengan mempertimbangkan rancangan studi, ketidakpastian, literatur, dan penjelasan alternatif.",
+      "id": "writing.scientific.discussion_writing.future_research",
+      "name": "Penelitian ilmiah selanjutnya"
+    },
+    {
+      "description": "Panduan asosiasi dan kausalitas agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.association_vs_causation",
+      "name": "Asosiasi dan kausalitas"
+    },
+    {
+      "description": "Panduan bahasa korelasi agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.correlation_language",
+      "name": "Bahasa korelasi"
+    },
+    {
+      "description": "Panduan bahasa prediksi agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.prediction_language",
+      "name": "Bahasa prediksi"
+    },
+    {
+      "description": "Panduan bahasa kausal agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.causal_language",
+      "name": "Bahasa kausal"
+    },
+    {
+      "description": "Panduan kekuatan bukti agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.evidence_strength",
+      "name": "Kekuatan bukti"
+    },
+    {
+      "description": "Panduan membatasi klaim ilmiah agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.hedging_scientific_claims",
+      "name": "Membatasi klaim ilmiah"
+    },
+    {
+      "description": "Panduan menghindari klaim berlebihan agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.avoiding_overclaiming",
+      "name": "Menghindari klaim berlebihan"
+    },
+    {
+      "description": "Panduan menafsirkan hasil nol agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.interpreting_null_results",
+      "name": "Menafsirkan hasil nol"
+    },
+    {
+      "description": "Panduan bahasa ukuran efek agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.effect_size_language",
+      "name": "Bahasa ukuran efek"
+    },
+    {
+      "description": "Panduan bahasa ketidakpastian agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.uncertainty_language",
+      "name": "Bahasa ketidakpastian"
+    },
+    {
+      "description": "Panduan cakupan dan generalisasi agar bahasa ilmiah tetap sebanding dengan rancangan, bukti, ketidakpastian, dan cakupan.",
+      "id": "writing.scientific.scientific_claim_control.scope_and_generalisation",
+      "name": "Cakupan dan generalisasi"
+    },
+    {
+      "description": "Panduan parafrasa dengan makna tetap dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.meaning_preserving_paraphrase",
+      "name": "Parafrasa dengan makna tetap"
+    },
+    {
+      "description": "Panduan parafrasa struktural dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.structural_paraphrase",
+      "name": "Parafrasa struktural"
+    },
+    {
+      "description": "Panduan parafrasa akademik dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.academic_paraphrase",
+      "name": "Parafrasa akademik"
+    },
+    {
+      "description": "Panduan parafrasa ilmiah dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.scientific_paraphrase",
+      "name": "Parafrasa ilmiah"
+    },
+    {
+      "description": "Panduan keringkasan dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.concision",
+      "name": "Keringkasan"
+    },
+    {
+      "description": "Panduan restrukturisasi kalimat dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.sentence_restructuring",
+      "name": "Restrukturisasi kalimat"
+    },
+    {
+      "description": "Panduan penulisan ulang dengan sitasi tetap dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.citation_preserving_rewrite",
+      "name": "Penulisan ulang dengan sitasi tetap"
+    },
+    {
+      "description": "Panduan penulisan ulang dengan angka tetap dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.number_preserving_rewrite",
+      "name": "Penulisan ulang dengan angka tetap"
+    },
+    {
+      "description": "Panduan penulisan ulang dengan kekuatan klaim tetap dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.claim_strength_preserving_rewrite",
+      "name": "Penulisan ulang dengan kekuatan klaim tetap"
+    },
+    {
+      "description": "Panduan penulisan ulang secara hati-hati dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.cautious_rewriting",
+      "name": "Penulisan ulang secara hati-hati"
+    },
+    {
+      "description": "Panduan ragam bahasa akademik dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.academic_register",
+      "name": "Ragam bahasa akademik"
+    },
+    {
+      "description": "Panduan menghapus kata berlebihan dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.removing_unnecessary_verbosity",
+      "name": "Menghapus kata berlebihan"
+    },
+    {
+      "description": "Panduan mengurangi pengulangan dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.reducing_repetition",
+      "name": "Mengurangi pengulangan"
+    },
+    {
+      "description": "Panduan memperbaiki alur logis dengan mempertahankan makna, atribusi, angka, cakupan, dan kekuatan klaim.",
+      "id": "writing.paraphrasing.paraphrasing.improving_logical_flow",
+      "name": "Memperbaiki alur logis"
+    }
+  ],
+  "source": "../editorial/writing-skills.v1.json"
+}

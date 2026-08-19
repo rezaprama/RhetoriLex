@@ -1,157 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Original rhetorical moves and evidence-safe academic writing patterns for researchers, editors, and AI agents.">
-    <meta name="theme-color" content="#0b2625">
-    <meta property="og:title" content="RhetoriLex">
-    <meta property="og:description" content="Write to the strength of your evidence.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
-    <meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/">
-    <title>RhetoriLex | Evidence-safe academic writing</title>
-    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="RhetoriLex home">
-        <img src="assets/icon.svg" width="36" height="36" alt="">
-        <span>RhetoriLex</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#explorer">Explorer</a>
-        <a href="#contract">Evidence contract</a>
-        <a href="#install">Install</a>
-        <a href="https://github.com/rezaprama/RhetoriLex">GitHub</a>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <h1>Write to the strength of your evidence.</h1>
-          <p>Original rhetorical patterns that protect citations, uncertainty, scope, and causal meaning.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#explorer">Explore patterns</a>
-            <a class="button button-secondary" href="#install">Install skill</a>
-          </div>
-        </div>
-        <figure class="hero-visual">
-          <img src="assets/rhetorilex-hero.png" width="1536" height="1024" alt="Abstract lexical blocks passing through an evidence-calibration structure">
-        </figure>
-      </section>
-
-      <section class="proof-strip" aria-label="Core properties">
-        <span>Offline retrieval</span>
-        <span>Independently authored</span>
-        <span>Claim-strength checks</span>
-        <span>No manuscript upload</span>
-      </section>
-
-      <section class="explorer-section" id="explorer" aria-labelledby="explorer-title">
-        <div class="section-heading">
-          <h2 id="explorer-title">Find the move before the phrase.</h2>
-          <p>Search by communicative purpose, then check whether each pattern fits your evidence.</p>
-        </div>
-
-        <form class="explorer-controls" id="explorer-form" role="search">
-          <label class="search-field" for="query">
-            <span>Rhetorical intent</span>
-            <input id="query" name="query" type="search" placeholder="e.g. cautious interpretation" autocomplete="off">
-          </label>
-          <label for="section-filter">
-            <span>Section</span>
-            <select id="section-filter" name="section">
-              <option value="">All sections</option>
-            </select>
-          </label>
-          <label for="function-filter">
-            <span>Function</span>
-            <select id="function-filter" name="function">
-              <option value="">All functions</option>
-            </select>
-          </label>
-          <label for="strength-filter">
-            <span>Claim strength</span>
-            <select id="strength-filter" name="strength">
-              <option value="">Any level</option>
-            </select>
-          </label>
-          <button class="button button-primary" type="submit">Search</button>
-        </form>
-
-        <div class="explorer-status" id="explorer-status" role="status" aria-live="polite">Loading original patterns...</div>
-        <div class="results" id="results" aria-live="polite" aria-busy="true"></div>
-        <noscript><p class="notice">Enable JavaScript to use the interactive explorer. The CLI remains fully offline.</p></noscript>
-      </section>
-
-      <section class="contrast-section" aria-labelledby="contrast-title">
-        <div>
-          <h2 id="contrast-title">A polished overclaim is still an overclaim.</h2>
-          <p>RhetoriLex checks the evidential relation before improving style.</p>
-        </div>
-        <div class="sentence-comparison">
-          <div class="sentence sentence-risk">
-            <span>Risky</span>
-            <p>Our observational analysis proves that exposure X causes outcome Y.</p>
-          </div>
-          <div class="sentence sentence-safe">
-            <span>Calibrated</span>
-            <p>In this observational analysis, exposure X was associated with outcome Y.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="contract-section" id="contract" aria-labelledby="contract-title">
-        <div class="contract-intro">
-          <h2 id="contract-title">Meaning has invariants.</h2>
-          <p>A rewrite fails when it silently changes any protected element.</p>
-        </div>
-        <div class="invariant-list" role="list">
-          <div role="listitem"><strong>Evidence</strong><span>numbers, units, intervals, citations</span></div>
-          <div role="listitem"><strong>Logic</strong><span>negation, comparison, direction, scope</span></div>
-          <div role="listitem"><strong>Inference</strong><span>uncertainty, design, causal status</span></div>
-          <div role="listitem"><strong>Context</strong><span>population, setting, time, limitations</span></div>
-        </div>
-      </section>
-
-      <section class="install-section" id="install" aria-labelledby="install-title">
-        <div>
-          <h2 id="install-title">One repository. Three useful surfaces.</h2>
-          <p>Use the Agent Skill, the zero-dependency Python CLI, or this static explorer. Core search stays local.</p>
-        </div>
-        <div class="install-tabs" aria-label="Install examples">
-          <section>
-            <h3>Agent Skill</h3>
-            <pre><code>$skill-installer https://github.com/rezaprama/RhetoriLex/tree/main/skills/rhetorilex</code></pre>
-          </section>
-          <section>
-            <h3>Python CLI</h3>
-            <pre><code>pip install .
-rhetorilex search "research gap" --limit 3</code></pre>
-          </section>
-          <section>
-            <h3>Source</h3>
-            <pre><code>git clone https://github.com/rezaprama/RhetoriLex.git
-python scripts/build_data.py</code></pre>
-          </section>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <img src="assets/icon.svg" width="32" height="32" alt="">
-      <p>RhetoriLex is independently authored. It does not redistribute restricted phrasebanks.</p>
-      <div>
-        <a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a>
-        <a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a>
-        <a href="https://github.com/rezaprama/RhetoriLex/blob/main/CONTRIBUTING.md">Contribute</a>
-      </div>
-    </footer>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="robots" content="noindex,follow">
+<meta name="description" content="Choose English or Bahasa Indonesia for the RhetoriLex academic writing index.">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/">
+<meta http-equiv="refresh" content="8;url=./en/">
+<title>Choose Language | RhetoriLex</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function () {
+  var locale = "";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.locale");
+    if (saved === "en" || saved === "id") locale = saved;
+  } catch (error) {}
+  if (!locale) locale = navigator.language && navigator.language.toLowerCase().indexOf("id") === 0 ? "id" : "en";
+  window.location.replace("./" + locale + "/");
+}());
+</script>
+</head>
+<body class="locale-root">
+<main id="main" class="locale-chooser">
+  <p class="wordmark">RhetoriLex</p>
+  <h1>Choose a language <span lang="id">Pilih bahasa</span></h1>
+  <p>Open the scholarly writing index in English or Bahasa Indonesia.</p>
+  <nav aria-label="Language">
+    <a class="primary-button" href="./en/" hreflang="en" lang="en">English</a>
+    <a class="secondary-button" href="./id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+  </nav>
+  <noscript><p>Automatic language selection is unavailable. Choose a link above.</p></noscript>
+</main>
+</body>
 </html>

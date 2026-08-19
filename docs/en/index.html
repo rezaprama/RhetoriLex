@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Find original English phrase patterns for academic and scientific writing by rhetorical purpose, evidence need, and claim strength.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Academic and Scientific Writing by Rhetorical Purpose | RhetoriLex">
+<meta property="og:description" content="Find original English phrase patterns for academic and scientific writing by rhetorical purpose, evidence need, and claim strength.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Academic and Scientific Writing by Rhetorical Purpose | RhetoriLex">
+<meta name="twitter:description" content="Find original English phrase patterns for academic and scientific writing by rhetorical purpose, evidence need, and claim strength.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Academic and Scientific Writing by Rhetorical Purpose | RhetoriLex</title>
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://rezaprama.github.io/RhetoriLex/en/#website","url":"https://rezaprama.github.io/RhetoriLex/en/","name":"RhetoriLex","description":"Find original English phrase patterns for academic and scientific writing by rhetorical purpose, evidence need, and claim strength.","inLanguage":"en","creator":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/?q={search_term_string}"},"query-input":"required name=search_term_string"}}]}</script>
+<script src="../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="./" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="academic-writing/">Academic Writing</a><a href="scientific-writing/">Scientific Writing</a><a href="phrase-explorer/">Phrase Explorer</a><a href="research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="academic-writing/">Academic Writing</a><a href="scientific-writing/">Scientific Writing</a><a href="phrase-explorer/">Phrase Explorer</a><a href="paraphrasing/">Paraphrasing</a><a href="rhetorical-moves/">Rhetorical Moves</a><a href="research-writing-guides/">Research Writing Guides</a><a href="agent-skills/">Agent Skills</a><a href="about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../id/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="home-intro">
+    <div class="home-intro-inner">
+      <h1>Academic and scientific writing, organised by rhetorical purpose.</h1>
+      <p class="lede">Find and adapt evidence-aware language for research papers, theses, literature reviews, methods, results, discussions, reviewer responses, and other scholarly writing.</p>
+      <form class="intent-search" action="phrase-explorer/" method="get" role="search">
+        <label for="home-query">Describe your rhetorical intent</label>
+        <div class="search-row">
+          <input id="home-query" name="q" type="search" placeholder="e.g. compare results without implying causation" autocomplete="off">
+          <button class="primary-button" type="submit">Search phrases</button>
+        </div>
+      </form>
+      <p class="pattern-language">Interface language and pattern language are separate. Phrase patterns remain in English.</p>
+      <div class="home-links">
+        <a href="writing-skills/research-framing/">Explore writing skills</a>
+        <a href="https://github.com/rezaprama/RhetoriLex" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+  <div class="page-frame home-content">
+<section class="section-block" aria-labelledby="purpose-index-title">
+  <div class="section-heading">
+    <h2 id="purpose-index-title">Start with the work your sentence must do</h2>
+    <p>Choose a writing problem, not a decorative phrase. Each guide links purpose, evidence, and revision checks.</p>
+  </div>
+  <ul class="purpose-index">
+    <li><a href="academic-writing/"><strong>Academic Writing</strong><span>Build arguments, syntheses, transitions, and bounded conclusions.</span></a></li>
+    <li><a href="scientific-writing/"><strong>Scientific Writing</strong><span>Report methods, results, uncertainty, and causal limits precisely.</span></a></li>
+    <li><a href="phrase-explorer/"><strong>Phrase Explorer</strong><span>Search the original catalog in natural language and filter by evidence.</span></a></li>
+    <li><a href="paraphrasing/"><strong>Paraphrasing</strong><span>Preserve citations, numbers, negation, scope, and inferential force.</span></a></li>
+    <li><a href="rhetorical-moves/"><strong>Rhetorical Moves</strong><span>Plan what a paragraph does before choosing how it sounds.</span></a></li>
+    <li><a href="research-writing-guides/"><strong>Research Writing Guides</strong><span>Use focused guidance for reviews, methods, results, and discussions.</span></a></li>
+    <li><a href="agent-skills/"><strong>Agent Skills</strong><span>Use RhetoriLex in a local agent workflow with explicit safety checks.</span></a></li>
+    <li><a href="about/"><strong>About</strong><span>Read the clean-room, authorship, licensing, and governance record.</span></a></li>
+  </ul>
+</section>
+<section class="section-block" aria-labelledby="popular-moves-title">
+  <div class="section-heading">
+    <h2 id="popular-moves-title">Popular rhetorical moves</h2>
+    <p>Open a focused guide when the writing problem is already clear.</p>
+  </div>
+  <ul class="compact-link-index">
+    <li><a href="research-gap/"><strong>Establish a research gap</strong><span>Define a specific unresolved issue without claiming that no research exists.</span></a></li>
+    <li><a href="literature-review/"><strong>Synthesise literature</strong><span>Compare evidence on an explicit analytical basis.</span></a></li>
+    <li><a href="hedging/"><strong>Calibrate uncertainty</strong><span>Choose hedging that marks a real evidential boundary.</span></a></li>
+    <li><a href="association-vs-causation/"><strong>Separate association from causation</strong><span>Use relations that the study design can support.</span></a></li>
+    <li><a href="reviewer-response/"><strong>Respond to a reviewer</strong><span>Make every answer and revision traceable.</span></a></li>
+    <li><a href="preserve-claim-strength/"><strong>Preserve claim strength</strong><span>Protect inferential force when editing or paraphrasing.</span></a></li>
+  </ul>
+</section>
+<section class="section-block" aria-labelledby="paper-section-title">
+  <div class="section-heading">
+    <h2 id="paper-section-title">Browse by paper section</h2>
+    <p>Use section guidance when you know where the sentence belongs but not which move it needs.</p>
+  </div>
+  <nav class="section-links" aria-label="Paper sections">
+    <a href="research-gap/">Introduction</a>
+    <a href="literature-review/">Literature review</a>
+    <a href="methods/">Methods</a>
+    <a href="results/">Results</a>
+    <a href="discussion/">Discussion</a>
+    <a href="thesis/">Thesis</a>
+  </nav>
+</section>
+<section class="section-block comparison-block" aria-labelledby="evidence-title">
+  <div class="section-heading">
+    <h2 id="evidence-title">Style follows evidence</h2>
+    <p>A fluent sentence can still misstate the study. Calibrate the relation before polishing the prose.</p>
+  </div>
+  <div class="comparison-lines">
+    <div><strong>Unsupported causal claim</strong><p>Our observational analysis proves that exposure X causes outcome Y.</p></div>
+    <div><strong>Evidence-calibrated claim</strong><p>In this observational analysis, exposure X was associated with outcome Y.</p></div>
+  </div>
+</section>
+<section class="section-block install-block" aria-labelledby="install-home-title">
+  <div>
+    <h2 id="install-home-title">Open data, documented method</h2>
+    <p>Download the released JSON catalog, review clean-room provenance, or install the local Agent Skill.</p>
+  </div>
+  <pre><code>$skill-installer https://github.com/rezaprama/RhetoriLex/tree/main/skills/rhetorilex</code></pre>
+  <ul class="resource-links">
+    <li><a href="https://rezaprama.github.io/RhetoriLex/data/phrases.json">Open dataset</a></li>
+    <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Read methodology and provenance</a></li>
+    <li><a href="agent-skills/">Read installation and prompt examples</a></li>
+  </ul>
+</section>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="./">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="academic-writing/">Academic Writing</a></li><li><a href="scientific-writing/">Scientific Writing</a></li><li><a href="phrase-explorer/">Phrase Explorer</a></li><li><a href="paraphrasing/">Paraphrasing</a></li><li><a href="rhetorical-moves/">Rhetorical Moves</a></li><li><a href="research-writing-guides/">Research Writing Guides</a></li><li><a href="agent-skills/">Agent Skills</a></li><li><a href="about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

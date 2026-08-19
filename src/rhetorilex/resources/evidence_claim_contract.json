@@ -33,15 +33,119 @@
     "estimate",
     "pattern"
   ],
+  "evidential_verb_classes": {
+    "association": [
+      "was associated with",
+      "co-varied with",
+      "predicted"
+    ],
+    "attribution": [
+      "reports",
+      "describes",
+      "states",
+      "argues",
+      "defines"
+    ],
+    "causal": [
+      "caused",
+      "led to",
+      "resulted in",
+      "increased",
+      "reduced"
+    ],
+    "cautious_interpretation": [
+      "may suggest",
+      "is compatible with",
+      "is consistent with"
+    ],
+    "empirical_reporting": [
+      "observed",
+      "measured",
+      "estimated",
+      "found"
+    ],
+    "high_force": [
+      "demonstrates",
+      "establishes",
+      "confirms"
+    ],
+    "support": [
+      "supports",
+      "indicates"
+    ]
+  },
   "id": "rhetorilex-evidence-claim-contract",
   "policy": {
+    "association_must_not_imply_causation": true,
     "causal_templates_must_be_high_risk": true,
     "declared_placeholders_must_equal_template_fields": true,
-    "evidence_bearing_templates_require_evidence_slot": true
+    "evidence_bearing_templates_require_evidence_slot": true,
+    "null_result_must_preserve_uncertainty": true,
+    "prediction_must_not_imply_intervention_effect": true
   },
   "provenance": {
     "required_method": "original_editorial",
     "source_reuse": false
   },
-  "version": "1.0.0"
+  "relation_controls": {
+    "association": {
+      "allowed_verbs": [
+        "was associated with",
+        "co-varied with",
+        "correlated with"
+      ],
+      "causal_design_required": false,
+      "forbidden_upgrade": "Association must not be rewritten as influence, effect, or cause."
+    },
+    "causal": {
+      "allowed_verbs": [
+        "caused",
+        "changed",
+        "increased",
+        "reduced",
+        "had an effect on"
+      ],
+      "causal_design_required": true,
+      "forbidden_upgrade": "Causal verbs require an identified effect, credible design, and explicit assumptions."
+    },
+    "interpretation": {
+      "allowed_verbs": [
+        "may suggest",
+        "is compatible with",
+        "is consistent with",
+        "supports"
+      ],
+      "causal_design_required": false,
+      "forbidden_upgrade": "Interpretive verbs do not repair weak or non-diagnostic evidence."
+    },
+    "null_result": {
+      "allowed_verbs": [
+        "did not meet the threshold",
+        "remained inconclusive",
+        "supported equivalence"
+      ],
+      "causal_design_required": false,
+      "forbidden_upgrade": "Non-significance is not no effect; equivalence needs a dedicated design and margin."
+    },
+    "observation": {
+      "allowed_verbs": [
+        "observed",
+        "measured",
+        "estimated",
+        "found"
+      ],
+      "causal_design_required": false,
+      "forbidden_upgrade": "A measured value does not by itself establish a broader relation."
+    },
+    "prediction": {
+      "allowed_verbs": [
+        "predicted",
+        "improved prediction of",
+        "was predictive of"
+      ],
+      "causal_design_required": false,
+      "forbidden_upgrade": "Prediction does not establish mechanism or intervention benefit."
+    }
+  },
+  "version": "1.1.0"
 }

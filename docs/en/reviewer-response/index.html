@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Write reviewer responses that identify the issue, document the revision, cite its location, and disagree with evidence when needed.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="How to Write a Clear Reviewer Response | RhetoriLex">
+<meta property="og:description" content="Write reviewer responses that identify the issue, document the revision, cite its location, and disagree with evidence when needed.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Write a Clear Reviewer Response | RhetoriLex">
+<meta name="twitter:description" content="Write reviewer responses that identify the issue, document the revision, cite its location, and disagree with evidence when needed.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>How to Write a Clear Reviewer Response | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/en/reviewer-response/#page","url":"https://rezaprama.github.io/RhetoriLex/en/reviewer-response/","name":"A reviewer response should make revision traceable","headline":"A reviewer response should make revision traceable","description":"Write reviewer responses that identify the issue, document the revision, cite its location, and disagree with evidence when needed.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Reviewer Response","item":"https://rezaprama.github.io/RhetoriLex/en/reviewer-response/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../paraphrasing/">Paraphrasing</a><a href="../rhetorical-moves/">Rhetorical Moves</a><a href="../research-writing-guides/">Research Writing Guides</a><a href="../agent-skills/">Agent Skills</a><a href="../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../id/tanggapan-reviewer/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li aria-current="page">Reviewer Response</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>A reviewer response should make revision traceable</h1>
+        <p class="lede">Address the substance, state what changed, point to the location, and explain the reasoning without inventing work.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Separate the comment into decisions</h2>
+  <p>A reviewer comment may contain a question, requested analysis, wording issue, and broader concern. Break it into answerable points. For each point, decide whether to revise, clarify, add evidence, explain an existing choice, or disagree. Respond to the concern before describing cosmetic edits.</p>
+  <p class="phrase-template">We revised [section and location] to clarify [specific issue]. The revised text now states [bounded summary of change].</p>
+</section>
+<section>
+  <h2>Document changes precisely</h2>
+  <p>Quote only the necessary revised text and provide page, line, section, table, or figure references that match the final manuscript. If an analysis was added, state the method and where the result appears. If the requested work cannot be done, explain the constraint and revise any claim affected by that limitation.</p>
+  <p class="phrase-template">We agree that [shared concern] required clarification. Because [methodological reason], we did not [requested action]; instead, we [bounded revision] and now state [remaining limitation].</p>
+</section>
+<section>
+  <h2>Disagree on methodological grounds</h2>
+  <p>Professional disagreement is legitimate. Identify the point of agreement, give the evidence or design reason, and explain the manuscript change that prevents misunderstanding. Avoid appeals to preference when a verifiable standard, citation, analysis, or reporting guideline is available.</p>
+  <p>Use the <a href="../phrase-explorer/?q=reviewer%20response">Phrase Explorer</a> for acknowledgement, revision, and bounded disagreement patterns.</p>
+</section>
+<aside class="article-note">
+  <h2>Warning</h2>
+  <p>Never claim that text, data, analysis, approval, or citation was added unless it appears in the submitted revision. Check every location reference after pagination changes.</p>
+</aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../academic-writing/">Academic Writing</a></li><li><a href="../scientific-writing/">Scientific Writing</a></li><li><a href="../phrase-explorer/">Phrase Explorer</a></li><li><a href="../paraphrasing/">Paraphrasing</a></li><li><a href="../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../research-writing-guides/">Research Writing Guides</a></li><li><a href="../agent-skills/">Agent Skills</a></li><li><a href="../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

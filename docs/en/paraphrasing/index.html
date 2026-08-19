@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Paraphrase academic prose while preserving citations, numbers, units, negation, scope, comparison direction, and uncertainty.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/parafrasa/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Academic Paraphrasing Without Meaning Drift | RhetoriLex">
+<meta property="og:description" content="Paraphrase academic prose while preserving citations, numbers, units, negation, scope, comparison direction, and uncertainty.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Academic Paraphrasing Without Meaning Drift | RhetoriLex">
+<meta name="twitter:description" content="Paraphrase academic prose while preserving citations, numbers, units, negation, scope, comparison direction, and uncertainty.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Academic Paraphrasing Without Meaning Drift | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/en/paraphrasing/#page","url":"https://rezaprama.github.io/RhetoriLex/en/paraphrasing/","name":"Paraphrasing is a meaning-preservation task","headline":"Paraphrasing is a meaning-preservation task","description":"Paraphrase academic prose while preserving citations, numbers, units, negation, scope, comparison direction, and uncertainty.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Paraphrasing","item":"https://rezaprama.github.io/RhetoriLex/en/paraphrasing/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="./" aria-current="page">Paraphrasing</a><a href="../rhetorical-moves/">Rhetorical Moves</a><a href="../research-writing-guides/">Research Writing Guides</a><a href="../agent-skills/">Agent Skills</a><a href="../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../id/parafrasa/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li aria-current="page">Paraphrasing</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>Paraphrasing is a meaning-preservation task</h1>
+        <p class="lede">Change wording only after identifying the facts, logic, scope, and inferential force that must remain invariant.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Protect meaning before changing form</h2>
+  <p>A successful paraphrase is not measured by synonym count or surface difference. It is measured by whether the rewritten sentence makes the same supported claim. Begin by marking protected elements: citations, names, numbers, units, intervals, technical terms, negation, comparison direction, population, setting, time, modality, and causal status.</p>
+  <p>Consider this source statement: Study A reported no increase in outcome Y after 12 weeks (Lee, 2024). A safe rewrite must retain the negative finding, the outcome, the 12-week period, and the citation. Changing no increase to reduced, or omitting the time period, changes the claim.</p>
+</section>
+<section>
+  <h2>Use a constraint-first workflow</h2>
+  <ol class="workflow-list compact">
+    <li><strong>Extract invariants</strong><span>List evidence, numbers, relations, and qualifying terms that cannot change.</span></li>
+    <li><strong>State the proposition plainly</strong><span>Write the supported meaning without trying to sound polished.</span></li>
+    <li><strong>Rebuild the sentence</strong><span>Change structure and emphasis while retaining disciplinary terms that carry exact meaning.</span></li>
+    <li><strong>Run a bidirectional check</strong><span>Ask whether the source entails the rewrite and whether the rewrite adds any unsupported proposition.</span></li>
+  </ol>
+</section>
+<section>
+  <h2>Watch for quiet forms of drift</h2>
+  <p>Meaning often changes through small edits. May becomes will. Associated with becomes led to. Some participants becomes participants. Higher than becomes different from. A result limited to one setting becomes a general claim. A citation moves to a sentence containing a new proposition it did not support.</p>
+  <p>When a passage is already concise, highly technical, or legally fixed, paraphrasing may be the wrong goal. Quote briefly when quotation is justified and permitted, cite the source, or retain the technical wording while rewriting the surrounding explanation. Never paraphrase to conceal dependence on a source.</p>
+</section>
+<aside class="article-note">
+  <h2>Use RhetoriLex safely</h2>
+  <p>Ask the Agent Skill to protect a citation, number, and negation explicitly. Then verify the output against the source yourself. See <a href="../agent-skills/">Agent Skills</a> for prompt patterns.</p>
+</aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../academic-writing/">Academic Writing</a></li><li><a href="../scientific-writing/">Scientific Writing</a></li><li><a href="../phrase-explorer/">Phrase Explorer</a></li><li><a href="./" aria-current="page">Paraphrasing</a></li><li><a href="../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../research-writing-guides/">Research Writing Guides</a></li><li><a href="../agent-skills/">Agent Skills</a></li><li><a href="../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

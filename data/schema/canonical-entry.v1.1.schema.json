@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rhetorilex.dev/schema/canonical-entry.v1.1.json",
+  "title": "RhetoriLex canonical entry 1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","function","title","template","description","stage","disciplines","claim_strength","evidence_requirement","causal_design_required","placeholders","keywords","notes","risk","provenance","version"],
+  "properties": {
+    "id": {"type":"string","pattern":"^RLX-[A-Z]{3}-[0-9]{3}$"},
+    "function": {"type":"string","enum":["position_claim","qualify_claim","introduce_evidence","interpret_evidence","compare_findings","contrast_findings","synthesize_sources","identify_gap","state_limitation","recommend_action","causal_claim","define_scope","establish_context","describe_method","justify_method","report_null_result","describe_association","distinguish_causation","attribute_source","paraphrase_with_attribution","report_uncertainty","interpret_qualitative_evidence","respond_reviewer","state_contribution"]},
+    "title": {"type":"string","minLength":3},
+    "template": {"type":"string","minLength":10},
+    "description": {"type":"string","minLength":10},
+    "stage": {"type":"string","enum":["general","abstract","introduction","literature_review","methods","results","discussion","limitations","conclusion","peer_review_response"]},
+    "disciplines": {"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string","enum":["general","humanities","social_sciences","sciences","engineering","health_sciences","quantitative_research","qualitative_research","clinical_research","computer_science","law","business"]}},
+    "claim_strength": {"type":"string","enum":["tentative","bounded","assertive","causal"]},
+    "evidence_requirement": {"type":"string","enum":["none","contextual","observational","direct","convergent"]},
+    "causal_design_required": {"type":"boolean"},
+    "placeholders": {"type":"array","uniqueItems":true,"items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},
+    "keywords": {"type":"array","minItems":2,"uniqueItems":true,"items":{"type":"string","minLength":2}},
+    "notes": {"type":"string","minLength":5},
+    "risk": {"type":"string","enum":["low","medium","high"]},
+    "provenance": {"type":"object","additionalProperties":false,"required":["method","author","source_reuse"],"properties":{"method":{"const":"original_editorial"},"author":{"type":"string","minLength":3},"source_reuse":{"const":false}}},
+    "version": {"type":"integer","minimum":1}
+  }
+}

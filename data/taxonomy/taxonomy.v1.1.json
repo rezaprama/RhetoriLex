@@ -1,0 +1,80 @@
+{
+  "$schema": "../schema/taxonomy.schema.json",
+  "id": "rhetorilex-taxonomy",
+  "version": "1.1.0",
+  "stability": "semantic-versioned",
+  "rhetorical_functions": [
+    {"id":"position_claim","label":"Position a claim","definition":"State or locate the paper's own defensible position."},
+    {"id":"qualify_claim","label":"Qualify a claim","definition":"Set confidence, scope, or conditions on an assertion."},
+    {"id":"introduce_evidence","label":"Introduce evidence","definition":"Present a source, observation, result, or estimate."},
+    {"id":"interpret_evidence","label":"Interpret evidence","definition":"Explain what evidence supports without exceeding it."},
+    {"id":"compare_findings","label":"Compare findings","definition":"Make a relevant similarity between results or sources explicit."},
+    {"id":"contrast_findings","label":"Contrast findings","definition":"Make a relevant difference between results or sources explicit."},
+    {"id":"synthesize_sources","label":"Synthesize sources","definition":"Integrate multiple sources into a higher-level account."},
+    {"id":"identify_gap","label":"Identify a gap","definition":"Specify an unresolved question or bounded absence."},
+    {"id":"state_limitation","label":"State a limitation","definition":"Describe a constraint and its consequence for inference."},
+    {"id":"recommend_action","label":"Recommend action","definition":"Propose research or practice proportionate to evidence."},
+    {"id":"causal_claim","label":"Make a causal claim","definition":"Attribute an outcome to a cause under a credible design."},
+    {"id":"define_scope","label":"Define scope","definition":"Set population, context, time, concept, or analytic boundary."},
+    {"id":"establish_context","label":"Establish context","definition":"Frame the problem, debate, or practical setting that motivates the work."},
+    {"id":"describe_method","label":"Describe a method","definition":"Report sampling, material, procedure, model, or evaluation design."},
+    {"id":"justify_method","label":"Justify a method","definition":"Explain why a method fits the question, unit, or uncertainty."},
+    {"id":"report_null_result","label":"Report a null or inconclusive result","definition":"Report non-significance, equivalence, absence, or imprecision without overclaiming."},
+    {"id":"describe_association","label":"Describe an association","definition":"Report covariation or prediction without assigning cause."},
+    {"id":"distinguish_causation","label":"Distinguish association from causation","definition":"Make explicit why evidence does or does not identify a causal effect."},
+    {"id":"attribute_source","label":"Attribute a source","definition":"Keep a claim, interpretation, or definition attached to its source."},
+    {"id":"paraphrase_with_attribution","label":"Paraphrase with attribution","definition":"Restate a source-dependent proposition independently while preserving citation duty."},
+    {"id":"report_uncertainty","label":"Report uncertainty","definition":"Report intervals, sensitivity, heterogeneity, or measurement boundaries."},
+    {"id":"interpret_qualitative_evidence","label":"Interpret qualitative evidence","definition":"Connect qualitative material to a bounded pattern or interpretation."},
+    {"id":"respond_reviewer","label":"Respond to a reviewer","definition":"Address review comments through revisions, evidence, or reasoned explanation."},
+    {"id":"state_contribution","label":"State a contribution","definition":"Describe empirical, conceptual, or methodological value without unsupported priority claims."}
+  ],
+  "claim_strengths": [
+    {"id":"tentative","rank":0,"definition":"Possibility or preliminary interpretation."},
+    {"id":"bounded","rank":1,"definition":"Supported assertion explicitly limited by scope or conditions."},
+    {"id":"assertive","rank":2,"definition":"Direct assertion supported by relevant empirical evidence."},
+    {"id":"causal","rank":3,"definition":"Cause-effect assertion requiring a credible causal design."}
+  ],
+  "evidence_requirements": [
+    {"id":"none","rank":0,"definition":"Organizational or definitional wording; no empirical support is implied."},
+    {"id":"contextual","rank":1,"definition":"Background, theory, or a bounded source context."},
+    {"id":"observational","rank":2,"definition":"A reported association, comparison, estimate, or observed pattern."},
+    {"id":"direct","rank":3,"definition":"Evidence directly tests the stated proposition under the study design."},
+    {"id":"convergent","rank":4,"definition":"Multiple independent lines of relevant evidence agree."}
+  ],
+  "stages": ["general","abstract","introduction","literature_review","methods","results","discussion","limitations","conclusion","peer_review_response"],
+  "disciplines": ["general","humanities","social_sciences","sciences","engineering","health_sciences","quantitative_research","qualitative_research","clinical_research","computer_science","law","business"],
+  "domains": [
+    {"id":"general_academic","label":"General academic writing","disciplines":["general"],"definition":"Cross-disciplinary research and publication writing."},
+    {"id":"humanities_interpretive","label":"Humanities and interpretive inquiry","disciplines":["humanities"],"definition":"Textual, historical, conceptual, and interpretive scholarship."},
+    {"id":"social_behavioral","label":"Social and behavioral research","disciplines":["social_sciences"],"definition":"Research on people, institutions, societies, and behavior."},
+    {"id":"quantitative_empirical","label":"Quantitative empirical research","disciplines":["quantitative_research"],"definition":"Statistical estimation, comparison, prediction, and uncertainty."},
+    {"id":"qualitative_inquiry","label":"Qualitative inquiry","disciplines":["qualitative_research"],"definition":"Interpretive analysis of interviews, observations, texts, and cases."},
+    {"id":"experimental_science","label":"Experimental and natural science","disciplines":["sciences"],"definition":"Experimental, observational, and measurement-centered scientific work."},
+    {"id":"clinical_health","label":"Clinical and health research","disciplines":["clinical_research","health_sciences"],"definition":"Clinical, epidemiological, and health-services evidence."},
+    {"id":"engineering_computing","label":"Engineering and computing","disciplines":["engineering","computer_science"],"definition":"Designed systems, algorithms, benchmarks, and technical evaluation."},
+    {"id":"legal_policy","label":"Legal and policy scholarship","disciplines":["law"],"definition":"Doctrinal, comparative, regulatory, and policy analysis."},
+    {"id":"business_management","label":"Business and management","disciplines":["business"],"definition":"Organizations, markets, operations, and managerial research."}
+  ],
+  "skill_areas": [
+    {"id":"research_framing","label":"Research framing","functions":["establish_context","identify_gap","define_scope","position_claim","state_contribution"]},
+    {"id":"literature_writing","label":"Literature writing","functions":["attribute_source","synthesize_sources","compare_findings","contrast_findings","identify_gap"]},
+    {"id":"argumentation","label":"Argumentation","functions":["position_claim","qualify_claim","interpret_evidence","contrast_findings","state_contribution"]},
+    {"id":"thesis_dissertation","label":"Thesis and dissertation","functions":["establish_context","define_scope","describe_method","justify_method","state_limitation","state_contribution"]},
+    {"id":"publication","label":"Publication writing","functions":["state_contribution","respond_reviewer","recommend_action","qualify_claim"]},
+    {"id":"scientific_framing","label":"Scientific framing","functions":["establish_context","introduce_evidence","report_uncertainty","report_null_result","causal_claim"]},
+    {"id":"methods","label":"Methods","functions":["describe_method","justify_method","define_scope"]},
+    {"id":"results","label":"Results","functions":["introduce_evidence","report_null_result","describe_association","report_uncertainty","compare_findings","contrast_findings"]},
+    {"id":"discussion","label":"Discussion","functions":["interpret_evidence","interpret_qualitative_evidence","qualify_claim","state_limitation","recommend_action"]},
+    {"id":"claim_control","label":"Claim control","functions":["qualify_claim","distinguish_causation","causal_claim","state_limitation","report_null_result"]},
+    {"id":"evidential_verbs","label":"Evidential verbs","functions":["introduce_evidence","interpret_evidence","attribute_source","describe_association","report_uncertainty"]},
+    {"id":"reviewer_response","label":"Reviewer response","functions":["respond_reviewer"]},
+    {"id":"paraphrasing","label":"Responsible paraphrasing","functions":["paraphrase_with_attribution","attribute_source"]}
+  ],
+  "risk_levels": [
+    {"id":"low","definition":"Wording unlikely to overstate evidence when slots are filled accurately."},
+    {"id":"medium","definition":"Wording requires explicit attention to scope or evidence quality."},
+    {"id":"high","definition":"Causal, prescriptive, or otherwise consequential wording requiring strong checks."}
+  ],
+  "compatibility": {"unknown_ids":"must-error","new_ids":"minor-version","changed_meaning":"major-version"}
+}

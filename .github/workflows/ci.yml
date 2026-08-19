@@ -34,11 +34,14 @@ jobs:
       - name: Reject tracked restricted sources
         run: python .github/scripts/check_tracked_files.py
 
+      - name: Validate canonical data
+        run: python scripts/validate_data.py
+
       - name: Build deterministic data
         run: python scripts/build_data.py
 
-      - name: Validate canonical data
-        run: python scripts/validate_data.py
+      - name: Build bilingual static site
+        run: python docs/build_site.py
 
       - name: Run unit tests
         run: python -m unittest discover -s tests -v

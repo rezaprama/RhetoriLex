@@ -103,6 +103,25 @@ guidance from the [US Office of Research Integrity](https://ori.hhs.gov/28-guide
 and [ICMJE](https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html).
 These references do not replace a user's institutional or publisher rules.
 
+## Discovery metadata provenance
+
+Discovery research uses public GitHub API metadata, search-result counts, and
+commit-pinned recursive-tree file counts. Each structured observation records its
+source, scope, metric, retrieval time, confidence, and limitations under
+`data/discovery/`. Repository names, topics, activity fields, and counts are factual
+metadata; selection, categories, notes, and analysis are original RhetoriLex work.
+
+No third-party repository content, prompts, Skill instructions, templates, or README
+prose was copied. GitHub counts are volatile supply/index observations, not web-search
+volume, user demand, adoption, or quality. Watchers use GitHub's documented
+`subscribers_count`; legacy `watchers_count` represents stars. Recursive `SKILL.md` file
+counts are commit-pinned footprints, not capability or quality rankings.
+
+Direct Google Trends measurement for Worldwide and Indonesia was unavailable in the
+research environment. Records therefore preserve `value: null` and
+`confidence: unavailable`; no proxy or estimate was invented. See
+`docs/discovery-research.md` and `docs/github-landscape.md` for method and interpretation
+gates.
 ## License mapping
 
 - software, scripts, configuration, tests, and Agent Skill code: Apache-2.0;

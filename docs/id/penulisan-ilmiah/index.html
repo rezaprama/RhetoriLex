@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Tulis metode, hasil, dan interpretasi ilmiah dengan desain, ketidakpastian, ukuran efek, serta pengaman kausal yang eksplisit.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/scientific-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/scientific-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Penulisan Ilmiah: Metode, Hasil, dan Batas Kausal | RhetoriLex">
+<meta property="og:description" content="Tulis metode, hasil, dan interpretasi ilmiah dengan desain, ketidakpastian, ukuran efek, serta pengaman kausal yang eksplisit.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Penulisan Ilmiah: Metode, Hasil, dan Batas Kausal | RhetoriLex">
+<meta name="twitter:description" content="Tulis metode, hasil, dan interpretasi ilmiah dengan desain, ketidakpastian, ukuran efek, serta pengaman kausal yang eksplisit.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Penulisan Ilmiah: Metode, Hasil, dan Batas Kausal | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/#page","url":"https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/","name":"Penulisan ilmiah menghubungkan bahasa dengan desain studi","headline":"Penulisan ilmiah menghubungkan bahasa dengan desain studi","description":"Tulis metode, hasil, dan interpretasi ilmiah dengan desain, ketidakpastian, ukuran efek, serta pengaman kausal yang eksplisit.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Penulisan Ilmiah","item":"https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="./" aria-current="page">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="./" aria-current="page">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../parafrasa/">Parafrasa</a><a href="../gerakan-retoris/">Gerakan Retoris</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../skill-agen/">Skill Agen</a><a href="../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../en/scientific-writing/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Beranda</a></li>
+    <li aria-current="page">Penulisan Ilmiah</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>Penulisan ilmiah menghubungkan bahasa dengan desain studi</h1>
+        <p class="lede">Laporkan apa yang diukur, diestimasi, dan didukung tanpa membiarkan prosa melampaui analisis.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Jaga metode agar dapat ditelusuri dan direproduksi</h2>
+  <p>Bagian metode harus membantu pembaca yang kompeten memahami populasi, bahan, variabel, prosedur, eksklusi, estimand, dan analisis. Nyatakan pilihan yang memengaruhi interpretasi. Bentuk pasif dapat berguna ketika prosedur lebih penting daripada pelaku, tetapi jangan gunakan bentuk itu untuk menyembunyikan siapa yang membuat keputusan atau bagaimana klasifikasi ditetapkan.</p>
+  <p>Hubungkan setiap estimasi yang dilaporkan dengan metode yang sesuai. Jika model berubah antar-analisis, nyatakan himpunan penyesuaian dan tujuannya. Jika data hilang, pengujian majemuk, kesalahan pengukuran, atau analisis sensitivitas memengaruhi hasil, laporkan agar pembaca dapat mengaitkan masalah dengan estimasi.</p>
+</section>
+<section>
+  <h2>Pisahkan observasi dari interpretasi</h2>
+  <p>Bagian hasil sebaiknya melaporkan arah, magnitudo, ketidakpastian, dan perbandingan yang dilakukan. Signifikansi statistik saja bukan interpretasi kepentingan praktis atau ilmiah. Berikan estimasi dan interval bila sesuai, pertahankan satuan, dan jangan mengubah hasil yang tidak signifikan menjadi bukti ketiadaan efek.</p>
+  <div class="reference-table" role="region" aria-label="Tanggung jawab bagian ilmiah" tabindex="0">
+    <table>
+      <thead><tr><th>Bagian</th><th>Tanggung jawab utama</th><th>Risiko umum</th></tr></thead>
+      <tbody>
+        <tr><td>Metode</td><td>Jelaskan desain dan keputusan analitik</td><td>Menghilangkan pilihan yang membentuk estimand</td></tr>
+        <tr><td>Hasil</td><td>Laporkan estimasi dan ketidakpastian</td><td>Mengganti magnitudo dengan label signifikansi</td></tr>
+        <tr><td>Diskusi</td><td>Tafsirkan dalam batas desain</td><td>Menyajikan asosiasi sebagai sebab</td></tr>
+        <tr><td>Simpulan</td><td>Nyatakan kontribusi yang terbatasi</td><td>Menggeneralisasi di luar populasi atau konteks</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  <h2>Perlakukan bahasa kausal sebagai klaim desain</h2>
+  <p>Kata caused, led to, reduced, improved, dan prevented membuat klaim tentang perubahan kontrafaktual. Klaim ini memerlukan lebih dari asosiasi kuat. Pernyataan kausal yang kredibel bergantung pada desain, asumsi identifikasi, urutan waktu, pengendalian perancu, pengukuran, dan analisis. Bila kondisi itu tidak terpenuhi, gunakan bahasa deskriptif atau asosiatif dan nyatakan ketidakpastian yang tersisa.</p>
+  <p>Cari <a href="../penjelajah-frasa/?q=interpretasi%20hati-hati">interpretasi hati-hati</a> atau <a href="../penjelajah-frasa/?q=asosiasi%20observasional">asosiasi observasional</a>. Penjelajah menampilkan pola bahasa Inggris beserta kebutuhan buktinya.</p>
+</section>
+<aside class="article-note">
+  <h2>Sebelum mengirim naskah</h2>
+  <p>Cocokkan setiap angka dengan keluaran analisis, setiap rujukan tabel dengan tata letak final, dan setiap verba kausal dengan desain studi. Minta ahli bidang meninjau klaim yang bergantung pada asumsi khusus.</p>
+</aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="./" aria-current="page">Penulisan Ilmiah</a></li><li><a href="../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../parafrasa/">Parafrasa</a></li><li><a href="../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../skill-agen/">Skill Agen</a></li><li><a href="../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

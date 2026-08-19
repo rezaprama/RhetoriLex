@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Skill untuk klaim, alasan, bukti, kontraargumen, warrant, konsesi, transisi, dan simpulan yang terbatasi.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/argumentation/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/argumentation/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Skill Argumentasi Akademik | RhetoriLex">
+<meta property="og:description" content="Skill untuk klaim, alasan, bukti, kontraargumen, warrant, konsesi, transisi, dan simpulan yang terbatasi.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skill Argumentasi Akademik | RhetoriLex">
+<meta name="twitter:description" content="Skill untuk klaim, alasan, bukti, kontraargumen, warrant, konsesi, transisi, dan simpulan yang terbatasi.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Skill Argumentasi Akademik | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#page","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/","name":"Skill penulisan argumentasi akademik","headline":"Skill penulisan argumentasi akademik","description":"Skill untuk klaim, alasan, bukti, kontraargumen, warrant, konsesi, transisi, dan simpulan yang terbatasi.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"},"mainEntity":{"@type":"ItemList","numberOfItems":15,"itemListElement":[{"@type":"ListItem","position":1,"name":"Menyusun klaim akademik","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#making-an-academic-claim"},{"@type":"ListItem","position":2,"name":"Mendukung klaim","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#supporting-a-claim"},{"@type":"ListItem","position":3,"name":"Membatasi klaim","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#qualifying-a-claim"},{"@type":"ListItem","position":4,"name":"Menggunakan bahasa berhati-hati","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#hedging"},{"@type":"ListItem","position":5,"name":"Memberi penekanan secara hati-hati","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#emphasising-cautiously"},{"@type":"ListItem","position":6,"name":"Mengakui suatu poin","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#conceding-a-point"},{"@type":"ListItem","position":7,"name":"Menyajikan argumen tandingan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#presenting-counterarguments"},{"@type":"ListItem","position":8,"name":"Membuat pembedaan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#drawing-distinctions"},{"@type":"ListItem","position":9,"name":"Menyatakan persetujuan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#expressing-agreement"},{"@type":"ListItem","position":10,"name":"Menyatakan ketidaksetujuan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#expressing-disagreement"},{"@type":"ListItem","position":11,"name":"Mendefinisikan konsep","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#defining-concepts"},{"@type":"ListItem","position":12,"name":"Mengklasifikasikan konsep","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#classifying-concepts"},{"@type":"ListItem","position":13,"name":"Memberikan contoh","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#giving-examples"},{"@type":"ListItem","position":14,"name":"Menarik perbandingan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#drawing-comparisons"},{"@type":"ListItem","position":15,"name":"Menjelaskan implikasi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/#explaining-implications"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Skill Argumentasi","item":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../parafrasa/">Parafrasa</a><a href="../../gerakan-retoris/">Gerakan Retoris</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../../skill-agen/">Skill Agen</a><a href="../../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../en/writing-skills/argumentation/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Beranda</a></li>
+    <li aria-current="page">Skill Argumentasi</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Skill penulisan argumentasi akademik</h1>
+      <p class="lede">Hubungkan klaim, alasan, dan bukti sambil menampilkan asumsi, alternatif, serta cakupan.</p>
+      <p class="catalog-count">15 skill penulisan</p>
+      <p class="pattern-language">Nama dan definisi tersedia dalam Bahasa Indonesia. Contoh pola, tujuan teknis, dan peringatan tetap dalam bahasa Inggris untuk menjaga kontrak canonical.</p>
+    </header>
+    <nav class="skill-page-index" aria-label="Dalam halaman ini">
+      <h2>Dalam halaman ini</h2>
+      <ol><li><a href="#making-an-academic-claim">Menyusun klaim akademik</a></li><li><a href="#supporting-a-claim">Mendukung klaim</a></li><li><a href="#qualifying-a-claim">Membatasi klaim</a></li><li><a href="#hedging">Menggunakan bahasa berhati-hati</a></li><li><a href="#emphasising-cautiously">Memberi penekanan secara hati-hati</a></li><li><a href="#conceding-a-point">Mengakui suatu poin</a></li><li><a href="#presenting-counterarguments">Menyajikan argumen tandingan</a></li><li><a href="#drawing-distinctions">Membuat pembedaan</a></li><li><a href="#expressing-agreement">Menyatakan persetujuan</a></li><li><a href="#expressing-disagreement">Menyatakan ketidaksetujuan</a></li><li><a href="#defining-concepts">Mendefinisikan konsep</a></li><li><a href="#classifying-concepts">Mengklasifikasikan konsep</a></li><li><a href="#giving-examples">Memberikan contoh</a></li><li><a href="#drawing-comparisons">Menarik perbandingan</a></li><li><a href="#explaining-implications">Menjelaskan implikasi</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="making-an-academic-claim">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.making_an_academic_claim</code><span>academic</span></div>
+    <h2>Menyusun klaim akademik</h2>
+    <a href="#making-an-academic-claim">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menyusun klaim akademik untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">These findings suggest that access, rather than awareness alone, constrains participation in the programme.</p><button class="copy-button" type="button" data-copy-value="These findings suggest that access, rather than awareness alone, constrains participation in the programme.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">State a contestable proposition with clear scope and an appropriate level of confidence.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">position_claim, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#supporting-a-claim">Mendukung klaim</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="supporting-a-claim">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.supporting_a_claim</code><span>academic</span></div>
+    <h2>Mendukung klaim</h2>
+    <a href="#supporting-a-claim">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan mendukung klaim untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">This interpretation is supported by the repeated appearance of the same concern across all four interview groups.</p><button class="copy-button" type="button" data-copy-value="This interpretation is supported by the repeated appearance of the same concern across all four interview groups.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Connect a proposition to the evidence, reasoning, or source that warrants it.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence, interpret_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#making-an-academic-claim">Menyusun klaim akademik</a>, <a href="./#qualifying-a-claim">Membatasi klaim</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="qualifying-a-claim">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.qualifying_a_claim</code><span>academic</span></div>
+    <h2>Membatasi klaim</h2>
+    <a href="#qualifying-a-claim">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan membatasi klaim untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Within the sampled districts, the pattern appears strongest where public transport is infrequent.</p><button class="copy-button" type="button" data-copy-value="Within the sampled districts, the pattern appears strongest where public transport is infrequent.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Limit a claim by confidence, population, condition, or analytical perspective.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">qualify_claim, define_scope</dd></div><div><dt>Skill terkait</dt><dd><a href="./#supporting-a-claim">Mendukung klaim</a>, <a href="./#hedging">Menggunakan bahasa berhati-hati</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="hedging">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.hedging</code><span>academic</span></div>
+    <h2>Menggunakan bahasa berhati-hati</h2>
+    <a href="#hedging">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menggunakan bahasa berhati-hati untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">One possible explanation is that participants interpreted the reminder as a signal of institutional support.</p><button class="copy-button" type="button" data-copy-value="One possible explanation is that participants interpreted the reminder as a signal of institutional support.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Mark possibility or uncertainty without making the sentence empty or evasive.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#qualifying-a-claim">Membatasi klaim</a>, <a href="./#emphasising-cautiously">Memberi penekanan secara hati-hati</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="emphasising-cautiously">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.emphasising_cautiously</code><span>academic</span></div>
+    <h2>Memberi penekanan secara hati-hati</h2>
+    <a href="#emphasising-cautiously">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan memberi penekanan secara hati-hati untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Notably, the difference remained similar across all prespecified sensitivity checks.</p><button class="copy-button" type="button" data-copy-value="Notably, the difference remained similar across all prespecified sensitivity checks.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Signal a well-supported point without implying certainty beyond the evidence.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">position_claim, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#hedging">Menggunakan bahasa berhati-hati</a>, <a href="./#conceding-a-point">Mengakui suatu poin</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="conceding-a-point">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.conceding_a_point</code><span>academic</span></div>
+    <h2>Mengakui suatu poin</h2>
+    <a href="#conceding-a-point">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan mengakui suatu poin untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Although cost is an important constraint, it does not fully explain why uptake differs between adjacent districts.</p><button class="copy-button" type="button" data-copy-value="Although cost is an important constraint, it does not fully explain why uptake differs between adjacent districts.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Acknowledge a valid counterpoint before clarifying its effect on the argument.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">qualify_claim, contrast_findings</dd></div><div><dt>Skill terkait</dt><dd><a href="./#emphasising-cautiously">Memberi penekanan secara hati-hati</a>, <a href="./#presenting-counterarguments">Menyajikan argumen tandingan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="presenting-counterarguments">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.presenting_counterarguments</code><span>academic</span></div>
+    <h2>Menyajikan argumen tandingan</h2>
+    <a href="#presenting-counterarguments">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menyajikan argumen tandingan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">An alternative view is that the observed change reflects seasonal demand rather than the new scheduling policy.</p><button class="copy-button" type="button" data-copy-value="An alternative view is that the observed change reflects seasonal demand rather than the new scheduling policy.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Represent a plausible opposing position fairly before evaluating it.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">contrast_findings, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#conceding-a-point">Mengakui suatu poin</a>, <a href="./#drawing-distinctions">Membuat pembedaan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="drawing-distinctions">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.drawing_distinctions</code><span>academic</span></div>
+    <h2>Membuat pembedaan</h2>
+    <a href="#drawing-distinctions">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan membuat pembedaan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Administrative compliance should be distinguished from substantive adoption of the policy.</p><button class="copy-button" type="button" data-copy-value="Administrative compliance should be distinguished from substantive adoption of the policy.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Separate concepts, mechanisms, populations, or levels of analysis that should not be conflated.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">contrast_findings, define_scope</dd></div><div><dt>Skill terkait</dt><dd><a href="./#presenting-counterarguments">Menyajikan argumen tandingan</a>, <a href="./#expressing-agreement">Menyatakan persetujuan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="expressing-agreement">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.expressing_agreement</code><span>academic</span></div>
+    <h2>Menyatakan persetujuan</h2>
+    <a href="#expressing-agreement">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menyatakan persetujuan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">This analysis supports Morgan&#x27;s distinction between procedural access and practical availability.</p><button class="copy-button" type="button" data-copy-value="This analysis supports Morgan&#x27;s distinction between procedural access and practical availability.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Align with another account while specifying the proposition being endorsed.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">compare_findings, attribute_source</dd></div><div><dt>Skill terkait</dt><dd><a href="./#drawing-distinctions">Membuat pembedaan</a>, <a href="./#expressing-disagreement">Menyatakan ketidaksetujuan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="expressing-disagreement">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.expressing_disagreement</code><span>academic</span></div>
+    <h2>Menyatakan ketidaksetujuan</h2>
+    <a href="#expressing-disagreement">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menyatakan ketidaksetujuan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Our results do not support the claim that the two indicators are interchangeable in low-resource settings.</p><button class="copy-button" type="button" data-copy-value="Our results do not support the claim that the two indicators are interchangeable in low-resource settings.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Challenge a proposition precisely without overstating what the present evidence disproves.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">contrast_findings, report_null_result</dd></div><div><dt>Skill terkait</dt><dd><a href="./#expressing-agreement">Menyatakan persetujuan</a>, <a href="./#defining-concepts">Mendefinisikan konsep</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="defining-concepts">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.defining_concepts</code><span>academic</span></div>
+    <h2>Mendefinisikan konsep</h2>
+    <a href="#defining-concepts">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan mendefinisikan konsep untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Here, resilience refers to the capacity to maintain essential services during and immediately after disruption.</p><button class="copy-button" type="button" data-copy-value="Here, resilience refers to the capacity to maintain essential services during and immediately after disruption.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Give a working meaning that establishes how a term is used in the argument.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">define_scope, position_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#expressing-disagreement">Menyatakan ketidaksetujuan</a>, <a href="./#classifying-concepts">Mengklasifikasikan konsep</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="classifying-concepts">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.classifying_concepts</code><span>academic</span></div>
+    <h2>Mengklasifikasikan konsep</h2>
+    <a href="#classifying-concepts">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan mengklasifikasikan konsep untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">We classify responses as anticipatory, reactive, or restorative according to when action begins.</p><button class="copy-button" type="button" data-copy-value="We classify responses as anticipatory, reactive, or restorative according to when action begins.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Organise cases into explicit categories using a stated principle.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">define_scope, describe_method</dd></div><div><dt>Skill terkait</dt><dd><a href="./#defining-concepts">Mendefinisikan konsep</a>, <a href="./#giving-examples">Memberikan contoh</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="giving-examples">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.giving_examples</code><span>academic</span></div>
+    <h2>Memberikan contoh</h2>
+    <a href="#giving-examples">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan memberikan contoh untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">For example, a library may expand access by offering evening hours rather than by opening a new branch.</p><button class="copy-button" type="button" data-copy-value="For example, a library may expand access by offering evening hours rather than by opening a new branch.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Illustrate an abstract point with a representative case without treating the example as proof by itself.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence, establish_context</dd></div><div><dt>Skill terkait</dt><dd><a href="./#classifying-concepts">Mengklasifikasikan konsep</a>, <a href="./#drawing-comparisons">Menarik perbandingan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="drawing-comparisons">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.drawing_comparisons</code><span>academic</span></div>
+    <h2>Menarik perbandingan</h2>
+    <a href="#drawing-comparisons">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menarik perbandingan untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Compared with fixed grants, matching funds place more of the short-term financing risk on local organisations.</p><button class="copy-button" type="button" data-copy-value="Compared with fixed grants, matching funds place more of the short-term financing risk on local organisations.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Compare entities on a named dimension and hold the basis of comparison constant.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">compare_findings</dd></div><div><dt>Skill terkait</dt><dd><a href="./#giving-examples">Memberikan contoh</a>, <a href="./#explaining-implications">Menjelaskan implikasi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="explaining-implications">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.argumentation.explaining_implications</code><span>academic</span></div>
+    <h2>Menjelaskan implikasi</h2>
+    <a href="#explaining-implications">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menjelaskan implikasi untuk membangun argumen akademik yang terukur, runtut, dan selaras dengan kekuatan bukti.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The result implies that evaluations should measure service continuity as well as initial deployment.</p><button class="copy-button" type="button" data-copy-value="The result implies that evaluations should measure service continuity as well as initial deployment.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">State what a finding or argument changes for theory, method, practice, or further inquiry.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>analytical paragraphs</li><li>discussion sections</li><li>conceptual papers</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">interpret_evidence, recommend_action</dd></div><div><dt>Skill terkait</dt><dd><a href="./#drawing-comparisons">Menarik perbandingan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Bangun relasi, bukan daya retoris</h2><p>Argumen memperoleh klaim melalui alasan, bukti, dan warrant yang menjelaskan relasinya. Kontraargumen serta konsesi harus mengubah penalaran, bukan menjadi hiasan. Gunakan <a href="../../gerakan-retoris/">Gerakan Retoris</a>.</p></section>
+<aside class="article-note"><h2>Batas penalaran</h2><p>Kata yang percaya diri tidak menggantikan warrant yang hilang. Simpulan tidak boleh memperluas bukti, populasi, atau daya kausal argumen.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../../parafrasa/">Parafrasa</a></li><li><a href="../../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../../skill-agen/">Skill Agen</a></li><li><a href="../../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -17,8 +17,10 @@ class ValidationTests(unittest.TestCase):
     def test_canonical_catalog_is_valid(self) -> None:
         entries, taxonomy, contract, errors = validate_paths()
         self.assertEqual(errors, [])
-        self.assertEqual(len(entries), 48)
-        self.assertEqual(len(taxonomy["rhetorical_functions"]), 12)
+        self.assertEqual(len(entries), 96)
+        self.assertEqual(len(taxonomy["rhetorical_functions"]), 24)
+        self.assertEqual(len(taxonomy["domains"]), 10)
+        self.assertEqual(len(taxonomy["skill_areas"]), 13)
         self.assertEqual(set(contract["claim_strength_rules"]), {"tentative", "bounded", "assertive", "causal"})
 
     def test_all_schemas_are_valid_json(self) -> None:
@@ -29,6 +31,23 @@ class ValidationTests(unittest.TestCase):
                 value = json.loads(path.read_text(encoding="utf-8"))
                 self.assertEqual(value["$schema"], "https://json-schema.org/draft/2020-12/schema")
 
+    def test_canonical_manifest_is_single_source_map(self) -> None:
+        canonical = ROOT / "data" / "canonical"
+        manifest = json.loads(
+            (canonical / "catalog-manifest.v2.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["release_version"], "0.2.0")
+        self.assertEqual(manifest["entry_count"], 96)
+        self.assertEqual(
+            manifest["shards"], ["catalog.v1.jsonl", "catalog.phase2.jsonl"]
+        )
+        self.assertEqual(
+            sorted(manifest["shards"]),
+            sorted(path.name for path in canonical.glob("*.jsonl")),
+        )
+        self.assertEqual(
+            manifest["translation_manifest"], "../translations/manifest.v2.json"
+        )
     def test_every_entry_has_original_editorial_provenance(self) -> None:
         entries, _, _, _ = validate_paths()
         for row in entries:

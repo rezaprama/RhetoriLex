@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="A practical guide to academic writing by rhetorical purpose, with paragraph moves, stance control, synthesis, and revision checks.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Academic Writing: Purpose, Structure, and Evidence | RhetoriLex">
+<meta property="og:description" content="A practical guide to academic writing by rhetorical purpose, with paragraph moves, stance control, synthesis, and revision checks.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/academic-writing/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Academic Writing: Purpose, Structure, and Evidence | RhetoriLex">
+<meta name="twitter:description" content="A practical guide to academic writing by rhetorical purpose, with paragraph moves, stance control, synthesis, and revision checks.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Academic Writing: Purpose, Structure, and Evidence | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/en/academic-writing/#page","url":"https://rezaprama.github.io/RhetoriLex/en/academic-writing/","name":"Academic writing begins with rhetorical purpose","headline":"Academic writing begins with rhetorical purpose","description":"A practical guide to academic writing by rhetorical purpose, with paragraph moves, stance control, synthesis, and revision checks.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Academic Writing","item":"https://rezaprama.github.io/RhetoriLex/en/academic-writing/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="./" aria-current="page">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="./" aria-current="page">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../paraphrasing/">Paraphrasing</a><a href="../rhetorical-moves/">Rhetorical Moves</a><a href="../research-writing-guides/">Research Writing Guides</a><a href="../agent-skills/">Agent Skills</a><a href="../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../id/penulisan-akademik/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li aria-current="page">Academic Writing</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>Academic writing begins with rhetorical purpose</h1>
+        <p class="lede">Plan what each sentence must accomplish, then choose language that matches the evidence and argument.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Move from task to rhetorical function</h2>
+  <p>Academic writing is easier to revise when every sentence has a job. A literature review may define a field, organise positions, compare findings, identify uncertainty, or establish a research gap. A discussion may interpret a result, connect it to prior work, bound its scope, and explain an implication. These functions are related, but they are not interchangeable.</p>
+  <p>Before drafting, write a plain-language label beside each paragraph: context, problem, evidence, interpretation, limitation, or contribution. If a paragraph needs three labels, its logic may need to be separated. Once the sequence is clear, use the <a href="../phrase-explorer/">Phrase Explorer</a> to find a pattern for the specific move.</p>
+</section>
+<section>
+  <h2>Control stance across a paragraph</h2>
+  <p>Stance is not a single hedge added near a verb. It is the relation among evidence quality, claim strength, scope, and certainty. Direct evidence can support an assertive descriptive claim. Observational evidence can support association, but it normally cannot support an unqualified causal statement. Contextual evidence may motivate a question without resolving it.</p>
+  <div class="reference-table" role="region" aria-label="Academic writing decisions" tabindex="0">
+    <table>
+      <thead><tr><th>Writing need</th><th>Useful move</th><th>Check before use</th></tr></thead>
+      <tbody>
+        <tr><td>Connect studies</td><td>Synthesise agreement and contrast</td><td>Do the cited studies support the same scope?</td></tr>
+        <tr><td>State a gap</td><td>Define the unresolved issue</td><td>Is the gap specific and demonstrable?</td></tr>
+        <tr><td>Interpret a result</td><td>Offer a bounded explanation</td><td>Could another mechanism fit the evidence?</td></tr>
+        <tr><td>Conclude</td><td>Return to contribution and limits</td><td>Does the conclusion exceed the analysis?</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  <h2>Revise for continuity and precision</h2>
+  <p>Read the first sentence of every paragraph as a sequence. The sequence should reveal the paper's argument without relying on formulaic transitions. Then inspect each claim for its evidence anchor. A citation must still support the same proposition after a rewrite. A number must retain its unit, comparison group, interval, and direction. Negation and limiting words such as only, may, within, and under should be treated as protected meaning.</p>
+  <p>Finish with a compression pass. Remove phrases that repeat the claim without adding logic. Prefer a precise subject and verb over abstract nominalisations when the actor or process matters. Keep technical terms when a shorter synonym would change disciplinary meaning.</p>
+</section>
+<aside class="article-note">
+  <h2>Quick revision check</h2>
+  <p>Can you name the move, point to its evidence, state its scope, and explain why its level of certainty is justified? If not, revise the reasoning before the wording.</p>
+</aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="./" aria-current="page">Academic Writing</a></li><li><a href="../scientific-writing/">Scientific Writing</a></li><li><a href="../phrase-explorer/">Phrase Explorer</a></li><li><a href="../paraphrasing/">Paraphrasing</a></li><li><a href="../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../research-writing-guides/">Research Writing Guides</a></li><li><a href="../agent-skills/">Agent Skills</a></li><li><a href="../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
