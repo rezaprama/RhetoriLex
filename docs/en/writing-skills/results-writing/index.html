@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Writing skills for participant flow, descriptive results, estimates, intervals, comparisons, null findings, sensitivity analyses, tables, and figures.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Scientific Results Writing Skills | RhetoriLex">
+<meta property="og:description" content="Writing skills for participant flow, descriptive results, estimates, intervals, comparisons, null findings, sensitivity analyses, tables, and figures.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scientific Results Writing Skills | RhetoriLex">
+<meta name="twitter:description" content="Writing skills for participant flow, descriptive results, estimates, intervals, comparisons, null findings, sensitivity analyses, tables, and figures.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Scientific Results Writing Skills | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#page","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/","name":"Scientific results writing skills","headline":"Scientific results writing skills","description":"Writing skills for participant flow, descriptive results, estimates, intervals, comparisons, null findings, sensitivity analyses, tables, and figures.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"},"mainEntity":{"@type":"ItemList","numberOfItems":17,"itemListElement":[{"@type":"ListItem","position":1,"name":"Introducing results","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#introducing-results"},{"@type":"ListItem","position":2,"name":"Reporting descriptive statistics","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#reporting-descriptive-statistics"},{"@type":"ListItem","position":3,"name":"Reporting comparisons","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#reporting-comparisons"},{"@type":"ListItem","position":4,"name":"Reporting associations","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#reporting-associations"},{"@type":"ListItem","position":5,"name":"Reporting effects","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#reporting-effects"},{"@type":"ListItem","position":6,"name":"Reporting uncertainty","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#reporting-uncertainty"},{"@type":"ListItem","position":7,"name":"Confidence intervals","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#confidence-intervals"},{"@type":"ListItem","position":8,"name":"Statistical significance","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#statistical-significance"},{"@type":"ListItem","position":9,"name":"Non-significant findings","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#non-significant-findings"},{"@type":"ListItem","position":10,"name":"Null findings","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#null-findings"},{"@type":"ListItem","position":11,"name":"Trends","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#trends"},{"@type":"ListItem","position":12,"name":"Subgroup results","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#subgroup-results"},{"@type":"ListItem","position":13,"name":"Sensitivity results","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#sensitivity-results"},{"@type":"ListItem","position":14,"name":"Robustness results","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#robustness-results"},{"@type":"ListItem","position":15,"name":"Unexpected findings","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#unexpected-findings"},{"@type":"ListItem","position":16,"name":"Referring to tables","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#referring-to-tables"},{"@type":"ListItem","position":17,"name":"Referring to figures","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/#referring-to-figures"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Results Writing Skills","item":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../../academic-writing/">Academic Writing</a><a href="../../scientific-writing/">Scientific Writing</a><a href="../../phrase-explorer/">Phrase Explorer</a><a href="../../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../../academic-writing/">Academic Writing</a><a href="../../scientific-writing/">Scientific Writing</a><a href="../../phrase-explorer/">Phrase Explorer</a><a href="../../paraphrasing/">Paraphrasing</a><a href="../../rhetorical-moves/">Rhetorical Moves</a><a href="../../research-writing-guides/">Research Writing Guides</a><a href="../../agent-skills/">Agent Skills</a><a href="../../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../id/skill-penulisan/penulisan-hasil/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Home</a></li>
+    <li aria-current="page">Results Writing Skills</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Scientific results writing skills</h1>
+      <p class="lede">Report the comparison, estimate, direction, unit, uncertainty, and analysis population without interpretive drift.</p>
+      <p class="catalog-count">17 writing skills</p>
+      
+    </header>
+    <nav class="skill-page-index" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol><li><a href="#introducing-results">Introducing results</a></li><li><a href="#reporting-descriptive-statistics">Reporting descriptive statistics</a></li><li><a href="#reporting-comparisons">Reporting comparisons</a></li><li><a href="#reporting-associations">Reporting associations</a></li><li><a href="#reporting-effects">Reporting effects</a></li><li><a href="#reporting-uncertainty">Reporting uncertainty</a></li><li><a href="#confidence-intervals">Confidence intervals</a></li><li><a href="#statistical-significance">Statistical significance</a></li><li><a href="#non-significant-findings">Non-significant findings</a></li><li><a href="#null-findings">Null findings</a></li><li><a href="#trends">Trends</a></li><li><a href="#subgroup-results">Subgroup results</a></li><li><a href="#sensitivity-results">Sensitivity results</a></li><li><a href="#robustness-results">Robustness results</a></li><li><a href="#unexpected-findings">Unexpected findings</a></li><li><a href="#referring-to-tables">Referring to tables</a></li><li><a href="#referring-to-figures">Referring to figures</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="introducing-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.introducing_results</code><span>scientific</span></div>
+    <h2>Introducing results</h2>
+    <a href="#introducing-results">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to orient the reader to the analysis or outcome being reported before presenting values, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">We first report changes in the primary outcome, followed by prespecified subgroup estimates.</p><button class="copy-button" type="button" data-copy-value="We first report changes in the primary outcome, followed by prespecified subgroup estimates.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Orient the reader to the analysis or outcome being reported before presenting values.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#reporting-descriptive-statistics">Reporting descriptive statistics</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-descriptive-statistics">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_descriptive_statistics</code><span>scientific</span></div>
+    <h2>Reporting descriptive statistics</h2>
+    <a href="#reporting-descriptive-statistics">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to summarise the observed sample or distribution with appropriate quantities and units, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Median follow-up was 14 months, with an interquartile range of 11 to 18 months.</p><button class="copy-button" type="button" data-copy-value="Median follow-up was 14 months, with an interquartile range of 11 to 18 months.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Summarise the observed sample or distribution with appropriate quantities and units.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>introduce_evidence, report_uncertainty</dd></div><div><dt>Related skills</dt><dd><a href="./#introducing-results">Introducing results</a>, <a href="./#reporting-comparisons">Reporting comparisons</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-comparisons">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_comparisons</code><span>scientific</span></div>
+    <h2>Reporting comparisons</h2>
+    <a href="#reporting-comparisons">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report a difference or ratio while naming the groups, reference, and uncertainty, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Mean recovery time was 1.8 days shorter in the guided group than in the standard-care group.</p><button class="copy-button" type="button" data-copy-value="Mean recovery time was 1.8 days shorter in the guided group than in the standard-care group.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report a difference or ratio while naming the groups, reference, and uncertainty.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>compare_findings, introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#reporting-descriptive-statistics">Reporting descriptive statistics</a>, <a href="./#reporting-associations">Reporting associations</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-associations">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_associations</code><span>scientific</span></div>
+    <h2>Reporting associations</h2>
+    <a href="#reporting-associations">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to describe covariation without implying that one variable caused the other, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Higher canopy cover was associated with lower afternoon surface temperature after adjustment for elevation.</p><button class="copy-button" type="button" data-copy-value="Higher canopy cover was associated with lower afternoon surface temperature after adjustment for elevation.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Describe covariation without implying that one variable caused the other.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>describe_association, introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#reporting-comparisons">Reporting comparisons</a>, <a href="./#reporting-effects">Reporting effects</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-effects">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_effects</code><span>scientific</span></div>
+    <h2>Reporting effects</h2>
+    <a href="#reporting-effects">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report an estimated intervention or exposure effect only in terms supported by the design, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Assignment to the reminder condition increased verified attendance by 6 percentage points.</p><button class="copy-button" type="button" data-copy-value="Assignment to the reminder condition increased verified attendance by 6 percentage points.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report an estimated intervention or exposure effect only in terms supported by the design.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>causal_claim, introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#reporting-associations">Reporting associations</a>, <a href="./#reporting-uncertainty">Reporting uncertainty</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reporting-uncertainty">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.reporting_uncertainty</code><span>scientific</span></div>
+    <h2>Reporting uncertainty</h2>
+    <a href="#reporting-uncertainty">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to present intervals, variability, or model uncertainty alongside the estimate it qualifies, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The estimated reduction was 4.2 units, with a 95% interval from 1.1 to 7.0 units.</p><button class="copy-button" type="button" data-copy-value="The estimated reduction was 4.2 units, with a 95% interval from 1.1 to 7.0 units.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Present intervals, variability, or model uncertainty alongside the estimate it qualifies.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>report_uncertainty, introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#reporting-effects">Reporting effects</a>, <a href="./#confidence-intervals">Confidence intervals</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="confidence-intervals">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.confidence_intervals</code><span>scientific</span></div>
+    <h2>Confidence intervals</h2>
+    <a href="#confidence-intervals">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report an interval with its confidence level, scale, and corresponding estimate, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The odds ratio was 1.32 (95% confidence interval 1.08 to 1.61).</p><button class="copy-button" type="button" data-copy-value="The odds ratio was 1.32 (95% confidence interval 1.08 to 1.61).">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report an interval with its confidence level, scale, and corresponding estimate.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>report_uncertainty, introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#reporting-uncertainty">Reporting uncertainty</a>, <a href="./#statistical-significance">Statistical significance</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="statistical-significance">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.statistical_significance</code><span>scientific</span></div>
+    <h2>Statistical significance</h2>
+    <a href="#statistical-significance">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report the prespecified statistical decision without equating it with importance or truth, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The difference crossed the prespecified significance threshold, although its absolute magnitude was small.</p><button class="copy-button" type="button" data-copy-value="The difference crossed the prespecified significance threshold, although its absolute magnitude was small.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report the prespecified statistical decision without equating it with importance or truth.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>introduce_evidence, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#confidence-intervals">Confidence intervals</a>, <a href="./#non-significant-findings">Non-significant findings</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="non-significant-findings">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.non_significant_findings</code><span>scientific</span></div>
+    <h2>Non-significant findings</h2>
+    <a href="#non-significant-findings">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report imprecise or threshold-crossing results without claiming equality or no effect, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The estimate did not meet the prespecified significance threshold, and the interval included both modest benefit and modest harm.</p><button class="copy-button" type="button" data-copy-value="The estimate did not meet the prespecified significance threshold, and the interval included both modest benefit and modest harm.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report imprecise or threshold-crossing results without claiming equality or no effect.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>report_null_result, report_uncertainty</dd></div><div><dt>Related skills</dt><dd><a href="./#statistical-significance">Statistical significance</a>, <a href="./#null-findings">Null findings</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="null-findings">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.null_findings</code><span>scientific</span></div>
+    <h2>Null findings</h2>
+    <a href="#null-findings">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to describe the absence of a detected difference while preserving what the data still permit, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">We detected no clear difference between groups, but the interval was too wide to rule out a meaningful effect.</p><button class="copy-button" type="button" data-copy-value="We detected no clear difference between groups, but the interval was too wide to rule out a meaningful effect.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Describe the absence of a detected difference while preserving what the data still permit.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>report_null_result, report_uncertainty</dd></div><div><dt>Related skills</dt><dd><a href="./#non-significant-findings">Non-significant findings</a>, <a href="./#trends">Trends</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="trends">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.trends</code><span>scientific</span></div>
+    <h2>Trends</h2>
+    <a href="#trends">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to describe an ordered pattern across time or levels without overstating its regularity, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Concentration declined over the first three sampling rounds and then remained broadly stable.</p><button class="copy-button" type="button" data-copy-value="Concentration declined over the first three sampling rounds and then remained broadly stable.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Describe an ordered pattern across time or levels without overstating its regularity.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>introduce_evidence, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#null-findings">Null findings</a>, <a href="./#subgroup-results">Subgroup results</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="subgroup-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.subgroup_results</code><span>scientific</span></div>
+    <h2>Subgroup results</h2>
+    <a href="#subgroup-results">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report subgroup estimates as prespecified or exploratory and avoid unsupported between-group claims, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The association was stronger in the prespecified rural subgroup; the interaction estimate remained imprecise.</p><button class="copy-button" type="button" data-copy-value="The association was stronger in the prespecified rural subgroup; the interaction estimate remained imprecise.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report subgroup estimates as prespecified or exploratory and avoid unsupported between-group claims.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>compare_findings, report_uncertainty</dd></div><div><dt>Related skills</dt><dd><a href="./#trends">Trends</a>, <a href="./#sensitivity-results">Sensitivity results</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="sensitivity-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.sensitivity_results</code><span>scientific</span></div>
+    <h2>Sensitivity results</h2>
+    <a href="#sensitivity-results">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to state whether conclusions changed under alternative defensible specifications, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Estimates were similar after complete-case analysis and after excluding the two smallest sites.</p><button class="copy-button" type="button" data-copy-value="Estimates were similar after complete-case analysis and after excluding the two smallest sites.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>State whether conclusions changed under alternative defensible specifications.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>report_uncertainty, compare_findings</dd></div><div><dt>Related skills</dt><dd><a href="./#subgroup-results">Subgroup results</a>, <a href="./#robustness-results">Robustness results</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="robustness-results">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.robustness_results</code><span>scientific</span></div>
+    <h2>Robustness results</h2>
+    <a href="#robustness-results">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report consistency across checks while naming which assumptions were varied, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The direction and approximate magnitude were retained across all three alternative outcome definitions.</p><button class="copy-button" type="button" data-copy-value="The direction and approximate magnitude were retained across all three alternative outcome definitions.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report consistency across checks while naming which assumptions were varied.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>report_uncertainty, compare_findings</dd></div><div><dt>Related skills</dt><dd><a href="./#sensitivity-results">Sensitivity results</a>, <a href="./#unexpected-findings">Unexpected findings</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="unexpected-findings">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.unexpected_findings</code><span>scientific</span></div>
+    <h2>Unexpected findings</h2>
+    <a href="#unexpected-findings">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to report an unanticipated result distinctly from prespecified evidence and interpretation, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Contrary to the prespecified hypothesis, response time increased during the second observation period.</p><button class="copy-button" type="button" data-copy-value="Contrary to the prespecified hypothesis, response time increased during the second observation period.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Report an unanticipated result distinctly from prespecified evidence and interpretation.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>contrast_findings, introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#robustness-results">Robustness results</a>, <a href="./#referring-to-tables">Referring to tables</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="referring-to-tables">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.referring_to_tables</code><span>scientific</span></div>
+    <h2>Referring to tables</h2>
+    <a href="#referring-to-tables">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to direct readers to tabulated evidence while stating the result in prose, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Baseline characteristics and missingness by group are reported in Table 1.</p><button class="copy-button" type="button" data-copy-value="Baseline characteristics and missingness by group are reported in Table 1.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Direct readers to tabulated evidence while stating the result in prose.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>introduce_evidence</dd></div><div><dt>Related skills</dt><dd><a href="./#unexpected-findings">Unexpected findings</a>, <a href="./#referring-to-figures">Referring to figures</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="referring-to-figures">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.results_writing.referring_to_figures</code><span>scientific</span></div>
+    <h2>Referring to figures</h2>
+    <a href="#referring-to-figures">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to direct readers to a figure and describe the feature relevant to the argument, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Figure 3 shows the widening separation between trajectories after week eight.</p><button class="copy-button" type="button" data-copy-value="Figure 3 shows the widening separation between trajectories after week eight.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Direct readers to a figure and describe the feature relevant to the argument.</dd></div><div><dt>Use cases</dt><dd><ul><li>results sections</li><li>technical reports</li><li>research abstracts</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>introduce_evidence, compare_findings</dd></div><div><dt>Related skills</dt><dd><a href="./#referring-to-tables">Referring to tables</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Make every estimate interpretable</h2><p>Results need a reference frame: outcome, comparison, magnitude, direction, unit, time, population, and uncertainty. Text should guide readers to the findings that answer the question. Read <a href="../../results/">Results Writing</a>.</p></section>
+<aside class="article-note"><h2>Inference boundary</h2><p>Statistical significance does not replace an estimate, and a non-significant result does not prove no effect. Report direct comparisons and compatible values.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../../academic-writing/">Academic Writing</a></li><li><a href="../../scientific-writing/">Scientific Writing</a></li><li><a href="../../phrase-explorer/">Phrase Explorer</a></li><li><a href="../../paraphrasing/">Paraphrasing</a></li><li><a href="../../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../../research-writing-guides/">Research Writing Guides</a></li><li><a href="../../agent-skills/">Agent Skills</a></li><li><a href="../../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

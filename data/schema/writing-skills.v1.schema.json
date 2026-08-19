@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rezaprama.github.io/RhetoriLex/schema/writing-skills.v1.schema.json",
+  "title": "RhetoriLex writing-skills catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "format", "format_version", "release", "language", "count", "group_count", "provenance", "groups", "skills"],
+  "properties": {
+    "$schema": {"type": "string", "const": "../schema/writing-skills.v1.schema.json"},
+    "format": {"type": "string", "const": "rhetorilex-writing-skills"},
+    "format_version": {"type": "string", "const": "1.0.0"},
+    "release": {"type": "string", "const": "0.2.0"},
+    "language": {"type": "string", "const": "en"},
+    "count": {"type": "integer", "const": 144},
+    "group_count": {"type": "integer", "const": 11},
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "author", "source_reuse", "restricted_source_used"],
+      "properties": {
+        "method": {"type": "string", "const": "original_editorial"},
+        "author": {"type": "string", "minLength": 3},
+        "source_reuse": {"type": "boolean", "const": false},
+        "restricted_source_used": {"type": "boolean", "const": false}
+      }
+    },
+    "groups": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {"$ref": "#/$defs/group"}
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 144,
+      "maxItems": 144,
+      "items": {"$ref": "#/$defs/skill"}
+    }
+  },
+  "$defs": {
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "domain", "name", "description", "count", "canonical_en"],
+      "properties": {
+        "id": {"$ref": "#/$defs/slug"},
+        "domain": {"enum": ["academic", "scientific", "paraphrasing"]},
+        "name": {"type": "string", "minLength": 3},
+        "description": {"type": "string", "minLength": 20},
+        "count": {"type": "integer", "minimum": 1},
+        "canonical_en": {"type": "string", "pattern": "^/en/writing-skills/[a-z0-9-]+/$"}
+      }
+    },
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "slug", "domain", "group", "name", "description", "rhetorical_objective", "use_cases", "example", "related_phrase_functions", "related_skill_ids", "evidence_claim_warning", "canonical_en"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^writing\\.(academic|scientific|paraphrasing)\\.[a-z0-9_]+\\.[a-z0-9_]+$"},
+        "slug": {"$ref": "#/$defs/slug"},
+        "domain": {"enum": ["academic", "scientific", "paraphrasing"]},
+        "group": {"$ref": "#/$defs/slug"},
+        "name": {"type": "string", "minLength": 3},
+        "description": {"type": "string", "minLength": 20},
+        "rhetorical_objective": {"type": "string", "minLength": 15},
+        "use_cases": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 3}},
+        "example": {"type": "string", "minLength": 15},
+        "related_phrase_functions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"}},
+        "related_skill_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^writing\\.(academic|scientific|paraphrasing)\\.[a-z0-9_]+\\.[a-z0-9_]+$"}},
+        "evidence_claim_warning": {"type": "string", "minLength": 20},
+        "canonical_en": {"type": "string", "pattern": "^/en/writing-skills/[a-z0-9-]+/#[a-z0-9-]+$"}
+      }
+    }
+  }
+}

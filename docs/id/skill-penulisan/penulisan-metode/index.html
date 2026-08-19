@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Skill untuk desain, sampling, bahan, ukuran, prosedur, eksklusi, model, data hilang, etika, dan reproduksibilitas.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Skill Penulisan Metode Ilmiah | RhetoriLex">
+<meta property="og:description" content="Skill untuk desain, sampling, bahan, ukuran, prosedur, eksklusi, model, data hilang, etika, dan reproduksibilitas.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skill Penulisan Metode Ilmiah | RhetoriLex">
+<meta name="twitter:description" content="Skill untuk desain, sampling, bahan, ukuran, prosedur, eksklusi, model, data hilang, etika, dan reproduksibilitas.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Skill Penulisan Metode Ilmiah | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#page","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/","name":"Skill penulisan metode ilmiah","headline":"Skill penulisan metode ilmiah","description":"Skill untuk desain, sampling, bahan, ukuran, prosedur, eksklusi, model, data hilang, etika, dan reproduksibilitas.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"},"mainEntity":{"@type":"ItemList","numberOfItems":19,"itemListElement":[{"@type":"ListItem","position":1,"name":"Rancangan studi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#study-design"},{"@type":"ListItem","position":2,"name":"Lokasi dan konteks studi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#study-setting"},{"@type":"ListItem","position":3,"name":"Partisipan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#participants"},{"@type":"ListItem","position":4,"name":"Pengambilan sampel","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#sampling"},{"@type":"ListItem","position":5,"name":"Kriteria inklusi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#inclusion-criteria"},{"@type":"ListItem","position":6,"name":"Kriteria eksklusi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#exclusion-criteria"},{"@type":"ListItem","position":7,"name":"Bahan","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#materials"},{"@type":"ListItem","position":8,"name":"Instrumen","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#instruments"},{"@type":"ListItem","position":9,"name":"Prosedur eksperimen","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#experimental-procedures"},{"@type":"ListItem","position":10,"name":"Variabel","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#variables"},{"@type":"ListItem","position":11,"name":"Pengukuran","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#measurements"},{"@type":"ListItem","position":12,"name":"Pengumpulan data","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#data-collection"},{"@type":"ListItem","position":13,"name":"Metode statistik","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#statistical-methods"},{"@type":"ListItem","position":14,"name":"Metode kualitatif","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#qualitative-methods"},{"@type":"ListItem","position":15,"name":"Spesifikasi model","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#model-specification"},{"@type":"ListItem","position":16,"name":"Analisis sensitivitas","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#sensitivity-analysis"},{"@type":"ListItem","position":17,"name":"Validasi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#validation"},{"@type":"ListItem","position":18,"name":"Reprodusibilitas","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#reproducibility"},{"@type":"ListItem","position":19,"name":"Persetujuan etik","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/#ethical-approval"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Skill Penulisan Metode","item":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../parafrasa/">Parafrasa</a><a href="../../gerakan-retoris/">Gerakan Retoris</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../../skill-agen/">Skill Agen</a><a href="../../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../en/writing-skills/methods-writing/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Beranda</a></li>
+    <li aria-current="page">Skill Penulisan Metode</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Skill penulisan metode ilmiah</h1>
+      <p class="lede">Catat keputusan yang diperlukan pembaca untuk memahami, menilai, dan mereproduksi analisis.</p>
+      <p class="catalog-count">19 skill penulisan</p>
+      <p class="pattern-language">Nama dan definisi tersedia dalam Bahasa Indonesia. Contoh pola, tujuan teknis, dan peringatan tetap dalam bahasa Inggris untuk menjaga kontrak canonical.</p>
+    </header>
+    <nav class="skill-page-index" aria-label="Dalam halaman ini">
+      <h2>Dalam halaman ini</h2>
+      <ol><li><a href="#study-design">Rancangan studi</a></li><li><a href="#study-setting">Lokasi dan konteks studi</a></li><li><a href="#participants">Partisipan</a></li><li><a href="#sampling">Pengambilan sampel</a></li><li><a href="#inclusion-criteria">Kriteria inklusi</a></li><li><a href="#exclusion-criteria">Kriteria eksklusi</a></li><li><a href="#materials">Bahan</a></li><li><a href="#instruments">Instrumen</a></li><li><a href="#experimental-procedures">Prosedur eksperimen</a></li><li><a href="#variables">Variabel</a></li><li><a href="#measurements">Pengukuran</a></li><li><a href="#data-collection">Pengumpulan data</a></li><li><a href="#statistical-methods">Metode statistik</a></li><li><a href="#qualitative-methods">Metode kualitatif</a></li><li><a href="#model-specification">Spesifikasi model</a></li><li><a href="#sensitivity-analysis">Analisis sensitivitas</a></li><li><a href="#validation">Validasi</a></li><li><a href="#reproducibility">Reprodusibilitas</a></li><li><a href="#ethical-approval">Persetujuan etik</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="study-design">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.study_design</code><span>scientific</span></div>
+    <h2>Rancangan studi</h2>
+    <a href="#study-design">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan rancangan studi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">We conducted a preregistered, parallel-group experiment with measurements at baseline and four weeks.</p><button class="copy-button" type="button" data-copy-value="We conducted a preregistered, parallel-group experiment with measurements at baseline and four weeks.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Name the design and connect it to the unit, timing, comparison, and inferential goal.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, define_scope</dd></div><div><dt>Skill terkait</dt><dd><a href="./#study-setting">Lokasi dan konteks studi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="study-setting">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.study_setting</code><span>scientific</span></div>
+    <h2>Lokasi dan konteks studi</h2>
+    <a href="#study-setting">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan lokasi dan konteks studi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The study was conducted in six primary-care clinics serving rural districts in northern Java.</p><button class="copy-button" type="button" data-copy-value="The study was conducted in six primary-care clinics serving rural districts in northern Java.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe where and under what conditions the research took place.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, define_scope</dd></div><div><dt>Skill terkait</dt><dd><a href="./#study-design">Rancangan studi</a>, <a href="./#participants">Partisipan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="participants">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.participants</code><span>scientific</span></div>
+    <h2>Partisipan</h2>
+    <a href="#participants">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan partisipan secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Participants were adults receiving their first hypertension consultation during the recruitment period.</p><button class="copy-button" type="button" data-copy-value="Participants were adults receiving their first hypertension consultation during the recruitment period.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Define who or what was studied and report relevant recruitment characteristics.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, define_scope</dd></div><div><dt>Skill terkait</dt><dd><a href="./#study-setting">Lokasi dan konteks studi</a>, <a href="./#sampling">Pengambilan sampel</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="sampling">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.sampling</code><span>scientific</span></div>
+    <h2>Pengambilan sampel</h2>
+    <a href="#sampling">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan pengambilan sampel secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Households were selected through stratified random sampling within each flood-risk zone.</p><button class="copy-button" type="button" data-copy-value="Households were selected through stratified random sampling within each flood-risk zone.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Explain how units entered the sample and what selection process was used.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method</dd></div><div><dt>Skill terkait</dt><dd><a href="./#participants">Partisipan</a>, <a href="./#inclusion-criteria">Kriteria inklusi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="inclusion-criteria">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.inclusion_criteria</code><span>scientific</span></div>
+    <h2>Kriteria inklusi</h2>
+    <a href="#inclusion-criteria">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan kriteria inklusi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Eligible records contained at least twelve consecutive monthly observations and a verified location code.</p><button class="copy-button" type="button" data-copy-value="Eligible records contained at least twelve consecutive monthly observations and a verified location code.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">State the prespecified conditions required for a unit to enter the analysis.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">define_scope, describe_method</dd></div><div><dt>Skill terkait</dt><dd><a href="./#sampling">Pengambilan sampel</a>, <a href="./#exclusion-criteria">Kriteria eksklusi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="exclusion-criteria">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.exclusion_criteria</code><span>scientific</span></div>
+    <h2>Kriteria eksklusi</h2>
+    <a href="#exclusion-criteria">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan kriteria eksklusi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">We excluded sensors that failed calibration before deployment; no devices were excluded on the basis of observed outcomes.</p><button class="copy-button" type="button" data-copy-value="We excluded sensors that failed calibration before deployment; no devices were excluded on the basis of observed outcomes.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">State prespecified reasons for removing units and distinguish them from post hoc attrition.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">define_scope, describe_method</dd></div><div><dt>Skill terkait</dt><dd><a href="./#inclusion-criteria">Kriteria inklusi</a>, <a href="./#materials">Bahan</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="materials">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.materials</code><span>scientific</span></div>
+    <h2>Bahan</h2>
+    <a href="#materials">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan bahan secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Samples were stored in 15-millilitre polypropylene tubes from the same manufacturing lot.</p><button class="copy-button" type="button" data-copy-value="Samples were stored in 15-millilitre polypropylene tubes from the same manufacturing lot.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Identify materials with enough specification for appraisal or replication.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method</dd></div><div><dt>Skill terkait</dt><dd><a href="./#exclusion-criteria">Kriteria eksklusi</a>, <a href="./#instruments">Instrumen</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="instruments">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.instruments</code><span>scientific</span></div>
+    <h2>Instrumen</h2>
+    <a href="#instruments">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan instrumen secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Temperature was recorded with calibrated T-type thermocouples at one-second intervals.</p><button class="copy-button" type="button" data-copy-value="Temperature was recorded with calibrated T-type thermocouples at one-second intervals.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Name instruments, versions, settings, and calibration procedures relevant to measurement.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#materials">Bahan</a>, <a href="./#experimental-procedures">Prosedur eksperimen</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="experimental-procedures">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.experimental_procedures</code><span>scientific</span></div>
+    <h2>Prosedur eksperimen</h2>
+    <a href="#experimental-procedures">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan prosedur eksperimen secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Each specimen underwent 50 heating cycles, cooled to room temperature, and was then tested under a constant loading rate.</p><button class="copy-button" type="button" data-copy-value="Each specimen underwent 50 heating cycles, cooled to room temperature, and was then tested under a constant loading rate.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report the ordered intervention, exposure, or laboratory steps without omitting consequential choices.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method</dd></div><div><dt>Skill terkait</dt><dd><a href="./#instruments">Instrumen</a>, <a href="./#variables">Variabel</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="variables">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.variables</code><span>scientific</span></div>
+    <h2>Variabel</h2>
+    <a href="#variables">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan variabel secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The primary outcome was seven-day retention, defined as any verified session after enrolment.</p><button class="copy-button" type="button" data-copy-value="The primary outcome was seven-day retention, defined as any verified session after enrolment.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Define outcomes, predictors, exposures, covariates, and derived variables operationally.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">define_scope, describe_method</dd></div><div><dt>Skill terkait</dt><dd><a href="./#experimental-procedures">Prosedur eksperimen</a>, <a href="./#measurements">Pengukuran</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="measurements">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.measurements</code><span>scientific</span></div>
+    <h2>Pengukuran</h2>
+    <a href="#measurements">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan pengukuran secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Leaf area was estimated from calibrated images and expressed in square centimetres.</p><button class="copy-button" type="button" data-copy-value="Leaf area was estimated from calibrated images and expressed in square centimetres.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe how constructs or physical quantities were measured and scored.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#variables">Variabel</a>, <a href="./#data-collection">Pengumpulan data</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="data-collection">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.data_collection</code><span>scientific</span></div>
+    <h2>Pengumpulan data</h2>
+    <a href="#data-collection">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan pengumpulan data secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Two trained observers independently coded each recording using the prespecified rubric.</p><button class="copy-button" type="button" data-copy-value="Two trained observers independently coded each recording using the prespecified rubric.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report when, by whom, and through which procedure data were obtained.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method</dd></div><div><dt>Skill terkait</dt><dd><a href="./#measurements">Pengukuran</a>, <a href="./#statistical-methods">Metode statistik</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="statistical-methods">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.statistical_methods</code><span>scientific</span></div>
+    <h2>Metode statistik</h2>
+    <a href="#statistical-methods">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan metode statistik secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">We estimated adjusted mean differences with cluster-robust standard errors and 95% confidence intervals.</p><button class="copy-button" type="button" data-copy-value="We estimated adjusted mean differences with cluster-robust standard errors and 95% confidence intervals.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Name the estimand, model, uncertainty procedure, and decision rules relevant to analysis.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#data-collection">Pengumpulan data</a>, <a href="./#qualitative-methods">Metode kualitatif</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="qualitative-methods">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.qualitative_methods</code><span>scientific</span></div>
+    <h2>Metode kualitatif</h2>
+    <a href="#qualitative-methods">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan metode kualitatif secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Interview transcripts were coded iteratively, with deviant cases reviewed before themes were finalised.</p><button class="copy-button" type="button" data-copy-value="Interview transcripts were coded iteratively, with deviant cases reviewed before themes were finalised.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Explain how qualitative material was sampled, coded, compared, and interpreted.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, interpret_qualitative_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#statistical-methods">Metode statistik</a>, <a href="./#model-specification">Spesifikasi model</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="model-specification">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.model_specification</code><span>scientific</span></div>
+    <h2>Spesifikasi model</h2>
+    <a href="#model-specification">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan spesifikasi model secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The model included site fixed effects, calendar month, baseline score, and a prespecified treatment-by-time interaction.</p><button class="copy-button" type="button" data-copy-value="The model included site fixed effects, calendar month, baseline score, and a prespecified treatment-by-time interaction.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">State the model form, included terms, reference categories, and prespecified interactions.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, define_scope</dd></div><div><dt>Skill terkait</dt><dd><a href="./#qualitative-methods">Metode kualitatif</a>, <a href="./#sensitivity-analysis">Analisis sensitivitas</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="sensitivity-analysis">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.sensitivity_analysis</code><span>scientific</span></div>
+    <h2>Analisis sensitivitas</h2>
+    <a href="#sensitivity-analysis">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan analisis sensitivitas secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">We repeated the analysis after excluding imputed outcomes and after varying the exposure threshold.</p><button class="copy-button" type="button" data-copy-value="We repeated the analysis after excluding imputed outcomes and after varying the exposure threshold.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe an alternative defensible analysis used to test dependence on assumptions or choices.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, report_uncertainty</dd></div><div><dt>Skill terkait</dt><dd><a href="./#model-specification">Spesifikasi model</a>, <a href="./#validation">Validasi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="validation">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.validation</code><span>scientific</span></div>
+    <h2>Validasi</h2>
+    <a href="#validation">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan validasi secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Performance was evaluated on a temporally separated test set that was not used during model selection.</p><button class="copy-button" type="button" data-copy-value="Performance was evaluated on a temporally separated test set that was not used during model selection.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report how a measure, model, or procedure was checked against independent or held-out information.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#sensitivity-analysis">Analisis sensitivitas</a>, <a href="./#reproducibility">Reprodusibilitas</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="reproducibility">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.reproducibility</code><span>scientific</span></div>
+    <h2>Reprodusibilitas</h2>
+    <a href="#reproducibility">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan reprodusibilitas secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Analysis scripts, environment files, and a synthetic test dataset are archived with versioned release tags.</p><button class="copy-button" type="button" data-copy-value="Analysis scripts, environment files, and a synthetic test dataset are archived with versioned release tags.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Provide the procedural and computational details needed to reproduce the analysis.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">describe_method, state_contribution</dd></div><div><dt>Skill terkait</dt><dd><a href="./#validation">Validasi</a>, <a href="./#ethical-approval">Persetujuan etik</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="ethical-approval">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.methods_writing.ethical_approval</code><span>scientific</span></div>
+    <h2>Persetujuan etik</h2>
+    <a href="#ethical-approval">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan persetujuan etik secara rinci agar rancangan dan pelaksanaan studi dapat dinilai dengan tepat.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The institutional review board approved the protocol under reference 24-118, and participants gave written consent.</p><button class="copy-button" type="button" data-copy-value="The institutional review board approved the protocol under reference 24-118, and participants gave written consent.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Report the approving body, decision identifier, consent process, and relevant safeguards.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>methods sections</li><li>study protocols</li><li>technical reports</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">introduce_evidence, define_scope</dd></div><div><dt>Skill terkait</dt><dd><a href="./#reproducibility">Reprodusibilitas</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Buat pilihan dan urutan dapat ditelusuri</h2><p>Hubungkan desain, populasi, ukuran, prosedur, eksklusi, dan model dengan analisis target. Bedakan keputusan yang ditentukan sebelumnya dan dipengaruhi data. Baca <a href="../../metode/">Penulisan Metode</a>.</p></section>
+<aside class="article-note"><h2>Batas pelaporan</h2><p>Jangan menyembunyikan keputusan subjektif dalam bentuk pasif atau mengklaim reproduktif tanpa detail dan bahan yang diperlukan.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../../parafrasa/">Parafrasa</a></li><li><a href="../../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../../skill-agen/">Skill Agen</a></li><li><a href="../../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Panduan praktis penulisan akademik berdasarkan tujuan retoris, dengan gerakan paragraf, kontrol sikap, sintesis, dan pemeriksaan revisi.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Penulisan Akademik: Tujuan, Struktur, dan Bukti | RhetoriLex">
+<meta property="og:description" content="Panduan praktis penulisan akademik berdasarkan tujuan retoris, dengan gerakan paragraf, kontrol sikap, sintesis, dan pemeriksaan revisi.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Penulisan Akademik: Tujuan, Struktur, dan Bukti | RhetoriLex">
+<meta name="twitter:description" content="Panduan praktis penulisan akademik berdasarkan tujuan retoris, dengan gerakan paragraf, kontrol sikap, sintesis, dan pemeriksaan revisi.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Penulisan Akademik: Tujuan, Struktur, dan Bukti | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/#page","url":"https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/","name":"Penulisan akademik dimulai dari tujuan retoris","headline":"Penulisan akademik dimulai dari tujuan retoris","description":"Panduan praktis penulisan akademik berdasarkan tujuan retoris, dengan gerakan paragraf, kontrol sikap, sintesis, dan pemeriksaan revisi.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Penulisan Akademik","item":"https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="./" aria-current="page">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="./" aria-current="page">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../parafrasa/">Parafrasa</a><a href="../gerakan-retoris/">Gerakan Retoris</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../skill-agen/">Skill Agen</a><a href="../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../en/academic-writing/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Beranda</a></li>
+    <li aria-current="page">Penulisan Akademik</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>Penulisan akademik dimulai dari tujuan retoris</h1>
+        <p class="lede">Rencanakan fungsi setiap kalimat, lalu pilih bahasa yang sesuai dengan bukti dan argumen.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Bergerak dari tugas ke fungsi retoris</h2>
+  <p>Penulisan akademik lebih mudah direvisi ketika setiap kalimat memiliki pekerjaan. Tinjauan pustaka dapat mendefinisikan bidang, mengatur posisi, membandingkan temuan, menunjukkan ketidakpastian, atau menetapkan kesenjangan riset. Diskusi dapat menafsirkan hasil, menghubungkannya dengan penelitian terdahulu, membatasi cakupan, dan menjelaskan implikasi. Fungsi tersebut berhubungan, tetapi tidak dapat saling menggantikan.</p>
+  <p>Sebelum menulis, beri label sederhana pada setiap paragraf: konteks, masalah, bukti, interpretasi, keterbatasan, atau kontribusi. Jika satu paragraf memerlukan tiga label, logikanya mungkin perlu dipisah. Setelah urutan jelas, gunakan <a href="../penjelajah-frasa/">Penjelajah Frasa</a> untuk mencari pola bagi gerakan tertentu.</p>
+</section>
+<section>
+  <h2>Kendalikan sikap dalam satu paragraf</h2>
+  <p>Sikap ilmiah bukan satu kata peredam yang ditambahkan di dekat verba. Sikap merupakan relasi antara mutu bukti, kekuatan klaim, cakupan, dan kepastian. Bukti langsung dapat mendukung klaim deskriptif yang tegas. Bukti observasional dapat mendukung asosiasi, tetapi biasanya tidak mendukung pernyataan kausal tanpa batas. Bukti kontekstual dapat memotivasi pertanyaan tanpa menyelesaikannya.</p>
+  <div class="reference-table" role="region" aria-label="Keputusan penulisan akademik" tabindex="0">
+    <table>
+      <thead><tr><th>Kebutuhan</th><th>Gerakan berguna</th><th>Periksa sebelum digunakan</th></tr></thead>
+      <tbody>
+        <tr><td>Menghubungkan studi</td><td>Sintesis kesepakatan dan perbedaan</td><td>Apakah studi yang disitasi mendukung cakupan yang sama?</td></tr>
+        <tr><td>Menyatakan kesenjangan</td><td>Tentukan persoalan yang belum selesai</td><td>Apakah kesenjangan spesifik dan dapat dibuktikan?</td></tr>
+        <tr><td>Menafsirkan hasil</td><td>Ajukan penjelasan yang terbatasi</td><td>Apakah mekanisme lain juga sesuai dengan bukti?</td></tr>
+        <tr><td>Menyimpulkan</td><td>Kembali ke kontribusi dan batas</td><td>Apakah simpulan melampaui analisis?</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  <h2>Revisi untuk kesinambungan dan ketepatan</h2>
+  <p>Baca kalimat pertama setiap paragraf sebagai satu urutan. Urutan itu harus menampakkan argumen tulisan tanpa bergantung pada transisi formulaik. Lalu periksa jangkar bukti setiap klaim. Sitasi harus tetap mendukung proposisi yang sama setelah penulisan ulang. Angka harus mempertahankan satuan, kelompok pembanding, interval, dan arah. Negasi serta kata pembatas seperti hanya, mungkin, dalam, dan pada kondisi tertentu harus diperlakukan sebagai makna yang dilindungi.</p>
+  <p>Akhiri dengan pemadatan. Hapus frasa yang mengulang klaim tanpa menambah logika. Gunakan subjek dan verba yang tepat ketika pelaku atau proses penting. Pertahankan istilah teknis bila sinonim yang lebih pendek mengubah makna disipliner.</p>
+</section>
+<aside class="article-note">
+  <h2>Pemeriksaan revisi cepat</h2>
+  <p>Dapatkah Anda menamai gerakan, menunjukkan bukti, menyatakan cakupan, dan menjelaskan mengapa tingkat kepastian dapat dibenarkan? Jika tidak, revisi penalaran sebelum kata-katanya.</p>
+</aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="./" aria-current="page">Penulisan Akademik</a></li><li><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../parafrasa/">Parafrasa</a></li><li><a href="../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../skill-agen/">Skill Agen</a></li><li><a href="../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

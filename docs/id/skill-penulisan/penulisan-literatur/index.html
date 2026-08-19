@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Skill untuk menentukan cakupan literatur, mengelompokkan sumber, membandingkan bukti, menyintesis temuan, dan mengenali ketidakpastian.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/literature-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/literature-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Skill Penulisan dan Sintesis Literatur | RhetoriLex">
+<meta property="og:description" content="Skill untuk menentukan cakupan literatur, mengelompokkan sumber, membandingkan bukti, menyintesis temuan, dan mengenali ketidakpastian.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skill Penulisan dan Sintesis Literatur | RhetoriLex">
+<meta name="twitter:description" content="Skill untuk menentukan cakupan literatur, mengelompokkan sumber, membandingkan bukti, menyintesis temuan, dan mengenali ketidakpastian.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Skill Penulisan dan Sintesis Literatur | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#page","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/","name":"Skill penulisan dan sintesis literatur","headline":"Skill penulisan dan sintesis literatur","description":"Skill untuk menentukan cakupan literatur, mengelompokkan sumber, membandingkan bukti, menyintesis temuan, dan mengenali ketidakpastian.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"},"mainEntity":{"@type":"ItemList","numberOfItems":13,"itemListElement":[{"@type":"ListItem","position":1,"name":"Memperkenalkan studi terdahulu","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#introducing-previous-studies"},{"@type":"ListItem","position":2,"name":"Menyintesis literatur","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#synthesising-literature"},{"@type":"ListItem","position":3,"name":"Membandingkan studi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#comparing-studies"},{"@type":"ListItem","position":4,"name":"Mengontraskan studi","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#contrasting-studies"},{"@type":"ListItem","position":5,"name":"Menjelaskan konsensus ilmiah","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#describing-scholarly-consensus"},{"@type":"ListItem","position":6,"name":"Menjelaskan perbedaan pendapat ilmiah","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#describing-scholarly-disagreement"},{"@type":"ListItem","position":7,"name":"Mengidentifikasi keterbatasan penelitian terdahulu","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#identifying-limitations-in-prior-work"},{"@type":"ListItem","position":8,"name":"Mengkritik penelitian terdahulu","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#critiquing-previous-research"},{"@type":"ListItem","position":9,"name":"Membatasi kritik","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#qualifying-criticism"},{"@type":"ListItem","position":10,"name":"Menetapkan kesenjangan literatur","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#establishing-a-literature-gap"},{"@type":"ListItem","position":11,"name":"Menulis bagian karya terkait","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#writing-related-work"},{"@type":"ListItem","position":12,"name":"Beralih antarsumber","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#transitioning-between-sources"},{"@type":"ListItem","position":13,"name":"Menulis dengan sitasi terpadu","url":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/#citation-integrated-writing"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Skill Penulisan Literatur","item":"https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../../penulisan-akademik/">Penulisan Akademik</a><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../../penjelajah-frasa/">Penjelajah Frasa</a><a href="../../parafrasa/">Parafrasa</a><a href="../../gerakan-retoris/">Gerakan Retoris</a><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../../skill-agen/">Skill Agen</a><a href="../../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../en/writing-skills/literature-writing/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Beranda</a></li>
+    <li aria-current="page">Skill Penulisan Literatur</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Skill penulisan dan sintesis literatur</h1>
+      <p class="lede">Atur sumber berdasarkan relasi analitik agar tinjauan menjelaskan pengetahuan, bukan mendaftar tulisan.</p>
+      <p class="catalog-count">13 skill penulisan</p>
+      <p class="pattern-language">Nama dan definisi tersedia dalam Bahasa Indonesia. Contoh pola, tujuan teknis, dan peringatan tetap dalam bahasa Inggris untuk menjaga kontrak canonical.</p>
+    </header>
+    <nav class="skill-page-index" aria-label="Dalam halaman ini">
+      <h2>Dalam halaman ini</h2>
+      <ol><li><a href="#introducing-previous-studies">Memperkenalkan studi terdahulu</a></li><li><a href="#synthesising-literature">Menyintesis literatur</a></li><li><a href="#comparing-studies">Membandingkan studi</a></li><li><a href="#contrasting-studies">Mengontraskan studi</a></li><li><a href="#describing-scholarly-consensus">Menjelaskan konsensus ilmiah</a></li><li><a href="#describing-scholarly-disagreement">Menjelaskan perbedaan pendapat ilmiah</a></li><li><a href="#identifying-limitations-in-prior-work">Mengidentifikasi keterbatasan penelitian terdahulu</a></li><li><a href="#critiquing-previous-research">Mengkritik penelitian terdahulu</a></li><li><a href="#qualifying-criticism">Membatasi kritik</a></li><li><a href="#establishing-a-literature-gap">Menetapkan kesenjangan literatur</a></li><li><a href="#writing-related-work">Menulis bagian karya terkait</a></li><li><a href="#transitioning-between-sources">Beralih antarsumber</a></li><li><a href="#citation-integrated-writing">Menulis dengan sitasi terpadu</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="introducing-previous-studies">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.introducing_previous_studies</code><span>academic</span></div>
+    <h2>Memperkenalkan studi terdahulu</h2>
+    <a href="#introducing-previous-studies">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan memperkenalkan studi terdahulu dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Several longitudinal studies have linked stable housing with improved school attendance.</p><button class="copy-button" type="button" data-copy-value="Several longitudinal studies have linked stable housing with improved school attendance.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Bring prior research into the discussion with clear attribution and relevance.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">attribute_source, introduce_evidence</dd></div><div><dt>Skill terkait</dt><dd><a href="./#synthesising-literature">Menyintesis literatur</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="synthesising-literature">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.synthesising_literature</code><span>academic</span></div>
+    <h2>Menyintesis literatur</h2>
+    <a href="#synthesising-literature">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menyintesis literatur dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Across qualitative and survey studies, flexible scheduling is consistently associated with greater perceived autonomy.</p><button class="copy-button" type="button" data-copy-value="Across qualitative and survey studies, flexible scheduling is consistently associated with greater perceived autonomy.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Combine multiple sources around a shared pattern, explanation, or unresolved tension.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">synthesize_sources</dd></div><div><dt>Skill terkait</dt><dd><a href="./#introducing-previous-studies">Memperkenalkan studi terdahulu</a>, <a href="./#comparing-studies">Membandingkan studi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="comparing-studies">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.comparing_studies</code><span>academic</span></div>
+    <h2>Membandingkan studi</h2>
+    <a href="#comparing-studies">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan membandingkan studi dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Both studies treat trust as relational, although they operationalise it with different indicators.</p><button class="copy-button" type="button" data-copy-value="Both studies treat trust as relational, although they operationalise it with different indicators.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">State a meaningful similarity between studies on a common basis.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">compare_findings, synthesize_sources</dd></div><div><dt>Skill terkait</dt><dd><a href="./#synthesising-literature">Menyintesis literatur</a>, <a href="./#contrasting-studies">Mengontraskan studi</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="contrasting-studies">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.contrasting_studies</code><span>academic</span></div>
+    <h2>Mengontraskan studi</h2>
+    <a href="#contrasting-studies">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan mengontraskan studi dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Whereas the national survey reports gradual change, the case study documents an abrupt local shift after closure.</p><button class="copy-button" type="button" data-copy-value="Whereas the national survey reports gradual change, the case study documents an abrupt local shift after closure.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">State a meaningful difference between studies and identify the basis of contrast.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">contrast_findings, synthesize_sources</dd></div><div><dt>Skill terkait</dt><dd><a href="./#comparing-studies">Membandingkan studi</a>, <a href="./#describing-scholarly-consensus">Menjelaskan konsensus ilmiah</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="describing-scholarly-consensus">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.describing_scholarly_consensus</code><span>academic</span></div>
+    <h2>Menjelaskan konsensus ilmiah</h2>
+    <a href="#describing-scholarly-consensus">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menjelaskan konsensus ilmiah dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Reviews generally agree that measurement error can attenuate estimated associations.</p><button class="copy-button" type="button" data-copy-value="Reviews generally agree that measurement error can attenuate estimated associations.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Represent broad agreement only when the reviewed evidence genuinely converges.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">synthesize_sources, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#contrasting-studies">Mengontraskan studi</a>, <a href="./#describing-scholarly-disagreement">Menjelaskan perbedaan pendapat ilmiah</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="describing-scholarly-disagreement">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.describing_scholarly_disagreement</code><span>academic</span></div>
+    <h2>Menjelaskan perbedaan pendapat ilmiah</h2>
+    <a href="#describing-scholarly-disagreement">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menjelaskan perbedaan pendapat ilmiah dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Scholars disagree over whether the reform altered incentives or merely formalised practices already in place.</p><button class="copy-button" type="button" data-copy-value="Scholars disagree over whether the reform altered incentives or merely formalised practices already in place.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Locate disagreement in assumptions, methods, evidence, or interpretation.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">contrast_findings, attribute_source</dd></div><div><dt>Skill terkait</dt><dd><a href="./#describing-scholarly-consensus">Menjelaskan konsensus ilmiah</a>, <a href="./#identifying-limitations-in-prior-work">Mengidentifikasi keterbatasan penelitian terdahulu</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="identifying-limitations-in-prior-work">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.identifying_limitations_in_prior_work</code><span>academic</span></div>
+    <h2>Mengidentifikasi keterbatasan penelitian terdahulu</h2>
+    <a href="#identifying-limitations-in-prior-work">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan mengidentifikasi keterbatasan penelitian terdahulu dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Because earlier samples were drawn from specialist clinics, their estimates may not transfer to community settings.</p><button class="copy-button" type="button" data-copy-value="Because earlier samples were drawn from specialist clinics, their estimates may not transfer to community settings.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Describe a constraint in earlier evidence and explain its consequence without dismissing the work.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">state_limitation, attribute_source</dd></div><div><dt>Skill terkait</dt><dd><a href="./#describing-scholarly-disagreement">Menjelaskan perbedaan pendapat ilmiah</a>, <a href="./#critiquing-previous-research">Mengkritik penelitian terdahulu</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="critiquing-previous-research">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.critiquing_previous_research</code><span>academic</span></div>
+    <h2>Mengkritik penelitian terdahulu</h2>
+    <a href="#critiquing-previous-research">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan mengkritik penelitian terdahulu dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The proposed typology is useful descriptively, but its categories overlap when applied to multilingual interviews.</p><button class="copy-button" type="button" data-copy-value="The proposed typology is useful descriptively, but its categories overlap when applied to multilingual interviews.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Evaluate a specific claim, method, or inference using explicit criteria and evidence.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">contrast_findings, qualify_claim</dd></div><div><dt>Skill terkait</dt><dd><a href="./#identifying-limitations-in-prior-work">Mengidentifikasi keterbatasan penelitian terdahulu</a>, <a href="./#qualifying-criticism">Membatasi kritik</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="qualifying-criticism">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.qualifying_criticism</code><span>academic</span></div>
+    <h2>Membatasi kritik</h2>
+    <a href="#qualifying-criticism">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan membatasi kritik dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">The model offers a clear account of short-term adaptation; however, it does not address changes beyond the first year.</p><button class="copy-button" type="button" data-copy-value="The model offers a clear account of short-term adaptation; however, it does not address changes beyond the first year.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Acknowledge what prior work establishes before defining a narrower concern.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">qualify_claim, state_limitation</dd></div><div><dt>Skill terkait</dt><dd><a href="./#critiquing-previous-research">Mengkritik penelitian terdahulu</a>, <a href="./#establishing-a-literature-gap">Menetapkan kesenjangan literatur</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="establishing-a-literature-gap">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.establishing_a_literature_gap</code><span>academic</span></div>
+    <h2>Menetapkan kesenjangan literatur</h2>
+    <a href="#establishing-a-literature-gap">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menetapkan kesenjangan literatur dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Existing reviews catalogue reported barriers but do not compare how those barriers vary by contract type.</p><button class="copy-button" type="button" data-copy-value="Existing reviews catalogue reported barriers but do not compare how those barriers vary by contract type.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Show what the literature does not yet resolve after representing what it already covers.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">identify_gap, synthesize_sources</dd></div><div><dt>Skill terkait</dt><dd><a href="./#qualifying-criticism">Membatasi kritik</a>, <a href="./#writing-related-work">Menulis bagian karya terkait</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="writing-related-work">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.writing_related_work</code><span>academic</span></div>
+    <h2>Menulis bagian karya terkait</h2>
+    <a href="#writing-related-work">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menulis bagian karya terkait dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Prior approaches fall into three groups: rule-based extraction, supervised classification, and hybrid retrieval.</p><button class="copy-button" type="button" data-copy-value="Prior approaches fall into three groups: rule-based extraction, supervised classification, and hybrid retrieval.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Organise related work by analytical relationship rather than as a sequence of isolated summaries.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">define_scope, synthesize_sources</dd></div><div><dt>Skill terkait</dt><dd><a href="./#establishing-a-literature-gap">Menetapkan kesenjangan literatur</a>, <a href="./#transitioning-between-sources">Beralih antarsumber</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="transitioning-between-sources">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.transitioning_between_sources</code><span>academic</span></div>
+    <h2>Beralih antarsumber</h2>
+    <a href="#transitioning-between-sources">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan beralih antarsumber dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">This institutional account is extended by later ethnographic work, which shows how the rule is negotiated in practice.</p><button class="copy-button" type="button" data-copy-value="This institutional account is extended by later ethnographic work, which shows how the rule is negotiated in practice.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Make the logical relation between one source and the next explicit.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">compare_findings, attribute_source</dd></div><div><dt>Skill terkait</dt><dd><a href="./#writing-related-work">Menulis bagian karya terkait</a>, <a href="./#citation-integrated-writing">Menulis dengan sitasi terpadu</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="citation-integrated-writing">
+  <header class="skill-reference-header">
+    <div><code>writing.academic.literature_writing.citation_integrated_writing</code><span>academic</span></div>
+    <h2>Menulis dengan sitasi terpadu</h2>
+    <a href="#citation-integrated-writing">Tautan tetap</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Panduan menulis dengan sitasi terpadu dengan atribusi yang tepat, hubungan antarsumber yang jelas, dan sintesis yang dapat ditelusuri.</p>
+    <div class="skill-example"><h3>Contoh orisinal</h3><p class="phrase-template" lang="en">Rahman and Lee report that response time declined after triage was reorganised, while noting substantial variation across sites.</p><button class="copy-button" type="button" data-copy-value="Rahman and Lee report that response time declined after triage was reorganised, while noting substantial variation across sites.">Salin contoh</button></div>
+    <dl class="skill-facts"><div><dt>Tujuan retoris</dt><dd lang="en">Attach attribution to the exact proposition supported by a source.</dd></div><div><dt>Kegunaan</dt><dd lang="en"><ul><li>literature reviews</li><li>related-work sections</li><li>research proposals</li></ul></dd></div><div><dt>Fungsi frasa terkait</dt><dd lang="en">attribute_source, paraphrase_with_attribution</dd></div><div><dt>Skill terkait</dt><dd><a href="./#transitioning-between-sources">Beralih antarsumber</a></dd></div><div><dt>Peringatan bukti dan klaim</dt><dd lang="en">Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Tampilkan dasar perbandingan</h2><p>Tentukan alasan sumber berada dalam kelompok yang sama: pertanyaan, teori, desain, populasi, ukuran, temuan, atau keterbatasan. Nyatakan apakah bukti sejalan, berbeda, atau tidak dapat dibandingkan. Baca <a href="../../tinjauan-pustaka/">Tinjauan Pustaka</a>.</p></section>
+<aside class="article-note"><h2>Batas sitasi</h2><p>Setiap studi harus mendukung relasi yang dilekatkan padanya. Banyak sitasi tidak otomatis membuktikan konsensus, mutu, atau kesenjangan.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../../parafrasa/">Parafrasa</a></li><li><a href="../../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../../skill-agen/">Skill Agen</a></li><li><a href="../../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

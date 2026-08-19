@@ -1,6 +1,363 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rezaprama.github.io/RhetoriLex/</loc>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/academic-writing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-akademik/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/academic-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/scientific-writing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/scientific-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/scientific-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/scientific-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penulisan-ilmiah/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/scientific-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penjelajah-frasa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/penjelajah-frasa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penjelajah-frasa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/paraphrasing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/parafrasa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/parafrasa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/parafrasa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/rhetorical-moves/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/rhetorical-moves/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/gerakan-retoris/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/rhetorical-moves/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/gerakan-retoris/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/rhetorical-moves/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/gerakan-retoris/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/rhetorical-moves/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/research-writing-guides/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/research-writing-guides/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/panduan-penulisan-riset/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/research-writing-guides/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/panduan-penulisan-riset/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/research-writing-guides/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/panduan-penulisan-riset/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/research-writing-guides/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/agent-skills/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/agent-skills/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-agen/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/agent-skills/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-agen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/agent-skills/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-agen/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/agent-skills/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/about/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tentang/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/about/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/tentang/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/about/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tentang/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/about/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/research-gap/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/research-gap/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/kesenjangan-riset/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/research-gap/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/kesenjangan-riset/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/research-gap/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/kesenjangan-riset/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/research-gap/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/literature-review/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/literature-review/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/literature-review/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/literature-review/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/literature-review/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/thesis/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/thesis/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tesis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/thesis/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/tesis/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/thesis/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tesis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/thesis/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/methods/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/methods/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/metode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/methods/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/metode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/methods/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/metode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/methods/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/results/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/results/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/hasil/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/results/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/hasil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/results/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/hasil/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/results/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/discussion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/discussion/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/diskusi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/discussion/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/diskusi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/discussion/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/diskusi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/discussion/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/hedging/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/hedging/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/hedging-akademik/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/hedging/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/hedging-akademik/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/hedging/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/hedging-akademik/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/hedging/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/reviewer-response/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/association-vs-causation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/association-vs-causation/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/asosiasi-vs-kausalitas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/association-vs-causation/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/asosiasi-vs-kausalitas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/association-vs-causation/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/asosiasi-vs-kausalitas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/association-vs-causation/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/preserve-claim-strength/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/preserve-claim-strength/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/pertahankan-kekuatan-klaim/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/preserve-claim-strength/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/pertahankan-kekuatan-klaim/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/preserve-claim-strength/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/pertahankan-kekuatan-klaim/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/preserve-claim-strength/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/research-framing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/research-framing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/perumusan-riset/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/research-framing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/perumusan-riset/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/research-framing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/perumusan-riset/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/research-framing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/literature-writing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/literature-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/literature-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/literature-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-literatur/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/literature-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/argumentation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/argumentation/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/argumentation/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/argumentation/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/argumentasi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/argumentation/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/thesis-and-dissertation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/thesis-and-dissertation/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/tesis-dan-disertasi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/thesis-and-dissertation/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/tesis-dan-disertasi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/thesis-and-dissertation/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/tesis-dan-disertasi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/thesis-and-dissertation/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/publication-writing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/publication-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-publikasi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/publication-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-publikasi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/publication-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-publikasi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/publication-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/perumusan-studi-ilmiah/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/perumusan-studi-ilmiah/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/perumusan-studi-ilmiah/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-study-framing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-metode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/methods-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-hasil/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/results-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-diskusi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-diskusi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-diskusi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-claim-control/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-claim-control/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-claim-control/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-claim-control/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/kontrol-klaim-ilmiah/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/scientific-claim-control/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/writing-skills/paraphrasing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/paraphrasing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/parafrasa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/paraphrasing/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/parafrasa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/paraphrasing/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/parafrasa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/paraphrasing/" />
   </url>
 </urlset>

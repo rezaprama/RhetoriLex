@@ -67,6 +67,47 @@ class CatalogTests(unittest.TestCase):
                 failures.append((case["id"], observed, results[0].entry.id if results else None))
         self.assertEqual(failures, [])
 
+    def test_phase2_alias_search(self) -> None:
+        result = self.catalog.search("ethical paraphrase preserve citation", limit=1)
+        self.assertEqual(result[0].entry.function, "paraphrase_with_attribution")
+        self.assertEqual(result[0].match, "alias")
+
+    def test_domain_skill_area_and_section_browsing(self) -> None:
+        entries = self.catalog.browse(
+            stage="results",
+            domain="quantitative_empirical",
+            skill_area="results",
+            limit=50,
+        )
+        self.assertTrue(entries)
+        self.assertTrue(all(entry.stage in {"results", "general"} for entry in entries))
+        self.assertTrue(all("quantitative_empirical" in entry.domains for entry in entries))
+        self.assertTrue(all("results" in entry.skill_areas for entry in entries))
+
+    def test_phase2_facet_counts(self) -> None:
+        counts = self.catalog.counts()
+        self.assertEqual(counts["entries"], 96)
+        self.assertEqual(len(counts["functions"]), 24)
+        self.assertGreaterEqual(len(counts["domains"]), 8)
+        self.assertEqual(len(counts["skill_areas"]), 13)
+        self.assertEqual(counts["functions"]["respond_reviewer"], 4)
+
+    def test_phase2_discovery_benchmark(self) -> None:
+        benchmark = json.loads(
+            (ROOT / "data" / "benchmarks" / "discovery-v0.2.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(benchmark["status"], "frozen")
+        failures = []
+        for case in benchmark["cases"]:
+            results = self.catalog.search(case["query"], limit=1)
+            observed = results[0].entry.function if results else None
+            if observed != case["expected_function"]:
+                failures.append(
+                    (case["id"], case["expected_function"], observed, results[0].entry.id if results else None)
+                )
+        self.assertEqual(failures, [])
 
 if __name__ == "__main__":
     unittest.main()

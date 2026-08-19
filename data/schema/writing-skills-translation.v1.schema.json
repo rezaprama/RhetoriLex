@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rezaprama.github.io/RhetoriLex/schema/writing-skills-translation.v1.schema.json",
+  "title": "RhetoriLex writing-skills interface translation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "format", "format_version", "release", "language", "canonical_language", "source", "count", "groups", "skills"],
+  "properties": {
+    "$schema": {"type": "string", "const": "../schema/writing-skills-translation.v1.schema.json"},
+    "format": {"type": "string", "const": "rhetorilex-writing-skills-translation"},
+    "format_version": {"type": "string", "const": "1.0.0"},
+    "release": {"type": "string", "const": "0.2.0"},
+    "language": {"type": "string", "const": "id"},
+    "canonical_language": {"type": "string", "const": "en"},
+    "source": {"type": "string", "const": "../editorial/writing-skills.v1.json"},
+    "count": {"type": "integer", "const": 144},
+    "groups": {"type": "array", "minItems": 11, "maxItems": 11, "items": {"$ref": "#/$defs/label"}},
+    "skills": {"type": "array", "minItems": 144, "maxItems": 144, "items": {"$ref": "#/$defs/label"}}
+  },
+  "$defs": {
+    "label": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "description"],
+      "properties": {
+        "id": {"type": "string", "minLength": 3},
+        "name": {"type": "string", "minLength": 3},
+        "description": {"type": "string", "minLength": 15}
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "name": "rhetorilex",
-  "version": "0.1.0",
-  "description": "Evidence-calibrated rhetorical moves and academic writing patterns.",
+  "version": "0.2.0",
+  "description": "Academic and scientific writing patterns organised by rhetorical purpose.",
   "author": {
-    "name": "Reza Prama",
-    "url": "https://github.com/rezaprama"
+    "name": "Reza Prama Arviandi",
+    "url": "https://rezaprama.com"
   },
   "homepage": "https://rezaprama.github.io/RhetoriLex/",
   "repository": "https://github.com/rezaprama/RhetoriLex",
@@ -12,6 +12,9 @@
   "keywords": [
     "academic-writing",
     "scientific-writing",
+    "research-writing",
+    "phrasebank",
+    "literature-review",
     "agent-skills",
     "evidence-preservation",
     "rhetorical-moves"
@@ -19,18 +22,20 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "RhetoriLex",
-    "shortDescription": "Evidence-safe academic writing patterns",
-    "longDescription": "Find and adapt original rhetorical patterns while preserving citations, uncertainty, scope, and scientific claim strength.",
-    "developerName": "Reza Prama",
+    "shortDescription": "Academic writing by rhetorical purpose",
+    "longDescription": "Find and adapt original academic and scientific writing patterns while preserving citations, uncertainty, scope, and scientific claim strength.",
+    "developerName": "Reza Prama Arviandi",
     "category": "Productivity",
     "capabilities": [],
     "websiteURL": "https://rezaprama.github.io/RhetoriLex/",
     "defaultPrompt": [
       "Rewrite this result without strengthening its claim.",
       "Give three cautious ways to state this research gap.",
-      "Check whether this paraphrase preserves the evidence."
+      "Check whether this paraphrase preserves the evidence.",
+      "Compare wording for association, prediction, and causation.",
+      "Plan rhetorical moves for a reviewer response."
     ],
-    "brandColor": "#0F766E",
+    "brandColor": "#164F7A",
     "composerIcon": "./assets/icon.svg",
     "logo": "./assets/logo.svg",
     "screenshots": [

@@ -1,11 +1,12 @@
 {
-  "name": "RhetoriLex",
+  "name": "RhetoriLex Academic Writing Index",
   "short_name": "RhetoriLex",
-  "description": "Evidence-safe academic writing patterns.",
-  "start_url": "./",
+  "description": "Original rhetorical patterns for evidence-calibrated academic writing.",
+  "start_url": "./en/",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f5ef",
-  "theme_color": "#0b2625",
+  "background_color": "#f5f3ed",
+  "theme_color": "#164f7a",
   "icons": [
     {
       "src": "assets/icon.svg",

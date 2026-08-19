@@ -7,9 +7,10 @@ abstract: >-
   adapting rhetorical moves and phrase patterns while preserving evidence,
   citations, uncertainty, and scientific claim strength.
 authors:
-  - family-names: "Prama"
-    given-names: "Reza"
-version: 0.1.0
+  - family-names: "Arviandi"
+    given-names: "Reza Prama"
+    website: "https://rezaprama.com"
+version: 0.2.0
 date-released: 2026-08-19
 repository-code: "https://github.com/rezaprama/RhetoriLex"
 url: "https://rezaprama.github.io/RhetoriLex/"
@@ -18,15 +19,18 @@ keywords:
   - academic writing
   - scientific writing
   - rhetoric
-  - corpus linguistics
+  - phrasebank
+  - literature review
   - evidence preservation
+  - claim strength
+  - rhetorical moves
   - agent skills
 preferred-citation:
   type: software
   title: "RhetoriLex"
   authors:
-    - family-names: "Prama"
-      given-names: "Reza"
-  version: 0.1.0
+    - family-names: "Arviandi"
+      given-names: "Reza Prama"
+  version: 0.2.0
   year: 2026
   url: "https://github.com/rezaprama/RhetoriLex"

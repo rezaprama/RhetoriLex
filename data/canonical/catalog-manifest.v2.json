@@ -1,0 +1,23 @@
+{
+  "format": "rhetorilex-canonical-manifest",
+  "format_version": "2.0.0",
+  "release_version": "0.2.0",
+  "language": "en",
+  "entry_count": 96,
+  "schema": "../schema/canonical-entry.v1.1.schema.json",
+  "taxonomy": "../taxonomy/taxonomy.v1.1.json",
+  "contract": "../contracts/evidence-claim.v1.json",
+  "editorial_manifest": "../editorial/manifest.v2.json",
+  "translation_manifest": "../translations/manifest.v2.json",
+  "shards": ["catalog.v1.jsonl", "catalog.phase2.jsonl"],
+  "editorial": {
+    "method": "original_editorial",
+    "source_reuse": false,
+    "review_status": "contract_validated"
+  },
+  "translations": {
+    "storage": "separate_from_canonical",
+    "available_languages": [],
+    "policy": "A translation must preserve IDs, placeholders, evidence conditions, and claim strength without replacing the English canonical text."
+  }
+}

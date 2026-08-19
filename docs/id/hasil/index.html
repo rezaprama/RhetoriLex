@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Tulis hasil yang melaporkan perbandingan, magnitudo, arah, ketidakpastian, dan data hilang tanpa overclaim kausal.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/hasil/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/results/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/hasil/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/results/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Cara Menulis Hasil dengan Estimasi dan Ketidakpastian | RhetoriLex">
+<meta property="og:description" content="Tulis hasil yang melaporkan perbandingan, magnitudo, arah, ketidakpastian, dan data hilang tanpa overclaim kausal.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/hasil/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Menulis Hasil dengan Estimasi dan Ketidakpastian | RhetoriLex">
+<meta name="twitter:description" content="Tulis hasil yang melaporkan perbandingan, magnitudo, arah, ketidakpastian, dan data hilang tanpa overclaim kausal.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Cara Menulis Hasil dengan Estimasi dan Ketidakpastian | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/id/hasil/#page","url":"https://rezaprama.github.io/RhetoriLex/id/hasil/","name":"Penulisan hasil melaporkan apa yang diestimasi analisis","headline":"Penulisan hasil melaporkan apa yang diestimasi analisis","description":"Tulis hasil yang melaporkan perbandingan, magnitudo, arah, ketidakpastian, dan data hilang tanpa overclaim kausal.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Penulisan Hasil","item":"https://rezaprama.github.io/RhetoriLex/id/hasil/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../parafrasa/">Parafrasa</a><a href="../gerakan-retoris/">Gerakan Retoris</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../skill-agen/">Skill Agen</a><a href="../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../en/results/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Beranda</a></li>
+    <li aria-current="page">Penulisan Hasil</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>Penulisan hasil melaporkan apa yang diestimasi analisis</h1>
+        <p class="lede">Mulai dari perbandingan dan estimasi, pertahankan ketidakpastian, dan sesuaikan interpretasi dengan desain.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Berikan kerangka referensi yang lengkap</h2>
+  <p>Hasil memerlukan outcome, kelompok atau kondisi pembanding, arah, magnitudo, satuan, dan ketidakpastian. Nyatakan populasi analisis serta waktu bila belum jelas. Gunakan tabel untuk estimasi padat, tetapi teks perlu mengidentifikasi temuan yang menjawab pertanyaan riset.</p>
+  <p>Jangan mengganti estimasi dengan label signifikansi. Nilai p kecil tidak menunjukkan kepentingan praktis, sedangkan nilai p besar tidak membuktikan ketiadaan efek. Laporkan interval dan nilai yang masih sesuai dengan data.</p>
+</section>
+<section>
+  <h2>Pola untuk pelaporan tepat</h2>
+  <p class="phrase-template">Outcome Y was [estimate and unit] higher in [group A] than in [group B] ([interval]), with [relevant adjustment or analysis population].</p>
+  <p class="phrase-template">The estimate was imprecise ([interval]), leaving both [scientifically relevant possibility A] and [possibility B] compatible with the data.</p>
+  <p>Pola pertama membutuhkan perbandingan dan arah yang benar. Pola kedua menjelaskan ketidakpastian tanpa mengubah hasil yang tidak meyakinkan menjadi bukti ketiadaan.</p>
+</section>
+<section>
+  <h2>Jaga batas desain</h2>
+  <p>Hasil observasional umumnya menggunakan associated with, differed, atau was related to, bukan caused, improved, atau prevented. Baca <a href="../asosiasi-vs-kausalitas/">Asosiasi vs Kausalitas</a>. Verifikasi angka, satuan, rujukan tabel, label subkelompok, dan tanda terhadap keluaran final.</p>
+</section>
+<aside class="article-note"><h2>Peringatan</h2><p>Jangan menyimpulkan perubahan dalam kelompok dari uji signifikansi terpisah, atau perbedaan kelompok dari satu hasil signifikan dan satu tidak signifikan. Laporkan perbandingan langsung.</p></aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../parafrasa/">Parafrasa</a></li><li><a href="../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../skill-agen/">Skill Agen</a></li><li><a href="../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

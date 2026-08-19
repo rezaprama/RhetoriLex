@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/evidence-claim.schema.json",
   "id": "rhetorilex-evidence-claim-contract",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "evidence_order": ["none", "contextual", "observational", "direct", "convergent"],
   "claim_strength_rules": {
     "tentative": {"minimum_evidence": "none", "causal_design_required": false},
@@ -9,11 +9,55 @@
     "assertive": {"minimum_evidence": "observational", "causal_design_required": false},
     "causal": {"minimum_evidence": "direct", "causal_design_required": true}
   },
+  "relation_controls": {
+    "observation": {
+      "causal_design_required": false,
+      "allowed_verbs": ["observed", "measured", "estimated", "found"],
+      "forbidden_upgrade": "A measured value does not by itself establish a broader relation."
+    },
+    "association": {
+      "causal_design_required": false,
+      "allowed_verbs": ["was associated with", "co-varied with", "correlated with"],
+      "forbidden_upgrade": "Association must not be rewritten as influence, effect, or cause."
+    },
+    "prediction": {
+      "causal_design_required": false,
+      "allowed_verbs": ["predicted", "improved prediction of", "was predictive of"],
+      "forbidden_upgrade": "Prediction does not establish mechanism or intervention benefit."
+    },
+    "interpretation": {
+      "causal_design_required": false,
+      "allowed_verbs": ["may suggest", "is compatible with", "is consistent with", "supports"],
+      "forbidden_upgrade": "Interpretive verbs do not repair weak or non-diagnostic evidence."
+    },
+    "causal": {
+      "causal_design_required": true,
+      "allowed_verbs": ["caused", "changed", "increased", "reduced", "had an effect on"],
+      "forbidden_upgrade": "Causal verbs require an identified effect, credible design, and explicit assumptions."
+    },
+    "null_result": {
+      "causal_design_required": false,
+      "allowed_verbs": ["did not meet the threshold", "remained inconclusive", "supported equivalence"],
+      "forbidden_upgrade": "Non-significance is not no effect; equivalence needs a dedicated design and margin."
+    }
+  },
+  "evidential_verb_classes": {
+    "attribution": ["reports", "describes", "states", "argues", "defines"],
+    "empirical_reporting": ["observed", "measured", "estimated", "found"],
+    "association": ["was associated with", "co-varied with", "predicted"],
+    "cautious_interpretation": ["may suggest", "is compatible with", "is consistent with"],
+    "support": ["supports", "indicates"],
+    "high_force": ["demonstrates", "establishes", "confirms"],
+    "causal": ["caused", "led to", "resulted in", "increased", "reduced"]
+  },
   "evidence_slot_names": ["evidence", "finding", "result", "source", "estimate", "pattern"],
   "provenance": {"required_method": "original_editorial", "source_reuse": false},
   "policy": {
     "causal_templates_must_be_high_risk": true,
     "declared_placeholders_must_equal_template_fields": true,
-    "evidence_bearing_templates_require_evidence_slot": true
+    "evidence_bearing_templates_require_evidence_slot": true,
+    "association_must_not_imply_causation": true,
+    "prediction_must_not_imply_intervention_effect": true,
+    "null_result_must_preserve_uncertainty": true
   }
 }

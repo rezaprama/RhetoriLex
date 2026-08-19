@@ -1,0 +1,3663 @@
+{
+  "$schema": "../schema/writing-skills.v1.schema.json",
+  "count": 144,
+  "format": "rhetorilex-writing-skills",
+  "format_version": "1.0.0",
+  "group_count": 11,
+  "groups": [
+    {
+      "canonical_en": "/en/writing-skills/research-framing/",
+      "count": 11,
+      "description": "Shape a research problem from broad context to a bounded, defensible contribution.",
+      "domain": "academic",
+      "id": "research-framing",
+      "name": "Research Framing"
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/",
+      "count": 13,
+      "description": "Represent, compare, and synthesise scholarship while keeping claims attached to their sources.",
+      "domain": "academic",
+      "id": "literature-writing",
+      "name": "Literature Writing"
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/",
+      "count": 15,
+      "description": "Build a traceable academic argument with calibrated claims, distinctions, concessions, and implications.",
+      "domain": "academic",
+      "id": "argumentation",
+      "name": "Argumentation"
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/",
+      "count": 13,
+      "description": "Coordinate long-form research chapters so each section performs a clear role in the whole argument.",
+      "domain": "academic",
+      "id": "thesis-and-dissertation",
+      "name": "Thesis and Dissertation Writing"
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/",
+      "count": 12,
+      "description": "Adapt research content to publication genres, editorial exchanges, and transparency statements.",
+      "domain": "academic",
+      "id": "publication-writing",
+      "name": "Publication Writing"
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-study-framing/",
+      "count": 6,
+      "description": "Connect a scientific question to prior evidence, testable expectations, and a bounded contribution.",
+      "domain": "scientific",
+      "id": "scientific-study-framing",
+      "name": "Scientific Study Framing"
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/",
+      "count": 19,
+      "description": "Report how a study was designed, conducted, analysed, and governed with enough detail for appraisal.",
+      "domain": "scientific",
+      "id": "methods-writing",
+      "name": "Methods Writing"
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/",
+      "count": 17,
+      "description": "Report observations and estimates precisely before moving to interpretation.",
+      "domain": "scientific",
+      "id": "results-writing",
+      "name": "Results Writing"
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/",
+      "count": 13,
+      "description": "Interpret findings against design, uncertainty, prior literature, and plausible alternatives.",
+      "domain": "scientific",
+      "id": "discussion-writing",
+      "name": "Discussion Writing"
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/",
+      "count": 11,
+      "description": "Match scientific wording to design, evidence strength, uncertainty, and scope.",
+      "domain": "scientific",
+      "id": "scientific-claim-control",
+      "name": "Scientific Claim Control"
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/",
+      "count": 14,
+      "description": "Rewrite academic material by preserving meaning, attribution, quantities, and inferential force.",
+      "domain": "paraphrasing",
+      "id": "paraphrasing",
+      "name": "Paraphrasing"
+    }
+  ],
+  "language": "en",
+  "provenance": {
+    "author": "Reza Prama Arviandi",
+    "method": "original_editorial",
+    "restricted_source_used": false,
+    "source_reuse": false
+  },
+  "release": "0.2.0",
+  "skills": [
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#establishing-a-research-context",
+      "description": "Practical guidance to place the study within a bounded scholarly, social, or practical setting, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "Research on urban heat has increasingly examined how neighbourhood design shapes exposure during extreme temperatures.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.establishing_a_research_context",
+      "name": "Establishing a research context",
+      "related_phrase_functions": [
+        "establish_context",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.introducing_a_topic"
+      ],
+      "rhetorical_objective": "Place the study within a bounded scholarly, social, or practical setting.",
+      "slug": "establishing-a-research-context",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#introducing-a-topic",
+      "description": "Practical guidance to name the central subject and orient the reader without making an unsupported importance claim, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "This article examines how community archives represent periods of forced migration.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.introducing_a_topic",
+      "name": "Introducing a topic",
+      "related_phrase_functions": [
+        "establish_context"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.establishing_a_research_context",
+        "writing.academic.research_framing.establishing_significance"
+      ],
+      "rhetorical_objective": "Name the central subject and orient the reader without making an unsupported importance claim.",
+      "slug": "introducing-a-topic",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#establishing-significance",
+      "description": "Practical guidance to explain why a problem, question, or setting deserves attention for a stated audience, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "Reliable flood warnings matter because delayed alerts can narrow the time available for evacuation.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.establishing_significance",
+      "name": "Establishing significance",
+      "related_phrase_functions": [
+        "establish_context",
+        "position_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.introducing_a_topic",
+        "writing.academic.research_framing.defining_a_research_problem"
+      ],
+      "rhetorical_objective": "Explain why a problem, question, or setting deserves attention for a stated audience.",
+      "slug": "establishing-significance",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#defining-a-research-problem",
+      "description": "Practical guidance to turn a broad concern into a specific condition that research can investigate, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "Existing battery tests do not capture performance loss under rapidly changing ambient temperatures.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.defining_a_research_problem",
+      "name": "Defining a research problem",
+      "related_phrase_functions": [
+        "establish_context",
+        "identify_gap"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.establishing_significance",
+        "writing.academic.research_framing.identifying_a_research_gap"
+      ],
+      "rhetorical_objective": "Turn a broad concern into a specific condition that research can investigate.",
+      "slug": "defining-a-research-problem",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#identifying-a-research-gap",
+      "description": "Practical guidance to identify a bounded unanswered question rather than claiming that no research exists, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "Although household energy use is well documented, its hour-by-hour response to heat alerts remains unclear.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.identifying_a_research_gap",
+      "name": "Identifying a research gap",
+      "related_phrase_functions": [
+        "identify_gap",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.defining_a_research_problem",
+        "writing.academic.research_framing.stating_research_aims"
+      ],
+      "rhetorical_objective": "Identify a bounded unanswered question rather than claiming that no research exists.",
+      "slug": "identifying-a-research-gap",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#stating-research-aims",
+      "description": "Practical guidance to state the intended analytical, empirical, or conceptual outcome of the study, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "This study aims to estimate how travel time changes after bus-priority measures are introduced.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.stating_research_aims",
+      "name": "Stating research aims",
+      "related_phrase_functions": [
+        "position_claim",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.identifying_a_research_gap",
+        "writing.academic.research_framing.writing_research_questions"
+      ],
+      "rhetorical_objective": "State the intended analytical, empirical, or conceptual outcome of the study.",
+      "slug": "stating-research-aims",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#writing-research-questions",
+      "description": "Practical guidance to formulate a focused question whose terms can be answered by the proposed evidence, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "We ask whether access to shaded public space differs across neighbourhood income levels.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.writing_research_questions",
+      "name": "Writing research questions",
+      "related_phrase_functions": [
+        "define_scope",
+        "position_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.stating_research_aims",
+        "writing.academic.research_framing.stating_hypotheses"
+      ],
+      "rhetorical_objective": "Formulate a focused question whose terms can be answered by the proposed evidence.",
+      "slug": "writing-research-questions",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#stating-hypotheses",
+      "description": "Practical guidance to express a testable expectation and identify the relationship or difference being predicted, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "We hypothesise that seedlings exposed to intermittent drought will recover more slowly than continuously watered controls.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.stating_hypotheses",
+      "name": "Stating hypotheses",
+      "related_phrase_functions": [
+        "position_claim",
+        "describe_association"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.writing_research_questions",
+        "writing.academic.research_framing.describing_scope"
+      ],
+      "rhetorical_objective": "Express a testable expectation and identify the relationship or difference being predicted.",
+      "slug": "stating-hypotheses",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#describing-scope",
+      "description": "Practical guidance to set explicit boundaries for population, place, period, material, or inference, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "The analysis is limited to first-year students enrolled at three public universities between 2022 and 2024.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.describing_scope",
+      "name": "Describing scope",
+      "related_phrase_functions": [
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.stating_hypotheses",
+        "writing.academic.research_framing.stating_contributions"
+      ],
+      "rhetorical_objective": "Set explicit boundaries for population, place, period, material, or inference.",
+      "slug": "describing-scope",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#stating-contributions",
+      "description": "Practical guidance to describe what the study adds empirically, conceptually, or methodologically, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "The study contributes a district-level measure of cooling access that can be reproduced from open spatial data.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.stating_contributions",
+      "name": "Stating contributions",
+      "related_phrase_functions": [
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.describing_scope",
+        "writing.academic.research_framing.describing_novelty_cautiously"
+      ],
+      "rhetorical_objective": "Describe what the study adds empirically, conceptually, or methodologically.",
+      "slug": "stating-contributions",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/research-framing/#describing-novelty-cautiously",
+      "description": "Practical guidance to describe a new feature without making an unverified priority or uniqueness claim, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Support field-level statements with relevant sources, and define any claimed gap by topic, population, setting, and search scope.",
+      "example": "To our knowledge, this analysis is among the first to compare these sensors under both laboratory and field conditions.",
+      "group": "research-framing",
+      "id": "writing.academic.research_framing.describing_novelty_cautiously",
+      "name": "Describing novelty cautiously",
+      "related_phrase_functions": [
+        "state_contribution",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.research_framing.stating_contributions"
+      ],
+      "rhetorical_objective": "Describe a new feature without making an unverified priority or uniqueness claim.",
+      "slug": "describing-novelty-cautiously",
+      "use_cases": [
+        "introductions",
+        "research proposals",
+        "abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#introducing-previous-studies",
+      "description": "Practical guidance to bring prior research into the discussion with clear attribution and relevance, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Several longitudinal studies have linked stable housing with improved school attendance.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.introducing_previous_studies",
+      "name": "Introducing previous studies",
+      "related_phrase_functions": [
+        "attribute_source",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.synthesising_literature"
+      ],
+      "rhetorical_objective": "Bring prior research into the discussion with clear attribution and relevance.",
+      "slug": "introducing-previous-studies",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#synthesising-literature",
+      "description": "Practical guidance to combine multiple sources around a shared pattern, explanation, or unresolved tension, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Across qualitative and survey studies, flexible scheduling is consistently associated with greater perceived autonomy.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.synthesising_literature",
+      "name": "Synthesising literature",
+      "related_phrase_functions": [
+        "synthesize_sources"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.introducing_previous_studies",
+        "writing.academic.literature_writing.comparing_studies"
+      ],
+      "rhetorical_objective": "Combine multiple sources around a shared pattern, explanation, or unresolved tension.",
+      "slug": "synthesising-literature",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#comparing-studies",
+      "description": "Practical guidance to state a meaningful similarity between studies on a common basis, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Both studies treat trust as relational, although they operationalise it with different indicators.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.comparing_studies",
+      "name": "Comparing studies",
+      "related_phrase_functions": [
+        "compare_findings",
+        "synthesize_sources"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.synthesising_literature",
+        "writing.academic.literature_writing.contrasting_studies"
+      ],
+      "rhetorical_objective": "State a meaningful similarity between studies on a common basis.",
+      "slug": "comparing-studies",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#contrasting-studies",
+      "description": "Practical guidance to state a meaningful difference between studies and identify the basis of contrast, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Whereas the national survey reports gradual change, the case study documents an abrupt local shift after closure.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.contrasting_studies",
+      "name": "Contrasting studies",
+      "related_phrase_functions": [
+        "contrast_findings",
+        "synthesize_sources"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.comparing_studies",
+        "writing.academic.literature_writing.describing_scholarly_consensus"
+      ],
+      "rhetorical_objective": "State a meaningful difference between studies and identify the basis of contrast.",
+      "slug": "contrasting-studies",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#describing-scholarly-consensus",
+      "description": "Practical guidance to represent broad agreement only when the reviewed evidence genuinely converges, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Reviews generally agree that measurement error can attenuate estimated associations.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.describing_scholarly_consensus",
+      "name": "Describing scholarly consensus",
+      "related_phrase_functions": [
+        "synthesize_sources",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.contrasting_studies",
+        "writing.academic.literature_writing.describing_scholarly_disagreement"
+      ],
+      "rhetorical_objective": "Represent broad agreement only when the reviewed evidence genuinely converges.",
+      "slug": "describing-scholarly-consensus",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#describing-scholarly-disagreement",
+      "description": "Practical guidance to locate disagreement in assumptions, methods, evidence, or interpretation, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Scholars disagree over whether the reform altered incentives or merely formalised practices already in place.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.describing_scholarly_disagreement",
+      "name": "Describing scholarly disagreement",
+      "related_phrase_functions": [
+        "contrast_findings",
+        "attribute_source"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.describing_scholarly_consensus",
+        "writing.academic.literature_writing.identifying_limitations_in_prior_work"
+      ],
+      "rhetorical_objective": "Locate disagreement in assumptions, methods, evidence, or interpretation.",
+      "slug": "describing-scholarly-disagreement",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#identifying-limitations-in-prior-work",
+      "description": "Practical guidance to describe a constraint in earlier evidence and explain its consequence without dismissing the work, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Because earlier samples were drawn from specialist clinics, their estimates may not transfer to community settings.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.identifying_limitations_in_prior_work",
+      "name": "Identifying limitations in prior work",
+      "related_phrase_functions": [
+        "state_limitation",
+        "attribute_source"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.describing_scholarly_disagreement",
+        "writing.academic.literature_writing.critiquing_previous_research"
+      ],
+      "rhetorical_objective": "Describe a constraint in earlier evidence and explain its consequence without dismissing the work.",
+      "slug": "identifying-limitations-in-prior-work",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#critiquing-previous-research",
+      "description": "Practical guidance to evaluate a specific claim, method, or inference using explicit criteria and evidence, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "The proposed typology is useful descriptively, but its categories overlap when applied to multilingual interviews.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.critiquing_previous_research",
+      "name": "Critiquing previous research",
+      "related_phrase_functions": [
+        "contrast_findings",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.identifying_limitations_in_prior_work",
+        "writing.academic.literature_writing.qualifying_criticism"
+      ],
+      "rhetorical_objective": "Evaluate a specific claim, method, or inference using explicit criteria and evidence.",
+      "slug": "critiquing-previous-research",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#qualifying-criticism",
+      "description": "Practical guidance to acknowledge what prior work establishes before defining a narrower concern, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "The model offers a clear account of short-term adaptation; however, it does not address changes beyond the first year.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.qualifying_criticism",
+      "name": "Qualifying criticism",
+      "related_phrase_functions": [
+        "qualify_claim",
+        "state_limitation"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.critiquing_previous_research",
+        "writing.academic.literature_writing.establishing_a_literature_gap"
+      ],
+      "rhetorical_objective": "Acknowledge what prior work establishes before defining a narrower concern.",
+      "slug": "qualifying-criticism",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#establishing-a-literature-gap",
+      "description": "Practical guidance to show what the literature does not yet resolve after representing what it already covers, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Existing reviews catalogue reported barriers but do not compare how those barriers vary by contract type.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.establishing_a_literature_gap",
+      "name": "Establishing a literature gap",
+      "related_phrase_functions": [
+        "identify_gap",
+        "synthesize_sources"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.qualifying_criticism",
+        "writing.academic.literature_writing.writing_related_work"
+      ],
+      "rhetorical_objective": "Show what the literature does not yet resolve after representing what it already covers.",
+      "slug": "establishing-a-literature-gap",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#writing-related-work",
+      "description": "Practical guidance to organise related work by analytical relationship rather than as a sequence of isolated summaries, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Prior approaches fall into three groups: rule-based extraction, supervised classification, and hybrid retrieval.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.writing_related_work",
+      "name": "Writing related work",
+      "related_phrase_functions": [
+        "define_scope",
+        "synthesize_sources"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.establishing_a_literature_gap",
+        "writing.academic.literature_writing.transitioning_between_sources"
+      ],
+      "rhetorical_objective": "Organise related work by analytical relationship rather than as a sequence of isolated summaries.",
+      "slug": "writing-related-work",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#transitioning-between-sources",
+      "description": "Practical guidance to make the logical relation between one source and the next explicit, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "This institutional account is extended by later ethnographic work, which shows how the rule is negotiated in practice.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.transitioning_between_sources",
+      "name": "Transitioning between sources",
+      "related_phrase_functions": [
+        "compare_findings",
+        "attribute_source"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.writing_related_work",
+        "writing.academic.literature_writing.citation_integrated_writing"
+      ],
+      "rhetorical_objective": "Make the logical relation between one source and the next explicit.",
+      "slug": "transitioning-between-sources",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/literature-writing/#citation-integrated-writing",
+      "description": "Practical guidance to attach attribution to the exact proposition supported by a source, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep each proposition attached to supporting citations, and distinguish source claims from your own synthesis or evaluation.",
+      "example": "Rahman and Lee report that response time declined after triage was reorganised, while noting substantial variation across sites.",
+      "group": "literature-writing",
+      "id": "writing.academic.literature_writing.citation_integrated_writing",
+      "name": "Citation-integrated writing",
+      "related_phrase_functions": [
+        "attribute_source",
+        "paraphrase_with_attribution"
+      ],
+      "related_skill_ids": [
+        "writing.academic.literature_writing.transitioning_between_sources"
+      ],
+      "rhetorical_objective": "Attach attribution to the exact proposition supported by a source.",
+      "slug": "citation-integrated-writing",
+      "use_cases": [
+        "literature reviews",
+        "related-work sections",
+        "research proposals"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#making-an-academic-claim",
+      "description": "Practical guidance to state a contestable proposition with clear scope and an appropriate level of confidence, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "These findings suggest that access, rather than awareness alone, constrains participation in the programme.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.making_an_academic_claim",
+      "name": "Making an academic claim",
+      "related_phrase_functions": [
+        "position_claim",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.supporting_a_claim"
+      ],
+      "rhetorical_objective": "State a contestable proposition with clear scope and an appropriate level of confidence.",
+      "slug": "making-an-academic-claim",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#supporting-a-claim",
+      "description": "Practical guidance to connect a proposition to the evidence, reasoning, or source that warrants it, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "This interpretation is supported by the repeated appearance of the same concern across all four interview groups.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.supporting_a_claim",
+      "name": "Supporting a claim",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "interpret_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.making_an_academic_claim",
+        "writing.academic.argumentation.qualifying_a_claim"
+      ],
+      "rhetorical_objective": "Connect a proposition to the evidence, reasoning, or source that warrants it.",
+      "slug": "supporting-a-claim",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#qualifying-a-claim",
+      "description": "Practical guidance to limit a claim by confidence, population, condition, or analytical perspective, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "Within the sampled districts, the pattern appears strongest where public transport is infrequent.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.qualifying_a_claim",
+      "name": "Qualifying a claim",
+      "related_phrase_functions": [
+        "qualify_claim",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.supporting_a_claim",
+        "writing.academic.argumentation.hedging"
+      ],
+      "rhetorical_objective": "Limit a claim by confidence, population, condition, or analytical perspective.",
+      "slug": "qualifying-a-claim",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#hedging",
+      "description": "Practical guidance to mark possibility or uncertainty without making the sentence empty or evasive, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "One possible explanation is that participants interpreted the reminder as a signal of institutional support.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.hedging",
+      "name": "Hedging",
+      "related_phrase_functions": [
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.qualifying_a_claim",
+        "writing.academic.argumentation.emphasising_cautiously"
+      ],
+      "rhetorical_objective": "Mark possibility or uncertainty without making the sentence empty or evasive.",
+      "slug": "hedging",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#emphasising-cautiously",
+      "description": "Practical guidance to signal a well-supported point without implying certainty beyond the evidence, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "Notably, the difference remained similar across all prespecified sensitivity checks.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.emphasising_cautiously",
+      "name": "Emphasising cautiously",
+      "related_phrase_functions": [
+        "position_claim",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.hedging",
+        "writing.academic.argumentation.conceding_a_point"
+      ],
+      "rhetorical_objective": "Signal a well-supported point without implying certainty beyond the evidence.",
+      "slug": "emphasising-cautiously",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#conceding-a-point",
+      "description": "Practical guidance to acknowledge a valid counterpoint before clarifying its effect on the argument, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "Although cost is an important constraint, it does not fully explain why uptake differs between adjacent districts.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.conceding_a_point",
+      "name": "Conceding a point",
+      "related_phrase_functions": [
+        "qualify_claim",
+        "contrast_findings"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.emphasising_cautiously",
+        "writing.academic.argumentation.presenting_counterarguments"
+      ],
+      "rhetorical_objective": "Acknowledge a valid counterpoint before clarifying its effect on the argument.",
+      "slug": "conceding-a-point",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#presenting-counterarguments",
+      "description": "Practical guidance to represent a plausible opposing position fairly before evaluating it, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "An alternative view is that the observed change reflects seasonal demand rather than the new scheduling policy.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.presenting_counterarguments",
+      "name": "Presenting counterarguments",
+      "related_phrase_functions": [
+        "contrast_findings",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.conceding_a_point",
+        "writing.academic.argumentation.drawing_distinctions"
+      ],
+      "rhetorical_objective": "Represent a plausible opposing position fairly before evaluating it.",
+      "slug": "presenting-counterarguments",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#drawing-distinctions",
+      "description": "Practical guidance to separate concepts, mechanisms, populations, or levels of analysis that should not be conflated, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "Administrative compliance should be distinguished from substantive adoption of the policy.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.drawing_distinctions",
+      "name": "Drawing distinctions",
+      "related_phrase_functions": [
+        "contrast_findings",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.presenting_counterarguments",
+        "writing.academic.argumentation.expressing_agreement"
+      ],
+      "rhetorical_objective": "Separate concepts, mechanisms, populations, or levels of analysis that should not be conflated.",
+      "slug": "drawing-distinctions",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#expressing-agreement",
+      "description": "Practical guidance to align with another account while specifying the proposition being endorsed, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "This analysis supports Morgan's distinction between procedural access and practical availability.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.expressing_agreement",
+      "name": "Expressing agreement",
+      "related_phrase_functions": [
+        "compare_findings",
+        "attribute_source"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.drawing_distinctions",
+        "writing.academic.argumentation.expressing_disagreement"
+      ],
+      "rhetorical_objective": "Align with another account while specifying the proposition being endorsed.",
+      "slug": "expressing-agreement",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#expressing-disagreement",
+      "description": "Practical guidance to challenge a proposition precisely without overstating what the present evidence disproves, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "Our results do not support the claim that the two indicators are interchangeable in low-resource settings.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.expressing_disagreement",
+      "name": "Expressing disagreement",
+      "related_phrase_functions": [
+        "contrast_findings",
+        "report_null_result"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.expressing_agreement",
+        "writing.academic.argumentation.defining_concepts"
+      ],
+      "rhetorical_objective": "Challenge a proposition precisely without overstating what the present evidence disproves.",
+      "slug": "expressing-disagreement",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#defining-concepts",
+      "description": "Practical guidance to give a working meaning that establishes how a term is used in the argument, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "Here, resilience refers to the capacity to maintain essential services during and immediately after disruption.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.defining_concepts",
+      "name": "Defining concepts",
+      "related_phrase_functions": [
+        "define_scope",
+        "position_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.expressing_disagreement",
+        "writing.academic.argumentation.classifying_concepts"
+      ],
+      "rhetorical_objective": "Give a working meaning that establishes how a term is used in the argument.",
+      "slug": "defining-concepts",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#classifying-concepts",
+      "description": "Practical guidance to organise cases into explicit categories using a stated principle, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "We classify responses as anticipatory, reactive, or restorative according to when action begins.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.classifying_concepts",
+      "name": "Classifying concepts",
+      "related_phrase_functions": [
+        "define_scope",
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.defining_concepts",
+        "writing.academic.argumentation.giving_examples"
+      ],
+      "rhetorical_objective": "Organise cases into explicit categories using a stated principle.",
+      "slug": "classifying-concepts",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#giving-examples",
+      "description": "Practical guidance to illustrate an abstract point with a representative case without treating the example as proof by itself, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "For example, a library may expand access by offering evening hours rather than by opening a new branch.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.giving_examples",
+      "name": "Giving examples",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "establish_context"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.classifying_concepts",
+        "writing.academic.argumentation.drawing_comparisons"
+      ],
+      "rhetorical_objective": "Illustrate an abstract point with a representative case without treating the example as proof by itself.",
+      "slug": "giving-examples",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#drawing-comparisons",
+      "description": "Practical guidance to compare entities on a named dimension and hold the basis of comparison constant, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "Compared with fixed grants, matching funds place more of the short-term financing risk on local organisations.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.drawing_comparisons",
+      "name": "Drawing comparisons",
+      "related_phrase_functions": [
+        "compare_findings"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.giving_examples",
+        "writing.academic.argumentation.explaining_implications"
+      ],
+      "rhetorical_objective": "Compare entities on a named dimension and hold the basis of comparison constant.",
+      "slug": "drawing-comparisons",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/argumentation/#explaining-implications",
+      "description": "Practical guidance to state what a finding or argument changes for theory, method, practice, or further inquiry, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Match assertiveness to the supplied evidence and scope; do not turn an interpretation, association, or example into established fact.",
+      "example": "The result implies that evaluations should measure service continuity as well as initial deployment.",
+      "group": "argumentation",
+      "id": "writing.academic.argumentation.explaining_implications",
+      "name": "Explaining implications",
+      "related_phrase_functions": [
+        "interpret_evidence",
+        "recommend_action"
+      ],
+      "related_skill_ids": [
+        "writing.academic.argumentation.drawing_comparisons"
+      ],
+      "rhetorical_objective": "State what a finding or argument changes for theory, method, practice, or further inquiry.",
+      "slug": "explaining-implications",
+      "use_cases": [
+        "analytical paragraphs",
+        "discussion sections",
+        "conceptual papers"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#thesis-introduction",
+      "description": "Practical guidance to open the thesis by connecting context, problem, aim, approach, and contribution, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "This thesis investigates how coastal households adapt water use during recurring dry seasons.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.thesis_introduction",
+      "name": "Thesis introduction",
+      "related_phrase_functions": [
+        "establish_context",
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.chapter_introduction"
+      ],
+      "rhetorical_objective": "Open the thesis by connecting context, problem, aim, approach, and contribution.",
+      "slug": "thesis-introduction",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#chapter-introduction",
+      "description": "Practical guidance to preview a chapter's purpose, scope, and relationship to the wider thesis, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "This chapter develops the conceptual basis for the comparative analysis presented in Chapters Four and Five.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.chapter_introduction",
+      "name": "Chapter introduction",
+      "related_phrase_functions": [
+        "define_scope",
+        "establish_context"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.thesis_introduction",
+        "writing.academic.thesis_and_dissertation.literature_review"
+      ],
+      "rhetorical_objective": "Preview a chapter's purpose, scope, and relationship to the wider thesis.",
+      "slug": "chapter-introduction",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#literature-review",
+      "description": "Practical guidance to build a critical synthesis that establishes the study's scholarly position, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "Taken together, the literature explains adoption decisions well but offers less insight into long-term maintenance.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.literature_review",
+      "name": "Literature review",
+      "related_phrase_functions": [
+        "synthesize_sources",
+        "identify_gap"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.chapter_introduction",
+        "writing.academic.thesis_and_dissertation.conceptual_framework"
+      ],
+      "rhetorical_objective": "Build a critical synthesis that establishes the study's scholarly position.",
+      "slug": "literature-review",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#conceptual-framework",
+      "description": "Practical guidance to define the concepts and relationships that guide data collection or interpretation, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "The framework distinguishes resource access, practical capability, and realised participation.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.conceptual_framework",
+      "name": "Conceptual framework",
+      "related_phrase_functions": [
+        "define_scope",
+        "position_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.literature_review",
+        "writing.academic.thesis_and_dissertation.theoretical_framework"
+      ],
+      "rhetorical_objective": "Define the concepts and relationships that guide data collection or interpretation.",
+      "slug": "conceptual-framework",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#theoretical-framework",
+      "description": "Practical guidance to explain which theory guides the analysis and why it fits the research problem, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "Institutional theory is used here to examine how formal rules and local routines interact over time.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.theoretical_framework",
+      "name": "Theoretical framework",
+      "related_phrase_functions": [
+        "attribute_source",
+        "justify_method"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.conceptual_framework",
+        "writing.academic.thesis_and_dissertation.methodology_chapter"
+      ],
+      "rhetorical_objective": "Explain which theory guides the analysis and why it fits the research problem.",
+      "slug": "theoretical-framework",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#methodology-chapter",
+      "description": "Practical guidance to explain and justify the overall research design, epistemic choices, and procedures, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "A comparative case design was selected to examine how the same regulation operates in contrasting administrative settings.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.methodology_chapter",
+      "name": "Methodology chapter",
+      "related_phrase_functions": [
+        "describe_method",
+        "justify_method"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.theoretical_framework",
+        "writing.academic.thesis_and_dissertation.findings_chapter"
+      ],
+      "rhetorical_objective": "Explain and justify the overall research design, epistemic choices, and procedures.",
+      "slug": "methodology-chapter",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#findings-chapter",
+      "description": "Practical guidance to present analysed evidence in an ordered structure without importing unsupported interpretation, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "Three recurring patterns were identified: delayed access, informal substitution, and partial recovery.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.findings_chapter",
+      "name": "Findings chapter",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "interpret_qualitative_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.methodology_chapter",
+        "writing.academic.thesis_and_dissertation.discussion_chapter"
+      ],
+      "rhetorical_objective": "Present analysed evidence in an ordered structure without importing unsupported interpretation.",
+      "slug": "findings-chapter",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#discussion-chapter",
+      "description": "Practical guidance to interpret findings in relation to questions, literature, theory, and design limits, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "The findings refine earlier accounts by showing that capacity varies not only between organisations but also across project stages.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.discussion_chapter",
+      "name": "Discussion chapter",
+      "related_phrase_functions": [
+        "interpret_evidence",
+        "compare_findings"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.findings_chapter",
+        "writing.academic.thesis_and_dissertation.chapter_summary"
+      ],
+      "rhetorical_objective": "Interpret findings in relation to questions, literature, theory, and design limits.",
+      "slug": "discussion-chapter",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#chapter-summary",
+      "description": "Practical guidance to close a chapter by consolidating its result and preparing the next analytical step, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "This chapter established the measurement model; the next chapter evaluates its performance across sites.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.chapter_summary",
+      "name": "Chapter summary",
+      "related_phrase_functions": [
+        "position_claim",
+        "establish_context"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.discussion_chapter",
+        "writing.academic.thesis_and_dissertation.general_conclusion"
+      ],
+      "rhetorical_objective": "Close a chapter by consolidating its result and preparing the next analytical step.",
+      "slug": "chapter-summary",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#general-conclusion",
+      "description": "Practical guidance to synthesize the thesis's answer and contribution without introducing new evidence, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "Overall, the thesis shows that continuity depends on coordination across technical and institutional boundaries.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.general_conclusion",
+      "name": "General conclusion",
+      "related_phrase_functions": [
+        "state_contribution",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.chapter_summary",
+        "writing.academic.thesis_and_dissertation.recommendations"
+      ],
+      "rhetorical_objective": "Synthesize the thesis's answer and contribution without introducing new evidence.",
+      "slug": "general-conclusion",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#recommendations",
+      "description": "Practical guidance to derive bounded actions from the study's findings, audience, and constraints, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "Universities could pilot the advising model in one faculty before considering wider implementation.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.recommendations",
+      "name": "Recommendations",
+      "related_phrase_functions": [
+        "recommend_action",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.general_conclusion",
+        "writing.academic.thesis_and_dissertation.future_research"
+      ],
+      "rhetorical_objective": "Derive bounded actions from the study's findings, audience, and constraints.",
+      "slug": "recommendations",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#future-research",
+      "description": "Practical guidance to identify a consequential unresolved question that follows from the study, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "Future studies should test whether the observed pattern persists beyond the first two years of implementation.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.future_research",
+      "name": "Future research",
+      "related_phrase_functions": [
+        "recommend_action",
+        "identify_gap"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.recommendations",
+        "writing.academic.thesis_and_dissertation.thesis_limitations"
+      ],
+      "rhetorical_objective": "Identify a consequential unresolved question that follows from the study.",
+      "slug": "future-research",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/thesis-and-dissertation/#thesis-limitations",
+      "description": "Practical guidance to explain how design or evidence constraints bound the thesis's conclusions, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Keep chapter-level claims consistent with the thesis evidence; summaries and conclusions must not introduce unsupported results.",
+      "example": "Because the archive is incomplete before 1980, the thesis cannot determine when the shift first began.",
+      "group": "thesis-and-dissertation",
+      "id": "writing.academic.thesis_and_dissertation.thesis_limitations",
+      "name": "Thesis limitations",
+      "related_phrase_functions": [
+        "state_limitation",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.thesis_and_dissertation.future_research"
+      ],
+      "rhetorical_objective": "Explain how design or evidence constraints bound the thesis's conclusions.",
+      "slug": "thesis-limitations",
+      "use_cases": [
+        "theses",
+        "dissertations",
+        "capstone reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#academic-abstract",
+      "description": "Practical guidance to condense the problem, approach, principal result, and bounded conclusion into a self-contained summary, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "Using panel data from 42 districts, we estimate changes in clinic attendance and find substantial variation by travel time.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.academic_abstract",
+      "name": "Academic abstract",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.research_proposal"
+      ],
+      "rhetorical_objective": "Condense the problem, approach, principal result, and bounded conclusion into a self-contained summary.",
+      "slug": "academic-abstract",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#research-proposal",
+      "description": "Practical guidance to present a feasible question, rationale, design, and expected contribution before evidence is collected, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "The proposed study will compare two onboarding models using prespecified retention and accessibility outcomes.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.research_proposal",
+      "name": "Research proposal",
+      "related_phrase_functions": [
+        "establish_context",
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.academic_abstract",
+        "writing.academic.publication_writing.journal_manuscript"
+      ],
+      "rhetorical_objective": "Present a feasible question, rationale, design, and expected contribution before evidence is collected.",
+      "slug": "research-proposal",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#journal-manuscript",
+      "description": "Practical guidance to coordinate the full research argument for a journal audience and reporting convention, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "The manuscript first defines the policy change, then evaluates implementation and interprets variation across regions.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.journal_manuscript",
+      "name": "Journal manuscript",
+      "related_phrase_functions": [
+        "define_scope",
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.research_proposal",
+        "writing.academic.publication_writing.conference_paper"
+      ],
+      "rhetorical_objective": "Coordinate the full research argument for a journal audience and reporting convention.",
+      "slug": "journal-manuscript",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#conference-paper",
+      "description": "Practical guidance to focus a research report around one clear contribution suitable for a time-limited presentation, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "This paper reports the evaluation design and the first six months of implementation evidence.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.conference_paper",
+      "name": "Conference paper",
+      "related_phrase_functions": [
+        "state_contribution",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.journal_manuscript",
+        "writing.academic.publication_writing.cover_letter"
+      ],
+      "rhetorical_objective": "Focus a research report around one clear contribution suitable for a time-limited presentation.",
+      "slug": "conference-paper",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#cover-letter",
+      "description": "Practical guidance to explain a submission's fit and contribution to an editor without inflated promotional claims, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "We submit this manuscript because its comparison of open-source audit methods aligns with the journal's focus on reproducible evaluation.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.cover_letter",
+      "name": "Cover letter",
+      "related_phrase_functions": [
+        "state_contribution",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.conference_paper",
+        "writing.academic.publication_writing.reviewer_response"
+      ],
+      "rhetorical_objective": "Explain a submission's fit and contribution to an editor without inflated promotional claims.",
+      "slug": "cover-letter",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#reviewer-response",
+      "description": "Practical guidance to answer each review point with a revision, evidence-based explanation, or respectful rationale, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "We agree that the sampling description was incomplete and have added the recruitment dates and exclusion process on page 8.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.reviewer_response",
+      "name": "Reviewer response",
+      "related_phrase_functions": [
+        "respond_reviewer"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.cover_letter",
+        "writing.academic.publication_writing.revision_response"
+      ],
+      "rhetorical_objective": "Answer each review point with a revision, evidence-based explanation, or respectful rationale.",
+      "slug": "reviewer-response",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#revision-response",
+      "description": "Practical guidance to document exactly what changed and where, while distinguishing revisions from unresolved disagreements, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "We revised Figure 2, added the requested uncertainty intervals, and clarified the remaining data limitation in Section 4.3.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.revision_response",
+      "name": "Revision response",
+      "related_phrase_functions": [
+        "respond_reviewer",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.reviewer_response",
+        "writing.academic.publication_writing.author_contribution_statement"
+      ],
+      "rhetorical_objective": "Document exactly what changed and where, while distinguishing revisions from unresolved disagreements.",
+      "slug": "revision-response",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#author-contribution-statement",
+      "description": "Practical guidance to attribute research roles transparently using the publication's required vocabulary, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "Maya Chen designed the study; Omar Aziz curated the data; both authors interpreted the results and revised the manuscript.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.author_contribution_statement",
+      "name": "Author contribution statement",
+      "related_phrase_functions": [
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.revision_response",
+        "writing.academic.publication_writing.data_availability_language"
+      ],
+      "rhetorical_objective": "Attribute research roles transparently using the publication's required vocabulary.",
+      "slug": "author-contribution-statement",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#data-availability-language",
+      "description": "Practical guidance to state where data can be accessed and any ethical, legal, or practical restrictions, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "De-identified aggregate data and analysis code are available in the repository; interview transcripts are restricted by participant consent.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.data_availability_language",
+      "name": "Data availability language",
+      "related_phrase_functions": [
+        "define_scope",
+        "state_limitation"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.author_contribution_statement",
+        "writing.academic.publication_writing.ethics_statement_language"
+      ],
+      "rhetorical_objective": "State where data can be accessed and any ethical, legal, or practical restrictions.",
+      "slug": "data-availability-language",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#ethics-statement-language",
+      "description": "Practical guidance to report review, consent, or exemption information accurately and specifically, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "The protocol was approved by the university research ethics committee, and all participants provided written informed consent.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.ethics_statement_language",
+      "name": "Ethics statement language",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.data_availability_language",
+        "writing.academic.publication_writing.conflict_of_interest_language"
+      ],
+      "rhetorical_objective": "Report review, consent, or exemption information accurately and specifically.",
+      "slug": "ethics-statement-language",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#conflict-of-interest-language",
+      "description": "Practical guidance to disclose relevant interests or state their absence without ambiguity, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "The authors declare no financial or personal relationships that could have influenced the reported work.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.conflict_of_interest_language",
+      "name": "Conflict-of-interest language",
+      "related_phrase_functions": [
+        "position_claim",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.ethics_statement_language",
+        "writing.academic.publication_writing.acknowledgements"
+      ],
+      "rhetorical_objective": "Disclose relevant interests or state their absence without ambiguity.",
+      "slug": "conflict-of-interest-language",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/publication-writing/#acknowledgements",
+      "description": "Practical guidance to recognise non-author contributions and support without assigning unsupported authorship credit, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "academic",
+      "evidence_claim_warning": "Report submission, contribution, ethics, availability, and disclosure facts exactly; do not use promotional language as evidence.",
+      "example": "We thank the community coordinators for facilitating recruitment and the data team for checking the transcription log.",
+      "group": "publication-writing",
+      "id": "writing.academic.publication_writing.acknowledgements",
+      "name": "Acknowledgements",
+      "related_phrase_functions": [
+        "attribute_source",
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.academic.publication_writing.conflict_of_interest_language"
+      ],
+      "rhetorical_objective": "Recognise non-author contributions and support without assigning unsupported authorship credit.",
+      "slug": "acknowledgements",
+      "use_cases": [
+        "journal submissions",
+        "conference submissions",
+        "publication statements"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-study-framing/#scientific-background",
+      "description": "Practical guidance to summarise the established scientific conditions needed to understand the study, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study's results.",
+      "example": "Seasonal oxygen depletion alters nutrient cycling in many shallow freshwater systems.",
+      "group": "scientific-study-framing",
+      "id": "writing.scientific.scientific_study_framing.scientific_background",
+      "name": "Scientific background",
+      "related_phrase_functions": [
+        "establish_context",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_study_framing.scientific_rationale"
+      ],
+      "rhetorical_objective": "Summarise the established scientific conditions needed to understand the study.",
+      "slug": "scientific-background",
+      "use_cases": [
+        "scientific introductions",
+        "study protocols",
+        "registered reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-study-framing/#scientific-rationale",
+      "description": "Practical guidance to explain why a specific design or test can address the stated scientific uncertainty, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study's results.",
+      "example": "Repeated within-site measurements are needed to separate short-lived fluctuations from persistent change.",
+      "group": "scientific-study-framing",
+      "id": "writing.scientific.scientific_study_framing.scientific_rationale",
+      "name": "Scientific rationale",
+      "related_phrase_functions": [
+        "justify_method",
+        "identify_gap"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_study_framing.scientific_background",
+        "writing.scientific.scientific_study_framing.research_objective"
+      ],
+      "rhetorical_objective": "Explain why a specific design or test can address the stated scientific uncertainty.",
+      "slug": "scientific-rationale",
+      "use_cases": [
+        "scientific introductions",
+        "study protocols",
+        "registered reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-study-framing/#research-objective",
+      "description": "Practical guidance to state the scientific quantity, mechanism, comparison, or phenomenon to be investigated, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study's results.",
+      "example": "The objective was to estimate the change in tensile strength after repeated thermal cycling.",
+      "group": "scientific-study-framing",
+      "id": "writing.scientific.scientific_study_framing.research_objective",
+      "name": "Research objective",
+      "related_phrase_functions": [
+        "define_scope",
+        "position_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_study_framing.scientific_rationale",
+        "writing.scientific.scientific_study_framing.hypothesis_language"
+      ],
+      "rhetorical_objective": "State the scientific quantity, mechanism, comparison, or phenomenon to be investigated.",
+      "slug": "research-objective",
+      "use_cases": [
+        "scientific introductions",
+        "study protocols",
+        "registered reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-study-framing/#hypothesis-language",
+      "description": "Practical guidance to state a directional or non-directional scientific expectation before examining results, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study's results.",
+      "example": "We predicted that lower salinity would delay larval development relative to the reference condition.",
+      "group": "scientific-study-framing",
+      "id": "writing.scientific.scientific_study_framing.hypothesis_language",
+      "name": "Hypothesis language",
+      "related_phrase_functions": [
+        "position_claim",
+        "describe_association"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_study_framing.research_objective",
+        "writing.scientific.scientific_study_framing.knowledge_gap"
+      ],
+      "rhetorical_objective": "State a directional or non-directional scientific expectation before examining results.",
+      "slug": "hypothesis-language",
+      "use_cases": [
+        "scientific introductions",
+        "study protocols",
+        "registered reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-study-framing/#knowledge-gap",
+      "description": "Practical guidance to identify a precise scientific uncertainty grounded in the existing evidence base, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study's results.",
+      "example": "It remains uncertain whether the catalyst retains activity when sulphur compounds are present.",
+      "group": "scientific-study-framing",
+      "id": "writing.scientific.scientific_study_framing.knowledge_gap",
+      "name": "Knowledge gap",
+      "related_phrase_functions": [
+        "identify_gap",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_study_framing.hypothesis_language",
+        "writing.scientific.scientific_study_framing.scientific_contribution"
+      ],
+      "rhetorical_objective": "Identify a precise scientific uncertainty grounded in the existing evidence base.",
+      "slug": "knowledge-gap",
+      "use_cases": [
+        "scientific introductions",
+        "study protocols",
+        "registered reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-study-framing/#scientific-contribution",
+      "description": "Practical guidance to describe the empirical, methodological, or theoretical addition made by the study, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Base background and gap statements on relevant evidence; hypotheses and contributions must not pre-empt the study's results.",
+      "example": "This work provides an independently validated calibration curve for low-cost particulate sensors.",
+      "group": "scientific-study-framing",
+      "id": "writing.scientific.scientific_study_framing.scientific_contribution",
+      "name": "Scientific contribution",
+      "related_phrase_functions": [
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_study_framing.knowledge_gap"
+      ],
+      "rhetorical_objective": "Describe the empirical, methodological, or theoretical addition made by the study.",
+      "slug": "scientific-contribution",
+      "use_cases": [
+        "scientific introductions",
+        "study protocols",
+        "registered reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#study-design",
+      "description": "Practical guidance to name the design and connect it to the unit, timing, comparison, and inferential goal, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "We conducted a preregistered, parallel-group experiment with measurements at baseline and four weeks.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.study_design",
+      "name": "Study design",
+      "related_phrase_functions": [
+        "describe_method",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.study_setting"
+      ],
+      "rhetorical_objective": "Name the design and connect it to the unit, timing, comparison, and inferential goal.",
+      "slug": "study-design",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#study-setting",
+      "description": "Practical guidance to describe where and under what conditions the research took place, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "The study was conducted in six primary-care clinics serving rural districts in northern Java.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.study_setting",
+      "name": "Study setting",
+      "related_phrase_functions": [
+        "describe_method",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.study_design",
+        "writing.scientific.methods_writing.participants"
+      ],
+      "rhetorical_objective": "Describe where and under what conditions the research took place.",
+      "slug": "study-setting",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#participants",
+      "description": "Practical guidance to define who or what was studied and report relevant recruitment characteristics, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Participants were adults receiving their first hypertension consultation during the recruitment period.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.participants",
+      "name": "Participants",
+      "related_phrase_functions": [
+        "describe_method",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.study_setting",
+        "writing.scientific.methods_writing.sampling"
+      ],
+      "rhetorical_objective": "Define who or what was studied and report relevant recruitment characteristics.",
+      "slug": "participants",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#sampling",
+      "description": "Practical guidance to explain how units entered the sample and what selection process was used, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Households were selected through stratified random sampling within each flood-risk zone.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.sampling",
+      "name": "Sampling",
+      "related_phrase_functions": [
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.participants",
+        "writing.scientific.methods_writing.inclusion_criteria"
+      ],
+      "rhetorical_objective": "Explain how units entered the sample and what selection process was used.",
+      "slug": "sampling",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#inclusion-criteria",
+      "description": "Practical guidance to state the prespecified conditions required for a unit to enter the analysis, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Eligible records contained at least twelve consecutive monthly observations and a verified location code.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.inclusion_criteria",
+      "name": "Inclusion criteria",
+      "related_phrase_functions": [
+        "define_scope",
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.sampling",
+        "writing.scientific.methods_writing.exclusion_criteria"
+      ],
+      "rhetorical_objective": "State the prespecified conditions required for a unit to enter the analysis.",
+      "slug": "inclusion-criteria",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#exclusion-criteria",
+      "description": "Practical guidance to state prespecified reasons for removing units and distinguish them from post hoc attrition, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "We excluded sensors that failed calibration before deployment; no devices were excluded on the basis of observed outcomes.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.exclusion_criteria",
+      "name": "Exclusion criteria",
+      "related_phrase_functions": [
+        "define_scope",
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.inclusion_criteria",
+        "writing.scientific.methods_writing.materials"
+      ],
+      "rhetorical_objective": "State prespecified reasons for removing units and distinguish them from post hoc attrition.",
+      "slug": "exclusion-criteria",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#materials",
+      "description": "Practical guidance to identify materials with enough specification for appraisal or replication, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Samples were stored in 15-millilitre polypropylene tubes from the same manufacturing lot.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.materials",
+      "name": "Materials",
+      "related_phrase_functions": [
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.exclusion_criteria",
+        "writing.scientific.methods_writing.instruments"
+      ],
+      "rhetorical_objective": "Identify materials with enough specification for appraisal or replication.",
+      "slug": "materials",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#instruments",
+      "description": "Practical guidance to name instruments, versions, settings, and calibration procedures relevant to measurement, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Temperature was recorded with calibrated T-type thermocouples at one-second intervals.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.instruments",
+      "name": "Instruments",
+      "related_phrase_functions": [
+        "describe_method",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.materials",
+        "writing.scientific.methods_writing.experimental_procedures"
+      ],
+      "rhetorical_objective": "Name instruments, versions, settings, and calibration procedures relevant to measurement.",
+      "slug": "instruments",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#experimental-procedures",
+      "description": "Practical guidance to report the ordered intervention, exposure, or laboratory steps without omitting consequential choices, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Each specimen underwent 50 heating cycles, cooled to room temperature, and was then tested under a constant loading rate.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.experimental_procedures",
+      "name": "Experimental procedures",
+      "related_phrase_functions": [
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.instruments",
+        "writing.scientific.methods_writing.variables"
+      ],
+      "rhetorical_objective": "Report the ordered intervention, exposure, or laboratory steps without omitting consequential choices.",
+      "slug": "experimental-procedures",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#variables",
+      "description": "Practical guidance to define outcomes, predictors, exposures, covariates, and derived variables operationally, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "The primary outcome was seven-day retention, defined as any verified session after enrolment.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.variables",
+      "name": "Variables",
+      "related_phrase_functions": [
+        "define_scope",
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.experimental_procedures",
+        "writing.scientific.methods_writing.measurements"
+      ],
+      "rhetorical_objective": "Define outcomes, predictors, exposures, covariates, and derived variables operationally.",
+      "slug": "variables",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#measurements",
+      "description": "Practical guidance to describe how constructs or physical quantities were measured and scored, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Leaf area was estimated from calibrated images and expressed in square centimetres.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.measurements",
+      "name": "Measurements",
+      "related_phrase_functions": [
+        "describe_method",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.variables",
+        "writing.scientific.methods_writing.data_collection"
+      ],
+      "rhetorical_objective": "Describe how constructs or physical quantities were measured and scored.",
+      "slug": "measurements",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#data-collection",
+      "description": "Practical guidance to report when, by whom, and through which procedure data were obtained, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Two trained observers independently coded each recording using the prespecified rubric.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.data_collection",
+      "name": "Data collection",
+      "related_phrase_functions": [
+        "describe_method"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.measurements",
+        "writing.scientific.methods_writing.statistical_methods"
+      ],
+      "rhetorical_objective": "Report when, by whom, and through which procedure data were obtained.",
+      "slug": "data-collection",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#statistical-methods",
+      "description": "Practical guidance to name the estimand, model, uncertainty procedure, and decision rules relevant to analysis, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "We estimated adjusted mean differences with cluster-robust standard errors and 95% confidence intervals.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.statistical_methods",
+      "name": "Statistical methods",
+      "related_phrase_functions": [
+        "describe_method",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.data_collection",
+        "writing.scientific.methods_writing.qualitative_methods"
+      ],
+      "rhetorical_objective": "Name the estimand, model, uncertainty procedure, and decision rules relevant to analysis.",
+      "slug": "statistical-methods",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#qualitative-methods",
+      "description": "Practical guidance to explain how qualitative material was sampled, coded, compared, and interpreted, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Interview transcripts were coded iteratively, with deviant cases reviewed before themes were finalised.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.qualitative_methods",
+      "name": "Qualitative methods",
+      "related_phrase_functions": [
+        "describe_method",
+        "interpret_qualitative_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.statistical_methods",
+        "writing.scientific.methods_writing.model_specification"
+      ],
+      "rhetorical_objective": "Explain how qualitative material was sampled, coded, compared, and interpreted.",
+      "slug": "qualitative-methods",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#model-specification",
+      "description": "Practical guidance to state the model form, included terms, reference categories, and prespecified interactions, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "The model included site fixed effects, calendar month, baseline score, and a prespecified treatment-by-time interaction.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.model_specification",
+      "name": "Model specification",
+      "related_phrase_functions": [
+        "describe_method",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.qualitative_methods",
+        "writing.scientific.methods_writing.sensitivity_analysis"
+      ],
+      "rhetorical_objective": "State the model form, included terms, reference categories, and prespecified interactions.",
+      "slug": "model-specification",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#sensitivity-analysis",
+      "description": "Practical guidance to describe an alternative defensible analysis used to test dependence on assumptions or choices, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "We repeated the analysis after excluding imputed outcomes and after varying the exposure threshold.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.sensitivity_analysis",
+      "name": "Sensitivity analysis",
+      "related_phrase_functions": [
+        "describe_method",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.model_specification",
+        "writing.scientific.methods_writing.validation"
+      ],
+      "rhetorical_objective": "Describe an alternative defensible analysis used to test dependence on assumptions or choices.",
+      "slug": "sensitivity-analysis",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#validation",
+      "description": "Practical guidance to report how a measure, model, or procedure was checked against independent or held-out information, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Performance was evaluated on a temporally separated test set that was not used during model selection.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.validation",
+      "name": "Validation",
+      "related_phrase_functions": [
+        "describe_method",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.sensitivity_analysis",
+        "writing.scientific.methods_writing.reproducibility"
+      ],
+      "rhetorical_objective": "Report how a measure, model, or procedure was checked against independent or held-out information.",
+      "slug": "validation",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#reproducibility",
+      "description": "Practical guidance to provide the procedural and computational details needed to reproduce the analysis, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "Analysis scripts, environment files, and a synthetic test dataset are archived with versioned release tags.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.reproducibility",
+      "name": "Reproducibility",
+      "related_phrase_functions": [
+        "describe_method",
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.validation",
+        "writing.scientific.methods_writing.ethical_approval"
+      ],
+      "rhetorical_objective": "Provide the procedural and computational details needed to reproduce the analysis.",
+      "slug": "reproducibility",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/methods-writing/#ethical-approval",
+      "description": "Practical guidance to report the approving body, decision identifier, consent process, and relevant safeguards, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Describe what was actually done, preserve prespecified versus post hoc distinctions, and do not imply reproducibility without sufficient detail.",
+      "example": "The institutional review board approved the protocol under reference 24-118, and participants gave written consent.",
+      "group": "methods-writing",
+      "id": "writing.scientific.methods_writing.ethical_approval",
+      "name": "Ethical approval",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "define_scope"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.methods_writing.reproducibility"
+      ],
+      "rhetorical_objective": "Report the approving body, decision identifier, consent process, and relevant safeguards.",
+      "slug": "ethical-approval",
+      "use_cases": [
+        "methods sections",
+        "study protocols",
+        "technical reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#introducing-results",
+      "description": "Practical guidance to orient the reader to the analysis or outcome being reported before presenting values, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "We first report changes in the primary outcome, followed by prespecified subgroup estimates.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.introducing_results",
+      "name": "Introducing results",
+      "related_phrase_functions": [
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.reporting_descriptive_statistics"
+      ],
+      "rhetorical_objective": "Orient the reader to the analysis or outcome being reported before presenting values.",
+      "slug": "introducing-results",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#reporting-descriptive-statistics",
+      "description": "Practical guidance to summarise the observed sample or distribution with appropriate quantities and units, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Median follow-up was 14 months, with an interquartile range of 11 to 18 months.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.reporting_descriptive_statistics",
+      "name": "Reporting descriptive statistics",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.introducing_results",
+        "writing.scientific.results_writing.reporting_comparisons"
+      ],
+      "rhetorical_objective": "Summarise the observed sample or distribution with appropriate quantities and units.",
+      "slug": "reporting-descriptive-statistics",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#reporting-comparisons",
+      "description": "Practical guidance to report a difference or ratio while naming the groups, reference, and uncertainty, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Mean recovery time was 1.8 days shorter in the guided group than in the standard-care group.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.reporting_comparisons",
+      "name": "Reporting comparisons",
+      "related_phrase_functions": [
+        "compare_findings",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.reporting_descriptive_statistics",
+        "writing.scientific.results_writing.reporting_associations"
+      ],
+      "rhetorical_objective": "Report a difference or ratio while naming the groups, reference, and uncertainty.",
+      "slug": "reporting-comparisons",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#reporting-associations",
+      "description": "Practical guidance to describe covariation without implying that one variable caused the other, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Higher canopy cover was associated with lower afternoon surface temperature after adjustment for elevation.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.reporting_associations",
+      "name": "Reporting associations",
+      "related_phrase_functions": [
+        "describe_association",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.reporting_comparisons",
+        "writing.scientific.results_writing.reporting_effects"
+      ],
+      "rhetorical_objective": "Describe covariation without implying that one variable caused the other.",
+      "slug": "reporting-associations",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#reporting-effects",
+      "description": "Practical guidance to report an estimated intervention or exposure effect only in terms supported by the design, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Assignment to the reminder condition increased verified attendance by 6 percentage points.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.reporting_effects",
+      "name": "Reporting effects",
+      "related_phrase_functions": [
+        "causal_claim",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.reporting_associations",
+        "writing.scientific.results_writing.reporting_uncertainty"
+      ],
+      "rhetorical_objective": "Report an estimated intervention or exposure effect only in terms supported by the design.",
+      "slug": "reporting-effects",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#reporting-uncertainty",
+      "description": "Practical guidance to present intervals, variability, or model uncertainty alongside the estimate it qualifies, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "The estimated reduction was 4.2 units, with a 95% interval from 1.1 to 7.0 units.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.reporting_uncertainty",
+      "name": "Reporting uncertainty",
+      "related_phrase_functions": [
+        "report_uncertainty",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.reporting_effects",
+        "writing.scientific.results_writing.confidence_intervals"
+      ],
+      "rhetorical_objective": "Present intervals, variability, or model uncertainty alongside the estimate it qualifies.",
+      "slug": "reporting-uncertainty",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#confidence-intervals",
+      "description": "Practical guidance to report an interval with its confidence level, scale, and corresponding estimate, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "The odds ratio was 1.32 (95% confidence interval 1.08 to 1.61).",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.confidence_intervals",
+      "name": "Confidence intervals",
+      "related_phrase_functions": [
+        "report_uncertainty",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.reporting_uncertainty",
+        "writing.scientific.results_writing.statistical_significance"
+      ],
+      "rhetorical_objective": "Report an interval with its confidence level, scale, and corresponding estimate.",
+      "slug": "confidence-intervals",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#statistical-significance",
+      "description": "Practical guidance to report the prespecified statistical decision without equating it with importance or truth, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "The difference crossed the prespecified significance threshold, although its absolute magnitude was small.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.statistical_significance",
+      "name": "Statistical significance",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.confidence_intervals",
+        "writing.scientific.results_writing.non_significant_findings"
+      ],
+      "rhetorical_objective": "Report the prespecified statistical decision without equating it with importance or truth.",
+      "slug": "statistical-significance",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#non-significant-findings",
+      "description": "Practical guidance to report imprecise or threshold-crossing results without claiming equality or no effect, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "The estimate did not meet the prespecified significance threshold, and the interval included both modest benefit and modest harm.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.non_significant_findings",
+      "name": "Non-significant findings",
+      "related_phrase_functions": [
+        "report_null_result",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.statistical_significance",
+        "writing.scientific.results_writing.null_findings"
+      ],
+      "rhetorical_objective": "Report imprecise or threshold-crossing results without claiming equality or no effect.",
+      "slug": "non-significant-findings",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#null-findings",
+      "description": "Practical guidance to describe the absence of a detected difference while preserving what the data still permit, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "We detected no clear difference between groups, but the interval was too wide to rule out a meaningful effect.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.null_findings",
+      "name": "Null findings",
+      "related_phrase_functions": [
+        "report_null_result",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.non_significant_findings",
+        "writing.scientific.results_writing.trends"
+      ],
+      "rhetorical_objective": "Describe the absence of a detected difference while preserving what the data still permit.",
+      "slug": "null-findings",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#trends",
+      "description": "Practical guidance to describe an ordered pattern across time or levels without overstating its regularity, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Concentration declined over the first three sampling rounds and then remained broadly stable.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.trends",
+      "name": "Trends",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.null_findings",
+        "writing.scientific.results_writing.subgroup_results"
+      ],
+      "rhetorical_objective": "Describe an ordered pattern across time or levels without overstating its regularity.",
+      "slug": "trends",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#subgroup-results",
+      "description": "Practical guidance to report subgroup estimates as prespecified or exploratory and avoid unsupported between-group claims, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "The association was stronger in the prespecified rural subgroup; the interaction estimate remained imprecise.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.subgroup_results",
+      "name": "Subgroup results",
+      "related_phrase_functions": [
+        "compare_findings",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.trends",
+        "writing.scientific.results_writing.sensitivity_results"
+      ],
+      "rhetorical_objective": "Report subgroup estimates as prespecified or exploratory and avoid unsupported between-group claims.",
+      "slug": "subgroup-results",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#sensitivity-results",
+      "description": "Practical guidance to state whether conclusions changed under alternative defensible specifications, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Estimates were similar after complete-case analysis and after excluding the two smallest sites.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.sensitivity_results",
+      "name": "Sensitivity results",
+      "related_phrase_functions": [
+        "report_uncertainty",
+        "compare_findings"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.subgroup_results",
+        "writing.scientific.results_writing.robustness_results"
+      ],
+      "rhetorical_objective": "State whether conclusions changed under alternative defensible specifications.",
+      "slug": "sensitivity-results",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#robustness-results",
+      "description": "Practical guidance to report consistency across checks while naming which assumptions were varied, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "The direction and approximate magnitude were retained across all three alternative outcome definitions.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.robustness_results",
+      "name": "Robustness results",
+      "related_phrase_functions": [
+        "report_uncertainty",
+        "compare_findings"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.sensitivity_results",
+        "writing.scientific.results_writing.unexpected_findings"
+      ],
+      "rhetorical_objective": "Report consistency across checks while naming which assumptions were varied.",
+      "slug": "robustness-results",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#unexpected-findings",
+      "description": "Practical guidance to report an unanticipated result distinctly from prespecified evidence and interpretation, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Contrary to the prespecified hypothesis, response time increased during the second observation period.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.unexpected_findings",
+      "name": "Unexpected findings",
+      "related_phrase_functions": [
+        "contrast_findings",
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.robustness_results",
+        "writing.scientific.results_writing.referring_to_tables"
+      ],
+      "rhetorical_objective": "Report an unanticipated result distinctly from prespecified evidence and interpretation.",
+      "slug": "unexpected-findings",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#referring-to-tables",
+      "description": "Practical guidance to direct readers to tabulated evidence while stating the result in prose, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Baseline characteristics and missingness by group are reported in Table 1.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.referring_to_tables",
+      "name": "Referring to tables",
+      "related_phrase_functions": [
+        "introduce_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.unexpected_findings",
+        "writing.scientific.results_writing.referring_to_figures"
+      ],
+      "rhetorical_objective": "Direct readers to tabulated evidence while stating the result in prose.",
+      "slug": "referring-to-tables",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/results-writing/#referring-to-figures",
+      "description": "Practical guidance to direct readers to a figure and describe the feature relevant to the argument, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Report observations and estimates before interpretation; preserve units, denominators, uncertainty, and prespecified analysis status.",
+      "example": "Figure 3 shows the widening separation between trajectories after week eight.",
+      "group": "results-writing",
+      "id": "writing.scientific.results_writing.referring_to_figures",
+      "name": "Referring to figures",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "compare_findings"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.results_writing.referring_to_tables"
+      ],
+      "rhetorical_objective": "Direct readers to a figure and describe the feature relevant to the argument.",
+      "slug": "referring-to-figures",
+      "use_cases": [
+        "results sections",
+        "technical reports",
+        "research abstracts"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#summarising-principal-findings",
+      "description": "Practical guidance to restate the main answer at the start of the discussion without repeating every result, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "The principal finding is that service continuity improved, but gains varied substantially across districts.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.summarising_principal_findings",
+      "name": "Summarising principal findings",
+      "related_phrase_functions": [
+        "interpret_evidence",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.interpreting_findings"
+      ],
+      "rhetorical_objective": "Restate the main answer at the start of the discussion without repeating every result.",
+      "slug": "summarising-principal-findings",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#interpreting-findings",
+      "description": "Practical guidance to explain what the results support in relation to the question and design, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "The pattern suggests that timely access may depend more on coordination than on the number of available providers.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.interpreting_findings",
+      "name": "Interpreting findings",
+      "related_phrase_functions": [
+        "interpret_evidence",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.summarising_principal_findings",
+        "writing.scientific.discussion_writing.comparing_findings_with_literature"
+      ],
+      "rhetorical_objective": "Explain what the results support in relation to the question and design.",
+      "slug": "interpreting-findings",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#comparing-findings-with-literature",
+      "description": "Practical guidance to relate the study to prior evidence on an explicit basis of similarity or difference, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "Our estimate is smaller than that reported in national surveys but similar to results from other rural samples.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.comparing_findings_with_literature",
+      "name": "Comparing findings with literature",
+      "related_phrase_functions": [
+        "compare_findings",
+        "attribute_source"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.interpreting_findings",
+        "writing.scientific.discussion_writing.explaining_possible_mechanisms"
+      ],
+      "rhetorical_objective": "Relate the study to prior evidence on an explicit basis of similarity or difference.",
+      "slug": "comparing-findings-with-literature",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#explaining-possible-mechanisms",
+      "description": "Practical guidance to offer a mechanism as a testable explanation and distinguish it from an observed result, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "One possible mechanism is that shorter forms reduce abandonment by lowering the initial effort required.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.explaining_possible_mechanisms",
+      "name": "Explaining possible mechanisms",
+      "related_phrase_functions": [
+        "interpret_evidence",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.comparing_findings_with_literature",
+        "writing.scientific.discussion_writing.presenting_competing_explanations"
+      ],
+      "rhetorical_objective": "Offer a mechanism as a testable explanation and distinguish it from an observed result.",
+      "slug": "explaining-possible-mechanisms",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#presenting-competing-explanations",
+      "description": "Practical guidance to set out plausible alternatives and identify which evidence would distinguish them, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "The change may reflect the new protocol, seasonal staffing, or both; the present design cannot separate these explanations.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.presenting_competing_explanations",
+      "name": "Presenting competing explanations",
+      "related_phrase_functions": [
+        "contrast_findings",
+        "state_limitation"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.explaining_possible_mechanisms",
+        "writing.scientific.discussion_writing.discussing_uncertainty"
+      ],
+      "rhetorical_objective": "Set out plausible alternatives and identify which evidence would distinguish them.",
+      "slug": "presenting-competing-explanations",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#discussing-uncertainty",
+      "description": "Practical guidance to explain how precision, measurement, missingness, or model dependence affects interpretation, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "Wide intervals around the subgroup estimates mean that the apparent difference should be interpreted cautiously.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.discussing_uncertainty",
+      "name": "Discussing uncertainty",
+      "related_phrase_functions": [
+        "report_uncertainty",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.presenting_competing_explanations",
+        "writing.scientific.discussion_writing.discussing_limitations"
+      ],
+      "rhetorical_objective": "Explain how precision, measurement, missingness, or model dependence affects interpretation.",
+      "slug": "discussing-uncertainty",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#discussing-limitations",
+      "description": "Practical guidance to connect each important design constraint to the inference it limits, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "Self-reported exposure may introduce misclassification, particularly when recall periods are long.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.discussing_limitations",
+      "name": "Discussing limitations",
+      "related_phrase_functions": [
+        "state_limitation"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.discussing_uncertainty",
+        "writing.scientific.discussion_writing.discussing_strengths"
+      ],
+      "rhetorical_objective": "Connect each important design constraint to the inference it limits.",
+      "slug": "discussing-limitations",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#discussing-strengths",
+      "description": "Practical guidance to describe design features that improve credibility without claiming that they remove all limitations, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "A prespecified analysis plan and independent outcome coding reduce flexibility in the primary comparison.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.discussing_strengths",
+      "name": "Discussing strengths",
+      "related_phrase_functions": [
+        "justify_method",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.discussing_limitations",
+        "writing.scientific.discussion_writing.discussing_generalisability"
+      ],
+      "rhetorical_objective": "Describe design features that improve credibility without claiming that they remove all limitations.",
+      "slug": "discussing-strengths",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#discussing-generalisability",
+      "description": "Practical guidance to assess which populations, settings, or periods the findings may reasonably inform, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "The findings may apply to similarly sized public clinics but not to specialist centres with different referral pathways.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.discussing_generalisability",
+      "name": "Discussing generalisability",
+      "related_phrase_functions": [
+        "define_scope",
+        "state_limitation"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.discussing_strengths",
+        "writing.scientific.discussion_writing.theoretical_implications"
+      ],
+      "rhetorical_objective": "Assess which populations, settings, or periods the findings may reasonably inform.",
+      "slug": "discussing-generalisability",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#theoretical-implications",
+      "description": "Practical guidance to explain how findings support, refine, bound, or challenge a theoretical account, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "The results refine the model by showing that institutional capacity changes across implementation stages.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.theoretical_implications",
+      "name": "Theoretical implications",
+      "related_phrase_functions": [
+        "interpret_evidence",
+        "state_contribution"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.discussing_generalisability",
+        "writing.scientific.discussion_writing.practical_implications"
+      ],
+      "rhetorical_objective": "Explain how findings support, refine, bound, or challenge a theoretical account.",
+      "slug": "theoretical-implications",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#practical-implications",
+      "description": "Practical guidance to state a feasible practice implication proportional to the evidence and context, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "Teams may benefit from testing the shorter protocol before adopting it across all service units.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.practical_implications",
+      "name": "Practical implications",
+      "related_phrase_functions": [
+        "recommend_action",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.theoretical_implications",
+        "writing.scientific.discussion_writing.policy_implications"
+      ],
+      "rhetorical_objective": "State a feasible practice implication proportional to the evidence and context.",
+      "slug": "practical-implications",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#policy-implications",
+      "description": "Practical guidance to translate evidence into a bounded policy consideration while naming uncertainty and affected settings, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "The results support considering flexible reporting deadlines in districts with intermittent connectivity.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.policy_implications",
+      "name": "Policy implications",
+      "related_phrase_functions": [
+        "recommend_action",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.practical_implications",
+        "writing.scientific.discussion_writing.future_research"
+      ],
+      "rhetorical_objective": "Translate evidence into a bounded policy consideration while naming uncertainty and affected settings.",
+      "slug": "policy-implications",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/discussion-writing/#future-research-in-discussion",
+      "description": "Practical guidance to identify the next study needed to resolve a mechanism, boundary, or uncertainty exposed by the findings, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.",
+      "example": "A multi-site experiment is needed to determine whether the scheduling change itself improves retention.",
+      "group": "discussion-writing",
+      "id": "writing.scientific.discussion_writing.future_research",
+      "name": "Future research",
+      "related_phrase_functions": [
+        "recommend_action",
+        "identify_gap"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.discussion_writing.policy_implications"
+      ],
+      "rhetorical_objective": "Identify the next study needed to resolve a mechanism, boundary, or uncertainty exposed by the findings.",
+      "slug": "future-research-in-discussion",
+      "use_cases": [
+        "discussion sections",
+        "evidence syntheses",
+        "research reports"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#association-vs-causation",
+      "description": "Practical guidance to distinguish observed covariation from evidence that changing one factor changes another, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "Income and tree cover were associated in the survey; the analysis does not establish that income caused the observed difference.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.association_vs_causation",
+      "name": "Association vs causation",
+      "related_phrase_functions": [
+        "distinguish_causation",
+        "describe_association"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.correlation_language"
+      ],
+      "rhetorical_objective": "Distinguish observed covariation from evidence that changing one factor changes another.",
+      "slug": "association-vs-causation",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#correlation-language",
+      "description": "Practical guidance to describe the direction and strength of correlation without causal verbs, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "Signal variability was positively correlated with distance from the transmitter.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.correlation_language",
+      "name": "Correlation language",
+      "related_phrase_functions": [
+        "describe_association"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.association_vs_causation",
+        "writing.scientific.scientific_claim_control.prediction_language"
+      ],
+      "rhetorical_objective": "Describe the direction and strength of correlation without causal verbs.",
+      "slug": "correlation-language",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#prediction-language",
+      "description": "Practical guidance to describe predictive performance separately from explanation or intervention effects, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "The model predicted readmission within 30 days but did not identify which factors would reduce readmission.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.prediction_language",
+      "name": "Prediction language",
+      "related_phrase_functions": [
+        "describe_association",
+        "distinguish_causation"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.correlation_language",
+        "writing.scientific.scientific_claim_control.causal_language"
+      ],
+      "rhetorical_objective": "Describe predictive performance separately from explanation or intervention effects.",
+      "slug": "prediction-language",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#causal-language",
+      "description": "Practical guidance to reserve causal wording for a design and analysis that identify the stated intervention or exposure effect, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "Random assignment supports the conclusion that the reminder increased appointment attendance in this trial.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.causal_language",
+      "name": "Causal language",
+      "related_phrase_functions": [
+        "causal_claim",
+        "distinguish_causation"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.prediction_language",
+        "writing.scientific.scientific_claim_control.evidence_strength"
+      ],
+      "rhetorical_objective": "Reserve causal wording for a design and analysis that identify the stated intervention or exposure effect.",
+      "slug": "causal-language",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#evidence-strength",
+      "description": "Practical guidance to calibrate wording to relevance, directness, precision, consistency, and design quality, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "The converging laboratory and field results provide moderate support for the proposed degradation pathway.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.evidence_strength",
+      "name": "Evidence strength",
+      "related_phrase_functions": [
+        "interpret_evidence",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.causal_language",
+        "writing.scientific.scientific_claim_control.hedging_scientific_claims"
+      ],
+      "rhetorical_objective": "Calibrate wording to relevance, directness, precision, consistency, and design quality.",
+      "slug": "evidence-strength",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#hedging-scientific-claims",
+      "description": "Practical guidance to use precise uncertainty markers that identify what is possible, estimated, or not resolved, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "The observed pattern may reflect a threshold response, although gradual change cannot be excluded.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.hedging_scientific_claims",
+      "name": "Hedging scientific claims",
+      "related_phrase_functions": [
+        "qualify_claim",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.evidence_strength",
+        "writing.scientific.scientific_claim_control.avoiding_overclaiming"
+      ],
+      "rhetorical_objective": "Use precise uncertainty markers that identify what is possible, estimated, or not resolved.",
+      "slug": "hedging-scientific-claims",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#avoiding-overclaiming",
+      "description": "Practical guidance to remove claims of proof, universality, or importance that the evidence does not warrant, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "The data support improved short-term detection, not the claim that the method is universally superior.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.avoiding_overclaiming",
+      "name": "Avoiding overclaiming",
+      "related_phrase_functions": [
+        "qualify_claim",
+        "state_limitation"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.hedging_scientific_claims",
+        "writing.scientific.scientific_claim_control.interpreting_null_results"
+      ],
+      "rhetorical_objective": "Remove claims of proof, universality, or importance that the evidence does not warrant.",
+      "slug": "avoiding-overclaiming",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#interpreting-null-results",
+      "description": "Practical guidance to separate failure to detect a clear effect from evidence of equivalence or absence, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "The non-significant estimate is inconclusive because the interval includes effects in both directions.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.interpreting_null_results",
+      "name": "Interpreting null results",
+      "related_phrase_functions": [
+        "report_null_result",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.avoiding_overclaiming",
+        "writing.scientific.scientific_claim_control.effect_size_language"
+      ],
+      "rhetorical_objective": "Separate failure to detect a clear effect from evidence of equivalence or absence.",
+      "slug": "interpreting-null-results",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#effect-size-language",
+      "description": "Practical guidance to describe magnitude on an interpretable scale and distinguish it from statistical significance, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "The intervention changed the mean score by 0.18 standard deviations, a small effect on the prespecified scale.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.effect_size_language",
+      "name": "Effect size language",
+      "related_phrase_functions": [
+        "introduce_evidence",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.interpreting_null_results",
+        "writing.scientific.scientific_claim_control.uncertainty_language"
+      ],
+      "rhetorical_objective": "Describe magnitude on an interpretable scale and distinguish it from statistical significance.",
+      "slug": "effect-size-language",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#uncertainty-language",
+      "description": "Practical guidance to attach uncertainty to the exact estimate, inference, or explanation it qualifies, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "The point estimate favours treatment, but substantial benefit and no effect are both compatible with the interval.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.uncertainty_language",
+      "name": "Uncertainty language",
+      "related_phrase_functions": [
+        "report_uncertainty",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.effect_size_language",
+        "writing.scientific.scientific_claim_control.scope_and_generalisation"
+      ],
+      "rhetorical_objective": "Attach uncertainty to the exact estimate, inference, or explanation it qualifies.",
+      "slug": "uncertainty-language",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/scientific-claim-control/#scope-and-generalisation",
+      "description": "Practical guidance to limit conclusions to populations, settings, outcomes, and time horizons supported by the study, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "scientific",
+      "evidence_claim_warning": "Causal verbs require a credible causal design; association, prediction, significance, and null results do not establish causation.",
+      "example": "These results concern supervised laboratory operation and should not be generalised to unattended field deployment.",
+      "group": "scientific-claim-control",
+      "id": "writing.scientific.scientific_claim_control.scope_and_generalisation",
+      "name": "Scope and generalisation",
+      "related_phrase_functions": [
+        "define_scope",
+        "state_limitation"
+      ],
+      "related_skill_ids": [
+        "writing.scientific.scientific_claim_control.uncertainty_language"
+      ],
+      "rhetorical_objective": "Limit conclusions to populations, settings, outcomes, and time horizons supported by the study.",
+      "slug": "scope-and-generalisation",
+      "use_cases": [
+        "results interpretation",
+        "abstracts",
+        "press-facing summaries"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#meaning-preserving-paraphrase",
+      "description": "Practical guidance to restate a passage in independent language while preserving its propositions, scope, and attribution, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Source: The intervention produced a modest decline in waiting time. Rewrite: Waiting time decreased modestly following the intervention.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.meaning_preserving_paraphrase",
+      "name": "Meaning-preserving paraphrase",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.structural_paraphrase"
+      ],
+      "rhetorical_objective": "Restate a passage in independent language while preserving its propositions, scope, and attribution.",
+      "slug": "meaning-preserving-paraphrase",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#structural-paraphrase",
+      "description": "Practical guidance to change clause structure and information order rather than substituting isolated synonyms, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Source: Because rainfall was limited, crop yields declined. Rewrite: Limited rainfall was accompanied by lower crop yields.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.structural_paraphrase",
+      "name": "Structural paraphrase",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.meaning_preserving_paraphrase",
+        "writing.paraphrasing.paraphrasing.academic_paraphrase"
+      ],
+      "rhetorical_objective": "Change clause structure and information order rather than substituting isolated synonyms.",
+      "slug": "structural-paraphrase",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#academic-paraphrase",
+      "description": "Practical guidance to restate source-dependent academic prose clearly without erasing citation responsibility, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Source: Patel argues that informal rules shape access. Rewrite: Access is shaped by informal rules, according to Patel.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.academic_paraphrase",
+      "name": "Academic paraphrase",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution",
+        "attribute_source"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.structural_paraphrase",
+        "writing.paraphrasing.paraphrasing.scientific_paraphrase"
+      ],
+      "rhetorical_objective": "Restate source-dependent academic prose clearly without erasing citation responsibility.",
+      "slug": "academic-paraphrase",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#scientific-paraphrase",
+      "description": "Practical guidance to rewrite scientific prose while preserving design, quantities, uncertainty, and inferential level, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Source: The groups differed by 3.1 units, with wide uncertainty. Rewrite: The estimated between-group difference was 3.1 units, although precision was low.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.scientific_paraphrase",
+      "name": "Scientific paraphrase",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.academic_paraphrase",
+        "writing.paraphrasing.paraphrasing.concision"
+      ],
+      "rhetorical_objective": "Rewrite scientific prose while preserving design, quantities, uncertainty, and inferential level.",
+      "slug": "scientific-paraphrase",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#concision",
+      "description": "Practical guidance to remove expendable wording while retaining every proposition needed by the argument, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Before: It is important to note that the two groups were similar. After: The two groups were similar.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.concision",
+      "name": "Concision",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.scientific_paraphrase",
+        "writing.paraphrasing.paraphrasing.sentence_restructuring"
+      ],
+      "rhetorical_objective": "Remove expendable wording while retaining every proposition needed by the argument.",
+      "slug": "concision",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#sentence-restructuring",
+      "description": "Practical guidance to split, combine, or reorder clauses to improve comprehension without changing logical relations, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Before: The model was accurate, but because calibration was poor, deployment was delayed. After: Deployment was delayed because calibration was poor, despite the model's accuracy.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.sentence_restructuring",
+      "name": "Sentence restructuring",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.concision",
+        "writing.paraphrasing.paraphrasing.citation_preserving_rewrite"
+      ],
+      "rhetorical_objective": "Split, combine, or reorder clauses to improve comprehension without changing logical relations.",
+      "slug": "sentence-restructuring",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#citation-preserving-rewrite",
+      "description": "Practical guidance to keep citations attached to the propositions they support throughout a rewrite, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Source: Early access improves retention (Diaz, 2024). Rewrite: Diaz (2024) links earlier access with improved retention.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.citation_preserving_rewrite",
+      "name": "Citation-preserving rewrite",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution",
+        "attribute_source"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.sentence_restructuring",
+        "writing.paraphrasing.paraphrasing.number_preserving_rewrite"
+      ],
+      "rhetorical_objective": "Keep citations attached to the propositions they support throughout a rewrite.",
+      "slug": "citation-preserving-rewrite",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#number-preserving-rewrite",
+      "description": "Practical guidance to preserve values, units, denominators, directions, and statistical qualifiers exactly, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Source: Error fell from 12% to 9%. Rewrite: The error rate decreased by 3 percentage points, from 12% to 9%.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.number_preserving_rewrite",
+      "name": "Number-preserving rewrite",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution",
+        "report_uncertainty"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.citation_preserving_rewrite",
+        "writing.paraphrasing.paraphrasing.claim_strength_preserving_rewrite"
+      ],
+      "rhetorical_objective": "Preserve values, units, denominators, directions, and statistical qualifiers exactly.",
+      "slug": "number-preserving-rewrite",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#claim-strength-preserving-rewrite",
+      "description": "Practical guidance to keep tentative, bounded, assertive, and causal force unchanged unless evidence is reassessed, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Source: The pattern may indicate delayed adaptation. Rewrite: Delayed adaptation is one possible interpretation of the pattern.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.claim_strength_preserving_rewrite",
+      "name": "Claim-strength-preserving rewrite",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution",
+        "qualify_claim"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.number_preserving_rewrite",
+        "writing.paraphrasing.paraphrasing.cautious_rewriting"
+      ],
+      "rhetorical_objective": "Keep tentative, bounded, assertive, and causal force unchanged unless evidence is reassessed.",
+      "slug": "claim-strength-preserving-rewrite",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#cautious-rewriting",
+      "description": "Practical guidance to reduce unjustified certainty by naming limits while retaining the useful proposition, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Before: The programme solved the access problem. After: The programme was associated with improved access during the study period.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.cautious_rewriting",
+      "name": "Cautious rewriting",
+      "related_phrase_functions": [
+        "qualify_claim",
+        "distinguish_causation"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.claim_strength_preserving_rewrite",
+        "writing.paraphrasing.paraphrasing.academic_register"
+      ],
+      "rhetorical_objective": "Reduce unjustified certainty by naming limits while retaining the useful proposition.",
+      "slug": "cautious-rewriting",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#academic-register",
+      "description": "Practical guidance to replace conversational or inflated wording with precise, readable scholarly language, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Before: The results are super convincing. After: The results provide consistent support for the proposed explanation.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.academic_register",
+      "name": "Academic register",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution",
+        "interpret_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.cautious_rewriting",
+        "writing.paraphrasing.paraphrasing.removing_unnecessary_verbosity"
+      ],
+      "rhetorical_objective": "Replace conversational or inflated wording with precise, readable scholarly language.",
+      "slug": "academic-register",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#removing-unnecessary-verbosity",
+      "description": "Practical guidance to delete metadiscourse and repetition that do not change meaning or guide the reader, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Before: It should be pointed out that costs increased. After: Costs increased.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.removing_unnecessary_verbosity",
+      "name": "Removing unnecessary verbosity",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.academic_register",
+        "writing.paraphrasing.paraphrasing.reducing_repetition"
+      ],
+      "rhetorical_objective": "Delete metadiscourse and repetition that do not change meaning or guide the reader.",
+      "slug": "removing-unnecessary-verbosity",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#reducing-repetition",
+      "description": "Practical guidance to vary sentence structure or consolidate repeated propositions without introducing new claims, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Before: Access improved. Access improved most in rural sites. After: Access improved, especially in rural sites.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.reducing_repetition",
+      "name": "Reducing repetition",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.removing_unnecessary_verbosity",
+        "writing.paraphrasing.paraphrasing.improving_logical_flow"
+      ],
+      "rhetorical_objective": "Vary sentence structure or consolidate repeated propositions without introducing new claims.",
+      "slug": "reducing-repetition",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    },
+    {
+      "canonical_en": "/en/writing-skills/paraphrasing/#improving-logical-flow",
+      "description": "Practical guidance to make relations among propositions explicit through order, reference, and appropriate linkage, with wording aligned to rhetorical purpose and available evidence.",
+      "domain": "paraphrasing",
+      "evidence_claim_warning": "Preserve attribution, meaning, numbers, negation, scope, and claim strength; paraphrasing never removes citation duties.",
+      "example": "Before: Uptake fell. Support ended. The timing matters. After: Uptake fell after support ended, making the timing relevant to interpretation.",
+      "group": "paraphrasing",
+      "id": "writing.paraphrasing.paraphrasing.improving_logical_flow",
+      "name": "Improving logical flow",
+      "related_phrase_functions": [
+        "paraphrase_with_attribution",
+        "interpret_evidence"
+      ],
+      "related_skill_ids": [
+        "writing.paraphrasing.paraphrasing.reducing_repetition"
+      ],
+      "rhetorical_objective": "Make relations among propositions explicit through order, reference, and appropriate linkage.",
+      "slug": "improving-logical-flow",
+      "use_cases": [
+        "source-based writing",
+        "manuscript revision",
+        "language editing"
+      ]
+    }
+  ]
+}

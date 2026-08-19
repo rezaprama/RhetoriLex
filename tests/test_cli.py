@@ -45,6 +45,31 @@ class CliTests(unittest.TestCase):
         code, second = self.capture(["random", "--seed", "repeat", "--function", "define_scope"])
         self.assertEqual(first, second)
 
+    def test_browse_by_section_and_skill_area(self) -> None:
+        code, output = self.capture(
+            [
+                "--json",
+                "browse",
+                "--section",
+                "peer_review_response",
+                "--skill-area",
+                "reviewer_response",
+                "--limit",
+                "10",
+            ]
+        )
+        self.assertEqual(code, 0)
+        entries = json.loads(output)
+        self.assertEqual(len(entries), 4)
+        self.assertTrue(all(row["function"] == "respond_reviewer" for row in entries))
+
+    def test_phase2_taxonomy_facets(self) -> None:
+        code, output = self.capture(["taxonomy", "skill_areas"])
+        self.assertEqual(code, 0)
+        self.assertEqual(len(json.loads(output)), 13)
+        code, output = self.capture(["taxonomy", "domains"])
+        self.assertEqual(code, 0)
+        self.assertEqual(len(json.loads(output)), 10)
 
 if __name__ == "__main__":
     unittest.main()

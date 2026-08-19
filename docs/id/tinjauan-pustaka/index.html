@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Tulis tinjauan pustaka yang mengatur, membandingkan, dan mengevaluasi bukti, bukan mendaftar studi satu per satu.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/literature-review/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/literature-review/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Cara Menulis Tinjauan Pustaka yang Menyintesis | RhetoriLex">
+<meta property="og:description" content="Tulis tinjauan pustaka yang mengatur, membandingkan, dan mengevaluasi bukti, bukan mendaftar studi satu per satu.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Menulis Tinjauan Pustaka yang Menyintesis | RhetoriLex">
+<meta name="twitter:description" content="Tulis tinjauan pustaka yang mengatur, membandingkan, dan mengevaluasi bukti, bukan mendaftar studi satu per satu.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Cara Menulis Tinjauan Pustaka yang Menyintesis | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/#page","url":"https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/","name":"Tinjauan pustaka perlu menyintesis, bukan menginventarisasi","headline":"Tinjauan pustaka perlu menyintesis, bukan menginventarisasi","description":"Tulis tinjauan pustaka yang mengatur, membandingkan, dan mengevaluasi bukti, bukan mendaftar studi satu per satu.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Tinjauan Pustaka","item":"https://rezaprama.github.io/RhetoriLex/id/tinjauan-pustaka/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../parafrasa/">Parafrasa</a><a href="../gerakan-retoris/">Gerakan Retoris</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../skill-agen/">Skill Agen</a><a href="../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../en/literature-review/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Beranda</a></li>
+    <li aria-current="page">Tinjauan Pustaka</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>Tinjauan pustaka perlu menyintesis, bukan menginventarisasi</h1>
+        <p class="lede">Atur sumber di sekitar pertanyaan dan tampilkan dasar perbandingan kepada pembaca.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Tentukan kerangka analitik tinjauan</h2>
+  <p>Tinjauan pustaka menjelaskan keadaan pengetahuan yang relevan dengan keputusan riset. Pilih kerangka sebelum menulis: teori yang bersaing, kelompok metode, populasi, konteks, outcome, waktu, atau pola kesepakatan dan pertentangan. Kerangka harus membantu pembaca memahami alasan studi dapat atau tidak dapat dibandingkan.</p>
+  <p>Buat tabel bukti berisi desain, sampel, ukuran, estimasi, keterbatasan, dan relevansi. Langkah ini mencegah sintesis yang rapi mencampur hasil dari pertanyaan berbeda.</p>
+</section>
+<section>
+  <h2>Tulis relasi antar-studi</h2>
+  <p class="phrase-template">Across [group of studies], estimates consistently indicate [shared pattern], although [design or population difference] limits direct comparison.</p>
+  <p class="phrase-template">Whereas [study group A] reports [finding], studies using [method B] find [contrasting finding], suggesting that [bounded source of variation] warrants examination.</p>
+  <p>Studi yang disitasi harus mendukung relasi dalam across, consistently, whereas, atau contrasting. Gunakan <a href="../hedging-akademik/">hedging akademik</a> untuk bukti yang bercampur atau tidak langsung.</p>
+</section>
+<section>
+  <h2>Bergerak dari sintesis ke masalah riset</h2>
+  <p>Akhiri unit tematik dengan hal yang telah ditetapkan dan yang masih tidak pasti. Kesenjangan harus mengikuti bukti yang ditinjau. Hubungkan keterbatasan dengan tujuan studi hanya bila desain dapat menanganinya.</p>
+  <p>Temukan pola sintesis di <a href="../penjelajah-frasa/?q=sintesis%20literatur">Penjelajah Frasa</a>. Pertahankan setiap sitasi pada proposisi yang didukungnya.</p>
+</section>
+<aside class="article-note"><h2>Peringatan</h2><p>Jangan memberikan label kesepakatan, kontradiksi, mutu, atau konsensus tanpa kriteria. Daftar abstrak serupa tidak membuktikan bukti konvergen.</p></aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../parafrasa/">Parafrasa</a></li><li><a href="../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../skill-agen/">Skill Agen</a></li><li><a href="../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

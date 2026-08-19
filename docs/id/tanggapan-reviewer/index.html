@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Tulis tanggapan reviewer yang mengidentifikasi masalah, mencatat revisi, menyebut lokasi, dan menyatakan ketidaksetujuan dengan bukti.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/reviewer-response/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Cara Menulis Tanggapan Reviewer yang Jelas | RhetoriLex">
+<meta property="og:description" content="Tulis tanggapan reviewer yang mengidentifikasi masalah, mencatat revisi, menyebut lokasi, dan menyatakan ketidaksetujuan dengan bukti.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Menulis Tanggapan Reviewer yang Jelas | RhetoriLex">
+<meta name="twitter:description" content="Tulis tanggapan reviewer yang mengidentifikasi masalah, mencatat revisi, menyebut lokasi, dan menyatakan ketidaksetujuan dengan bukti.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Cara Menulis Tanggapan Reviewer yang Jelas | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/#page","url":"https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/","name":"Tanggapan reviewer perlu membuat revisi dapat ditelusuri","headline":"Tanggapan reviewer perlu membuat revisi dapat ditelusuri","description":"Tulis tanggapan reviewer yang mengidentifikasi masalah, mencatat revisi, menyebut lokasi, dan menyatakan ketidaksetujuan dengan bukti.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Tanggapan Reviewer","item":"https://rezaprama.github.io/RhetoriLex/id/tanggapan-reviewer/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../parafrasa/">Parafrasa</a><a href="../gerakan-retoris/">Gerakan Retoris</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../skill-agen/">Skill Agen</a><a href="../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../en/reviewer-response/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Beranda</a></li>
+    <li aria-current="page">Tanggapan Reviewer</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>Tanggapan reviewer perlu membuat revisi dapat ditelusuri</h1>
+        <p class="lede">Jawab substansi, nyatakan perubahan, tunjukkan lokasi, dan jelaskan alasan tanpa menciptakan pekerjaan.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Pisahkan komentar menjadi keputusan</h2>
+  <p>Komentar reviewer dapat memuat pertanyaan, permintaan analisis, masalah kata, dan kekhawatiran luas. Pecah menjadi poin yang dapat dijawab. Tentukan apakah perlu merevisi, mengklarifikasi, menambah bukti, menjelaskan pilihan, atau tidak setuju. Jawab kekhawatiran sebelum menjelaskan suntingan kosmetik.</p>
+  <p class="phrase-template">We revised [section and location] to clarify [specific issue]. The revised text now states [bounded summary of change].</p>
+</section>
+<section>
+  <h2>Catat perubahan dengan tepat</h2>
+  <p>Kutip hanya teks revisi yang diperlukan dan berikan rujukan halaman, baris, bagian, tabel, atau gambar yang sesuai naskah final. Jika analisis ditambah, nyatakan metode dan lokasi hasil. Jika pekerjaan tidak dapat dilakukan, jelaskan batas dan revisi klaim yang terpengaruh.</p>
+  <p class="phrase-template">We agree that [shared concern] required clarification. Because [methodological reason], we did not [requested action]; instead, we [bounded revision] and now state [remaining limitation].</p>
+</section>
+<section>
+  <h2>Nyatakan ketidaksetujuan secara metodologis</h2>
+  <p>Identifikasi titik kesepakatan, berikan alasan berbasis bukti atau desain, dan jelaskan revisi yang mencegah salah paham. Gunakan standar, sitasi, analisis, atau pedoman pelaporan bila tersedia.</p>
+  <p>Temukan pola tanggapan di <a href="../penjelajah-frasa/?q=tanggapan%20reviewer">Penjelajah Frasa</a>.</p>
+</section>
+<aside class="article-note"><h2>Peringatan</h2><p>Jangan mengklaim teks, data, analisis, persetujuan, atau sitasi telah ditambah bila tidak ada dalam revisi. Periksa lokasi setelah paginasi berubah.</p></aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../parafrasa/">Parafrasa</a></li><li><a href="../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../skill-agen/">Skill Agen</a></li><li><a href="../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

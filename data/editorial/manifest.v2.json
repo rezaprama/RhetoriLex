@@ -1,0 +1,29 @@
+{
+  "format": "rhetorilex-editorial-manifest",
+  "format_version": "2.0.0",
+  "canonical_manifest": "../canonical/catalog-manifest.v2.json",
+  "language": "en",
+  "entry_count": 96,
+  "status": "contract_validated",
+  "authorship": "original_editorial",
+  "source_reuse": false,
+  "writing_skill_catalog": {
+    "path": "writing-skills.v1.json",
+    "schema": "../schema/writing-skills.v1.schema.json",
+    "entry_count": 144,
+    "group_count": 11,
+    "canonical_language": "en",
+    "status": "contract_validated"
+  },
+  "quality_gates": [
+    "schema",
+    "placeholder_integrity",
+    "evidence_claim_contract",
+    "function_coverage",
+    "discovery_benchmark",
+    "writing_skill_reference_integrity",
+    "translation_key_parity"
+  ],
+  "content_policy": "Editorial metadata describes original English records; translated interface labels remain in separate keyed files."
+}
+

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Writing skills for interpreting findings, comparing studies, alternatives, mechanisms, limitations, implications, generalisability, and future work.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/skill-penulisan/penulisan-diskusi/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Scientific Discussion Writing Skills | RhetoriLex">
+<meta property="og:description" content="Writing skills for interpreting findings, comparing studies, alternatives, mechanisms, limitations, implications, generalisability, and future work.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scientific Discussion Writing Skills | RhetoriLex">
+<meta name="twitter:description" content="Writing skills for interpreting findings, comparing studies, alternatives, mechanisms, limitations, implications, generalisability, and future work.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Scientific Discussion Writing Skills | RhetoriLex</title>
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="stylesheet" href="../../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#page","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/","name":"Scientific discussion writing skills","headline":"Scientific discussion writing skills","description":"Writing skills for interpreting findings, comparing studies, alternatives, mechanisms, limitations, implications, generalisability, and future work.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"},"mainEntity":{"@type":"ItemList","numberOfItems":13,"itemListElement":[{"@type":"ListItem","position":1,"name":"Summarising principal findings","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#summarising-principal-findings"},{"@type":"ListItem","position":2,"name":"Interpreting findings","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#interpreting-findings"},{"@type":"ListItem","position":3,"name":"Comparing findings with literature","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#comparing-findings-with-literature"},{"@type":"ListItem","position":4,"name":"Explaining possible mechanisms","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#explaining-possible-mechanisms"},{"@type":"ListItem","position":5,"name":"Presenting competing explanations","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#presenting-competing-explanations"},{"@type":"ListItem","position":6,"name":"Discussing uncertainty","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#discussing-uncertainty"},{"@type":"ListItem","position":7,"name":"Discussing limitations","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#discussing-limitations"},{"@type":"ListItem","position":8,"name":"Discussing strengths","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#discussing-strengths"},{"@type":"ListItem","position":9,"name":"Discussing generalisability","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#discussing-generalisability"},{"@type":"ListItem","position":10,"name":"Theoretical implications","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#theoretical-implications"},{"@type":"ListItem","position":11,"name":"Practical implications","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#practical-implications"},{"@type":"ListItem","position":12,"name":"Policy implications","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#policy-implications"},{"@type":"ListItem","position":13,"name":"Future research","url":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/#future-research-in-discussion"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Discussion Writing Skills","item":"https://rezaprama.github.io/RhetoriLex/en/writing-skills/discussion-writing/"}]}]}</script>
+<script src="../../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../../academic-writing/">Academic Writing</a><a href="../../scientific-writing/">Scientific Writing</a><a href="../../phrase-explorer/">Phrase Explorer</a><a href="../../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../../academic-writing/">Academic Writing</a><a href="../../scientific-writing/">Scientific Writing</a><a href="../../phrase-explorer/">Phrase Explorer</a><a href="../../paraphrasing/">Paraphrasing</a><a href="../../rhetorical-moves/">Rhetorical Moves</a><a href="../../research-writing-guides/">Research Writing Guides</a><a href="../../agent-skills/">Agent Skills</a><a href="../../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../../id/skill-penulisan/penulisan-diskusi/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../../">Home</a></li>
+    <li aria-current="page">Discussion Writing Skills</li>
+  </ol>
+</nav>
+    <header class="article-header skill-group-header">
+      <h1>Scientific discussion writing skills</h1>
+      <p class="lede">Interpret findings through study design, prior evidence, credible alternatives, meaningful limits, and bounded implications.</p>
+      <p class="catalog-count">13 writing skills</p>
+      
+    </header>
+    <nav class="skill-page-index" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol><li><a href="#summarising-principal-findings">Summarising principal findings</a></li><li><a href="#interpreting-findings">Interpreting findings</a></li><li><a href="#comparing-findings-with-literature">Comparing findings with literature</a></li><li><a href="#explaining-possible-mechanisms">Explaining possible mechanisms</a></li><li><a href="#presenting-competing-explanations">Presenting competing explanations</a></li><li><a href="#discussing-uncertainty">Discussing uncertainty</a></li><li><a href="#discussing-limitations">Discussing limitations</a></li><li><a href="#discussing-strengths">Discussing strengths</a></li><li><a href="#discussing-generalisability">Discussing generalisability</a></li><li><a href="#theoretical-implications">Theoretical implications</a></li><li><a href="#practical-implications">Practical implications</a></li><li><a href="#policy-implications">Policy implications</a></li><li><a href="#future-research-in-discussion">Future research</a></li></ol>
+    </nav>
+    <div class="skill-catalog"><article class="skill-reference" id="summarising-principal-findings">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.summarising_principal_findings</code><span>scientific</span></div>
+    <h2>Summarising principal findings</h2>
+    <a href="#summarising-principal-findings">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to restate the main answer at the start of the discussion without repeating every result, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The principal finding is that service continuity improved, but gains varied substantially across districts.</p><button class="copy-button" type="button" data-copy-value="The principal finding is that service continuity improved, but gains varied substantially across districts.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Restate the main answer at the start of the discussion without repeating every result.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>interpret_evidence, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#interpreting-findings">Interpreting findings</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="interpreting-findings">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.interpreting_findings</code><span>scientific</span></div>
+    <h2>Interpreting findings</h2>
+    <a href="#interpreting-findings">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to explain what the results support in relation to the question and design, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The pattern suggests that timely access may depend more on coordination than on the number of available providers.</p><button class="copy-button" type="button" data-copy-value="The pattern suggests that timely access may depend more on coordination than on the number of available providers.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Explain what the results support in relation to the question and design.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>interpret_evidence, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#summarising-principal-findings">Summarising principal findings</a>, <a href="./#comparing-findings-with-literature">Comparing findings with literature</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="comparing-findings-with-literature">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.comparing_findings_with_literature</code><span>scientific</span></div>
+    <h2>Comparing findings with literature</h2>
+    <a href="#comparing-findings-with-literature">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to relate the study to prior evidence on an explicit basis of similarity or difference, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Our estimate is smaller than that reported in national surveys but similar to results from other rural samples.</p><button class="copy-button" type="button" data-copy-value="Our estimate is smaller than that reported in national surveys but similar to results from other rural samples.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Relate the study to prior evidence on an explicit basis of similarity or difference.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>compare_findings, attribute_source</dd></div><div><dt>Related skills</dt><dd><a href="./#interpreting-findings">Interpreting findings</a>, <a href="./#explaining-possible-mechanisms">Explaining possible mechanisms</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="explaining-possible-mechanisms">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.explaining_possible_mechanisms</code><span>scientific</span></div>
+    <h2>Explaining possible mechanisms</h2>
+    <a href="#explaining-possible-mechanisms">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to offer a mechanism as a testable explanation and distinguish it from an observed result, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">One possible mechanism is that shorter forms reduce abandonment by lowering the initial effort required.</p><button class="copy-button" type="button" data-copy-value="One possible mechanism is that shorter forms reduce abandonment by lowering the initial effort required.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Offer a mechanism as a testable explanation and distinguish it from an observed result.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>interpret_evidence, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#comparing-findings-with-literature">Comparing findings with literature</a>, <a href="./#presenting-competing-explanations">Presenting competing explanations</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="presenting-competing-explanations">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.presenting_competing_explanations</code><span>scientific</span></div>
+    <h2>Presenting competing explanations</h2>
+    <a href="#presenting-competing-explanations">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to set out plausible alternatives and identify which evidence would distinguish them, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The change may reflect the new protocol, seasonal staffing, or both; the present design cannot separate these explanations.</p><button class="copy-button" type="button" data-copy-value="The change may reflect the new protocol, seasonal staffing, or both; the present design cannot separate these explanations.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Set out plausible alternatives and identify which evidence would distinguish them.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>contrast_findings, state_limitation</dd></div><div><dt>Related skills</dt><dd><a href="./#explaining-possible-mechanisms">Explaining possible mechanisms</a>, <a href="./#discussing-uncertainty">Discussing uncertainty</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="discussing-uncertainty">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.discussing_uncertainty</code><span>scientific</span></div>
+    <h2>Discussing uncertainty</h2>
+    <a href="#discussing-uncertainty">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to explain how precision, measurement, missingness, or model dependence affects interpretation, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Wide intervals around the subgroup estimates mean that the apparent difference should be interpreted cautiously.</p><button class="copy-button" type="button" data-copy-value="Wide intervals around the subgroup estimates mean that the apparent difference should be interpreted cautiously.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Explain how precision, measurement, missingness, or model dependence affects interpretation.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>report_uncertainty, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#presenting-competing-explanations">Presenting competing explanations</a>, <a href="./#discussing-limitations">Discussing limitations</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="discussing-limitations">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.discussing_limitations</code><span>scientific</span></div>
+    <h2>Discussing limitations</h2>
+    <a href="#discussing-limitations">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to connect each important design constraint to the inference it limits, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Self-reported exposure may introduce misclassification, particularly when recall periods are long.</p><button class="copy-button" type="button" data-copy-value="Self-reported exposure may introduce misclassification, particularly when recall periods are long.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Connect each important design constraint to the inference it limits.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>state_limitation</dd></div><div><dt>Related skills</dt><dd><a href="./#discussing-uncertainty">Discussing uncertainty</a>, <a href="./#discussing-strengths">Discussing strengths</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="discussing-strengths">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.discussing_strengths</code><span>scientific</span></div>
+    <h2>Discussing strengths</h2>
+    <a href="#discussing-strengths">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to describe design features that improve credibility without claiming that they remove all limitations, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">A prespecified analysis plan and independent outcome coding reduce flexibility in the primary comparison.</p><button class="copy-button" type="button" data-copy-value="A prespecified analysis plan and independent outcome coding reduce flexibility in the primary comparison.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Describe design features that improve credibility without claiming that they remove all limitations.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>justify_method, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#discussing-limitations">Discussing limitations</a>, <a href="./#discussing-generalisability">Discussing generalisability</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="discussing-generalisability">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.discussing_generalisability</code><span>scientific</span></div>
+    <h2>Discussing generalisability</h2>
+    <a href="#discussing-generalisability">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to assess which populations, settings, or periods the findings may reasonably inform, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The findings may apply to similarly sized public clinics but not to specialist centres with different referral pathways.</p><button class="copy-button" type="button" data-copy-value="The findings may apply to similarly sized public clinics but not to specialist centres with different referral pathways.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Assess which populations, settings, or periods the findings may reasonably inform.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>define_scope, state_limitation</dd></div><div><dt>Related skills</dt><dd><a href="./#discussing-strengths">Discussing strengths</a>, <a href="./#theoretical-implications">Theoretical implications</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="theoretical-implications">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.theoretical_implications</code><span>scientific</span></div>
+    <h2>Theoretical implications</h2>
+    <a href="#theoretical-implications">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to explain how findings support, refine, bound, or challenge a theoretical account, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The results refine the model by showing that institutional capacity changes across implementation stages.</p><button class="copy-button" type="button" data-copy-value="The results refine the model by showing that institutional capacity changes across implementation stages.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Explain how findings support, refine, bound, or challenge a theoretical account.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>interpret_evidence, state_contribution</dd></div><div><dt>Related skills</dt><dd><a href="./#discussing-generalisability">Discussing generalisability</a>, <a href="./#practical-implications">Practical implications</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="practical-implications">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.practical_implications</code><span>scientific</span></div>
+    <h2>Practical implications</h2>
+    <a href="#practical-implications">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to state a feasible practice implication proportional to the evidence and context, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">Teams may benefit from testing the shorter protocol before adopting it across all service units.</p><button class="copy-button" type="button" data-copy-value="Teams may benefit from testing the shorter protocol before adopting it across all service units.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>State a feasible practice implication proportional to the evidence and context.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>recommend_action, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#theoretical-implications">Theoretical implications</a>, <a href="./#policy-implications">Policy implications</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="policy-implications">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.policy_implications</code><span>scientific</span></div>
+    <h2>Policy implications</h2>
+    <a href="#policy-implications">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to translate evidence into a bounded policy consideration while naming uncertainty and affected settings, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">The results support considering flexible reporting deadlines in districts with intermittent connectivity.</p><button class="copy-button" type="button" data-copy-value="The results support considering flexible reporting deadlines in districts with intermittent connectivity.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Translate evidence into a bounded policy consideration while naming uncertainty and affected settings.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>recommend_action, qualify_claim</dd></div><div><dt>Related skills</dt><dd><a href="./#practical-implications">Practical implications</a>, <a href="./#future-research-in-discussion">Future research</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article><article class="skill-reference" id="future-research-in-discussion">
+  <header class="skill-reference-header">
+    <div><code>writing.scientific.discussion_writing.future_research</code><span>scientific</span></div>
+    <h2>Future research</h2>
+    <a href="#future-research-in-discussion">Permanent link</a>
+  </header>
+  <div class="skill-reference-body">
+    <p class="entry-description">Practical guidance to identify the next study needed to resolve a mechanism, boundary, or uncertainty exposed by the findings, with wording aligned to rhetorical purpose and available evidence.</p>
+    <div class="skill-example"><h3>Original example</h3><p class="phrase-template">A multi-site experiment is needed to determine whether the scheduling change itself improves retention.</p><button class="copy-button" type="button" data-copy-value="A multi-site experiment is needed to determine whether the scheduling change itself improves retention.">Copy example</button></div>
+    <dl class="skill-facts"><div><dt>Rhetorical objective</dt><dd>Identify the next study needed to resolve a mechanism, boundary, or uncertainty exposed by the findings.</dd></div><div><dt>Use cases</dt><dd><ul><li>discussion sections</li><li>evidence syntheses</li><li>research reports</li></ul></dd></div><div><dt>Related phrase functions</dt><dd>recommend_action, identify_gap</dd></div><div><dt>Related skills</dt><dd><a href="./#policy-implications">Policy implications</a></dd></div><div><dt>Evidence and claim warning</dt><dd>Separate results from interpretation, label explanations as provisional, and bound implications by design and uncertainty.</dd></div></dl>
+  </div>
+</article></div>
+    <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+    <div class="article-body skill-group-guide">
+<section><h2>Separate answer, explanation, and implication</h2><p>Begin with the supported answer. Compare prior evidence on a stated basis, mark explanations as tested or possible, and connect limitations to their consequences. Read <a href="../../discussion/">Discussion Writing</a>.</p></section>
+<aside class="article-note"><h2>Interpretation boundary</h2><p>Interest, novelty, and narrative importance do not justify stronger language. Generalisation and causal claims require their own evidence.</p></aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../../academic-writing/">Academic Writing</a></li><li><a href="../../scientific-writing/">Scientific Writing</a></li><li><a href="../../phrase-explorer/">Phrase Explorer</a></li><li><a href="../../paraphrasing/">Paraphrasing</a></li><li><a href="../../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../../research-writing-guides/">Research Writing Guides</a></li><li><a href="../../agent-skills/">Agent Skills</a></li><li><a href="../../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

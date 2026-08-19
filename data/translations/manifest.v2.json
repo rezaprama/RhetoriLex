@@ -1,0 +1,39 @@
+{
+  "format": "rhetorilex-translation-manifest",
+  "format_version": "2.0.0",
+  "canonical_language": "en",
+  "canonical_manifest": "../canonical/catalog-manifest.v2.json",
+  "available_languages": [],
+  "interface_languages": [
+    "id"
+  ],
+  "interface_catalogs": [
+    {
+      "language": "id",
+      "path": "writing-skills.id.v1.json",
+      "schema": "../schema/writing-skills-translation.v1.schema.json",
+      "source": "../editorial/writing-skills.v1.json",
+      "entry_count": 144,
+      "content": [
+        "group_labels",
+        "group_descriptions",
+        "skill_labels",
+        "skill_descriptions"
+      ],
+      "excludes": [
+        "english_examples",
+        "english_phrase_patterns"
+      ]
+    }
+  ],
+  "storage_policy": "Each language uses a separate file keyed by canonical ID; translated interface text never replaces English canonical text.",
+  "integrity_requirements": [
+    "preserve_ids",
+    "preserve_attribution",
+    "preserve_evidence_requirement",
+    "preserve_claim_strength",
+    "preserve_causal_status",
+    "do_not_translate_english_examples"
+  ]
+}
+

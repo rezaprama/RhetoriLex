@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Write a results section that reports comparison, magnitude, direction, uncertainty, and missingness without causal overclaiming.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/results/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/results/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/hasil/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/results/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="How to Write Results With Estimates and Uncertainty | RhetoriLex">
+<meta property="og:description" content="Write a results section that reports comparison, magnitude, direction, uncertainty, and missingness without causal overclaiming.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/results/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Write Results With Estimates and Uncertainty | RhetoriLex">
+<meta name="twitter:description" content="Write a results section that reports comparison, magnitude, direction, uncertainty, and missingness without causal overclaiming.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>How to Write Results With Estimates and Uncertainty | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/en/results/#page","url":"https://rezaprama.github.io/RhetoriLex/en/results/","name":"Results writing reports what the analysis estimated","headline":"Results writing reports what the analysis estimated","description":"Write a results section that reports comparison, magnitude, direction, uncertainty, and missingness without causal overclaiming.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Results Writing","item":"https://rezaprama.github.io/RhetoriLex/en/results/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../paraphrasing/">Paraphrasing</a><a href="../rhetorical-moves/">Rhetorical Moves</a><a href="../research-writing-guides/">Research Writing Guides</a><a href="../agent-skills/">Agent Skills</a><a href="../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../id/hasil/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li aria-current="page">Results Writing</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>Results writing reports what the analysis estimated</h1>
+        <p class="lede">Lead with the comparison and estimate, preserve uncertainty, and keep interpretation proportional to the design.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>Give each result a complete reference frame</h2>
+  <p>A result needs the outcome, groups or condition compared, direction, magnitude, unit, and uncertainty where appropriate. State the analysis population and time point when they are not already clear. Use tables for dense estimates, but make the text identify the findings that answer the research question.</p>
+  <p>Do not replace an estimate with a significance label. A small p-value does not show practical importance, and a large p-value does not establish no effect. Report intervals and discuss what values remain compatible with the data.</p>
+</section>
+<section>
+  <h2>Patterns for precise reporting</h2>
+  <p class="phrase-template">Outcome Y was [estimate and unit] higher in [group A] than in [group B] ([interval]), with [relevant adjustment or analysis population].</p>
+  <p class="phrase-template">The estimate was imprecise ([interval]), leaving both [scientifically relevant possibility A] and [possibility B] compatible with the data.</p>
+  <p>The first pattern requires a real comparison and correct direction. The second helps describe uncertainty without turning an inconclusive result into proof of absence.</p>
+</section>
+<section>
+  <h2>Keep design limits visible</h2>
+  <p>Observational results should normally use associated with, differed, or was related to rather than caused, improved, or prevented. See <a href="../association-vs-causation/">Association vs Causation</a>. Verify every number, unit, table reference, subgroup label, and sign against the final analysis output.</p>
+</section>
+<aside class="article-note">
+  <h2>Warning</h2>
+  <p>Never infer a within-group change from separate significance tests, or a group difference from one significant and one non-significant result. Report the direct comparison.</p>
+</aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../academic-writing/">Academic Writing</a></li><li><a href="../scientific-writing/">Scientific Writing</a></li><li><a href="../phrase-explorer/">Phrase Explorer</a></li><li><a href="../paraphrasing/">Paraphrasing</a></li><li><a href="../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../research-writing-guides/">Research Writing Guides</a></li><li><a href="../agent-skills/">Agent Skills</a></li><li><a href="../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

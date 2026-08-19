@@ -20,8 +20,10 @@ def _add_filters(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--evidence")
     parser.add_argument("--max-claim-strength")
     parser.add_argument("--discipline")
-    parser.add_argument("--stage")
+    parser.add_argument("--stage", "--section", dest="stage")
     parser.add_argument("--risk", choices=("low", "medium", "high"))
+    parser.add_argument("--domain")
+    parser.add_argument("--skill-area")
 
 
 def _filters(args: argparse.Namespace) -> dict[str, str | None]:
@@ -32,6 +34,8 @@ def _filters(args: argparse.Namespace) -> dict[str, str | None]:
         "discipline": args.discipline,
         "stage": args.stage,
         "risk": args.risk,
+        "domain": args.domain,
+        "skill_area": args.skill_area,
     }
 
 
@@ -39,8 +43,9 @@ def _print_result(result: SearchResult) -> None:
     print(f"{result.entry.id}  {result.entry.title}  [{result.score:.1f} {result.match}]")
     print(f"  {result.entry.template}")
     print(
-        f"  function={result.entry.function} evidence={result.entry.evidence_requirement} "
-        f"strength={result.entry.claim_strength} risk={result.entry.risk}"
+        f"  function={result.entry.function} stage={result.entry.stage} "
+        f"evidence={result.entry.evidence_requirement} strength={result.entry.claim_strength} "
+        f"risk={result.entry.risk} areas={','.join(result.entry.skill_areas)}"
     )
 
 
@@ -52,6 +57,8 @@ def _print_entry(entry: Entry) -> None:
         f"Function: {entry.function} | stage: {entry.stage} | "
         f"evidence: {entry.evidence_requirement} | claim: {entry.claim_strength} | risk: {entry.risk}"
     )
+    print(f"Skill areas: {', '.join(entry.skill_areas)}")
+    print(f"Domains: {', '.join(entry.domains)}")
     print(f"Notes: {entry.notes}")
 
 
@@ -67,14 +74,18 @@ def build_parser() -> argparse.ArgumentParser:
     search.add_argument("--no-fuzzy", action="store_true")
     _add_filters(search)
 
-    suggest = commands.add_parser("suggest", help="complete functions, titles, and keywords")
+    browse = commands.add_parser("browse", help="browse templates by paper section or semantic facet")
+    browse.add_argument("--limit", type=int, default=25)
+    _add_filters(browse)
+
+    suggest = commands.add_parser("suggest", help="complete moves, titles, keywords, and aliases")
     suggest.add_argument("prefix")
     suggest.add_argument("--limit", type=int, default=8)
 
     explain = commands.add_parser("explain", help="show use guidance and contract status")
     explain.add_argument("id")
 
-    inspect = commands.add_parser("inspect", help="show catalog health and distribution")
+    inspect = commands.add_parser("inspect", help="show catalog health and facet distribution")
     inspect.add_argument("--validate", action="store_true")
 
     taxonomy = commands.add_parser("taxonomy", help="show stable semantic taxonomy")
@@ -104,6 +115,16 @@ def main(argv: Sequence[str] | None = None) -> int:
                 for result in results:
                     _print_result(result)
             return 0 if results else 1
+
+        if args.command == "browse":
+            entries = catalog.browse(limit=args.limit, **_filters(args))
+            if args.json:
+                print(_json([entry.as_dict() for entry in entries]))
+            else:
+                for entry in entries:
+                    _print_entry(entry)
+                    print()
+            return 0 if entries else 1
 
         if args.command == "suggest":
             suggestions = catalog.suggest(args.prefix, limit=args.limit)

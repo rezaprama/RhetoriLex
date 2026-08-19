@@ -4,12 +4,13 @@ PLUGIN_ZIP ?= $(DIST_DIR)/rhetorilex-plugin.zip
 
 .DEFAULT_GOAL := help
 
-.PHONY: help validate build test skill-check restricted-check package verify-package determinism pages check release-check
+.PHONY: help validate build site test skill-check restricted-check package verify-package determinism pages check release-check
 
 help:
 	@echo "RhetoriLex developer targets"
 	@echo "  make validate        Validate canonical data"
 	@echo "  make build           Build public data and package resources"
+	@echo "  make site            Build bilingual static reference pages"
 	@echo "  make test            Run unit tests"
 	@echo "  make skill-check     Validate bundled Codex skill"
 	@echo "  make package         Build deterministic plugin ZIP + SHA-256"
@@ -22,6 +23,9 @@ validate:
 
 build:
 	$(PYTHON) scripts/build_data.py
+
+site: build
+	$(PYTHON) docs/build_site.py
 
 test:
 	$(PYTHON) -m unittest discover -s tests -v
@@ -41,9 +45,9 @@ verify-package: package
 determinism:
 	$(PYTHON) .github/scripts/check_determinism.py
 
-pages: build
+pages: site
 	$(PYTHON) .github/scripts/prepare_pages.py
 
-check: restricted-check validate build test skill-check verify-package determinism
+check: restricted-check validate site test skill-check verify-package determinism
 
 release-check: check pages

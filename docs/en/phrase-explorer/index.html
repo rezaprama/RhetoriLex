@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Search original academic English patterns by natural-language intent, section, function, claim strength, evidence requirement, and risk.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/penjelajah-frasa/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Academic Phrase Explorer by Rhetorical Intent | RhetoriLex">
+<meta property="og:description" content="Search original academic English patterns by natural-language intent, section, function, claim strength, evidence requirement, and risk.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Academic Phrase Explorer by Rhetorical Intent | RhetoriLex">
+<meta name="twitter:description" content="Search original academic English patterns by natural-language intent, section, function, claim strength, evidence requirement, and risk.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Academic Phrase Explorer by Rhetorical Intent | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/#page","url":"https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/","name":"Find an academic phrase by rhetorical intent","headline":"Find an academic phrase by rhetorical intent","description":"Search original academic English patterns by natural-language intent, section, function, claim strength, evidence requirement, and risk.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"},"mainEntity":{"@type":"Dataset","name":"RhetoriLex rhetorical pattern catalog","description":"Original academic English patterns with rhetorical and evidence metadata.","url":"https://rezaprama.github.io/RhetoriLex/data/phrases.json","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"inLanguage":"en","distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://rezaprama.github.io/RhetoriLex/data/phrases.json"}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Phrase Explorer","item":"https://rezaprama.github.io/RhetoriLex/en/phrase-explorer/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="./" aria-current="page">Phrase Explorer</a><a href="../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="./" aria-current="page">Phrase Explorer</a><a href="../paraphrasing/">Paraphrasing</a><a href="../rhetorical-moves/">Rhetorical Moves</a><a href="../research-writing-guides/">Research Writing Guides</a><a href="../agent-skills/">Agent Skills</a><a href="../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../id/penjelajah-frasa/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li aria-current="page">Phrase Explorer</li>
+  </ol>
+</nav>
+    <header class="article-header">
+      <h1>Find an academic phrase by rhetorical intent</h1>
+      <p class="lede">Describe the work your sentence must do. Results expose evidence requirements and claim risk before you copy a pattern.</p>
+    </header>
+    <section class="explorer-workspace" data-explorer data-locale="en" data-catalog-url="../../data/phrases.json" aria-labelledby="explorer-form-title">
+      <h2 class="sr-only" id="explorer-form-title">Phrase Explorer</h2>
+      <form class="explorer-form" id="explorer-form" role="search">
+        <label class="explorer-query" for="query">
+          <span>Rhetorical intent</span>
+          <input id="query" name="q" type="search" placeholder="e.g. cautious interpretation of an observational result" autocomplete="off">
+        </label>
+        <div class="explorer-actions">
+          <button class="primary-button" type="submit">Search</button>
+          <button class="secondary-button" id="clear-search" type="button">Clear</button>
+        </div>
+        <details class="filter-panel">
+          <summary>Refine by metadata</summary>
+          <div class="filter-grid">
+            <label for="section-filter"><span>Manuscript stage</span><select id="section-filter" name="stage"><option value="">All stages</option></select></label>
+            <label for="function-filter"><span>Rhetorical function</span><select id="function-filter" name="function"><option value="">All functions</option></select></label>
+            <label for="strength-filter"><span>Claim strength</span><select id="strength-filter" name="strength"><option value="">Any strength</option></select></label>
+            <label for="evidence-filter"><span>Evidence requirement</span><select id="evidence-filter" name="evidence"><option value="">Any evidence requirement</option></select></label>
+            <label for="risk-filter"><span>Risk</span><select id="risk-filter" name="risk"><option value="">Any risk level</option></select></label>
+          </div>
+        </details>
+      </form>
+      <div class="explorer-status" id="explorer-status" role="status" aria-live="polite">Loading the local reference catalog...</div>
+      <div class="results" id="results" aria-live="polite" aria-busy="true"></div>
+      <button class="secondary-button show-more" id="show-more" type="button" hidden>Show more results</button>
+      <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+      <noscript><p class="notice">JavaScript is required for interactive search. The static guide and local command-line interface remain available.</p></noscript>
+    </section>
+    <div class="article-body explorer-guide">
+<section class="explainer-grid" aria-labelledby="read-entry-title">
+  <div>
+    <h2 id="read-entry-title">How to read a phrase reference</h2>
+    <p>The template is a starting structure, not a sentence to paste unchanged. The function identifies its rhetorical job. Claim strength and evidence requirement indicate what must be true before the wording is defensible. Notes and causal guards identify conditions that need human review.</p>
+  </div>
+  <div>
+    <h2>Adapt, then verify</h2>
+    <p>Replace every placeholder with manuscript-specific content. Compare the result with the source claim and evidence. Preserve citations, numbers, units, negation, comparison direction, population, time, and uncertainty. Copying a pattern does not transfer support from another study.</p>
+  </div>
+</section>
+<section class="reference-anatomy" aria-labelledby="anatomy-title">
+  <h2 id="anatomy-title">Reference entry anatomy</h2>
+  <article class="phrase-entry static-entry">
+    <div class="entry-meta"><code>EXAMPLE-BOUNDING</code><span>Discussion</span><span>Tentative claim</span></div>
+    <h3>Bound an interpretation</h3>
+    <p class="phrase-template">Taken together, these findings suggest that [bounded interpretation], although [limitation] constrains conclusions about [scope].</p>
+    <button class="copy-button" type="button" data-copy-value="Taken together, these findings suggest that [bounded interpretation], although [limitation] constrains conclusions about [scope].">Copy pattern</button>
+    <dl class="entry-facts"><div><dt>Evidence requirement</dt><dd>Convergent</dd></div><div><dt>Risk</dt><dd>Low when the limitation is explicit</dd></div><div><dt>Causal guard</dt><dd>Not required for this tentative pattern</dd></div></dl>
+  </article>
+</section>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../academic-writing/">Academic Writing</a></li><li><a href="../scientific-writing/">Scientific Writing</a></li><li><a href="./" aria-current="page">Phrase Explorer</a></li><li><a href="../paraphrasing/">Paraphrasing</a></li><li><a href="../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../research-writing-guides/">Research Writing Guides</a></li><li><a href="../agent-skills/">Agent Skills</a></li><li><a href="../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

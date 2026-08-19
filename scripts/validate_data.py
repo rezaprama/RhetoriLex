@@ -11,11 +11,22 @@ import string
 import sys
 from typing import Any, Iterable
 
+from validate_writing_skills import validate_writing_skills
+
+
+
+
+
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CATALOG = ROOT / "data" / "canonical" / "catalog.v1.jsonl"
-DEFAULT_TAXONOMY = ROOT / "data" / "taxonomy" / "taxonomy.v1.json"
+DEFAULT_CATALOG = ROOT / "data" / "canonical"
+DEFAULT_TAXONOMY = ROOT / "data" / "taxonomy" / "taxonomy.v1.1.json"
 DEFAULT_CONTRACT = ROOT / "data" / "contracts" / "evidence-claim.v1.json"
+DEFAULT_ALIASES = ROOT / "data" / "taxonomy" / "search-aliases.v1.json"
+DEFAULT_WRITING_SKILLS = ROOT / "data" / "editorial" / "writing-skills.v1.json"
+DEFAULT_WRITING_SKILLS_ID = ROOT / "data" / "translations" / "writing-skills.id.v1.json"
+
+
 ID_RE = re.compile(r"^RLX-[A-Z]{3}-[0-9]{3}$")
 PLACEHOLDER_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 
@@ -47,21 +58,55 @@ def load_json(path: Path) -> dict[str, Any]:
     return value
 
 
+def canonical_manifest(path: Path = DEFAULT_CATALOG) -> dict[str, Any]:
+    manifest_path = path / "catalog-manifest.v2.json"
+    manifest = load_json(manifest_path)
+    if manifest.get("format") != "rhetorilex-canonical-manifest":
+        raise ValueError(f"{manifest_path}: unexpected canonical manifest format")
+    if manifest.get("release_version") != "0.2.0":
+        raise ValueError(f"{manifest_path}: release_version must be 0.2.0")
+    shards = manifest.get("shards")
+    if not isinstance(shards, list) or not shards or not all(isinstance(item, str) for item in shards):
+        raise ValueError(f"{manifest_path}: shards must be a non-empty string array")
+    if len(shards) != len(set(shards)):
+        raise ValueError(f"{manifest_path}: shard names must be unique")
+    if any(Path(item).name != item or not item.endswith(".jsonl") for item in shards):
+        raise ValueError(f"{manifest_path}: shard names must be local .jsonl filenames")
+    return manifest
+
+
+def catalog_files(path: Path = DEFAULT_CATALOG) -> list[Path]:
+    if path.is_dir():
+        manifest = canonical_manifest(path)
+        declared = list(manifest["shards"])
+        discovered = sorted(item.name for item in path.glob("*.jsonl"))
+        if sorted(declared) != discovered:
+            raise ValueError(
+                f"{path}: canonical shards differ from manifest; "
+                f"declared={sorted(declared)} discovered={discovered}"
+            )
+        files = [path / name for name in declared]
+        missing = [item.name for item in files if not item.is_file()]
+        if missing:
+            raise ValueError(f"{path}: missing canonical shards {missing}")
+        return files
+    return [path]
+
 def load_entries(path: Path = DEFAULT_CATALOG) -> list[dict[str, Any]]:
     entries: list[dict[str, Any]] = []
-    with path.open("r", encoding="utf-8") as handle:
-        for line_number, line in enumerate(handle, start=1):
-            if not line.strip():
-                continue
-            try:
-                value = json.loads(line)
-            except json.JSONDecodeError as exc:
-                raise ValueError(f"{path}:{line_number}: {exc}") from exc
-            if not isinstance(value, dict):
-                raise ValueError(f"{path}:{line_number}: expected JSON object")
-            entries.append(value)
+    for shard in catalog_files(path):
+        with shard.open("r", encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, start=1):
+                if not line.strip():
+                    continue
+                try:
+                    value = json.loads(line)
+                except json.JSONDecodeError as exc:
+                    raise ValueError(f"{shard}:{line_number}: {exc}") from exc
+                if not isinstance(value, dict):
+                    raise ValueError(f"{shard}:{line_number}: expected JSON object")
+                entries.append(value)
     return entries
-
 
 def placeholders(template: str) -> set[str]:
     return {
@@ -74,6 +119,135 @@ def placeholders(template: str) -> set[str]:
 def _ids(items: Iterable[dict[str, Any]]) -> set[str]:
     return {str(item["id"]) for item in items}
 
+
+def _unique_ids(items: Any, label: str, errors: list[str]) -> set[str]:
+    if not isinstance(items, list):
+        errors.append(f"taxonomy {label} must be an array")
+        return set()
+    ids: list[str] = []
+    for index, item in enumerate(items):
+        if not isinstance(item, dict) or not isinstance(item.get("id"), str):
+            errors.append(f"taxonomy {label}[{index}] must have a string id")
+            continue
+        ids.append(item["id"])
+    if len(ids) != len(set(ids)):
+        errors.append(f"taxonomy {label} ids must be unique")
+    return set(ids)
+
+
+def validate_taxonomy_extensions(taxonomy: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    functions = _unique_ids(taxonomy.get("rhetorical_functions"), "rhetorical_functions", errors)
+    domains = _unique_ids(taxonomy.get("domains"), "domains", errors)
+    skill_areas = _unique_ids(taxonomy.get("skill_areas"), "skill_areas", errors)
+    disciplines = taxonomy.get("disciplines")
+    stages = taxonomy.get("stages")
+    if not isinstance(disciplines, list) or not all(isinstance(item, str) for item in disciplines):
+        errors.append("taxonomy disciplines must be a string array")
+        discipline_ids: set[str] = set()
+    else:
+        discipline_ids = set(disciplines)
+        if len(disciplines) != len(discipline_ids):
+            errors.append("taxonomy disciplines must be unique")
+    if not isinstance(stages, list) or not all(isinstance(item, str) for item in stages):
+        errors.append("taxonomy stages must be a string array")
+    elif len(stages) != len(set(stages)):
+        errors.append("taxonomy stages must be unique")
+
+    covered_functions: set[str] = set()
+    for area in taxonomy.get("skill_areas", []):
+        if not isinstance(area, dict):
+            continue
+        area_functions = area.get("functions")
+        if not isinstance(area_functions, list) or not area_functions:
+            errors.append(f"skill area {area.get('id')!r} must list functions")
+            continue
+        if not all(isinstance(item, str) for item in area_functions):
+            errors.append(f"skill area {area.get('id')!r} functions must be strings")
+            continue
+        unknown = set(area_functions) - functions
+        if unknown:
+            errors.append(f"skill area {area.get('id')!r} has unknown functions {sorted(unknown)}")
+        covered_functions.update(area_functions)
+    if functions - covered_functions:
+        errors.append(f"functions without skill area {sorted(functions - covered_functions)}")
+
+    covered_disciplines: set[str] = set()
+    for domain in taxonomy.get("domains", []):
+        if not isinstance(domain, dict):
+            continue
+        values = domain.get("disciplines")
+        if not isinstance(values, list) or not values or not all(isinstance(item, str) for item in values):
+            errors.append(f"domain {domain.get('id')!r} must list disciplines")
+            continue
+        unknown = set(values) - discipline_ids
+        if unknown:
+            errors.append(f"domain {domain.get('id')!r} has unknown disciplines {sorted(unknown)}")
+        covered_disciplines.update(values)
+    if discipline_ids - covered_disciplines:
+        errors.append(f"disciplines without domain {sorted(discipline_ids - covered_disciplines)}")
+    if len(domains) < 8:
+        errors.append("taxonomy requires at least eight distinct domains")
+    if len(skill_areas) < 12:
+        errors.append("taxonomy requires at least twelve skill areas")
+    return errors
+
+
+def _alias_array(value: Any, label: str, errors: list[str]) -> None:
+    if not isinstance(value, list) or not value or not all(isinstance(item, str) and len(item) >= 2 for item in value):
+        errors.append(f"{label} must be a non-empty array of strings with at least two characters")
+    elif len(value) != len(set(value)):
+        errors.append(f"{label} values must be unique")
+
+
+def validate_search_aliases(aliases: dict[str, Any], taxonomy: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    if aliases.get("format") != "rhetorilex-search-aliases":
+        errors.append("search aliases has unknown format")
+    functions = {item["id"] for item in taxonomy["rhetorical_functions"]}
+    stages = set(taxonomy["stages"])
+    disciplines = set(taxonomy["disciplines"])
+    mappings = (
+        ("function_aliases", functions, True),
+        ("stage_aliases", stages, False),
+        ("discipline_aliases", disciplines, False),
+    )
+    for field_name, allowed, exhaustive in mappings:
+        mapping = aliases.get(field_name)
+        if not isinstance(mapping, dict):
+            errors.append(f"search aliases {field_name} must be an object")
+            continue
+        unknown = set(mapping) - allowed
+        if unknown:
+            errors.append(f"search aliases {field_name} has unknown ids {sorted(unknown)}")
+        if exhaustive and allowed - set(mapping):
+            errors.append(f"search aliases missing functions {sorted(allowed - set(mapping))}")
+        for key, values in mapping.items():
+            _alias_array(values, f"search aliases {field_name}.{key}", errors)
+    groups = aliases.get("concept_groups")
+    if not isinstance(groups, list) or not groups:
+        errors.append("search aliases concept_groups must be a non-empty array")
+    else:
+        group_ids: list[str] = []
+        for index, group in enumerate(groups):
+            if not isinstance(group, dict) or not isinstance(group.get("id"), str):
+                errors.append(f"search aliases concept_groups[{index}] must have a string id")
+                continue
+            group_ids.append(group["id"])
+            _alias_array(group.get("terms"), f"search aliases concept group {group['id']} terms", errors)
+            group_functions = group.get("functions")
+            if not isinstance(group_functions, list) or not group_functions:
+                errors.append(f"search aliases concept group {group['id']} must list functions")
+            elif not all(isinstance(item, str) for item in group_functions):
+                errors.append(f"search aliases concept group {group['id']} functions must be strings")
+            elif set(group_functions) - functions:
+                errors.append(
+                    f"search aliases concept group {group['id']} has unknown functions "
+                    f"{sorted(set(group_functions) - functions)}"
+                )
+        if len(group_ids) != len(set(group_ids)):
+            errors.append("search aliases concept group ids must be unique")
+    return errors
 
 def _has_duplicates(values: list[Any]) -> bool:
     """Compare JSON values deterministically, including unhashable arrays/objects."""
@@ -146,7 +320,7 @@ def validate(
     taxonomy: dict[str, Any],
     contract: dict[str, Any],
 ) -> list[str]:
-    errors: list[str] = []
+    errors: list[str] = validate_taxonomy_extensions(taxonomy)
     functions = _ids(taxonomy["rhetorical_functions"])
     strengths = _ids(taxonomy["claim_strengths"])
     evidence_values = _ids(taxonomy["evidence_requirements"])
@@ -323,8 +497,8 @@ def validate(
     duplicates = sorted(key for key, count in seen.items() if count > 1)
     if duplicates:
         errors.append(f"duplicate ids: {duplicates}")
-    if not 36 <= len(entries) <= 60:
-        errors.append(f"catalog must contain 36-60 entries; found {len(entries)}")
+    if not 72 <= len(entries) <= 240:
+        errors.append(f"catalog must contain 72-240 entries; found {len(entries)}")
     counts = Counter(
         row.get("function")
         for row in entries
@@ -333,20 +507,40 @@ def validate(
     missing_functions = sorted(functions - counts.keys())
     if missing_functions:
         errors.append(f"functions without entries: {missing_functions}")
-    thin_functions = sorted(key for key, count in counts.items() if key in functions and count < 3)
+    thin_functions = sorted(key for key, count in counts.items() if key in functions and count < 4)
     if thin_functions:
-        errors.append(f"functions need at least three entries: {thin_functions}")
+        errors.append(f"functions need at least four entries: {thin_functions}")
     return errors
 
 def validate_paths(
     catalog_path: Path = DEFAULT_CATALOG,
     taxonomy_path: Path = DEFAULT_TAXONOMY,
     contract_path: Path = DEFAULT_CONTRACT,
+    aliases_path: Path = DEFAULT_ALIASES,
 ) -> tuple[list[dict[str, Any]], dict[str, Any], dict[str, Any], list[str]]:
     entries = load_entries(catalog_path)
     taxonomy = load_json(taxonomy_path)
     contract = load_json(contract_path)
-    return entries, taxonomy, contract, validate(entries, taxonomy, contract)
+    errors = validate(entries, taxonomy, contract)
+    aliases = load_json(aliases_path)
+    errors.extend(validate_search_aliases(aliases, taxonomy))
+    writing_skills = load_json(DEFAULT_WRITING_SKILLS)
+    writing_skills_id = load_json(DEFAULT_WRITING_SKILLS_ID)
+    errors.extend(validate_writing_skills(writing_skills, writing_skills_id, taxonomy))
+
+
+    if catalog_path.is_dir():
+        manifest = canonical_manifest(catalog_path)
+        if manifest.get("entry_count") != len(entries):
+            errors.append(
+                f"canonical manifest entry_count={manifest.get('entry_count')!r} "
+                f"does not match {len(entries)} entries"
+            )
+        if manifest.get("taxonomy") != "../taxonomy/taxonomy.v1.1.json":
+            errors.append("canonical manifest taxonomy path is not Phase 2 taxonomy")
+        if manifest.get("schema") != "../schema/canonical-entry.v1.1.schema.json":
+            errors.append("canonical manifest schema path is not Phase 2 schema")
+    return entries, taxonomy, contract, errors
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -354,9 +548,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--taxonomy", type=Path, default=DEFAULT_TAXONOMY)
     parser.add_argument("--contract", type=Path, default=DEFAULT_CONTRACT)
+    parser.add_argument("--aliases", type=Path, default=DEFAULT_ALIASES)
     args = parser.parse_args(argv)
     try:
-        entries, _, _, errors = validate_paths(args.catalog, args.taxonomy, args.contract)
+        entries, _, _, errors = validate_paths(args.catalog, args.taxonomy, args.contract, args.aliases)
     except (OSError, ValueError, KeyError, TypeError) as exc:
         print(f"validation failed: {exc}", file=sys.stderr)
         return 2

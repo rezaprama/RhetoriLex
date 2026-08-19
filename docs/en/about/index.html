@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Learn how RhetoriLex maintains an original clean-room academic phrase catalog, evidence safeguards, open licensing, and project governance.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/about/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/about/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/tentang/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="About RhetoriLex: Originality, Provenance, and Licensing">
+<meta property="og:description" content="Learn how RhetoriLex maintains an original clean-room academic phrase catalog, evidence safeguards, open licensing, and project governance.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/about/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About RhetoriLex: Originality, Provenance, and Licensing">
+<meta name="twitter:description" content="Learn how RhetoriLex maintains an original clean-room academic phrase catalog, evidence safeguards, open licensing, and project governance.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>About RhetoriLex: Originality, Provenance, and Licensing</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/en/about/#page","url":"https://rezaprama.github.io/RhetoriLex/en/about/","name":"RhetoriLex is an original rhetorical pattern index","headline":"RhetoriLex is an original rhetorical pattern index","description":"Learn how RhetoriLex maintains an original clean-room academic phrase catalog, evidence safeguards, open licensing, and project governance.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"About","item":"https://rezaprama.github.io/RhetoriLex/en/about/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../research-writing-guides/">Research Writing Guides</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../paraphrasing/">Paraphrasing</a><a href="../rhetorical-moves/">Rhetorical Moves</a><a href="../research-writing-guides/">Research Writing Guides</a><a href="../agent-skills/">Agent Skills</a><a href="./" aria-current="page">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../id/tentang/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li aria-current="page">About</li>
+  </ol>
+</nav>
+    <article>
+      <header class="article-header">
+        <h1>RhetoriLex is an original rhetorical pattern index</h1>
+        <p class="lede">The project helps writers choose language by purpose and evidence without redistributing restricted phrasebank content.</p>
+      </header>
+      <div class="article-body">
+<section>
+  <h2>What the project provides</h2>
+  <p>RhetoriLex is a structured catalog of independently authored English patterns for academic and scientific writing. Each record links a rhetorical function to a template, manuscript stage, claim strength, evidence requirement, risk level, and review notes. The web explorer, Python interface, command-line tool, and Agent Skill consume the same released data.</p>
+  <p>The catalog is a writing aid, not an authority on whether a scientific claim is true. Writers remain responsible for source accuracy, disciplinary conventions, research integrity, and the fit between wording and evidence.</p>
+</section>
+<section>
+  <h2>Clean-room authorship and provenance</h2>
+  <p>Released patterns are original editorial work. Restricted local source inventories are excluded from the repository and release artifacts. The project does not import, reproduce, or lightly rewrite the Manchester Academic Phrasebank inventory. External resources may inform concepts, taxonomy, or aggregate validation only when their role and license are documented.</p>
+  <p>Build checks scan tracked and packaged content for restricted filenames and other leakage indicators. Provenance records state what was considered, what was excluded, and why. Read the complete <a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">provenance policy</a> before proposing a new corpus source.</p>
+</section>
+<section>
+  <h2>Licensing and attribution</h2>
+  <p>Original editorial data and human-facing documentation are released under Creative Commons Attribution 4.0. Software and Agent Skill instructions are released under Apache License 2.0. Third-party material, if accepted in the future, must retain its own notice and may not be covered by either project license.</p>
+  <p>Created by Reza Prama Arviandi. Contributors are credited through repository history and release records. See the <a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">software license</a>, <a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSES/CC-BY-4.0.txt">data license</a>, and <a href="https://github.com/rezaprama/RhetoriLex/blob/main/GOVERNANCE.md">governance policy</a>.</p>
+</section>
+<section>
+  <h2>How to contribute responsibly</h2>
+  <p>Propose a rhetorical need, evidence contract, and original wording. Do not contribute phrases copied from restricted sources or manuscripts without authorisation. Tests check schema validity, deterministic builds, safety semantics, and provenance metadata. Editorial review checks whether a pattern is useful, distinct, natural, and calibrated to its evidence requirement.</p>
+  <p>Use the repository issue tracker for defects, taxonomy proposals, accessibility reports, and documentation improvements. Report security concerns through the documented private channel rather than a public issue.</p>
+</section>
+<aside class="article-note">
+  <h2>Scope</h2>
+  <p>RhetoriLex does not generate evidence, verify every citation, replace domain review, or guarantee publication. It makes wording decisions more explicit and auditable.</p>
+</aside>
+</div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Original rhetorical patterns for evidence-calibrated academic writing.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../academic-writing/">Academic Writing</a></li><li><a href="../scientific-writing/">Scientific Writing</a></li><li><a href="../phrase-explorer/">Phrase Explorer</a></li><li><a href="../paraphrasing/">Paraphrasing</a></li><li><a href="../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../research-writing-guides/">Research Writing Guides</a></li><li><a href="../agent-skills/">Agent Skills</a></li><li><a href="./" aria-current="page">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

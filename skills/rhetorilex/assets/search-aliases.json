@@ -1,0 +1,294 @@
+{
+  "concept_groups": [
+    {
+      "functions": [
+        "describe_association",
+        "distinguish_causation",
+        "causal_claim",
+        "qualify_claim"
+      ],
+      "id": "association_causation",
+      "terms": [
+        "association versus causation",
+        "correlation is not causation",
+        "causal overclaim"
+      ]
+    },
+    {
+      "functions": [
+        "introduce_evidence",
+        "interpret_evidence",
+        "qualify_claim",
+        "attribute_source"
+      ],
+      "id": "evidential_force",
+      "terms": [
+        "suggests indicates supports demonstrates confirms",
+        "evidential verb strength",
+        "calibrate evidence verb"
+      ]
+    },
+    {
+      "functions": [
+        "report_null_result",
+        "report_uncertainty",
+        "qualify_claim"
+      ],
+      "id": "null_evidence",
+      "terms": [
+        "absence of evidence",
+        "evidence of absence",
+        "non significance",
+        "equivalence"
+      ]
+    },
+    {
+      "functions": [
+        "paraphrase_with_attribution",
+        "attribute_source"
+      ],
+      "id": "integrity_paraphrase",
+      "terms": [
+        "preserve citation",
+        "meaning preserving rewrite",
+        "structural paraphrase",
+        "plagiarism safe"
+      ]
+    },
+    {
+      "functions": [
+        "respond_reviewer"
+      ],
+      "id": "publication_response",
+      "terms": [
+        "reviewer rebuttal",
+        "revise manuscript",
+        "answer peer review"
+      ]
+    },
+    {
+      "functions": [
+        "establish_context",
+        "describe_method",
+        "introduce_evidence",
+        "interpret_evidence",
+        "state_contribution"
+      ],
+      "id": "paper_navigation",
+      "terms": [
+        "paper section",
+        "chapter writing",
+        "browse manuscript moves"
+      ]
+    }
+  ],
+  "discipline_aliases": {
+    "business": [
+      "management research",
+      "business study"
+    ],
+    "clinical_research": [
+      "clinical study",
+      "trial reporting"
+    ],
+    "computer_science": [
+      "algorithm evaluation",
+      "machine learning paper"
+    ],
+    "engineering": [
+      "technical design",
+      "system evaluation"
+    ],
+    "health_sciences": [
+      "health research",
+      "biomedical writing"
+    ],
+    "humanities": [
+      "interpretive scholarship",
+      "textual analysis"
+    ],
+    "law": [
+      "legal scholarship",
+      "doctrinal analysis"
+    ],
+    "qualitative_research": [
+      "interviews",
+      "thematic analysis"
+    ],
+    "quantitative_research": [
+      "statistical analysis",
+      "empirical quantitative"
+    ],
+    "sciences": [
+      "natural science",
+      "experimental research"
+    ],
+    "social_sciences": [
+      "social research",
+      "behavioral research"
+    ]
+  },
+  "format": "rhetorilex-search-aliases",
+  "function_aliases": {
+    "attribute_source": [
+      "authors argue",
+      "according to source",
+      "citation boundary"
+    ],
+    "causal_claim": [
+      "cause and effect",
+      "treatment effect",
+      "causal inference"
+    ],
+    "compare_findings": [
+      "similar results",
+      "compare studies",
+      "agreement with prior work"
+    ],
+    "contrast_findings": [
+      "different results",
+      "disagree with literature",
+      "contrast studies"
+    ],
+    "define_scope": [
+      "set boundaries",
+      "define population",
+      "delimit study",
+      "delimit study population"
+    ],
+    "describe_association": [
+      "correlation wording",
+      "relationship between variables",
+      "non causal link"
+    ],
+    "describe_method": [
+      "methodology wording",
+      "report procedure",
+      "describe analysis"
+    ],
+    "distinguish_causation": [
+      "association not causation",
+      "causal caution",
+      "avoid causal language"
+    ],
+    "establish_context": [
+      "research background",
+      "problem statement",
+      "motivate study"
+    ],
+    "identify_gap": [
+      "research gap",
+      "knowledge deficit",
+      "unanswered question"
+    ],
+    "interpret_evidence": [
+      "explain a finding",
+      "meaning of results",
+      "interpret data"
+    ],
+    "interpret_qualitative_evidence": [
+      "interpret interview theme",
+      "qualitative finding",
+      "deviant case"
+    ],
+    "introduce_evidence": [
+      "present evidence",
+      "report data",
+      "introduce a result"
+    ],
+    "justify_method": [
+      "method rationale",
+      "why this method",
+      "design choice"
+    ],
+    "paraphrase_with_attribution": [
+      "ethical paraphrase",
+      "rewrite source with citation",
+      "avoid patchwriting"
+    ],
+    "position_claim": [
+      "thesis statement",
+      "main argument",
+      "take a position"
+    ],
+    "qualify_claim": [
+      "hedge a claim",
+      "add caution",
+      "limit certainty"
+    ],
+    "recommend_action": [
+      "future research",
+      "practical implication",
+      "next step"
+    ],
+    "report_null_result": [
+      "non significant finding",
+      "no detected difference",
+      "inconclusive result"
+    ],
+    "report_uncertainty": [
+      "confidence interval",
+      "precision wording",
+      "sensitivity range"
+    ],
+    "respond_reviewer": [
+      "reply to peer review",
+      "response letter",
+      "address reviewer comment"
+    ],
+    "state_contribution": [
+      "research contribution",
+      "what study adds",
+      "thesis contribution"
+    ],
+    "state_limitation": [
+      "study weakness",
+      "caveat",
+      "boundary of inference"
+    ],
+    "synthesize_sources": [
+      "literature synthesis",
+      "combine sources",
+      "integrate studies"
+    ]
+  },
+  "stage_aliases": {
+    "abstract": [
+      "summary",
+      "structured abstract"
+    ],
+    "conclusion": [
+      "closing section",
+      "takeaway"
+    ],
+    "discussion": [
+      "interpretation section",
+      "meaning of findings"
+    ],
+    "introduction": [
+      "opening section",
+      "research framing"
+    ],
+    "limitations": [
+      "study limitations",
+      "caveats"
+    ],
+    "literature_review": [
+      "related work",
+      "background literature"
+    ],
+    "methods": [
+      "methodology",
+      "materials and methods"
+    ],
+    "peer_review_response": [
+      "rebuttal letter",
+      "review response"
+    ],
+    "results": [
+      "findings",
+      "analysis output"
+    ]
+  },
+  "version": "1.0.0"
+}

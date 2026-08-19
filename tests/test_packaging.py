@@ -17,11 +17,11 @@ class PluginPackagingTests(unittest.TestCase):
     def test_archive_is_verified_and_carries_mixed_license_notices(self) -> None:
         with tempfile.TemporaryDirectory() as raw:
             archive = Path(raw) / "rhetorilex-plugin.zip"
-            built, sidecar, digest = build_archive(ROOT, output=archive, expected_version="0.1.0")
+            built, sidecar, digest = build_archive(ROOT, output=archive, expected_version="0.2.0")
 
             self.assertEqual(built, archive.resolve())
             self.assertTrue(sidecar.is_file())
-            self.assertEqual(verify_archive(built, expected_version="0.1.0"), digest)
+            self.assertEqual(verify_archive(built, expected_version="0.2.0"), digest)
 
             with zipfile.ZipFile(built) as package:
                 names = set(package.namelist())
@@ -34,6 +34,11 @@ class PluginPackagingTests(unittest.TestCase):
                 "LICENSES/Apache-2.0.txt",
                 "LICENSES/CC-BY-4.0.txt",
                 "skills/rhetorilex/assets/patterns.json",
+                "skills/rhetorilex/assets/search-aliases.json",
+                "skills/rhetorilex/assets/taxonomy.json",
+                "skills/rhetorilex/assets/writing-skills.json",
+                "skills/rhetorilex/assets/writing-skills.id.json",
+                "skills/rhetorilex/references/evidential-verbs.md",
             }
             self.assertEqual(required - names, set())
 
