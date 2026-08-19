@@ -1,0 +1,142 @@
+registry_version: 1
+last_reviewed: "2026-08-19"
+policy:
+  default_ingestion: deny
+  public_output: >-
+    Only independently authored canonical material and source-permitted,
+    non-reconstructive aggregates may be released.
+  unresolved_action: exclude
+  decision_document: "PROVENANCE.md"
+  disclaimer: >-
+    These records document project policy and source facts; they are not legal advice.
+
+sources:
+  - source_id: supervisor-workbook-2026
+    source_type: local_seed_workbook
+    source_name: "Academic_Phrasebank_Sections.xlsx"
+    canonical_url: null
+    authors_organisation:
+      - "Academic supervisor (identity not published)"
+    description: >-
+      Locally supplied workbook inspected only to produce aggregate structural and
+      quality audit statistics.
+    access_date: "2026-08-19"
+    version: "Local file supplied for this project"
+    license: >-
+      No public license. File notice limits use to academic purposes and prohibits
+      distribution, reproduction, or other use without proper authorization.
+    redistribution_status: prohibited
+    attribution_requirements:
+      - "Not applicable because the file and its contents are not redistributed."
+    allowed_uses:
+      - "Local academic inspection within the permission stated by the provider"
+      - "Publication of non-expressive aggregate audit counts"
+    prohibited_uses:
+      - "Commit or distribute the workbook"
+      - "Publish cell values, labels, formatting, screenshots, or source wording"
+      - "Promote derived phrases or templates into canonical data"
+      - "Use outside the stated academic purpose without authorization"
+    ingestion_status: excluded
+    notes: >-
+      No canonical URL exists for this private local file. It is ignored by version
+      control. Audit-derived candidates are provenance-unresolved; promotion count is
+      zero. Public artifacts contain aggregate facts only.
+
+  - source_id: manchester-academic-phrasebank
+    source_type: restricted_reference_resource
+    source_name: "University of Manchester Academic Phrasebank"
+    canonical_url: "https://www.phrasebank.manchester.ac.uk/"
+    authors_organisation:
+      - "The University of Manchester"
+      - "John Morley"
+    description: >-
+      Web resource organised around communicative functions in academic writing;
+      referenced only for historical and conceptual orientation.
+    access_date: "2026-08-19"
+    version: "Live website; no versioned corpus used"
+    license: >-
+      No open redistribution license identified. The University copyright notice says
+      its web material is copyright and may not be reproduced without permission.
+    redistribution_status: prohibited
+    attribution_requirements:
+      - "Cite the University resource when discussing it conceptually"
+      - "Do not imply affiliation or endorsement"
+    allowed_uses:
+      - "Citation"
+      - "High-level study of rhetorical-move organisation"
+      - "Use as an exclusion/overlap reference when lawfully accessed"
+    prohibited_uses:
+      - "Scrape, mirror, bulk-copy, or redistribute the phrase inventory"
+      - "Import website pages, PDFs, examples, or third-party mirrors"
+      - "Paraphrase its inventory into the RhetoriLex canonical dataset"
+    ingestion_status: excluded
+    notes: >-
+      About page: https://www.phrasebank.manchester.ac.uk/about-academic-phrasebank/ .
+      Copyright notice: https://www.manchester.ac.uk/copyright/ . No inventory content
+      was ingested or distributed.
+
+  - source_id: elsevier-oa-cc-by-corpus-v3
+    source_type: external_open_corpus_candidate
+    source_name: "Elsevier OA CC-BY Corpus"
+    canonical_url: "https://elsevier.digitalcommonsdata.com/datasets/zm33cdndxs/3"
+    authors_organisation:
+      - "Daniel Kershaw"
+      - "Rob Koeling"
+      - "Elsevier BV"
+    description: >-
+      Version 3 corpus of 40,001 cross-disciplinary open-access CC-BY articles,
+      published to support natural-language-processing and machine-learning research.
+    access_date: "2026-08-19"
+    version: "3; DOI 10.17632/zm33cdndxs.3; published 2020-09-16"
+    license: "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+    redistribution_status: eligible_after_separate_review
+    attribution_requirements:
+      - "Credit Daniel Kershaw, Rob Koeling, and Elsevier BV"
+      - "Cite dataset title, version 3, and DOI 10.17632/zm33cdndxs.3"
+      - "Link CC BY 4.0 and indicate modifications"
+    allowed_uses:
+      - "Separately approved reproducible NLP/corpus research"
+      - "Derived frequency, section, discipline, and collocation aggregates"
+      - "Naturalness validation that does not publish source sentences"
+    prohibited_uses:
+      - "Automatic promotion of article text into canonical templates"
+      - "Publication of source sentences in RhetoriLex data, fixtures, or reports"
+      - "Ingestion before checksum, attribution, minimisation, and leakage review"
+    ingestion_status: not_ingested
+    notes: >-
+      CC BY 4.0 may permit broader uses than this project chooses. RhetoriLex adopts an
+      aggregate-only, independently-authored-output policy to minimise source leakage.
+      No file from this corpus is included in the repository or initial release.
+
+  - source_id: bawe-ota-2539
+    source_type: external_corpus_excluded
+    source_name: "British Academic Written English Corpus (BAWE)"
+    canonical_url: "https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/2539"
+    authors_organisation:
+      - "Hilary Nesi"
+      - "Sheena Gardner"
+      - "Paul Thompson"
+      - "Paul Wickens"
+      - "Oxford Text Archive (repository)"
+    description: >-
+      Corpus of British university student writing, published through the Oxford Text
+      Archive.
+    access_date: "2026-08-19"
+    version: "OTA identifier ota:2539; publication date 2004"
+    license: "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported"
+    redistribution_status: excluded_by_project_policy
+    attribution_requirements:
+      - "Follow CC BY-NC-SA 3.0 attribution and share-alike conditions for independent use"
+      - "Credit the named corpus authors and repository record"
+    allowed_uses:
+      - "Independent use only under the corpus license and repository terms"
+      - "Bibliographic citation in RhetoriLex documentation"
+    prohibited_uses:
+      - "Use in the RhetoriLex ingestion or canonical-data pipeline"
+      - "Redistribute BAWE text or derived text through RhetoriLex"
+      - "Represent BAWE material as CC-BY-4.0 RhetoriLex data"
+    ingestion_status: excluded
+    notes: >-
+      Exclusion is a conservative project decision because non-commercial/share-alike
+      conditions do not fit the intended unrestricted distribution workflow. BAWE was
+      not downloaded or processed.

@@ -1,0 +1,153 @@
+{
+  "$schema": "../schema/taxonomy.schema.json",
+  "claim_strengths": [
+    {
+      "definition": "Possibility or preliminary interpretation.",
+      "id": "tentative",
+      "rank": 0
+    },
+    {
+      "definition": "Supported assertion explicitly limited by scope or conditions.",
+      "id": "bounded",
+      "rank": 1
+    },
+    {
+      "definition": "Direct assertion supported by relevant empirical evidence.",
+      "id": "assertive",
+      "rank": 2
+    },
+    {
+      "definition": "Cause-effect assertion requiring a credible causal design.",
+      "id": "causal",
+      "rank": 3
+    }
+  ],
+  "compatibility": {
+    "changed_meaning": "major-version",
+    "new_ids": "minor-version",
+    "unknown_ids": "must-error"
+  },
+  "disciplines": [
+    "general",
+    "humanities",
+    "social_sciences",
+    "sciences",
+    "engineering",
+    "health_sciences"
+  ],
+  "evidence_requirements": [
+    {
+      "definition": "Organizational or definitional wording; no empirical support is implied.",
+      "id": "none",
+      "rank": 0
+    },
+    {
+      "definition": "Background, theory, or a bounded source context.",
+      "id": "contextual",
+      "rank": 1
+    },
+    {
+      "definition": "A reported association, comparison, estimate, or observed pattern.",
+      "id": "observational",
+      "rank": 2
+    },
+    {
+      "definition": "Evidence directly tests the stated proposition under the study design.",
+      "id": "direct",
+      "rank": 3
+    },
+    {
+      "definition": "Multiple independent lines of relevant evidence agree.",
+      "id": "convergent",
+      "rank": 4
+    }
+  ],
+  "id": "rhetorilex-taxonomy",
+  "rhetorical_functions": [
+    {
+      "definition": "State or locate the paper's own defensible position.",
+      "id": "position_claim",
+      "label": "Position a claim"
+    },
+    {
+      "definition": "Set confidence, scope, or conditions on an assertion.",
+      "id": "qualify_claim",
+      "label": "Qualify a claim"
+    },
+    {
+      "definition": "Present a source, observation, result, or estimate.",
+      "id": "introduce_evidence",
+      "label": "Introduce evidence"
+    },
+    {
+      "definition": "Explain what evidence supports without exceeding it.",
+      "id": "interpret_evidence",
+      "label": "Interpret evidence"
+    },
+    {
+      "definition": "Make a relevant similarity between results or sources explicit.",
+      "id": "compare_findings",
+      "label": "Compare findings"
+    },
+    {
+      "definition": "Make a relevant difference between results or sources explicit.",
+      "id": "contrast_findings",
+      "label": "Contrast findings"
+    },
+    {
+      "definition": "Integrate multiple sources into a higher-level account.",
+      "id": "synthesize_sources",
+      "label": "Synthesize sources"
+    },
+    {
+      "definition": "Specify an unresolved question or bounded absence.",
+      "id": "identify_gap",
+      "label": "Identify a gap"
+    },
+    {
+      "definition": "Describe a constraint and its consequence for inference.",
+      "id": "state_limitation",
+      "label": "State a limitation"
+    },
+    {
+      "definition": "Propose research or practice proportionate to evidence.",
+      "id": "recommend_action",
+      "label": "Recommend action"
+    },
+    {
+      "definition": "Attribute an outcome to a cause under a credible design.",
+      "id": "causal_claim",
+      "label": "Make a causal claim"
+    },
+    {
+      "definition": "Set population, context, time, concept, or analytic boundary.",
+      "id": "define_scope",
+      "label": "Define scope"
+    }
+  ],
+  "risk_levels": [
+    {
+      "definition": "Wording unlikely to overstate evidence when slots are filled accurately.",
+      "id": "low"
+    },
+    {
+      "definition": "Wording requires explicit attention to scope or evidence quality.",
+      "id": "medium"
+    },
+    {
+      "definition": "Causal, prescriptive, or otherwise consequential wording requiring strong checks.",
+      "id": "high"
+    }
+  ],
+  "stability": "semantic-versioned",
+  "stages": [
+    "general",
+    "introduction",
+    "literature_review",
+    "methods",
+    "results",
+    "discussion",
+    "conclusion"
+  ],
+  "version": "1.0.0"
+}

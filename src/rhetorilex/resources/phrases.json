@@ -1,0 +1,1631 @@
+{
+  "entries": [
+    {
+      "causal_design_required": true,
+      "claim_strength": "causal",
+      "description": "State a causal effect from a randomized design while retaining its identifying assumptions.",
+      "disciplines": [
+        "sciences",
+        "health_sciences",
+        "social_sciences"
+      ],
+      "evidence_requirement": "direct",
+      "function": "causal_claim",
+      "id": "RLX-CAU-001",
+      "keywords": [
+        "randomized",
+        "causal effect",
+        "changed",
+        "identification"
+      ],
+      "notes": "Report assignment, adherence, estimand, uncertainty, and assumptions relevant to the effect.",
+      "placeholders": [
+        "evidence",
+        "cause",
+        "outcome",
+        "estimate"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "high",
+      "stage": "discussion",
+      "template": "Under the randomized design and stated assumptions, {evidence} indicates that {cause} changed {outcome} by {estimate}.",
+      "title": "Randomized causal effect",
+      "version": 1
+    },
+    {
+      "causal_design_required": true,
+      "claim_strength": "causal",
+      "description": "State a quasi-experimental causal estimate conditional on its central identifying assumption.",
+      "disciplines": [
+        "social_sciences",
+        "health_sciences",
+        "engineering"
+      ],
+      "evidence_requirement": "direct",
+      "function": "causal_claim",
+      "id": "RLX-CAU-002",
+      "keywords": [
+        "quasi-experimental",
+        "identifying assumption",
+        "causal estimate",
+        "effect"
+      ],
+      "notes": "Pair with falsification, balance, sensitivity, or design-specific diagnostic evidence.",
+      "placeholders": [
+        "identifying_assumption",
+        "estimate",
+        "cause",
+        "outcome"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "high",
+      "stage": "discussion",
+      "template": "If {identifying_assumption} holds, {estimate} estimates the effect of {cause} on {outcome}.",
+      "title": "Quasi-experimental causal estimate",
+      "version": 1
+    },
+    {
+      "causal_design_required": true,
+      "claim_strength": "causal",
+      "description": "Express strengthened causal credibility from independent designs or evidence streams.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "convergent",
+      "function": "causal_claim",
+      "id": "RLX-CAU-003",
+      "keywords": [
+        "causal convergence",
+        "triangulation",
+        "alternative explanation",
+        "credible"
+      ],
+      "notes": "Explain how the evidence streams carry different biases and address the named alternative.",
+      "placeholders": [
+        "evidence",
+        "cause",
+        "outcome",
+        "alternative"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "high",
+      "stage": "discussion",
+      "template": "Across {evidence}, the causal interpretation that {cause} affects {outcome} is more credible than {alternative}.",
+      "title": "Convergent causal inference",
+      "version": 1
+    },
+    {
+      "causal_design_required": true,
+      "claim_strength": "causal",
+      "description": "Connect an intervention, a measured mechanism, and an outcome under a causal design.",
+      "disciplines": [
+        "sciences",
+        "engineering",
+        "health_sciences"
+      ],
+      "evidence_requirement": "direct",
+      "function": "causal_claim",
+      "id": "RLX-CAU-004",
+      "keywords": [
+        "causal mechanism",
+        "intervention",
+        "mediation",
+        "resulting change"
+      ],
+      "notes": "A mechanism measurement alone does not establish mediation; report the identifying design.",
+      "placeholders": [
+        "mechanism",
+        "evidence",
+        "outcome"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "high",
+      "stage": "discussion",
+      "template": "The intervention altered {mechanism}, and {evidence} supports a resulting change in {outcome}.",
+      "title": "Mechanism-linked causal claim",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Compare a shared direction while preserving a meaningful magnitude difference.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "compare_findings",
+      "id": "RLX-CMP-001",
+      "keywords": [
+        "compare findings",
+        "similarity",
+        "magnitude",
+        "like"
+      ],
+      "notes": "Ensure both results use compatible outcomes, scales, and comparison groups.",
+      "placeholders": [
+        "source",
+        "finding",
+        "similarity",
+        "difference"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "Like {source}, {finding} shows {similarity}, although the magnitude differs by {difference}.",
+      "title": "Compare direction and magnitude",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Identify a specific dimension on which patterns from two contexts align.",
+      "disciplines": [
+        "humanities",
+        "social_sciences"
+      ],
+      "evidence_requirement": "observational",
+      "function": "compare_findings",
+      "id": "RLX-CMP-002",
+      "keywords": [
+        "parallel",
+        "cross-context",
+        "comparison",
+        "dimension"
+      ],
+      "notes": "Do not imply broader equivalence beyond the named dimension.",
+      "placeholders": [
+        "context_a",
+        "finding",
+        "context_b",
+        "dimension"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "literature_review",
+      "template": "The pattern in {context_a} parallels {finding} in {context_b} with respect to {dimension}.",
+      "title": "Compare across contexts",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Highlight outcome agreement across a specified methodological difference.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "convergent",
+      "function": "compare_findings",
+      "id": "RLX-CMP-003",
+      "keywords": [
+        "method comparison",
+        "agreement",
+        "robustness",
+        "both analyses"
+      ],
+      "notes": "Methodological diversity strengthens convergence only when biases are not shared.",
+      "placeholders": [
+        "method_difference",
+        "finding"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "Despite using {method_difference}, both analyses produced {finding}.",
+      "title": "Compare methods and outcomes",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Interpret an estimate against an explicit, relevant benchmark.",
+      "disciplines": [
+        "engineering",
+        "sciences",
+        "health_sciences",
+        "social_sciences"
+      ],
+      "evidence_requirement": "observational",
+      "function": "compare_findings",
+      "id": "RLX-CMP-004",
+      "keywords": [
+        "benchmark",
+        "relative to",
+        "comparison",
+        "estimate"
+      ],
+      "notes": "Justify why the selected benchmark is an appropriate reference point.",
+      "placeholders": [
+        "benchmark",
+        "estimate",
+        "comparison",
+        "outcome"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "results",
+      "template": "Relative to {benchmark}, {estimate} represents {comparison} for {outcome}.",
+      "title": "Compare with a benchmark",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "State a contrast while keeping source and present-study contexts visible.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "contrast_findings",
+      "id": "RLX-CON-001",
+      "keywords": [
+        "whereas",
+        "contrast",
+        "different finding",
+        "scope"
+      ],
+      "notes": "Follow with design or context differences that could explain the contrast.",
+      "placeholders": [
+        "source",
+        "finding",
+        "result",
+        "scope"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "Whereas {source} reports {finding}, the present analysis finds {result} in {scope}.",
+      "title": "Contrast by context",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Contrast how one observation relates to two specified theoretical predictions.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "contrast_findings",
+      "id": "RLX-CON-002",
+      "keywords": [
+        "theory contrast",
+        "prediction",
+        "aligns",
+        "differs"
+      ],
+      "notes": "State each framework's prediction before judging alignment.",
+      "placeholders": [
+        "pattern",
+        "framework_a",
+        "framework_b"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "{pattern} aligns with {framework_a} but differs from the prediction of {framework_b}.",
+      "title": "Contrast predictions",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Report a subgroup contrast without assuming the between-group difference is tested.",
+      "disciplines": [
+        "health_sciences",
+        "social_sciences",
+        "sciences"
+      ],
+      "evidence_requirement": "direct",
+      "function": "contrast_findings",
+      "id": "RLX-CON-003",
+      "keywords": [
+        "subgroup",
+        "contrast estimates",
+        "while",
+        "heterogeneity"
+      ],
+      "notes": "Add a formal interaction or contrast test before claiming that effects differ.",
+      "placeholders": [
+        "group_a",
+        "estimate",
+        "group_b",
+        "pattern"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "results",
+      "template": "The estimate for {group_a} was {estimate}, while the corresponding pattern for {group_b} was {pattern}.",
+      "title": "Contrast subgroup estimates",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Resolve or refine an apparent disagreement by identifying a relevant distinction.",
+      "disciplines": [
+        "humanities",
+        "social_sciences",
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "contrast_findings",
+      "id": "RLX-CON-004",
+      "keywords": [
+        "apparent conflict",
+        "distinction",
+        "reconcile",
+        "contradiction"
+      ],
+      "notes": "The distinction should change what each claim entails, not merely rename the disagreement.",
+      "placeholders": [
+        "source",
+        "finding",
+        "distinction"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "literature_review",
+      "template": "The apparent conflict between {source} and {finding} narrows once {distinction} is made explicit.",
+      "title": "Separate apparent contradiction",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Introduce a quantitative or qualitative result with outcome and scope attached.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "direct",
+      "function": "introduce_evidence",
+      "id": "RLX-EVI-001",
+      "keywords": [
+        "report result",
+        "measurement",
+        "outcome",
+        "analysis"
+      ],
+      "notes": "Include units, uncertainty, and comparison basis where relevant.",
+      "placeholders": [
+        "result",
+        "outcome",
+        "scope"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "results",
+      "template": "The analysis yielded {result} for {outcome} in {scope}.",
+      "title": "Report a measured result",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Attribute evidence and its intended proposition without adopting the source's conclusion automatically.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "introduce_evidence",
+      "id": "RLX-EVI-002",
+      "keywords": [
+        "source attribution",
+        "evidence",
+        "literature",
+        "proposition"
+      ],
+      "notes": "Use a precise source locator in the citation system required by the venue.",
+      "placeholders": [
+        "source",
+        "evidence",
+        "proposition"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "literature_review",
+      "template": "In {source}, {evidence} is presented as evidence for {proposition}.",
+      "title": "Attribute source evidence",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Report a recurring empirical pattern while keeping its domain explicit.",
+      "disciplines": [
+        "sciences",
+        "social_sciences",
+        "health_sciences"
+      ],
+      "evidence_requirement": "observational",
+      "function": "introduce_evidence",
+      "id": "RLX-EVI-003",
+      "keywords": [
+        "observed pattern",
+        "across cases",
+        "empirical",
+        "results"
+      ],
+      "notes": "Describe exceptions or heterogeneity immediately after the broad pattern when material.",
+      "placeholders": [
+        "scope",
+        "pattern"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "results",
+      "template": "Across {scope}, the observed pattern was {pattern}.",
+      "title": "Present an observed pattern",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Report a point estimate together with its stated uncertainty interval.",
+      "disciplines": [
+        "sciences",
+        "engineering",
+        "health_sciences",
+        "social_sciences"
+      ],
+      "evidence_requirement": "direct",
+      "function": "introduce_evidence",
+      "id": "RLX-EVI-004",
+      "keywords": [
+        "estimate",
+        "confidence interval",
+        "uncertainty",
+        "precision"
+      ],
+      "notes": "Name the interval type and level in nearby text or notation.",
+      "placeholders": [
+        "estimate",
+        "interval"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "results",
+      "template": "The estimate was {estimate}, with an uncertainty interval of {interval}.",
+      "title": "Introduce an uncertainty interval",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Identify a specific evidence gap without claiming that no work exists.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "identify_gap",
+      "id": "RLX-GAP-001",
+      "keywords": [
+        "research gap",
+        "limited evidence",
+        "unresolved question",
+        "scope"
+      ],
+      "notes": "Support the gap with a transparent search or review boundary.",
+      "placeholders": [
+        "evidence",
+        "question",
+        "scope"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "introduction",
+      "template": "The available {evidence} remains limited for {question} in {scope}.",
+      "title": "Bounded empirical gap",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Separate evidence for an observed pattern from uncertainty about its mechanism.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "identify_gap",
+      "id": "RLX-GAP-002",
+      "keywords": [
+        "mechanism gap",
+        "remains unresolved",
+        "prior findings",
+        "outcome"
+      ],
+      "notes": "Do not imply that a mechanism is absent merely because it has not been established.",
+      "placeholders": [
+        "pattern",
+        "outcome"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "introduction",
+      "template": "Prior findings describe {pattern}, but the mechanism linking it to {outcome} remains unresolved.",
+      "title": "Unresolved mechanism gap",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Identify a construct or measurement dimension that current instruments underrepresent.",
+      "disciplines": [
+        "social_sciences",
+        "health_sciences",
+        "engineering"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "identify_gap",
+      "id": "RLX-GAP-003",
+      "keywords": [
+        "measurement gap",
+        "construct validity",
+        "limited evidence",
+        "dimension"
+      ],
+      "notes": "Ground the distinction between dimensions in theory or validation evidence.",
+      "placeholders": [
+        "covered_dimension",
+        "missing_dimension"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "literature_review",
+      "template": "Existing measures capture {covered_dimension}, yet provide limited evidence about {missing_dimension}.",
+      "title": "Measurement gap",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Frame an open generalizability question as a change in a named condition.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "identify_gap",
+      "id": "RLX-GAP-004",
+      "keywords": [
+        "boundary condition",
+        "not yet clear",
+        "generalizability",
+        "open question"
+      ],
+      "notes": "Choose a condition with a reasoned basis for effect modification.",
+      "placeholders": [
+        "finding",
+        "condition"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "introduction",
+      "template": "It is not yet clear whether {finding} holds when {condition} changes.",
+      "title": "Boundary-condition gap",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Interpret a finding as support for a claim inside a named boundary.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "direct",
+      "function": "interpret_evidence",
+      "id": "RLX-INT-001",
+      "keywords": [
+        "interpret finding",
+        "indicates",
+        "scope",
+        "discussion"
+      ],
+      "notes": "Use indicates only when the design directly bears on the claim; otherwise select a tentative template.",
+      "placeholders": [
+        "scope",
+        "finding",
+        "claim"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "Within {scope}, {finding} indicates that {claim}.",
+      "title": "Bounded evidence interpretation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Offer a tentative mechanism that could account for an observed finding.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "interpret_evidence",
+      "id": "RLX-INT-002",
+      "keywords": [
+        "mechanism",
+        "one interpretation",
+        "may shape",
+        "finding"
+      ],
+      "notes": "Present competing mechanisms when the evidence cannot discriminate among them.",
+      "placeholders": [
+        "finding",
+        "mechanism",
+        "outcome"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "One interpretation of {finding} is that {mechanism} may shape {outcome}.",
+      "title": "Mechanism-compatible interpretation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Translate an estimate into a decision-relevant magnitude for a named stakeholder.",
+      "disciplines": [
+        "engineering",
+        "health_sciences",
+        "social_sciences"
+      ],
+      "evidence_requirement": "observational",
+      "function": "interpret_evidence",
+      "id": "RLX-INT-003",
+      "keywords": [
+        "practical significance",
+        "magnitude",
+        "stakeholder",
+        "estimate"
+      ],
+      "notes": "Keep the translation numerically traceable and separate it from value judgments.",
+      "placeholders": [
+        "estimate",
+        "real_world_meaning",
+        "stakeholder"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "In practical terms, {estimate} corresponds to {real_world_meaning} for {stakeholder}.",
+      "title": "Practical magnitude interpretation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Interpret an inconclusive result without equating non-significance with equivalence.",
+      "disciplines": [
+        "sciences",
+        "health_sciences",
+        "social_sciences"
+      ],
+      "evidence_requirement": "direct",
+      "function": "interpret_evidence",
+      "id": "RLX-INT-004",
+      "keywords": [
+        "inconclusive",
+        "imprecision",
+        "null result",
+        "does not distinguish"
+      ],
+      "notes": "State the precision criterion or interval that leaves both possibilities open.",
+      "placeholders": [
+        "result",
+        "possibility_a",
+        "possibility_b"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "discussion",
+      "template": "Because {result} remains imprecise, the evidence does not distinguish between {possibility_a} and {possibility_b}.",
+      "title": "Null-compatible interpretation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Connect a sampling boundary directly to the supported target population.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "state_limitation",
+      "id": "RLX-LIM-001",
+      "keywords": [
+        "sampling limitation",
+        "generalize",
+        "excluded group",
+        "scope"
+      ],
+      "notes": "Avoid implying how the result would change in the excluded group without evidence.",
+      "placeholders": [
+        "excluded_group",
+        "finding",
+        "scope"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "discussion",
+      "template": "Because the sample excludes {excluded_group}, {finding} should be generalized only to {scope}.",
+      "title": "Sampling limitation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Specify which construct dimension a measure captures and what it may miss.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "state_limitation",
+      "id": "RLX-LIM-002",
+      "keywords": [
+        "measurement limitation",
+        "indicator",
+        "construct",
+        "omit"
+      ],
+      "notes": "Describe likely direction of bias only when supported.",
+      "placeholders": [
+        "construct",
+        "indicator",
+        "uncaptured_dimension"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "discussion",
+      "template": "The measure captures {construct} through {indicator}, which may omit {uncaptured_dimension}.",
+      "title": "Measurement limitation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Explain why a design cannot support causal interpretation of a finding.",
+      "disciplines": [
+        "sciences",
+        "health_sciences",
+        "social_sciences"
+      ],
+      "evidence_requirement": "observational",
+      "function": "state_limitation",
+      "id": "RLX-LIM-003",
+      "keywords": [
+        "causal limitation",
+        "confounding",
+        "design",
+        "not causal"
+      ],
+      "notes": "Name the specific alternative causal pathway or bias left open.",
+      "placeholders": [
+        "design_feature",
+        "alternative",
+        "finding"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "Since {design_feature} does not rule out {alternative}, {finding} should not be read as causal evidence.",
+      "title": "Design limitation on causality",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Tie limited precision to the range of interpretations still supported.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "direct",
+      "function": "state_limitation",
+      "id": "RLX-LIM-004",
+      "keywords": [
+        "precision limitation",
+        "wide uncertainty",
+        "compatible",
+        "estimate"
+      ],
+      "notes": "Report the interval or sensitivity range that motivates the statement.",
+      "placeholders": [
+        "estimate",
+        "interpretation_a",
+        "interpretation_b",
+        "result"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "discussion",
+      "template": "The wide uncertainty around {estimate} leaves both {interpretation_a} and {interpretation_b} compatible with {result}.",
+      "title": "Precision limitation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "State the central position while naming the boundary within which it applies.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "position_claim",
+      "id": "RLX-POS-001",
+      "keywords": [
+        "argument",
+        "central claim",
+        "thesis",
+        "scope"
+      ],
+      "notes": "Replace scope with a population, setting, corpus, period, or analytic boundary.",
+      "placeholders": [
+        "claim",
+        "scope"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "introduction",
+      "template": "This study argues that {claim} within {scope}.",
+      "title": "Direct scoped position",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Choose a bounded position after presenting a relevant empirical finding.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "position_claim",
+      "id": "RLX-POS-002",
+      "keywords": [
+        "defensible interpretation",
+        "position",
+        "finding",
+        "argument"
+      ],
+      "notes": "The claim must remain within what the stated finding can distinguish.",
+      "placeholders": [
+        "finding",
+        "claim"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "Given {finding}, the more defensible interpretation is that {claim}.",
+      "title": "Position from observed result",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Locate a proposition inside a named theoretical or conceptual framework.",
+      "disciplines": [
+        "humanities",
+        "social_sciences"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "position_claim",
+      "id": "RLX-POS-003",
+      "keywords": [
+        "framework",
+        "analytic lens",
+        "proposition",
+        "theory"
+      ],
+      "notes": "Clarify whether the framework guides interpretation or is itself being tested.",
+      "placeholders": [
+        "framework",
+        "claim"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "literature_review",
+      "template": "Using {framework} as the analytic lens, we propose that {claim}.",
+      "title": "Theory-guided proposition",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "State a position supported by multiple independent and mutually relevant lines of evidence.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "convergent",
+      "function": "position_claim",
+      "id": "RLX-POS-004",
+      "keywords": [
+        "taken together",
+        "convergent evidence",
+        "position",
+        "conclusion"
+      ],
+      "notes": "Name the independent lines of evidence instead of using convergence as decoration.",
+      "placeholders": [
+        "evidence",
+        "claim"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "conclusion",
+      "template": "Taken together, {evidence} supports the position that {claim}.",
+      "title": "Convergent position",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Mark an interpretation as plausible while explicitly withholding certainty.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "qualify_claim",
+      "id": "RLX-QUA-001",
+      "keywords": [
+        "qualify",
+        "suggests",
+        "uncertainty",
+        "does not establish"
+      ],
+      "notes": "Keep evidence wording concrete nearby; this sentence is not a substitute for describing it.",
+      "placeholders": [
+        "evidence",
+        "claim"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "discussion",
+      "template": "The available evidence, {evidence}, suggests but does not establish that {claim}.",
+      "title": "Confidence qualifier",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Prevent overgeneralization by naming both the supported scope and an excluded context.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "qualify_claim",
+      "id": "RLX-QUA-002",
+      "keywords": [
+        "boundary",
+        "generalizability",
+        "limited to",
+        "scope"
+      ],
+      "notes": "Choose an excluded context that differs on a theoretically relevant dimension.",
+      "placeholders": [
+        "scope",
+        "excluded_context"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "discussion",
+      "template": "This claim is limited to {scope} and may not extend to {excluded_context}.",
+      "title": "Boundary qualifier",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Make the premise needed for an empirical interpretation visible.",
+      "disciplines": [
+        "sciences",
+        "engineering",
+        "social_sciences"
+      ],
+      "evidence_requirement": "observational",
+      "function": "qualify_claim",
+      "id": "RLX-QUA-003",
+      "keywords": [
+        "conditional",
+        "consistent with",
+        "assumption",
+        "interpretation"
+      ],
+      "notes": "State a checkable condition; avoid conditions that merely restate the claim.",
+      "placeholders": [
+        "condition",
+        "finding",
+        "claim"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "If {condition} holds, {finding} is consistent with {claim}.",
+      "title": "Conditional interpretation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Acknowledge a live alternative explanation when evidence is not uniquely diagnostic.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "observational",
+      "function": "qualify_claim",
+      "id": "RLX-QUA-004",
+      "keywords": [
+        "alternative explanation",
+        "compatible",
+        "qualifier",
+        "non-unique"
+      ],
+      "notes": "Use only when the alternative could plausibly generate the stated finding.",
+      "placeholders": [
+        "finding",
+        "claim",
+        "alternative"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "discussion",
+      "template": "Although {finding} supports {claim}, it remains compatible with {alternative}.",
+      "title": "Alternative-compatible claim",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Turn a bounded research gap into a specific, testable next study.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "recommend_action",
+      "id": "RLX-REC-001",
+      "keywords": [
+        "future research",
+        "recommendation",
+        "test",
+        "method"
+      ],
+      "notes": "Explain how the proposed method addresses the identified limitation or gap.",
+      "placeholders": [
+        "question",
+        "scope",
+        "method"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "conclusion",
+      "template": "Future work should test {question} in {scope} using {method}.",
+      "title": "Research recommendation from gap",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Offer a reversible, conditional practice option with an explicit monitoring target.",
+      "disciplines": [
+        "engineering",
+        "health_sciences",
+        "social_sciences"
+      ],
+      "evidence_requirement": "observational",
+      "function": "recommend_action",
+      "id": "RLX-REC-002",
+      "keywords": [
+        "practice recommendation",
+        "could consider",
+        "monitoring",
+        "conditional"
+      ],
+      "notes": "Use could consider when benefits and harms remain uncertain; state trade-offs nearby.",
+      "placeholders": [
+        "evidence",
+        "condition",
+        "stakeholder",
+        "action",
+        "outcome"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "high",
+      "stage": "conclusion",
+      "template": "Given {evidence}, where {condition} applies, {stakeholder} could consider {action} while monitoring {outcome}.",
+      "title": "Conditional practice recommendation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Recommend bounded implementation backed by direct evidence and a review point.",
+      "disciplines": [
+        "engineering",
+        "health_sciences"
+      ],
+      "evidence_requirement": "direct",
+      "function": "recommend_action",
+      "id": "RLX-REC-003",
+      "keywords": [
+        "implementation",
+        "warranted",
+        "review",
+        "recommend action"
+      ],
+      "notes": "Assess feasibility, distributional effects, harms, and stakeholder values before use.",
+      "placeholders": [
+        "evidence",
+        "action",
+        "scope",
+        "timeframe"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "high",
+      "stage": "conclusion",
+      "template": "Given {evidence}, implementation of {action} is warranted for {scope}, with review after {timeframe}.",
+      "title": "Evidence-backed implementation recommendation",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Recommend a limited next step that also reduces consequential uncertainty.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "recommend_action",
+      "id": "RLX-REC-004",
+      "keywords": [
+        "decision uncertainty",
+        "proportionate step",
+        "collect evidence",
+        "recommendation"
+      ],
+      "notes": "Prefer reversible actions when downside risk or evidential uncertainty is high.",
+      "placeholders": [
+        "uncertainty",
+        "action",
+        "evidence"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "high",
+      "stage": "conclusion",
+      "template": "Until {uncertainty} is resolved, a proportionate step is to {action} and collect {evidence}.",
+      "title": "Decision under uncertainty",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Define the population, setting, and period covered by an analysis.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "none",
+      "function": "define_scope",
+      "id": "RLX-SCO-001",
+      "keywords": [
+        "scope",
+        "population",
+        "setting",
+        "period"
+      ],
+      "notes": "Use the same boundary terms consistently in methods, results, and conclusions.",
+      "placeholders": [
+        "population",
+        "setting",
+        "period"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "methods",
+      "template": "The analysis concerns {population} in {setting} during {period}.",
+      "title": "Population and setting scope",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Define a term operationally and name a nearby meaning that is excluded.",
+      "disciplines": [
+        "humanities",
+        "social_sciences",
+        "general"
+      ],
+      "evidence_requirement": "none",
+      "function": "define_scope",
+      "id": "RLX-SCO-002",
+      "keywords": [
+        "define term",
+        "conceptual scope",
+        "excluding",
+        "definition"
+      ],
+      "notes": "Do not present a stipulative definition as universal usage.",
+      "placeholders": [
+        "term",
+        "definition",
+        "excluded_meaning"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "introduction",
+      "template": "Here, {term} refers specifically to {definition}, excluding {excluded_meaning}.",
+      "title": "Conceptual definition scope",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "Set the unit of analysis and an explicit non-goal.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "none",
+      "function": "define_scope",
+      "id": "RLX-SCO-003",
+      "keywords": [
+        "unit of analysis",
+        "boundary",
+        "does not address",
+        "scope"
+      ],
+      "notes": "Check that later claims do not shift to a different unit without justification.",
+      "placeholders": [
+        "outcome",
+        "unit",
+        "outside_scope"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "methods",
+      "template": "This analysis evaluates {outcome} at the {unit} level and does not address {outside_scope}.",
+      "title": "Analytic boundary",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "tentative",
+      "description": "State the source type, inclusion criterion, and temporal cutoff of a review.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "define_scope",
+      "id": "RLX-SCO-004",
+      "keywords": [
+        "review scope",
+        "inclusion criteria",
+        "cutoff date",
+        "sources"
+      ],
+      "notes": "Report databases, languages, screening process, and exclusions elsewhere in the method.",
+      "placeholders": [
+        "source",
+        "criterion",
+        "date"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "methods",
+      "template": "The review includes {source} that meet {criterion} and were available by {date}.",
+      "title": "Review inclusion boundary",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Integrate multiple independent sources around a conditional shared proposition.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "convergent",
+      "function": "synthesize_sources",
+      "id": "RLX-SYN-001",
+      "keywords": [
+        "synthesis",
+        "converges",
+        "shared proposition",
+        "multiple sources"
+      ],
+      "notes": "Use plural source wording in the filled slot and identify meaningful disagreement separately.",
+      "placeholders": [
+        "source",
+        "evidence",
+        "claim",
+        "condition"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "literature_review",
+      "template": "Across {source}, {evidence} converges on {claim}, particularly under {condition}.",
+      "title": "Synthesize shared proposition",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Combine sources that illuminate different parts of the same problem.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "synthesize_sources",
+      "id": "RLX-SYN-002",
+      "keywords": [
+        "complementary sources",
+        "together",
+        "synthesis",
+        "aspects"
+      ],
+      "notes": "Explain the link between the two aspects in the next sentence.",
+      "placeholders": [
+        "source_a",
+        "aspect_a",
+        "source_b",
+        "aspect_b"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "literature_review",
+      "template": "Together, {source_a} explains {aspect_a}, while {source_b} clarifies {aspect_b}.",
+      "title": "Synthesize complementary roles",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "bounded",
+      "description": "Synthesize disagreement by organizing sources around a clearly posed question.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "contextual",
+      "function": "synthesize_sources",
+      "id": "RLX-SYN-003",
+      "keywords": [
+        "literature divide",
+        "debate",
+        "positions",
+        "synthesis"
+      ],
+      "notes": "Represent each position charitably and include mixed or intermediate accounts when relevant.",
+      "placeholders": [
+        "question",
+        "source_a",
+        "position_a",
+        "source_b",
+        "position_b"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "low",
+      "stage": "literature_review",
+      "template": "The literature divides over {question}: {source_a} supports {position_a}, whereas {source_b} supports {position_b}.",
+      "title": "Map a structured disagreement",
+      "version": 1
+    },
+    {
+      "causal_design_required": false,
+      "claim_strength": "assertive",
+      "description": "Distinguish direct support from contextual material within a synthesis.",
+      "disciplines": [
+        "general"
+      ],
+      "evidence_requirement": "convergent",
+      "function": "synthesize_sources",
+      "id": "RLX-SYN-004",
+      "keywords": [
+        "evidence hierarchy",
+        "strongest support",
+        "context",
+        "synthesis"
+      ],
+      "notes": "Explain the criteria used to rank evidential strength.",
+      "placeholders": [
+        "claim",
+        "evidence",
+        "source"
+      ],
+      "provenance": {
+        "author": "RhetoriLex contributors",
+        "method": "original_editorial",
+        "source_reuse": false
+      },
+      "risk": "medium",
+      "stage": "literature_review",
+      "template": "The strongest support for {claim} comes from {evidence}, while {source} supplies contextual detail.",
+      "title": "Synthesize evidence hierarchy",
+      "version": 1
+    }
+  ],
+  "entry_count": 48,
+  "format": "rhetorilex-catalog",
+  "format_version": "1.0.0",
+  "taxonomy_version": "1.0.0"
+}

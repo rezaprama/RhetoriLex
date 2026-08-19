@@ -1,0 +1,102 @@
+name: Original phrase-pattern proposal
+description: Propose a clean-room rhetorical pattern with explicit evidence conditions.
+title: "[Pattern]: "
+labels: [phrase-proposal, provenance-review]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit only wording you created independently. Do not adapt or transcribe a phrasebank,
+        supervisor-provided workbook, paywalled source, manuscript, or other restricted material.
+
+  - type: textarea
+    id: pattern
+    attributes:
+      label: Original adaptable pattern
+      description: Use named slots in braces, such as `{finding}` or `{population}`.
+      placeholder: "Within {population}, {finding} was associated with {outcome}."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: function
+    attributes:
+      label: Rhetorical function
+      options:
+        - position_claim
+        - qualify_claim
+        - introduce_evidence
+        - interpret_evidence
+        - compare_findings
+        - contrast_findings
+        - synthesize_sources
+        - identify_gap
+        - state_limitation
+        - recommend_action
+        - causal_claim
+        - define_scope
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose and distinctions
+      description: Explain the move, intended section, and how it differs from existing entries.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Minimum evidence requirement
+      options:
+        - none
+        - contextual
+        - observational
+        - direct
+        - convergent
+    validations:
+      required: true
+
+  - type: dropdown
+    id: strength
+    attributes:
+      label: Maximum claim strength
+      options:
+        - tentative
+        - bounded
+        - assertive
+        - causal
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Misuse risks and guardrails
+      description: Note causal, statistical, scope, citation, or integrity risks.
+    validations:
+      required: true
+
+  - type: textarea
+    id: method
+    attributes:
+      label: Creation method
+      description: Describe how you composed this wording independently and checked for accidental reuse.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: provenance
+    attributes:
+      label: Provenance declaration
+      options:
+        - label: I created this proposal as original editorial work without copying or close adaptation.
+          required: true
+        - label: I did not use any supervisor-provided workbook or other restricted/private source.
+          required: true
+        - label: I grant the project permission to publish my contribution under repository licenses.
+          required: true
+        - label: I understand maintainers may rewrite or reject wording that is not clearly original.
+          required: true

@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema/evidence-claim.schema.json",
+  "claim_strength_rules": {
+    "assertive": {
+      "causal_design_required": false,
+      "minimum_evidence": "observational"
+    },
+    "bounded": {
+      "causal_design_required": false,
+      "minimum_evidence": "contextual"
+    },
+    "causal": {
+      "causal_design_required": true,
+      "minimum_evidence": "direct"
+    },
+    "tentative": {
+      "causal_design_required": false,
+      "minimum_evidence": "none"
+    }
+  },
+  "evidence_order": [
+    "none",
+    "contextual",
+    "observational",
+    "direct",
+    "convergent"
+  ],
+  "evidence_slot_names": [
+    "evidence",
+    "finding",
+    "result",
+    "source",
+    "estimate",
+    "pattern"
+  ],
+  "id": "rhetorilex-evidence-claim-contract",
+  "policy": {
+    "causal_templates_must_be_high_risk": true,
+    "declared_placeholders_must_equal_template_fields": true,
+    "evidence_bearing_templates_require_evidence_slot": true
+  },
+  "provenance": {
+    "required_method": "original_editorial",
+    "source_reuse": false
+  },
+  "version": "1.0.0"
+}

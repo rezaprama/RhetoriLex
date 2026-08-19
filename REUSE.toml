@@ -1,0 +1,54 @@
+version = 1
+
+# Default for repository-authored software, configuration, and Skill code.
+[[annotations]]
+path = "**"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Reza Prama and RhetoriLex contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+# Original editorial data, benchmarks, reports, and human-facing documentation.
+[[annotations]]
+path = [
+  "README*",
+  "CHANGELOG.md",
+  "CITATION.cff",
+  "CODE_OF_CONDUCT.md",
+  "CONTRIBUTING.md",
+  "GOVERNANCE.md",
+  "IMPLEMENTATION_LOG.md",
+  "PROVENANCE.md",
+  "ROADMAP.md",
+  "SECURITY.md",
+  "THIRD_PARTY_NOTICES.md",
+  "assets/**",
+  "benchmarks/**",
+  "data/**",
+  "docs/**",
+  "examples/**",
+  "reports/**",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Reza Prama and RhetoriLex contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# Agent Skills are executable operational instructions and stay with the code license.
+[[annotations]]
+path = "skills/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Reza Prama and RhetoriLex contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+# The bundled retrieval catalog remains data even inside the executable Skill tree.
+[[annotations]]
+path = "skills/rhetorilex/assets/patterns.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Reza Prama and RhetoriLex contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# Bundled catalog resources are original editorial data even when packaged under src/.
+[[annotations]]
+path = "src/rhetorilex/resources/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Reza Prama and RhetoriLex contributors"
+SPDX-License-Identifier = "CC-BY-4.0"

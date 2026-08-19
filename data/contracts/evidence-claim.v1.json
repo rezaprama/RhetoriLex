@@ -1,0 +1,19 @@
+{
+  "$schema": "../schema/evidence-claim.schema.json",
+  "id": "rhetorilex-evidence-claim-contract",
+  "version": "1.0.0",
+  "evidence_order": ["none", "contextual", "observational", "direct", "convergent"],
+  "claim_strength_rules": {
+    "tentative": {"minimum_evidence": "none", "causal_design_required": false},
+    "bounded": {"minimum_evidence": "contextual", "causal_design_required": false},
+    "assertive": {"minimum_evidence": "observational", "causal_design_required": false},
+    "causal": {"minimum_evidence": "direct", "causal_design_required": true}
+  },
+  "evidence_slot_names": ["evidence", "finding", "result", "source", "estimate", "pattern"],
+  "provenance": {"required_method": "original_editorial", "source_reuse": false},
+  "policy": {
+    "causal_templates_must_be_high_risk": true,
+    "declared_placeholders_must_equal_template_fields": true,
+    "evidence_bearing_templates_require_evidence_slot": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "../schema/taxonomy.schema.json",
+  "id": "rhetorilex-taxonomy",
+  "version": "1.0.0",
+  "stability": "semantic-versioned",
+  "rhetorical_functions": [
+    {"id": "position_claim", "label": "Position a claim", "definition": "State or locate the paper's own defensible position."},
+    {"id": "qualify_claim", "label": "Qualify a claim", "definition": "Set confidence, scope, or conditions on an assertion."},
+    {"id": "introduce_evidence", "label": "Introduce evidence", "definition": "Present a source, observation, result, or estimate."},
+    {"id": "interpret_evidence", "label": "Interpret evidence", "definition": "Explain what evidence supports without exceeding it."},
+    {"id": "compare_findings", "label": "Compare findings", "definition": "Make a relevant similarity between results or sources explicit."},
+    {"id": "contrast_findings", "label": "Contrast findings", "definition": "Make a relevant difference between results or sources explicit."},
+    {"id": "synthesize_sources", "label": "Synthesize sources", "definition": "Integrate multiple sources into a higher-level account."},
+    {"id": "identify_gap", "label": "Identify a gap", "definition": "Specify an unresolved question or bounded absence."},
+    {"id": "state_limitation", "label": "State a limitation", "definition": "Describe a constraint and its consequence for inference."},
+    {"id": "recommend_action", "label": "Recommend action", "definition": "Propose research or practice proportionate to evidence."},
+    {"id": "causal_claim", "label": "Make a causal claim", "definition": "Attribute an outcome to a cause under a credible design."},
+    {"id": "define_scope", "label": "Define scope", "definition": "Set population, context, time, concept, or analytic boundary."}
+  ],
+  "claim_strengths": [
+    {"id": "tentative", "rank": 0, "definition": "Possibility or preliminary interpretation."},
+    {"id": "bounded", "rank": 1, "definition": "Supported assertion explicitly limited by scope or conditions."},
+    {"id": "assertive", "rank": 2, "definition": "Direct assertion supported by relevant empirical evidence."},
+    {"id": "causal", "rank": 3, "definition": "Cause-effect assertion requiring a credible causal design."}
+  ],
+  "evidence_requirements": [
+    {"id": "none", "rank": 0, "definition": "Organizational or definitional wording; no empirical support is implied."},
+    {"id": "contextual", "rank": 1, "definition": "Background, theory, or a bounded source context."},
+    {"id": "observational", "rank": 2, "definition": "A reported association, comparison, estimate, or observed pattern."},
+    {"id": "direct", "rank": 3, "definition": "Evidence directly tests the stated proposition under the study design."},
+    {"id": "convergent", "rank": 4, "definition": "Multiple independent lines of relevant evidence agree."}
+  ],
+  "stages": ["general", "introduction", "literature_review", "methods", "results", "discussion", "conclusion"],
+  "disciplines": ["general", "humanities", "social_sciences", "sciences", "engineering", "health_sciences"],
+  "risk_levels": [
+    {"id": "low", "definition": "Wording unlikely to overstate evidence when slots are filled accurately."},
+    {"id": "medium", "definition": "Wording requires explicit attention to scope or evidence quality."},
+    {"id": "high", "definition": "Causal, prescriptive, or otherwise consequential wording requiring strong checks."}
+  ],
+  "compatibility": {"unknown_ids": "must-error", "new_ids": "minor-version", "changed_meaning": "major-version"}
+}

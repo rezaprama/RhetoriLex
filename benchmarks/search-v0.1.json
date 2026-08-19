@@ -1,0 +1,20 @@
+{
+  "benchmark": "rhetorilex-search",
+  "version": "0.1.0",
+  "status": "frozen",
+  "metric": "top_result_function_accuracy",
+  "cases": [
+    {"id": "B001", "query": "research gap limited evidence", "expected_function": "identify_gap"},
+    {"id": "B002", "query": "uncertainty interval estimate", "expected_function": "introduce_evidence"},
+    {"id": "B003", "query": "qualify with alternative explanation", "expected_function": "qualify_claim"},
+    {"id": "B004", "query": "sampling limitation excluded group generalize", "expected_function": "state_limitation"},
+    {"id": "B005", "query": "quasi experimental identifying assumption", "expected_function": "causal_claim"},
+    {"id": "B006", "query": "define population setting period", "expected_function": "define_scope"},
+    {"id": "B007", "query": "literature disagreement positions sources", "expected_function": "synthesize_sources"},
+    {"id": "B008", "query": "practice recommendation monitor outcome", "expected_function": "recommend_action"},
+    {"id": "B009", "query": "compare benchmark estimate", "expected_function": "compare_findings"},
+    {"id": "B010", "query": "mechanism may shape outcome", "expected_function": "interpret_evidence"},
+    {"id": "B011", "query": "subgroup contrast estimates heterogeneity", "expected_function": "contrast_findings"},
+    {"id": "B012", "query": "thesis central claim scope", "expected_function": "position_claim"}
+  ]
+}

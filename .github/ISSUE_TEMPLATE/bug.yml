@@ -1,0 +1,77 @@
+name: Bug report
+description: Report reproducible incorrect behavior in the skill, CLI, data, or website.
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste confidential manuscripts, private datasets, or restricted source files.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Codex skill
+        - Python CLI or library
+        - Phrase catalog or taxonomy
+        - Documentation website
+        - Build or release automation
+        - Other repository content
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: State what happened. Include the shortest safe error output.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: State what should have happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Give exact commands or steps using non-confidential example text.
+      placeholder: |
+        1. Run `...`
+        2. Enter `...`
+        3. Observe `...`
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0 or commit SHA
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Codex app version, Python version, operating system
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safe disclosure
+      options:
+        - label: I removed personal, confidential, copyrighted, and restricted source material.
+          required: true
+        - label: I searched existing issues for this behavior.
+          required: true

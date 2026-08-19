@@ -1,0 +1,42 @@
+# Restricted or private source material
+Academic_Phrasebank_Sections.xlsx
+data/private/
+staging/private/
+reports/private/
+
+# Local scaffold and generated working files
+.tmp-plugin-scaffold/
+.audit-work/
+.work/
+tmp/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+!data/dist/
+!data/dist/**
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Documentation preview
+.pages-preview/
+docs/data/phrases.json

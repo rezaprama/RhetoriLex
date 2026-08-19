@@ -1,0 +1,79 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Validate and publish plugin archive
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Validate release tag
+        id: version
+        shell: bash
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          if [[ ! "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?(\+[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?$ ]]; then
+            echo "::error::Release tag must be v followed by a semantic version"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Reject tracked restricted sources
+        run: python .github/scripts/check_tracked_files.py
+
+      - name: Validate, build, and test
+        run: |
+          python scripts/validate_data.py
+          python scripts/build_data.py
+          python -m unittest discover -s tests -v
+          python .github/scripts/validate_skill.py skills/rhetorilex
+
+      - name: Build deterministic release archive
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          python scripts/package_plugin.py \
+            --expected-version "$VERSION" \
+            --output "dist/rhetorilex-plugin-$VERSION.zip"
+          python scripts/package_plugin.py \
+            --expected-version "$VERSION" \
+            --verify "dist/rhetorilex-plugin-$VERSION.zip"
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rhetorilex-plugin-${{ steps.version.outputs.version }}
+          if-no-files-found: error
+          path: |
+            dist/rhetorilex-plugin-${{ steps.version.outputs.version }}.zip
+            dist/rhetorilex-plugin-${{ steps.version.outputs.version }}.zip.sha256
+
+      - name: Create or update GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        shell: bash
+        run: |
+          archive="dist/rhetorilex-plugin-$VERSION.zip"
+          checksum="$archive.sha256"
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "$archive" "$checksum" --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" "$archive" "$checksum" \
+              --verify-tag --generate-notes --title "RhetoriLex $VERSION"
+          fi

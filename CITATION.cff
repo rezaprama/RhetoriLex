@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If RhetoriLex supports your work, cite the software and the exact dataset release used."
+title: "RhetoriLex"
+type: software
+abstract: >-
+  RhetoriLex is an open, structured academic-language system for finding and
+  adapting rhetorical moves and phrase patterns while preserving evidence,
+  citations, uncertainty, and scientific claim strength.
+authors:
+  - family-names: "Prama"
+    given-names: "Reza"
+version: 0.1.0
+date-released: 2026-08-19
+repository-code: "https://github.com/rezaprama/RhetoriLex"
+url: "https://rezaprama.github.io/RhetoriLex/"
+license: Apache-2.0
+keywords:
+  - academic writing
+  - scientific writing
+  - rhetoric
+  - corpus linguistics
+  - evidence preservation
+  - agent skills
+preferred-citation:
+  type: software
+  title: "RhetoriLex"
+  authors:
+    - family-names: "Prama"
+      given-names: "Reza"
+  version: 0.1.0
+  year: 2026
+  url: "https://github.com/rezaprama/RhetoriLex"

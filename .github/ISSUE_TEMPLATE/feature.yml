@@ -1,0 +1,52 @@
+name: Feature request
+description: Propose a useful, safe, and broadly reusable improvement.
+title: "[Feature]: "
+labels: [enhancement, triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the user need and who experiences it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe observable behavior, not only an implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Safe example
+      description: Show a non-confidential input and expected output or workflow.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Note existing commands, patterns, or workarounds you tried.
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Integrity, privacy, and compatibility risks
+      description: Note any evidence, citation, licensing, privacy, or breaking-change concerns.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: This request does not require distributing restricted or private source material.
+          required: true
+        - label: I searched existing issues and the roadmap.
+          required: true

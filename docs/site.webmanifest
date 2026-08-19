@@ -1,0 +1,17 @@
+{
+  "name": "RhetoriLex",
+  "short_name": "RhetoriLex",
+  "description": "Evidence-safe academic writing patterns.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#0b2625",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

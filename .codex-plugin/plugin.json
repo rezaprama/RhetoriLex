@@ -1,0 +1,40 @@
+{
+  "name": "rhetorilex",
+  "version": "0.1.0",
+  "description": "Evidence-calibrated rhetorical moves and academic writing patterns.",
+  "author": {
+    "name": "Reza Prama",
+    "url": "https://github.com/rezaprama"
+  },
+  "homepage": "https://rezaprama.github.io/RhetoriLex/",
+  "repository": "https://github.com/rezaprama/RhetoriLex",
+  "license": "Apache-2.0",
+  "keywords": [
+    "academic-writing",
+    "scientific-writing",
+    "agent-skills",
+    "evidence-preservation",
+    "rhetorical-moves"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "RhetoriLex",
+    "shortDescription": "Evidence-safe academic writing patterns",
+    "longDescription": "Find and adapt original rhetorical patterns while preserving citations, uncertainty, scope, and scientific claim strength.",
+    "developerName": "Reza Prama",
+    "category": "Productivity",
+    "capabilities": [],
+    "websiteURL": "https://rezaprama.github.io/RhetoriLex/",
+    "defaultPrompt": [
+      "Rewrite this result without strengthening its claim.",
+      "Give three cautious ways to state this research gap.",
+      "Check whether this paraphrase preserves the evidence."
+    ],
+    "brandColor": "#0F766E",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": [
+      "./assets/rhetorilex-hero.png"
+    ]
+  }
+}

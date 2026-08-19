@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rhetorilex.dev/schema/taxonomy.v1.json",
+  "type": "object",
+  "required": ["id", "version", "stability", "rhetorical_functions", "claim_strengths", "evidence_requirements", "stages", "disciplines", "risk_levels", "compatibility"],
+  "properties": {
+    "id": {"const": "rhetorilex-taxonomy"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "stability": {"const": "semantic-versioned"},
+    "rhetorical_functions": {"type": "array", "minItems": 1},
+    "claim_strengths": {"type": "array", "minItems": 1},
+    "evidence_requirements": {"type": "array", "minItems": 1},
+    "stages": {"type": "array", "minItems": 1, "uniqueItems": true},
+    "disciplines": {"type": "array", "minItems": 1, "uniqueItems": true},
+    "risk_levels": {"type": "array", "minItems": 1},
+    "compatibility": {"type": "object"}
+  }
+}

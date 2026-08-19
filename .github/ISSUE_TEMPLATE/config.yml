@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/rezaprama/RhetoriLex/security/advisories/new
+    about: Report vulnerabilities privately; do not open a public issue.
+  - name: Usage and contribution guide
+    url: https://github.com/rezaprama/RhetoriLex/blob/main/CONTRIBUTING.md
+    about: Read scope, provenance, and contribution requirements before filing.
