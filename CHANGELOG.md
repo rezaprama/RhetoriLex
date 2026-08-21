@@ -18,6 +18,9 @@ separate calendar-based version in release notes.
 
 - Expanded the original catalog to 96 entries across 24 rhetorical functions with
   versioned Phase 2 schema, taxonomy, editorial, translation, and benchmark assets.
+- Added 144 original writing skills (64 academic, 66 scientific, and 14
+  paraphrasing) across 11 substantive groups.
+- Published 60 localized static routes: 30 English and 30 Indonesian.
 - Timestamped GitHub repository, topic, keyword, and recursive-tree discovery datasets.
 - Methodology-led discovery research and GitHub landscape reports with interpretation
   gates and explicit measurement limits.

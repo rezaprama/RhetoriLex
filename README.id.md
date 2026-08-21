@@ -14,6 +14,10 @@ bukan sekadar kesan akademik. Versi 0.2.0 berisi 96 pola yang ditulis mandiri un
 fungsi retoris, dengan tingkat klaim, kebutuhan bukti, guard desain kausal, risiko, slot
 bernama, dan provenance yang eksplisit.
 
+Versi 0.2.0 juga mengindeks 144 keterampilan menulis original: 64 akademik, 66 ilmiah,
+dan 14 parafrasa. Situs bilingual menerbitkan 60 rute terlokalisasi: 30 Inggris dan 30
+Indonesia.
+
 RhetoriLex tidak membuat bukti atau sitasi. RhetoriLex juga tidak mengubah asosiasi
 menjadi sebab-akibat.
 
