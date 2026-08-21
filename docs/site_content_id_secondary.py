@@ -68,16 +68,21 @@ PAGES_ID = {
     },
     "agent_skills": {
         "kind": "article",
-        "title": "Skill Agen RhetoriLex untuk Penulisan Akademik | RhetoriLex",
-        "description": "Pasang dan gunakan Skill Agen RhetoriLex untuk pencarian frasa lokal, penulisan ulang yang selaras dengan bukti, dan parafrasa aman.",
-        "h1": "Gunakan RhetoriLex sebagai Skill Agen penulisan akademik",
-        "lede": "Temukan pola orisinal secara lokal, tampilkan batas bukti, dan pertahankan keputusan naskah pada manusia.",
+        "title": "Skill Agen RhetoriLex dan Aplikasi Parafrasa Lokal | RhetoriLex",
+        "description": "Pasang dan gunakan RhetoriLex sebagai skill parafrasa akademik lokal gratis, app statis, CLI, atau workbench BYO-endpoint.",
+        "h1": "Gunakan RhetoriLex sebagai skill parafrasa lokal",
+        "lede": "Jalankan parafrasa prompt-first, pencarian frasa lokal, dan cek bukti tanpa bergantung pada SaaS parafrasa berbayar.",
         "body": """
 <section>
   <h2>Pasang dari repositori</h2>
   <p>Paket skill berisi instruksi, skrip pencarian deterministik, dan katalog rilis. Pencarian inti berjalan secara lokal serta tidak memerlukan unggahan naskah. Tinjau repositori dan izin sebelum memasang ekstensi agen apa pun.</p>
   <pre><code>$skill-installer https://github.com/rezaprama/RhetoriLex/tree/main/skills/rhetorilex</code></pre>
   <p>Anda juga dapat mengkloning repositori dan mengarahkan agen ke <code>skills/rhetorilex/SKILL.md</code>. Antarmuka baris perintah Python memakai katalog yang sama untuk pencarian yang dapat direproduksi.</p>
+</section>
+<section>
+  <h2>Gunakan aplikasi web yang bisa dipasang</h2>
+  <p><a href="{{link:paraphrase_workbench}}">Alat Parafrasa</a> dapat berjalan sebagai aplikasi browser. Tanpa endpoint AI, alat membuat prompt aman. Dengan endpoint, alat memanggil endpoint OpenAI-compatible atau Gemini-compatible yang dimasukkan pengguna. Token diproses di browser dan disimpan hanya bila pengguna memilih mengingat pengaturan.</p>
+  <p>Halaman statis hosted menerapkan batas tiga panggilan harian browser untuk panggilan endpoint. Ini bukan pengganti keamanan server-side. Shared public model key perlu backend dengan secret di server, penyimpanan kuota harian, perlindungan abuse, dan logging naskah mati secara default.</p>
 </section>
 <section>
   <h2>Nyatakan tujuan dan batasan dalam prompt</h2>

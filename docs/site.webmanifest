@@ -1,8 +1,8 @@
 {
-  "name": "RhetoriLex Academic Writing Index",
+  "name": "RhetoriLex Free Local Academic Paraphrase Skill",
   "short_name": "RhetoriLex",
-  "description": "Original rhetorical patterns for evidence-calibrated academic writing.",
-  "start_url": "./en/",
+  "description": "Free local-first academic paraphrase workbench and Agent Skill for Indonesian and English writers.",
+  "start_url": "./en/paraphrase-workbench/",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f5f3ed",
@@ -13,6 +13,18 @@
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Paraphrase Workbench",
+      "url": "./en/paraphrase-workbench/",
+      "description": "Open the local-first paraphrase tool."
+    },
+    {
+      "name": "Alat Parafrasa",
+      "url": "./id/alat-parafrasa/",
+      "description": "Buka alat parafrasa lokal."
     }
   ]
 }

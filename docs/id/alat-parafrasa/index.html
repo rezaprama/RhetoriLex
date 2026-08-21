@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id" data-locale="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Gunakan alat parafrasa local-first yang bisa dipasang, memakai endpoint OpenAI-compatible milik sendiri, batas harian browser, dan cek bukti.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Alat Parafrasa Lokal Gratis | RhetoriLex">
+<meta property="og:description" content="Gunakan alat parafrasa local-first yang bisa dipasang, memakai endpoint OpenAI-compatible milik sendiri, batas harian browser, dan cek bukti.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="Referensi penulisan akademik RhetoriLex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alat Parafrasa Lokal Gratis | RhetoriLex">
+<meta name="twitter:description" content="Gunakan alat parafrasa local-first yang bisa dipasang, memakai endpoint OpenAI-compatible milik sendiri, batas harian browser, dan cek bukti.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Alat Parafrasa Lokal Gratis | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/#page","url":"https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/","name":"Alat parafrasa lokal gratis.","headline":"Alat parafrasa lokal gratis.","description":"Gunakan alat parafrasa local-first yang bisa dipasang, memakai endpoint OpenAI-compatible milik sendiri, batas harian browser, dan cek bukti.","inLanguage":"id","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/id/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://rezaprama.github.io/RhetoriLex/id/"},{"@type":"ListItem","position":2,"name":"Alat Parafrasa","item":"https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lewati ke isi</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Beranda">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="./" aria-current="page">Alat Parafrasa</a><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../skill-agen/">Skill Agen</a></nav>
+    <details class="index-menu">
+      <summary>Indeks</summary>
+      <nav class="index-panel" aria-label="Indeks penulisan"><a href="../penulisan-akademik/">Penulisan Akademik</a><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a><a href="../penjelajah-frasa/">Penjelajah Frasa</a><a href="../parafrasa/">Parafrasa</a><a href="./" aria-current="page">Alat Parafrasa</a><a href="../gerakan-retoris/">Gerakan Retoris</a><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a><a href="../skill-agen/">Skill Agen</a><a href="../tentang/">Tentang</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../en/paraphrase-workbench/" hreflang="en" lang="en" data-locale-link="en" title="English">EN</a>
+      <label class="theme-picker">
+        <span class="sr-only">Tema</span>
+        <select data-theme-control aria-label="Tema">
+          <option value="system">Sistem</option>
+          <option value="light">Terang</option>
+          <option value="dark">Gelap</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Beranda</a></li>
+    <li aria-current="page">Alat Parafrasa</li>
+  </ol>
+</nav>
+    <header class="article-header workbench-header">
+      <h1>Alat parafrasa lokal gratis.</h1>
+      <p class="lede">Gunakan endpoint AI atau model lokal milik sendiri untuk menulis ulang teks akademik, ilmiah, teknis, dan Indonesia-Inggris sambil menjaga bukti dan makna.</p>
+    </header>
+    <section class="paraphrase-workbench" data-paraphrase-workbench data-locale="id" aria-labelledby="workbench-form-title">
+      <div class="workbench-intro">
+        <h2 id="workbench-form-title">Alat parafrasa lokal</h2>
+        <p>Teks naskah hanya dikirim ke endpoint yang Anda masukkan. Situs statis RhetoriLex tidak memiliki penyimpanan naskah server-side, sistem akun, atau analytics.</p>
+        <p class="limit-pill" id="paraphrase-limit">3 panggilan endpoint per hari browser. Mode prompt saja tidak dibatasi.</p>
+      </div>
+      <form class="workbench-form" id="paraphrase-form">
+        <label class="field-span" for="paraphrase-source"><span>Teks sumber</span><textarea id="paraphrase-source" name="source" rows="10" placeholder="Tempel satu paragraf atau bagian pendek. Biarkan sitasi dan angka tetap terlihat."></textarea></label>
+        <div class="settings-grid">
+          <label for="paraphrase-mode"><span>Mode penulisan ulang</span><select id="paraphrase-mode" name="mode"><option value="safe">Akademik, aman-makna</option><option value="plain">Teknis bahasa sederhana</option><option value="concise">Revisi ringkas</option><option value="idfriendly">Bahasa Inggris ramah Indonesia</option></select></label>
+          <label for="paraphrase-target"><span>Catatan target</span><input id="paraphrase-target" name="target" type="text" placeholder="Contoh: pertahankan nada jurnal, jaga semua sitasi, hindari bahasa kausal." autocomplete="off"></label>
+        </div>
+        <label class="field-span" for="paraphrase-protected"><span>Istilah tambahan yang dilindungi</span><textarea id="paraphrase-protected" name="protected" rows="3" placeholder="Opsional: variabel, nama penulis, persamaan, istilah hukum, istilah lokal."></textarea></label>
+        <fieldset class="endpoint-panel">
+          <legend>Pengaturan endpoint AI</legend>
+          <div class="settings-grid">
+            <label for="paraphrase-endpoint"><span>Endpoint OpenAI-compatible</span><input id="paraphrase-endpoint" name="endpoint" type="url" inputmode="url" placeholder="http://localhost:11434/v1/chat/completions" autocomplete="off"></label>
+            <label for="paraphrase-model"><span>Model</span><input id="paraphrase-model" name="model" type="text" placeholder="local-model atau id model provider" autocomplete="off"></label>
+            <label for="paraphrase-token"><span>Token API</span><input id="paraphrase-token" name="token" type="password" placeholder="Disimpan hanya bila opsi ingat pengaturan dipilih" autocomplete="off"></label>
+          </div>
+          <label class="checkbox-row" for="paraphrase-save"><input id="paraphrase-save" name="save" type="checkbox"><span>Ingat endpoint, model, dan token di browser ini</span></label>
+        </fieldset>
+        <div class="workbench-actions">
+          <button class="primary-button" id="paraphrase-submit" type="submit">Parafrasakan dengan endpoint</button>
+          <button class="secondary-button" id="paraphrase-draft" type="button">Buat prompt saja</button>
+          <button class="secondary-button" id="paraphrase-clear" type="button">Bersihkan teks</button>
+        </div>
+      </form>
+      <div class="workbench-status" id="paraphrase-status" role="status" aria-live="polite">Tempel teks, lalu pilih prompt saja atau penulisan ulang lewat endpoint.</div>
+      <div class="workbench-results">
+        <section class="workbench-panel"><h2>Makna yang dilindungi</h2><ul class="audit-list" id="paraphrase-invariants"></ul></section>
+        <section class="workbench-panel"><h2>Prompt yang akan dikirim</h2><pre><code id="paraphrase-prompt"></code></pre></section>
+        <section class="workbench-panel workbench-output"><h2>Keluaran parafrasa</h2><div class="rewrite-output" id="paraphrase-output" tabindex="0"></div></section>
+        <section class="workbench-panel"><h2>Peringatan final</h2><p class="warning-box" id="paraphrase-warning">Cek ulang sebelum dikumpulkan. Pastikan makna, sitasi, istilah teknis, kekuatan klaim, dan aturan kampus atau jurnal tetap benar. RhetoriLex membantu menulis ulang; keputusan akhir tetap pada penulis.</p></section>
+      </div>
+      <noscript><p class="notice">JavaScript diperlukan untuk alat ini. Anda tetap dapat memasang Agent Skill atau memakai CLI secara lokal.</p></noscript>
+    </section>
+    <div class="article-body workbench-guide">
+<section>
+  <h2>Mengapa local-first penting</h2>
+  <p>Banyak layanan parafrasa meminta penulis menempel draft ke form remote dan membayar untuk batas yang lebih longgar. RhetoriLex memilih jalur berbeda. Aplikasi publik ini statis, bisa dipasang, dan gratis. Aplikasi dapat membuat prompt aman tanpa endpoint, atau memanggil hanya endpoint OpenAI-compatible yang dimasukkan pengguna.</p>
+  <p>Dengan cara ini, alat tetap berguna bagi peneliti, mahasiswa, dosen pembimbing, editor, dan penulis Indonesia yang membutuhkan bahasa Inggris hati-hati tanpa menjadikan setiap kalimat sebagai request berbayar. Aplikasi tidak menyimpan naskah di server RhetoriLex karena versi web saat ini tidak punya database naskah server-side.</p>
+</section>
+<section>
+  <h2>Pilihan setup aman</h2>
+  <div class="reference-table" role="region" aria-label="Pilihan setup alat parafrasa" tabindex="0">
+    <table>
+      <thead><tr><th>Pilihan</th><th>Cara kerja</th><th>Pemeriksaan privasi</th></tr></thead>
+      <tbody>
+        <tr><td>Prompt saja</td><td>RhetoriLex membuat instruksi dan checklist invarian.</td><td>Tidak ada panggilan AI keluar dari browser.</td></tr>
+        <tr><td>Endpoint lokal</td><td>Gunakan server lokal OpenAI-compatible seperti gateway model lokal.</td><td>Jaga endpoint tetap di mesin atau jaringan sendiri.</td></tr>
+        <tr><td>Endpoint provider</td><td>Masukkan endpoint, model, dan token sendiri bila provider mengizinkan panggilan browser.</td><td>Teks dikirim ke provider itu, bukan ke RhetoriLex.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  <h2>Mengapa batas web hosted bersifat lokal</h2>
+  <p>Halaman publik menerapkan batas tiga panggilan harian di storage browser. Ini batas pemakaian ringan, bukan keamanan akun. Tujuannya mencegah pemakaian berlebihan tanpa membuat situs statis kehilangan sifat gratis dan mudah deploy di GitHub Pages.</p>
+  <p>Layanan hosted dengan shared key sungguhan membutuhkan backend. Desain yang direncanakan adalah Worker API kecil, tabel D1 untuk kuota harian anonim, cache KV untuk keputusan rate-limit, Turnstile untuk menahan abuse, token provider hanya sebagai server secret, dan logging naskah mati secara default. Backend itu sengaja dipisahkan dari aplikasi statis saat ini.</p>
+</section>
+<aside class="article-note">
+  <h2>Gunakan hasil sebagai draft</h2>
+  <p>Selalu bandingkan keluaran dengan sumber. Verifikasi sitasi, angka, istilah, negasi, ketidakpastian, kekuatan klaim, dan aturan jurnal atau kampus sebelum dikumpulkan.</p>
+</aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Skill parafrasa akademik lokal gratis dan indeks penulisan aman-bukti.</p>
+      <p>Dibuat oleh <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Data editorial: CC BY 4.0. Kode: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Indeks penulisan">
+      <h2>Indeks penulisan</h2>
+      <ul><li><a href="../penulisan-akademik/">Penulisan Akademik</a></li><li><a href="../penulisan-ilmiah/">Penulisan Ilmiah</a></li><li><a href="../penjelajah-frasa/">Penjelajah Frasa</a></li><li><a href="../parafrasa/">Parafrasa</a></li><li><a href="./" aria-current="page">Alat Parafrasa</a></li><li><a href="../gerakan-retoris/">Gerakan Retoris</a></li><li><a href="../panduan-penulisan-riset/">Panduan Penulisan Riset</a></li><li><a href="../skill-agen/">Skill Agen</a></li><li><a href="../tentang/">Tentang</a></li></ul>
+    </nav>
+    <nav aria-label="Sumber proyek">
+      <h2>Sumber proyek</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repositori</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenans</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Keamanan</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Lisensi</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

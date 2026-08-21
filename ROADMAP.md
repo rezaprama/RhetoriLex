@@ -12,7 +12,7 @@ count, launch timing, and GitHub-star goals.
 - Validate schema, placeholders, stable IDs, claim/evidence contract, and provenance.
 - Publish aggregate-only workbook audit; promote zero restricted seed strings.
 - Establish dual license mapping, source registry, governance, security, and CI.
-- Provide quick start, evidence-safe examples, and static documentation baseline.
+- Provide quick start, evidence-safe examples, static documentation baseline, and local-first paraphrase workbench.
 
 **Exit gate:** clean install; deterministic tests/builds; no unresolved provenance or
 restricted file in Git/release; core usage needs no network or API key.
@@ -24,7 +24,7 @@ restricted file in Git/release; core usage needs no network or API key.
 - Expand intent coverage through small, original, reviewed batches.
 - Freeze initial retrieval benchmark and report Recall@K/MRR transparently.
 - Add phrase-proposal, benchmark, and deprecation workflows.
-- Improve explorer accessibility, mobile layout, and copy/paste ergonomics.
+- Improve explorer and workbench accessibility, mobile layout, copy/paste ergonomics, and local endpoint guidance.
 - Publish one concise tutorial showing intent → evidence → language.
 
 **Exit gate:** every new entry passes provenance and claim-strength checks; benchmark
@@ -63,7 +63,7 @@ source sentences; source registry and attribution remain complete.
 - Measure where general patterns fail rather than claiming universal coverage.
 - Add Indonesian README/docs translation, then invite Chinese, Japanese, and Spanish
   translation review as maintainers become available.
-- Improve editor/agent integration examples without adding mandatory services.
+- Improve editor/agent integration examples without adding mandatory services. Evaluate whether a hosted backend with server-held secrets, D1 quota storage, KV rate-limit cache, Turnstile, and disabled manuscript logging is justified by usage.
 
 **Exit gate:** overlays declare scope and evidence; translations preserve warnings and
 do not create an unreviewed translated phrasebank.

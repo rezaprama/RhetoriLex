@@ -6,6 +6,15 @@ separate calendar-based version in release notes.
 
 ## [Unreleased]
 
+### Added
+
+- Added an installable local-first paraphrase workbench with prompt-only mode, BYO AI endpoint settings, browser-side daily call guard, service worker, and updated PWA manifest.
+- Added English and Indonesian workbench routes, raising the static site to 62 localized routes.
+
+### Changed
+
+- Repositioned public copy around free local academic paraphrase, Indonesian-friendly academic English, protected meaning, and safe endpoint use.
+
 ### Planned
 
 - Expand original reviewed rhetorical coverage.

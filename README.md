@@ -1,25 +1,25 @@
 # RhetoriLex
 
-**Offline, evidence-calibrated rhetorical moves and academic writing patterns for researchers, editors, and AI agents.**
+**Free local academic paraphrase skill and evidence-safe writing workbench for researchers, students, editors, and AI agents.**
 
 [![CI](https://github.com/rezaprama/RhetoriLex/actions/workflows/ci.yml/badge.svg)](https://github.com/rezaprama/RhetoriLex/actions/workflows/ci.yml)
 [![Pages](https://github.com/rezaprama/RhetoriLex/actions/workflows/pages.yml/badge.svg)](https://github.com/rezaprama/RhetoriLex/actions/workflows/pages.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-0f766e.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-0f766e.svg)](LICENSES/CC-BY-4.0.txt)
 
-[Explore the catalog](https://rezaprama.github.io/RhetoriLex/) · [Bahasa Indonesia](README.id.md) · [Agent Skill](skills/rhetorilex/SKILL.md) · [Research](docs/discovery-research.md) · [Provenance](PROVENANCE.md)
+[Open the workbench](https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/) · [Explore the catalog](https://rezaprama.github.io/RhetoriLex/) · [Bahasa Indonesia](README.id.md) · [Agent Skill](skills/rhetorilex/SKILL.md) · [Research](docs/discovery-research.md) · [Provenance](PROVENANCE.md)
 
-RhetoriLex helps writers choose language from communicative purpose and evidence, not
+RhetoriLex helps writers paraphrase, audit, and revise academic or technical prose from communicative purpose and evidence, not
 from how academic it sounds. Version 0.2.0 contains 96 independently authored patterns
 across 24 rhetorical functions, with explicit claim strength, evidence requirements,
 causal-design guards, risk, named slots, and provenance.
 
 Version 0.2.0 also indexes 144 original writing skills: 64 academic, 66 scientific,
-and 14 paraphrasing. The bilingual site publishes 60 localized routes: 30 English and
-30 Indonesian.
+and 14 paraphrasing. The bilingual site publishes 62 localized routes: 31 English and
+31 Indonesian, including an installable local-first paraphrase workbench.
 
 It does not write evidence for you. It does not invent citations. It does not turn an
-association into a cause.
+association into a cause. Final submission checks remain the writer's responsibility.
 
 ## Why it is different
 
@@ -33,10 +33,15 @@ association into a cause.
   Python's standard library.
 - **One source of truth.** Canonical JSONL deterministically produces JSON, CSV, SQLite,
   Markdown, package resources, Skill assets, and checksums.
-- **Four useful surfaces.** Use the Python API/CLI, portable Agent Skill/plugin, static
-  browser explorer, or generated data artifacts.
+- **Installable web workbench.** The PWA can build safe prompts without AI, or call a user-supplied OpenAI-compatible or Gemini-compatible endpoint with a browser-side 3-call daily guard.
+- **Five useful surfaces.** Use the Python API/CLI, portable Agent Skill/plugin, static
+  browser explorer, local-first paraphrase workbench, or generated data artifacts.
 
 ## Try it
+
+Open the static workbench at <https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/>.
+Use prompt-only mode for no remote AI call, or enter your own local/provider endpoint and token.
+The token is handled in the browser and stored only if you choose to remember settings.
 
 ```bash
 git clone https://github.com/rezaprama/RhetoriLex.git
@@ -161,8 +166,7 @@ taxonomy + JSON Schema + evidence contract
           +--> validator --> tests --> deterministic release gate
 ```
 
-The browser explorer is static HTML, CSS, and JavaScript. It has no account, backend,
-CDN dependency, or telemetry.
+The browser explorer and paraphrase workbench are static HTML, CSS, and JavaScript. They have no account, backend, CDN dependency, telemetry, or RhetoriLex manuscript database. Endpoint calls go directly from the user's browser to the endpoint they enter. A future shared-key hosted service would need a backend with server-held secrets, quota storage, abuse protection, and manuscript logging disabled by default.
 
 ## Source and rights boundary
 

@@ -5,13 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rhetorilex"
 version = "0.2.0"
-description = "Offline, evidence-calibrated academic writing patterns for researchers and AI agents"
+description = "Free local academic paraphrase skill and evidence-safe writing workbench"
 requires-python = ">=3.10"
 dependencies = []
 readme = "README.md"
 license = { text = "Apache-2.0" }
 authors = [{ name = "Reza Prama Arviandi" }]
-keywords = ["academic-writing", "scientific-writing", "research-writing", "academic-english", "phrasebank", "rhetorical-moves", "literature-review", "research-tools", "agent-skills", "codex", "evidence-calibration", "offline"]
+keywords = ["academic-paraphrase", "paraphrasing-tool", "academic-writing", "scientific-writing", "research-writing", "academic-english", "phrasebank", "local-first", "pwa", "agent-skills", "codex", "evidence-calibration", "offline"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Environment :: Console",

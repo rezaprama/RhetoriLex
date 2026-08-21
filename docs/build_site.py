@@ -27,6 +27,7 @@ ROUTES: dict[str, dict[str, str]] = {
     "scientific_writing": {"en": "scientific-writing", "id": "penulisan-ilmiah"},
     "phrase_explorer": {"en": "phrase-explorer", "id": "penjelajah-frasa"},
     "paraphrasing": {"en": "paraphrasing", "id": "parafrasa"},
+    "paraphrase_workbench": {"en": "paraphrase-workbench", "id": "alat-parafrasa"},
     "rhetorical_moves": {"en": "rhetorical-moves", "id": "gerakan-retoris"},
     "research_writing_guides": {
         "en": "research-writing-guides",
@@ -101,6 +102,7 @@ LABELS: dict[str, dict[str, str]] = {
     "scientific_writing": {"en": "Scientific Writing", "id": "Penulisan Ilmiah"},
     "phrase_explorer": {"en": "Phrase Explorer", "id": "Penjelajah Frasa"},
     "paraphrasing": {"en": "Paraphrasing", "id": "Parafrasa"},
+    "paraphrase_workbench": {"en": "Paraphrase Workbench", "id": "Alat Parafrasa"},
     "rhetorical_moves": {"en": "Rhetorical Moves", "id": "Gerakan Retoris"},
     "research_writing_guides": {
         "en": "Research Writing Guides",
@@ -142,6 +144,7 @@ CORE_KEYS = (
     "scientific_writing",
     "phrase_explorer",
     "paraphrasing",
+    "paraphrase_workbench",
     "rhetorical_moves",
     "research_writing_guides",
     "agent_skills",
@@ -168,7 +171,7 @@ UI: dict[str, dict[str, str]] = {
         "rights": "Editorial data: CC BY 4.0. Code: Apache 2.0.",
         "resources": "Project resources",
         "sections": "Writing index",
-        "footer_note": "Original rhetorical patterns for evidence-calibrated academic writing.",
+        "footer_note": "Free local academic paraphrase skill and evidence-safe writing index.",
     },
     "id": {
         "skip": "Lewati ke isi",
@@ -189,7 +192,7 @@ UI: dict[str, dict[str, str]] = {
         "rights": "Data editorial: CC BY 4.0. Kode: Apache 2.0.",
         "resources": "Sumber proyek",
         "sections": "Indeks penulisan",
-        "footer_note": "Pola retoris orisinal untuk penulisan akademik yang selaras dengan bukti.",
+        "footer_note": "Skill parafrasa akademik lokal gratis dan indeks penulisan aman-bukti.",
     },
 }
 
@@ -273,10 +276,10 @@ def render_header(locale: str, current_key: str) -> str:
     text = UI[locale]
     other_locale = "id" if locale == "en" else "en"
     primary_keys = (
+        "paraphrase_workbench",
         "academic_writing",
-        "scientific_writing",
         "phrase_explorer",
-        "research_writing_guides",
+        "agent_skills",
     )
     primary = "".join(nav_link(locale, current_key, key) for key in primary_keys)
     full_index = "".join(nav_link(locale, current_key, key) for key in CORE_KEYS)
@@ -651,6 +654,131 @@ def render_explorer_main(locale: str, key: str, page: dict[str, str]) -> str:
 </main>"""
 
 
+def workbench_labels(locale: str) -> dict[str, str]:
+    if locale == "en":
+        return {
+            "form_title": "Local paraphrase workbench",
+            "source": "Source text",
+            "source_placeholder": "Paste one paragraph or a short passage. Keep citations and numbers visible.",
+            "mode": "Rewrite mode",
+            "mode_safe": "Academic, meaning-safe",
+            "mode_plain": "Plain-language technical",
+            "mode_concise": "Concise revision",
+            "mode_id": "Indonesian-friendly English",
+            "target": "Target note",
+            "target_placeholder": "Example: keep journal tone, preserve all citations, avoid causal language.",
+            "protected": "Extra protected terms",
+            "protected_placeholder": "Optional: variables, author names, equations, legal terms, local terminology.",
+            "settings": "AI endpoint settings",
+            "endpoint": "OpenAI-compatible endpoint",
+            "endpoint_placeholder": "http://localhost:11434/v1/chat/completions",
+            "model": "Model",
+            "model_placeholder": "local-model or provider model id",
+            "token": "API token",
+            "token_placeholder": "Stored only if you choose remember settings",
+            "save": "Remember endpoint, model, and token in this browser",
+            "submit": "Rewrite with endpoint",
+            "draft": "Build prompt only",
+            "clear": "Clear text",
+            "limit": "3 endpoint calls per browser day. Prompt-only mode is unlimited.",
+            "status": "Paste text, then choose prompt-only or an endpoint rewrite.",
+            "protected_title": "Protected meaning",
+            "prompt_title": "Prompt to send",
+            "output_title": "Rewrite output",
+            "warning_title": "Final warning",
+            "warning": "Review final text before submission. Verify meaning, citations, terminology, evidence strength, and journal or university rules. RhetoriLex helps rewrite; it does not replace author judgment.",
+            "privacy": "Your manuscript text is sent only to the endpoint you enter. The static RhetoriLex site has no server-side manuscript storage, account system, or analytics.",
+            "noscript": "JavaScript is required for the workbench. You can still install the Agent Skill or use the CLI locally.",
+        }
+    return {
+        "form_title": "Alat parafrasa lokal",
+        "source": "Teks sumber",
+        "source_placeholder": "Tempel satu paragraf atau bagian pendek. Biarkan sitasi dan angka tetap terlihat.",
+        "mode": "Mode penulisan ulang",
+        "mode_safe": "Akademik, aman-makna",
+        "mode_plain": "Teknis bahasa sederhana",
+        "mode_concise": "Revisi ringkas",
+        "mode_id": "Bahasa Inggris ramah Indonesia",
+        "target": "Catatan target",
+        "target_placeholder": "Contoh: pertahankan nada jurnal, jaga semua sitasi, hindari bahasa kausal.",
+        "protected": "Istilah tambahan yang dilindungi",
+        "protected_placeholder": "Opsional: variabel, nama penulis, persamaan, istilah hukum, istilah lokal.",
+        "settings": "Pengaturan endpoint AI",
+        "endpoint": "Endpoint OpenAI-compatible",
+        "endpoint_placeholder": "http://localhost:11434/v1/chat/completions",
+        "model": "Model",
+        "model_placeholder": "local-model atau id model provider",
+        "token": "Token API",
+        "token_placeholder": "Disimpan hanya bila opsi ingat pengaturan dipilih",
+        "save": "Ingat endpoint, model, dan token di browser ini",
+        "submit": "Parafrasakan dengan endpoint",
+        "draft": "Buat prompt saja",
+        "clear": "Bersihkan teks",
+        "limit": "3 panggilan endpoint per hari browser. Mode prompt saja tidak dibatasi.",
+        "status": "Tempel teks, lalu pilih prompt saja atau penulisan ulang lewat endpoint.",
+        "protected_title": "Makna yang dilindungi",
+        "prompt_title": "Prompt yang akan dikirim",
+        "output_title": "Keluaran parafrasa",
+        "warning_title": "Peringatan final",
+        "warning": "Cek ulang sebelum dikumpulkan. Pastikan makna, sitasi, istilah teknis, kekuatan klaim, dan aturan kampus atau jurnal tetap benar. RhetoriLex membantu menulis ulang; keputusan akhir tetap pada penulis.",
+        "privacy": "Teks naskah hanya dikirim ke endpoint yang Anda masukkan. Situs statis RhetoriLex tidak memiliki penyimpanan naskah server-side, sistem akun, atau analytics.",
+        "noscript": "JavaScript diperlukan untuk alat ini. Anda tetap dapat memasang Agent Skill atau memakai CLI secara lokal.",
+    }
+
+
+def render_workbench_main(locale: str, key: str, page: dict[str, str]) -> str:
+    labels = workbench_labels(locale)
+    body = resolve_links(page["body"], locale, key)
+    return f"""
+<main id="main" class="article-page">
+  <div class="page-frame">
+    {render_breadcrumb(locale, key)}
+    <header class="article-header workbench-header">
+      <h1>{html.escape(page["h1"])}</h1>
+      <p class="lede">{html.escape(page["lede"])}</p>
+    </header>
+    <section class="paraphrase-workbench" data-paraphrase-workbench data-locale="{locale}" aria-labelledby="workbench-form-title">
+      <div class="workbench-intro">
+        <h2 id="workbench-form-title">{html.escape(labels["form_title"])}</h2>
+        <p>{html.escape(labels["privacy"])}</p>
+        <p class="limit-pill" id="paraphrase-limit">{html.escape(labels["limit"])}</p>
+      </div>
+      <form class="workbench-form" id="paraphrase-form">
+        <label class="field-span" for="paraphrase-source"><span>{html.escape(labels["source"])}</span><textarea id="paraphrase-source" name="source" rows="10" placeholder="{html.escape(labels["source_placeholder"], quote=True)}"></textarea></label>
+        <div class="settings-grid">
+          <label for="paraphrase-mode"><span>{html.escape(labels["mode"])}</span><select id="paraphrase-mode" name="mode"><option value="safe">{html.escape(labels["mode_safe"])}</option><option value="plain">{html.escape(labels["mode_plain"])}</option><option value="concise">{html.escape(labels["mode_concise"])}</option><option value="idfriendly">{html.escape(labels["mode_id"])}</option></select></label>
+          <label for="paraphrase-target"><span>{html.escape(labels["target"])}</span><input id="paraphrase-target" name="target" type="text" placeholder="{html.escape(labels["target_placeholder"], quote=True)}" autocomplete="off"></label>
+        </div>
+        <label class="field-span" for="paraphrase-protected"><span>{html.escape(labels["protected"])}</span><textarea id="paraphrase-protected" name="protected" rows="3" placeholder="{html.escape(labels["protected_placeholder"], quote=True)}"></textarea></label>
+        <fieldset class="endpoint-panel">
+          <legend>{html.escape(labels["settings"])}</legend>
+          <div class="settings-grid">
+            <label for="paraphrase-endpoint"><span>{html.escape(labels["endpoint"])}</span><input id="paraphrase-endpoint" name="endpoint" type="url" inputmode="url" placeholder="{html.escape(labels["endpoint_placeholder"], quote=True)}" autocomplete="off"></label>
+            <label for="paraphrase-model"><span>{html.escape(labels["model"])}</span><input id="paraphrase-model" name="model" type="text" placeholder="{html.escape(labels["model_placeholder"], quote=True)}" autocomplete="off"></label>
+            <label for="paraphrase-token"><span>{html.escape(labels["token"])}</span><input id="paraphrase-token" name="token" type="password" placeholder="{html.escape(labels["token_placeholder"], quote=True)}" autocomplete="off"></label>
+          </div>
+          <label class="checkbox-row" for="paraphrase-save"><input id="paraphrase-save" name="save" type="checkbox"><span>{html.escape(labels["save"])}</span></label>
+        </fieldset>
+        <div class="workbench-actions">
+          <button class="primary-button" id="paraphrase-submit" type="submit">{html.escape(labels["submit"])}</button>
+          <button class="secondary-button" id="paraphrase-draft" type="button">{html.escape(labels["draft"])}</button>
+          <button class="secondary-button" id="paraphrase-clear" type="button">{html.escape(labels["clear"])}</button>
+        </div>
+      </form>
+      <div class="workbench-status" id="paraphrase-status" role="status" aria-live="polite">{html.escape(labels["status"])}</div>
+      <div class="workbench-results">
+        <section class="workbench-panel"><h2>{html.escape(labels["protected_title"])}</h2><ul class="audit-list" id="paraphrase-invariants"></ul></section>
+        <section class="workbench-panel"><h2>{html.escape(labels["prompt_title"])}</h2><pre><code id="paraphrase-prompt"></code></pre></section>
+        <section class="workbench-panel workbench-output"><h2>{html.escape(labels["output_title"])}</h2><div class="rewrite-output" id="paraphrase-output" tabindex="0"></div></section>
+        <section class="workbench-panel"><h2>{html.escape(labels["warning_title"])}</h2><p class="warning-box" id="paraphrase-warning">{html.escape(labels["warning"])}</p></section>
+      </div>
+      <noscript><p class="notice">{html.escape(labels["noscript"])}</p></noscript>
+    </section>
+    <div class="article-body workbench-guide">{body}</div>
+  </div>
+</main>"""
+
+
 def render_skill_group_main(locale: str, key: str, page: dict[str, str]) -> str:
     skills = group_skills(page["group_id"])
     source, _ = load_writing_skills()
@@ -807,6 +935,8 @@ def render_page(locale: str, key: str) -> str:
         main = render_explorer_main(locale, key, page)
     elif page["kind"] == "skill_group":
         main = render_skill_group_main(locale, key, page)
+    elif page["kind"] == "workbench":
+        main = render_workbench_main(locale, key, page)
     else:
         main = render_article_main(locale, key, page)
     return f"""<!doctype html>
@@ -890,6 +1020,50 @@ def render_sitemap() -> str:
     return "\n".join(lines) + "\n"
 
 
+def render_service_worker() -> str:
+    return """const CACHE_NAME = "rhetorilex-pwa-v1";
+const CORE_ASSETS = [
+  "./",
+  "./en/",
+  "./id/",
+  "./en/paraphrase-workbench/",
+  "./id/alat-parafrasa/",
+  "./styles.css",
+  "./app.js",
+  "./site.webmanifest",
+  "./assets/icon.svg",
+  "./data/phrases.json"
+];
+
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS)).then(() => self.skipWaiting())
+  );
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
+  );
+});
+
+self.addEventListener("fetch", (event) => {
+  if (event.request.method !== "GET") return;
+  const requestUrl = new URL(event.request.url);
+  if (requestUrl.origin !== self.location.origin) return;
+  event.respondWith(
+    fetch(event.request)
+      .then((response) => {
+        const clone = response.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        return response;
+      })
+      .catch(() => caches.match(event.request).then((cached) => cached || caches.match("./en/paraphrase-workbench/")))
+  );
+});
+"""
+
+
 def generated_files() -> dict[Path, str]:
     files: dict[Path, str] = {DOCS / "index.html": render_root()}
     for key in ROUTES:
@@ -902,10 +1076,10 @@ def generated_files() -> dict[Path, str]:
         f"Sitemap: {BASE_URL}/sitemap.xml\n"
     )
     manifest = {
-        "name": "RhetoriLex Academic Writing Index",
+        "name": "RhetoriLex Free Local Academic Paraphrase Skill",
         "short_name": "RhetoriLex",
-        "description": "Original rhetorical patterns for evidence-calibrated academic writing.",
-        "start_url": "./en/",
+        "description": "Free local-first academic paraphrase workbench and Agent Skill for Indonesian and English writers.",
+        "start_url": "./en/paraphrase-workbench/",
         "scope": "./",
         "display": "standalone",
         "background_color": "#f5f3ed",
@@ -918,8 +1092,21 @@ def generated_files() -> dict[Path, str]:
                 "purpose": "any",
             }
         ],
+        "shortcuts": [
+            {
+                "name": "Paraphrase Workbench",
+                "url": "./en/paraphrase-workbench/",
+                "description": "Open the local-first paraphrase tool."
+            },
+            {
+                "name": "Alat Parafrasa",
+                "url": "./id/alat-parafrasa/",
+                "description": "Buka alat parafrasa lokal."
+            }
+        ],
     }
     files[DOCS / "site.webmanifest"] = json.dumps(manifest, indent=2, ensure_ascii=False) + "\n"
+    files[DOCS / "service-worker.js"] = render_service_worker()
     return files
 
 

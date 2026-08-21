@@ -68,16 +68,21 @@ PAGES_EN = {
     },
     "agent_skills": {
         "kind": "article",
-        "title": "RhetoriLex Agent Skill for Academic Writing | RhetoriLex",
-        "description": "Install and use the RhetoriLex Agent Skill for local phrase retrieval, evidence-calibrated rewriting, and meaning-preserving paraphrase.",
-        "h1": "Use RhetoriLex as an academic writing Agent Skill",
-        "lede": "Retrieve original patterns locally, expose evidence constraints, and keep manuscript decisions under human control.",
+        "title": "RhetoriLex Agent Skill and Local Paraphrase App | RhetoriLex",
+        "description": "Install and use RhetoriLex as a free local academic paraphrase skill, static web app, CLI, or BYO-endpoint writing workbench.",
+        "h1": "Use RhetoriLex as a local paraphrase skill",
+        "lede": "Run prompt-first paraphrasing, local phrase retrieval, and evidence checks without depending on a paid paraphrase SaaS.",
         "body": """
 <section>
   <h2>Install from the repository</h2>
   <p>The skill package includes instructions, a deterministic retrieval script, and the released catalog. Core search works locally and does not require manuscript upload. Review the repository and permissions before installing any agent extension.</p>
   <pre><code>$skill-installer https://github.com/rezaprama/RhetoriLex/tree/main/skills/rhetorilex</code></pre>
   <p>You can also clone the repository and point your agent to <code>skills/rhetorilex/SKILL.md</code>. The Python command-line interface supports the same catalog for reproducible searches.</p>
+</section>
+<section>
+  <h2>Use the installable web app</h2>
+  <p>The <a href="{{link:paraphrase_workbench}}">Paraphrase Workbench</a> can run as a browser app. It works without an AI endpoint by generating a safe prompt, or it can call an OpenAI-compatible or Gemini-compatible endpoint that the user enters. Tokens are handled in the browser and are stored only when the user chooses to remember settings.</p>
+  <p>The hosted static page applies a three-call daily browser guard for endpoint calls. This is not a substitute for server-side security. A shared public model key should use a backend with server-held secrets, daily quota storage, abuse protection, and manuscript logging disabled by default.</p>
 </section>
 <section>
   <h2>Ask for purpose and constraints</h2>

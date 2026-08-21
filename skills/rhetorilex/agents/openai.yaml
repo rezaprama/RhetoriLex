@@ -1,10 +1,10 @@
 interface:
   display_name: "RhetoriLex"
-  short_description: "Evidence-safe academic writing patterns"
+  short_description: "Free local academic paraphrase"
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/logo.svg"
   brand_color: "#0F766E"
-  default_prompt: "Use $rhetorilex to rewrite this academic passage without strengthening its claims."
+  default_prompt: "Use $rhetorilex to paraphrase this academic passage without changing citations, numbers, or claim strength."
 
 policy:
   allow_implicit_invocation: true

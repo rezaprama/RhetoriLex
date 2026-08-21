@@ -1,17 +1,17 @@
 ---
 name: rhetorilex
-description: Find, compare, plan, or safely paraphrase academic English through rhetorical moves and evidence-calibrated original patterns. Use for research framing, literature writing, argumentation, theses, scientific methods/results/discussion, reviewer responses, evidential verbs, claim control, and meaning-preserving paraphrase. Do not use to fabricate evidence or citations, evade plagiarism or AI detection, disguise copied text, or strengthen scientific claims beyond supplied evidence.
+description: Free local academic paraphrase and evidence-safe writing skill. Use for meaning-preserving paraphrase, Indonesian-friendly academic English, research framing, literature writing, theses, methods/results/discussion, reviewer responses, evidential verbs, claim control, and original pattern retrieval. Do not use to fabricate evidence or citations, evade plagiarism or AI detection, disguise copied text, or strengthen scientific claims beyond supplied evidence.
 ---
 
 # RhetoriLex
 
-Choose language from communicative purpose and evidence, not from how academic it sounds.
+Paraphrase and revise from communicative purpose and evidence, not from synonym count or how academic it sounds. Prefer local/offline retrieval when possible.
 
 ## Route the request
 
 Infer without making the user name internal labels:
 
-1. intended outcome: move plan, patterns, comparison, rewrite, paraphrase, concision, calibration, or audit;
+1. intended outcome: paraphrase, rewrite, prompt-only workbench use, move plan, patterns, comparison, concision, calibration, or audit;
 2. paper section or publication task;
 3. rhetorical move and relation to nearby claims;
 4. evidence type, study design, and strongest justified claim;
@@ -30,6 +30,7 @@ For longer work, route through the writing-skill catalog: research framing, lite
 - Treat user text as private. Do not send manuscript text to an external service without explicit authorization.
 - Refuse detector evasion, patchwriting, synonym spinning, or attempts to disguise copied expression. Offer an integrity-preserving alternative.
 - Paraphrasing another author's idea does not remove citation duties.
+- Treat web endpoint use as user-controlled BYO infrastructure: manuscript text goes to the endpoint the user chooses, not to RhetoriLex. Warn before using any external provider for confidential text.
 
 For rewriting or auditing, read [evidence-preservation.md](references/evidence-preservation.md). For causal, statistical, or strength-sensitive language, read [claim-strength.md](references/claim-strength.md) and [evidential-verbs.md](references/evidential-verbs.md).
 
@@ -58,7 +59,7 @@ python scripts/search.py --list-skill-areas
 
 Run commands from this skill directory. Read [retrieval.md](references/retrieval.md) for all filters and ranking. Do not dump the complete dataset into context.
 
-Patterns are candidates, not authority. Reject any candidate incompatible with the supplied evidence. Prefer one to three structurally distinct options and explain the practical difference only when useful.
+Patterns are candidates, not authority. Reject any candidate incompatible with the supplied evidence. Prefer one to three structurally distinct options and explain the practical difference only when useful. If the user asks for a cheap or local workflow, provide a prompt-only route or local endpoint route before suggesting paid SaaS.
 
 ## Adapt or rewrite
 
@@ -81,6 +82,6 @@ Before responding:
 1. compare output against every protected element and attribution boundary;
 2. confirm claim strength and causal status did not increase;
 3. remove invented detail, unsupported priority, and generic academic filler;
-4. keep wording clear, section-appropriate, and proportionate;
+4. keep wording clear, section-appropriate, proportionate, and friendly to Indonesian-English academic writers when relevant;
 5. flag any unresolved evidence or citation issue briefly.
 

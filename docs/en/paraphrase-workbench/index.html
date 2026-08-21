@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var preference = "system";
+  try {
+    var saved = window.localStorage.getItem("rhetorilex.theme");
+    if (saved === "light" || saved === "dark" || saved === "system") preference = saved;
+  } catch (error) {}
+  var dark = preference === "dark" ||
+    (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themePreference = preference;
+}());
+</script>
+<meta name="description" content="Use an installable local-first paraphrase workbench with your own OpenAI-compatible endpoint, browser-side daily limits, and evidence checks.">
+<meta name="author" content="Reza Prama Arviandi">
+<meta name="theme-color" content="#f5f3ed" data-theme-color>
+<link rel="canonical" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/">
+<link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/">
+<link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/">
+<link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RhetoriLex">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:title" content="Free Local Paraphrase Workbench | RhetoriLex">
+<meta property="og:description" content="Use an installable local-first paraphrase workbench with your own OpenAI-compatible endpoint, browser-side daily limits, and evidence checks.">
+<meta property="og:url" content="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/">
+<meta property="og:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<meta property="og:image:alt" content="RhetoriLex academic writing reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Local Paraphrase Workbench | RhetoriLex">
+<meta name="twitter:description" content="Use an installable local-first paraphrase workbench with your own OpenAI-compatible endpoint, browser-side daily limits, and evidence checks.">
+<meta name="twitter:image" content="https://rezaprama.github.io/RhetoriLex/assets/rhetorilex-hero.png">
+<title>Free Local Paraphrase Workbench | RhetoriLex</title>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/#page","url":"https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/","name":"Free local paraphrase workbench.","headline":"Free local paraphrase workbench.","description":"Use an installable local-first paraphrase workbench with your own OpenAI-compatible endpoint, browser-side daily limits, and evidence checks.","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Person","name":"Reza Prama Arviandi","url":"https://rezaprama.com"},"isPartOf":{"@type":"WebSite","name":"RhetoriLex","url":"https://rezaprama.github.io/RhetoriLex/en/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rezaprama.github.io/RhetoriLex/en/"},{"@type":"ListItem","position":2,"name":"Paraphrase Workbench","item":"https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/"}]}]}</script>
+<script src="../../app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../" aria-label="RhetoriLex Home">RhetoriLex</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="./" aria-current="page">Paraphrase Workbench</a><a href="../academic-writing/">Academic Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../agent-skills/">Agent Skills</a></nav>
+    <details class="index-menu">
+      <summary>Index</summary>
+      <nav class="index-panel" aria-label="Writing index"><a href="../academic-writing/">Academic Writing</a><a href="../scientific-writing/">Scientific Writing</a><a href="../phrase-explorer/">Phrase Explorer</a><a href="../paraphrasing/">Paraphrasing</a><a href="./" aria-current="page">Paraphrase Workbench</a><a href="../rhetorical-moves/">Rhetorical Moves</a><a href="../research-writing-guides/">Research Writing Guides</a><a href="../agent-skills/">Agent Skills</a><a href="../about/">About</a></nav>
+    </details>
+    <div class="site-tools">
+      <a class="locale-switch" href="../../id/alat-parafrasa/" hreflang="id" lang="id" data-locale-link="id" title="Bahasa Indonesia">ID</a>
+      <label class="theme-picker">
+        <span class="sr-only">Theme</span>
+        <select data-theme-control aria-label="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="article-page">
+  <div class="page-frame">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li aria-current="page">Paraphrase Workbench</li>
+  </ol>
+</nav>
+    <header class="article-header workbench-header">
+      <h1>Free local paraphrase workbench.</h1>
+      <p class="lede">Use your own AI endpoint or local model to rewrite academic, scientific, technical, and Indonesian-English writing while preserving evidence and meaning.</p>
+    </header>
+    <section class="paraphrase-workbench" data-paraphrase-workbench data-locale="en" aria-labelledby="workbench-form-title">
+      <div class="workbench-intro">
+        <h2 id="workbench-form-title">Local paraphrase workbench</h2>
+        <p>Your manuscript text is sent only to the endpoint you enter. The static RhetoriLex site has no server-side manuscript storage, account system, or analytics.</p>
+        <p class="limit-pill" id="paraphrase-limit">3 endpoint calls per browser day. Prompt-only mode is unlimited.</p>
+      </div>
+      <form class="workbench-form" id="paraphrase-form">
+        <label class="field-span" for="paraphrase-source"><span>Source text</span><textarea id="paraphrase-source" name="source" rows="10" placeholder="Paste one paragraph or a short passage. Keep citations and numbers visible."></textarea></label>
+        <div class="settings-grid">
+          <label for="paraphrase-mode"><span>Rewrite mode</span><select id="paraphrase-mode" name="mode"><option value="safe">Academic, meaning-safe</option><option value="plain">Plain-language technical</option><option value="concise">Concise revision</option><option value="idfriendly">Indonesian-friendly English</option></select></label>
+          <label for="paraphrase-target"><span>Target note</span><input id="paraphrase-target" name="target" type="text" placeholder="Example: keep journal tone, preserve all citations, avoid causal language." autocomplete="off"></label>
+        </div>
+        <label class="field-span" for="paraphrase-protected"><span>Extra protected terms</span><textarea id="paraphrase-protected" name="protected" rows="3" placeholder="Optional: variables, author names, equations, legal terms, local terminology."></textarea></label>
+        <fieldset class="endpoint-panel">
+          <legend>AI endpoint settings</legend>
+          <div class="settings-grid">
+            <label for="paraphrase-endpoint"><span>OpenAI-compatible endpoint</span><input id="paraphrase-endpoint" name="endpoint" type="url" inputmode="url" placeholder="http://localhost:11434/v1/chat/completions" autocomplete="off"></label>
+            <label for="paraphrase-model"><span>Model</span><input id="paraphrase-model" name="model" type="text" placeholder="local-model or provider model id" autocomplete="off"></label>
+            <label for="paraphrase-token"><span>API token</span><input id="paraphrase-token" name="token" type="password" placeholder="Stored only if you choose remember settings" autocomplete="off"></label>
+          </div>
+          <label class="checkbox-row" for="paraphrase-save"><input id="paraphrase-save" name="save" type="checkbox"><span>Remember endpoint, model, and token in this browser</span></label>
+        </fieldset>
+        <div class="workbench-actions">
+          <button class="primary-button" id="paraphrase-submit" type="submit">Rewrite with endpoint</button>
+          <button class="secondary-button" id="paraphrase-draft" type="button">Build prompt only</button>
+          <button class="secondary-button" id="paraphrase-clear" type="button">Clear text</button>
+        </div>
+      </form>
+      <div class="workbench-status" id="paraphrase-status" role="status" aria-live="polite">Paste text, then choose prompt-only or an endpoint rewrite.</div>
+      <div class="workbench-results">
+        <section class="workbench-panel"><h2>Protected meaning</h2><ul class="audit-list" id="paraphrase-invariants"></ul></section>
+        <section class="workbench-panel"><h2>Prompt to send</h2><pre><code id="paraphrase-prompt"></code></pre></section>
+        <section class="workbench-panel workbench-output"><h2>Rewrite output</h2><div class="rewrite-output" id="paraphrase-output" tabindex="0"></div></section>
+        <section class="workbench-panel"><h2>Final warning</h2><p class="warning-box" id="paraphrase-warning">Review final text before submission. Verify meaning, citations, terminology, evidence strength, and journal or university rules. RhetoriLex helps rewrite; it does not replace author judgment.</p></section>
+      </div>
+      <noscript><p class="notice">JavaScript is required for the workbench. You can still install the Agent Skill or use the CLI locally.</p></noscript>
+    </section>
+    <div class="article-body workbench-guide">
+<section>
+  <h2>Why local-first matters</h2>
+  <p>Many paraphrase services ask writers to paste drafts into a remote form and pay for stronger limits. RhetoriLex takes a different route. The public app is static, installable, and free. It can build a safe prompt without any endpoint, or call only the OpenAI-compatible endpoint that the user enters.</p>
+  <p>This keeps the default tool useful for researchers, students, supervisors, editors, and Indonesian writers who need careful English without turning every sentence into a paid request. The app does not store manuscripts on a RhetoriLex server because the current web version has no server-side manuscript database.</p>
+</section>
+<section>
+  <h2>Safe setup choices</h2>
+  <div class="reference-table" role="region" aria-label="Paraphrase workbench setup choices" tabindex="0">
+    <table>
+      <thead><tr><th>Choice</th><th>How it works</th><th>Privacy check</th></tr></thead>
+      <tbody>
+        <tr><td>Prompt only</td><td>RhetoriLex builds the instruction and invariant checklist.</td><td>No AI call leaves the browser.</td></tr>
+        <tr><td>Local endpoint</td><td>Use an OpenAI-compatible local server such as a local model gateway.</td><td>Keep endpoint on your own machine or network.</td></tr>
+        <tr><td>Provider endpoint</td><td>Enter your own endpoint, model, and token when your provider permits browser calls.</td><td>Your text goes to that provider, not to RhetoriLex.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  <h2>Why the hosted web limit is local</h2>
+  <p>The public page applies a three-call daily guard in browser storage. This is a courtesy limit, not account security. It prevents accidental overuse while keeping the static site free and deployable on GitHub Pages.</p>
+  <p>A true shared-key hosted service needs a backend. The planned design is a small Worker API, a D1 table for anonymous daily quota, a KV cache for rate-limit decisions, Turnstile for abuse resistance, provider tokens stored only as server secrets, and manuscript logging disabled by default. That backend is intentionally separate from the current static app.</p>
+</section>
+<aside class="article-note">
+  <h2>Use the result as a draft</h2>
+  <p>Always compare output with the source. Verify citations, numbers, terms, negation, uncertainty, claim strength, and journal or university rules before submission.</p>
+</aside>
+</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <a class="wordmark" href="../">RhetoriLex</a>
+      <p>Free local academic paraphrase skill and evidence-safe writing index.</p>
+      <p>Created by <a href="https://rezaprama.com" target="_blank" rel="noopener noreferrer">Reza Prama Arviandi</a>.</p>
+      <p>Editorial data: CC BY 4.0. Code: Apache 2.0.</p>
+    </div>
+    <nav aria-label="Writing index">
+      <h2>Writing index</h2>
+      <ul><li><a href="../academic-writing/">Academic Writing</a></li><li><a href="../scientific-writing/">Scientific Writing</a></li><li><a href="../phrase-explorer/">Phrase Explorer</a></li><li><a href="../paraphrasing/">Paraphrasing</a></li><li><a href="./" aria-current="page">Paraphrase Workbench</a></li><li><a href="../rhetorical-moves/">Rhetorical Moves</a></li><li><a href="../research-writing-guides/">Research Writing Guides</a></li><li><a href="../agent-skills/">Agent Skills</a></li><li><a href="../about/">About</a></li></ul>
+    </nav>
+    <nav aria-label="Project resources">
+      <h2>Project resources</h2>
+      <ul>
+        <li><a href="https://github.com/rezaprama/RhetoriLex">Repository</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Provenance</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/LICENSE">Licensing</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

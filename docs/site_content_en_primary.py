@@ -3,17 +3,18 @@
 PAGES_EN = {
     "home": {
         "kind": "home",
-        "title": "Academic and Scientific Writing by Rhetorical Purpose | RhetoriLex",
-        "description": "Find original English phrase patterns for academic and scientific writing by rhetorical purpose, evidence need, and claim strength.",
-        "h1": "Academic and scientific writing, organised by rhetorical purpose.",
-        "lede": "Find and adapt evidence-aware language for research papers, theses, literature reviews, methods, results, discussions, reviewer responses, and other scholarly writing.",
+        "title": "Free Local Academic Paraphrase Skill | RhetoriLex",
+        "description": "Use a free local-first academic paraphrase skill and web workbench for evidence-safe rewriting, Indonesian-friendly support, and original writing patterns.",
+        "h1": "Free local academic paraphrase skill for researchers.",
+        "lede": "Paraphrase, audit, and revise academic, scientific, technical, and Indonesian-English writing with local-first controls, explicit evidence checks, and no paid SaaS requirement.",
         "body": """
 <section class="section-block" aria-labelledby="purpose-index-title">
   <div class="section-heading">
-    <h2 id="purpose-index-title">Start with the work your sentence must do</h2>
-    <p>Choose a writing problem, not a decorative phrase. Each guide links purpose, evidence, and revision checks.</p>
+    <h2 id="purpose-index-title">Start with the writing problem</h2>
+    <p>Choose a paraphrase, audit, writing, or revision task. RhetoriLex links purpose, evidence, protected meaning, and final checks.</p>
   </div>
   <ul class="purpose-index">
+    <li><a href="{{link:paraphrase_workbench}}"><strong>Paraphrase Workbench</strong><span>Installable local-first tool with your own endpoint, token, or local model.</span></a></li>
     <li><a href="{{link:academic_writing}}"><strong>Academic Writing</strong><span>Build arguments, syntheses, transitions, and bounded conclusions.</span></a></li>
     <li><a href="{{link:scientific_writing}}"><strong>Scientific Writing</strong><span>Report methods, results, uncertainty, and causal limits precisely.</span></a></li>
     <li><a href="{{link:phrase_explorer}}"><strong>Phrase Explorer</strong><span>Search the original catalog in natural language and filter by evidence.</span></a></li>
@@ -26,8 +27,8 @@ PAGES_EN = {
 </section>
 <section class="section-block" aria-labelledby="popular-moves-title">
   <div class="section-heading">
-    <h2 id="popular-moves-title">Popular rhetorical moves</h2>
-    <p>Open a focused guide when the writing problem is already clear.</p>
+    <h2 id="popular-moves-title">Popular writing tasks</h2>
+    <p>Open a focused guide when the sentence problem is already clear.</p>
   </div>
   <ul class="compact-link-index">
     <li><a href="{{link:research_gap}}"><strong>Establish a research gap</strong><span>Define a specific unresolved issue without claiming that no research exists.</span></a></li>
@@ -64,11 +65,12 @@ PAGES_EN = {
 </section>
 <section class="section-block install-block" aria-labelledby="install-home-title">
   <div>
-    <h2 id="install-home-title">Open data, documented method</h2>
-    <p>Download the released JSON catalog, review clean-room provenance, or install the local Agent Skill.</p>
+    <h2 id="install-home-title">Free, local, installable</h2>
+    <p>Open the workbench, download the released JSON catalog, review clean-room provenance, or install the local Agent Skill.</p>
   </div>
   <pre><code>$skill-installer https://github.com/rezaprama/RhetoriLex/tree/main/skills/rhetorilex</code></pre>
   <ul class="resource-links">
+    <li><a href="{{link:paraphrase_workbench}}">Open Paraphrase Workbench</a></li>
     <li><a href="https://rezaprama.github.io/RhetoriLex/data/phrases.json">Open dataset</a></li>
     <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Read methodology and provenance</a></li>
     <li><a href="{{link:agent_skills}}">Read installation and prompt examples</a></li>
@@ -210,6 +212,42 @@ PAGES_EN = {
 <aside class="article-note">
   <h2>Use RhetoriLex safely</h2>
   <p>Ask the Agent Skill to protect a citation, number, and negation explicitly. Then verify the output against the source yourself. See <a href="{{link:agent_skills}}">Agent Skills</a> for prompt patterns.</p>
+</aside>
+""",
+    },
+    "paraphrase_workbench": {
+        "kind": "workbench",
+        "title": "Free Local Paraphrase Workbench | RhetoriLex",
+        "description": "Use an installable local-first paraphrase workbench with your own OpenAI-compatible endpoint, browser-side daily limits, and evidence checks.",
+        "h1": "Free local paraphrase workbench.",
+        "lede": "Use your own AI endpoint or local model to rewrite academic, scientific, technical, and Indonesian-English writing while preserving evidence and meaning.",
+        "body": """
+<section>
+  <h2>Why local-first matters</h2>
+  <p>Many paraphrase services ask writers to paste drafts into a remote form and pay for stronger limits. RhetoriLex takes a different route. The public app is static, installable, and free. It can build a safe prompt without any endpoint, or call only the OpenAI-compatible endpoint that the user enters.</p>
+  <p>This keeps the default tool useful for researchers, students, supervisors, editors, and Indonesian writers who need careful English without turning every sentence into a paid request. The app does not store manuscripts on a RhetoriLex server because the current web version has no server-side manuscript database.</p>
+</section>
+<section>
+  <h2>Safe setup choices</h2>
+  <div class="reference-table" role="region" aria-label="Paraphrase workbench setup choices" tabindex="0">
+    <table>
+      <thead><tr><th>Choice</th><th>How it works</th><th>Privacy check</th></tr></thead>
+      <tbody>
+        <tr><td>Prompt only</td><td>RhetoriLex builds the instruction and invariant checklist.</td><td>No AI call leaves the browser.</td></tr>
+        <tr><td>Local endpoint</td><td>Use an OpenAI-compatible local server such as a local model gateway.</td><td>Keep endpoint on your own machine or network.</td></tr>
+        <tr><td>Provider endpoint</td><td>Enter your own endpoint, model, and token when your provider permits browser calls.</td><td>Your text goes to that provider, not to RhetoriLex.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  <h2>Why the hosted web limit is local</h2>
+  <p>The public page applies a three-call daily guard in browser storage. This is a courtesy limit, not account security. It prevents accidental overuse while keeping the static site free and deployable on GitHub Pages.</p>
+  <p>A true shared-key hosted service needs a backend. The planned design is a small Worker API, a D1 table for anonymous daily quota, a KV cache for rate-limit decisions, Turnstile for abuse resistance, provider tokens stored only as server secrets, and manuscript logging disabled by default. That backend is intentionally separate from the current static app.</p>
+</section>
+<aside class="article-note">
+  <h2>Use the result as a draft</h2>
+  <p>Always compare output with the source. Verify citations, numbers, terms, negation, uncertainty, claim strength, and journal or university rules before submission.</p>
 </aside>
 """,
     },

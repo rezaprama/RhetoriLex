@@ -1,7 +1,7 @@
 {
   "name": "rhetorilex",
   "version": "0.2.0",
-  "description": "Academic and scientific writing patterns organised by rhetorical purpose.",
+  "description": "Free local academic paraphrase skill and evidence-safe writing workbench.",
   "author": {
     "name": "Reza Prama Arviandi",
     "url": "https://rezaprama.com"
@@ -14,6 +14,7 @@
     "scientific-writing",
     "research-writing",
     "phrasebank",
+    "paraphrasing-tool",
     "literature-review",
     "agent-skills",
     "evidence-preservation",
@@ -22,14 +23,14 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "RhetoriLex",
-    "shortDescription": "Academic writing by rhetorical purpose",
-    "longDescription": "Find and adapt original academic and scientific writing patterns while preserving citations, uncertainty, scope, and scientific claim strength.",
+    "shortDescription": "Free local academic paraphrase",
+    "longDescription": "Paraphrase and revise academic, scientific, technical, and Indonesian-English writing with local-first controls, original patterns, protected citations, uncertainty, scope, and scientific claim strength.",
     "developerName": "Reza Prama Arviandi",
     "category": "Productivity",
     "capabilities": [],
-    "websiteURL": "https://rezaprama.github.io/RhetoriLex/",
+    "websiteURL": "https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/",
     "defaultPrompt": [
-      "Rewrite this result without strengthening its claim.",
+      "Paraphrase this paragraph without changing citations, numbers, or claim strength.",
       "Give three cautious ways to state this research gap.",
       "Check whether this paraphrase preserves the evidence.",
       "Compare wording for association, prediction, and causation.",

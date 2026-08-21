@@ -61,6 +61,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/paraphrasing/" />
   </url>
   <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/" />
+  </url>
+  <url>
+    <loc>https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rezaprama.github.io/RhetoriLex/en/paraphrase-workbench/" />
+  </url>
+  <url>
     <loc>https://rezaprama.github.io/RhetoriLex/en/rhetorical-moves/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://rezaprama.github.io/RhetoriLex/en/rhetorical-moves/" />
     <xhtml:link rel="alternate" hreflang="id" href="https://rezaprama.github.io/RhetoriLex/id/gerakan-retoris/" />

@@ -557,3 +557,325 @@ if (explorer) {
 
   loadPatterns();
 }
+
+const APP_SCRIPT_URL = document.currentScript && document.currentScript.src ? document.currentScript.src : "";
+if ("serviceWorker" in navigator && APP_SCRIPT_URL) {
+  const serviceWorkerUrl = new URL("service-worker.js", APP_SCRIPT_URL);
+  navigator.serviceWorker.register(serviceWorkerUrl).catch(() => {});
+}
+
+const REMOTE_CALL_LIMIT = 3;
+const workbench = document.querySelector("[data-paraphrase-workbench]");
+
+if (workbench) {
+  const locale = workbench.dataset.locale === "id" ? "id" : "en";
+  const STORAGE = {
+    endpoint: "rhetorilex.workbench.endpoint",
+    model: "rhetorilex.workbench.model",
+    token: "rhetorilex.workbench.token",
+    save: "rhetorilex.workbench.save",
+    usage: "rhetorilex.workbench.usage",
+  };
+
+  const TEXT = {
+    en: {
+      empty: "Paste text before building a prompt.",
+      promptReady: "Prompt ready. No endpoint call was made.",
+      endpointMissing: "Endpoint is empty. Prompt-only output is ready below.",
+      calling: "Calling endpoint. Review output before use.",
+      done: "Rewrite returned. Check protected meaning before submission.",
+      failed: "Endpoint call failed. Prompt remains available for manual use.",
+      limit: (remaining) => remaining + " of " + REMOTE_CALL_LIMIT + " endpoint calls remain today in this browser.",
+      limitReached: "Daily browser limit reached. Prompt-only mode still works.",
+      protectedFallback: "Claim strength and evidence scope",
+      found: "visible",
+      check: "check manually",
+      rewritePlaceholder: "No rewrite yet.",
+      promptTitle: "Use this prompt with your own trusted model.",
+      noEndpoint: "No endpoint call. Copy the prompt to a trusted local or provider model.",
+    },
+    id: {
+      empty: "Tempel teks sebelum membuat prompt.",
+      promptReady: "Prompt siap. Tidak ada panggilan endpoint.",
+      endpointMissing: "Endpoint kosong. Output prompt saja tersedia di bawah.",
+      calling: "Memanggil endpoint. Tinjau output sebelum dipakai.",
+      done: "Parafrasa diterima. Cek makna terlindungi sebelum dikumpulkan.",
+      failed: "Panggilan endpoint gagal. Prompt tetap tersedia untuk penggunaan manual.",
+      limit: (remaining) => remaining + " dari " + REMOTE_CALL_LIMIT + " panggilan endpoint tersisa hari ini di browser ini.",
+      limitReached: "Batas harian browser tercapai. Mode prompt saja tetap bekerja.",
+      protectedFallback: "Kekuatan klaim dan cakupan bukti",
+      found: "terlihat",
+      check: "cek manual",
+      rewritePlaceholder: "Belum ada parafrasa.",
+      promptTitle: "Gunakan prompt ini dengan model tepercaya milik Anda.",
+      noEndpoint: "Tidak ada panggilan endpoint. Salin prompt ke model lokal atau provider tepercaya.",
+    },
+  }[locale];
+
+  const elements = {
+    form: document.querySelector("#paraphrase-form"),
+    source: document.querySelector("#paraphrase-source"),
+    mode: document.querySelector("#paraphrase-mode"),
+    target: document.querySelector("#paraphrase-target"),
+    protected: document.querySelector("#paraphrase-protected"),
+    endpoint: document.querySelector("#paraphrase-endpoint"),
+    model: document.querySelector("#paraphrase-model"),
+    token: document.querySelector("#paraphrase-token"),
+    save: document.querySelector("#paraphrase-save"),
+    draft: document.querySelector("#paraphrase-draft"),
+    clear: document.querySelector("#paraphrase-clear"),
+    limit: document.querySelector("#paraphrase-limit"),
+    status: document.querySelector("#paraphrase-status"),
+    invariants: document.querySelector("#paraphrase-invariants"),
+    prompt: document.querySelector("#paraphrase-prompt"),
+    output: document.querySelector("#paraphrase-output"),
+  };
+
+  function todayKey() {
+    const now = new Date();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    return now.getFullYear() + "-" + month + "-" + day;
+  }
+
+  function usageState() {
+    const empty = { day: todayKey(), count: 0 };
+    try {
+      const saved = JSON.parse(window.localStorage.getItem(STORAGE.usage) || "null");
+      if (!saved || saved.day !== empty.day || typeof saved.count !== "number") return empty;
+      return saved;
+    } catch (error) {
+      return empty;
+    }
+  }
+
+  function remainingCalls() {
+    return Math.max(0, REMOTE_CALL_LIMIT - usageState().count);
+  }
+
+  function incrementCalls() {
+    const current = usageState();
+    current.count += 1;
+    writePreference(STORAGE.usage, JSON.stringify(current));
+    updateLimitText();
+  }
+
+  function updateLimitText() {
+    if (elements.limit) elements.limit.textContent = TEXT.limit(remainingCalls());
+  }
+
+  function createNode(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function splitExtra(value) {
+    return value
+      .split(/[\n;,]+/)
+      .map((item) => item.trim())
+      .filter(Boolean);
+  }
+
+  function addMatches(set, text, pattern) {
+    for (const match of text.matchAll(pattern)) {
+      const value = match[0].trim();
+      if (value) set.add(value);
+    }
+  }
+
+  function extractInvariants(source, extra) {
+    const values = new Set(splitExtra(extra));
+    addMatches(values, source, /\([A-Z][^()]{0,90}\d{4}[a-z]?[^()]*\)/g);
+    addMatches(values, source, /\[[0-9,\s-]+\]/g);
+    addMatches(values, source, /\b\d+(?:[.,]\d+)?(?:\s?(?:%|percent|weeks?|months?|years?|days?|kg|g|mg|ml|cm|mm|m|n|p|CI|OR|RR|HR))?\b/gi);
+    addMatches(values, source, /\b(no|not|without|never|cannot|only|within|under|may|might|could|suggests?|associated with|correlated with|predicts?|causes?|caused|led to|increased|decreased|reduced)\b/gi);
+    if (!values.size) values.add(TEXT.protectedFallback);
+    return [...values].slice(0, 40);
+  }
+
+  function modeInstruction(mode) {
+    if (mode === "plain") return "Rewrite in clear technical prose for a broad academic reader. Preserve technical terms when a synonym would change meaning.";
+    if (mode === "concise") return "Make the passage more concise. Remove redundancy, but do not remove evidence, conditions, citations, or uncertainty.";
+    if (mode === "idfriendly") return "Rewrite in natural academic English that remains friendly to Indonesian writers. Avoid idioms, ornate phrasing, and unnecessary nominalisations.";
+    return "Rewrite in academic prose while preserving the exact claim, evidence boundary, uncertainty, citation support, and causal status.";
+  }
+
+  function buildPrompt(source, invariants) {
+    const target = elements.target.value.trim();
+    const protectedTerms = invariants.map((item) => "- " + item).join("\n");
+    const parts = [
+      "Role: RhetoriLex, a meaning-preserving paraphrase assistant for academic and technical writing.",
+      "Task: " + modeInstruction(elements.mode.value),
+      "Protected meaning. Do not change or omit these unless the user explicitly says so:\n" + protectedTerms,
+      target ? "User target note:\n" + target : "",
+      "Rules:\n- Do not fabricate citations, data, methods, mechanisms, or novelty.\n- Do not turn association into causation or weak evidence into strong claims.\n- Preserve citations, numbers, units, negation, direction, scope, population, time, and uncertainty.\n- If a protected element cannot be retained naturally, flag it instead of deleting it.",
+      "Return format:\n1. Rewrite\n2. Protected-meaning checklist\n3. Remaining risks or manual checks",
+      "Source text:\n" + source,
+    ];
+    return parts.filter(Boolean).join("\n\n");
+  }
+
+  function renderInvariants(items, output) {
+    const outputText = (output || "").toLocaleLowerCase();
+    const nodes = items.map((item) => {
+      const li = createNode("li");
+      li.append(createNode("span", "audit-item", item));
+      if (output) {
+        const visible = outputText.includes(item.toLocaleLowerCase());
+        li.append(createNode("span", visible ? "audit-tag" : "audit-tag audit-tag-check", visible ? TEXT.found : TEXT.check));
+      }
+      return li;
+    });
+    elements.invariants.replaceChildren(...nodes);
+  }
+
+  function saveSettings() {
+    if (elements.save.checked) {
+      writePreference(STORAGE.save, "1");
+      writePreference(STORAGE.endpoint, elements.endpoint.value.trim());
+      writePreference(STORAGE.model, elements.model.value.trim());
+      writePreference(STORAGE.token, elements.token.value.trim());
+      return;
+    }
+    try {
+      window.localStorage.removeItem(STORAGE.save);
+      window.localStorage.removeItem(STORAGE.endpoint);
+      window.localStorage.removeItem(STORAGE.model);
+      window.localStorage.removeItem(STORAGE.token);
+    } catch (error) {
+      return;
+    }
+  }
+
+  function loadSettings() {
+    const shouldSave = readPreference(STORAGE.save) === "1";
+    elements.save.checked = shouldSave;
+    if (!shouldSave) return;
+    elements.endpoint.value = readPreference(STORAGE.endpoint) || "";
+    elements.model.value = readPreference(STORAGE.model) || "";
+    elements.token.value = readPreference(STORAGE.token) || "";
+  }
+
+  function extractModelText(payload) {
+    if (!payload || typeof payload !== "object") return "";
+    if (typeof payload.output_text === "string") return payload.output_text;
+    const choices = Array.isArray(payload.choices) ? payload.choices : [];
+    if (choices[0] && choices[0].message && typeof choices[0].message.content === "string") {
+      return choices[0].message.content;
+    }
+    const output = Array.isArray(payload.output) ? payload.output : [];
+    for (const item of output) {
+      const content = Array.isArray(item.content) ? item.content : [];
+      const text = content.map((part) => part.text || part.output_text || "").join("\n").trim();
+      if (text) return text;
+    }
+    const candidates = Array.isArray(payload.candidates) ? payload.candidates : [];
+    const parts = candidates[0] && candidates[0].content ? candidates[0].content.parts || [] : [];
+    return parts.map((part) => part.text || "").join("\n").trim();
+  }
+
+  function isGeminiNative(endpoint) {
+    return endpoint.includes("generativelanguage.googleapis.com") && !endpoint.includes("/openai/");
+  }
+
+  function requestBody(endpoint, prompt) {
+    if (isGeminiNative(endpoint)) {
+      return {
+        contents: [{ role: "user", parts: [{ text: prompt }] }],
+        generationConfig: { temperature: 0.2 },
+      };
+    }
+    return {
+      model: elements.model.value.trim() || "local-model",
+      messages: [
+        { role: "system", content: "You are RhetoriLex. Rewrite safely without adding evidence, citations, or stronger claims." },
+        { role: "user", content: prompt },
+      ],
+      temperature: 0.2,
+    };
+  }
+
+  function requestHeaders(endpoint, token) {
+    const headers = { "Content-Type": "application/json" };
+    if (!token) return headers;
+    if (isGeminiNative(endpoint)) headers["x-goog-api-key"] = token;
+    else headers.Authorization = "Bearer " + token;
+    return headers;
+  }
+
+  async function callEndpoint(endpoint, prompt) {
+    const token = elements.token.value.trim();
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: requestHeaders(endpoint, token),
+      body: JSON.stringify(requestBody(endpoint, prompt)),
+    });
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    const payload = await response.json();
+    const text = extractModelText(payload);
+    if (!text) throw new Error("Empty model response");
+    return text;
+  }
+
+  function preparePromptOnly(statusText) {
+    const source = elements.source.value.trim();
+    if (!source) {
+      elements.status.textContent = TEXT.empty;
+      return null;
+    }
+    saveSettings();
+    const invariants = extractInvariants(source, elements.protected.value);
+    const prompt = buildPrompt(source, invariants);
+    renderInvariants(invariants, "");
+    elements.prompt.textContent = prompt;
+    elements.output.textContent = TEXT.rewritePlaceholder;
+    elements.status.textContent = statusText;
+    return { source, invariants, prompt };
+  }
+
+  elements.draft.addEventListener("click", () => {
+    preparePromptOnly(TEXT.promptReady);
+  });
+
+  elements.form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const prepared = preparePromptOnly(TEXT.promptTitle);
+    if (!prepared) return;
+    const endpoint = elements.endpoint.value.trim();
+    if (!endpoint) {
+      elements.status.textContent = TEXT.endpointMissing + " " + TEXT.noEndpoint;
+      return;
+    }
+    if (remainingCalls() <= 0) {
+      elements.status.textContent = TEXT.limitReached;
+      return;
+    }
+    elements.status.textContent = TEXT.calling;
+    try {
+      const rewritten = await callEndpoint(endpoint, prepared.prompt);
+      incrementCalls();
+      elements.output.textContent = rewritten;
+      renderInvariants(prepared.invariants, rewritten);
+      elements.status.textContent = TEXT.done;
+    } catch (error) {
+      elements.status.textContent = TEXT.failed + " " + error.message;
+    }
+  });
+
+  elements.clear.addEventListener("click", () => {
+    elements.source.value = "";
+    elements.target.value = "";
+    elements.protected.value = "";
+    elements.prompt.textContent = "";
+    elements.output.textContent = TEXT.rewritePlaceholder;
+    elements.invariants.replaceChildren();
+    elements.status.textContent = TEXT.noEndpoint;
+    elements.source.focus();
+  });
+
+  loadSettings();
+  updateLimitText();
+  elements.output.textContent = TEXT.rewritePlaceholder;
+}

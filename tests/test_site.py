@@ -22,6 +22,7 @@ ROUTE_PAIRS = [
     ("scientific-writing", "penulisan-ilmiah"),
     ("phrase-explorer", "penjelajah-frasa"),
     ("paraphrasing", "parafrasa"),
+    ("paraphrase-workbench", "alat-parafrasa"),
     ("rhetorical-moves", "gerakan-retoris"),
     ("research-writing-guides", "panduan-penulisan-riset"),
     ("agent-skills", "skill-agen"),
@@ -239,22 +240,22 @@ class StaticSiteTests(unittest.TestCase):
             for path in (DOCS / locale).rglob("index.html")
         }
         self.assertEqual(actual, expected)
-        self.assertEqual(len(actual), 60)
+        self.assertEqual(len(actual), 62)
 
     def test_homepage_h1_and_required_intents(self) -> None:
         en = parse_page(DOCS / "en" / "index.html")
         id_page = parse_page(DOCS / "id" / "index.html")
         self.assertEqual(
             en.h1,
-            "Academic and scientific writing, organised by rhetorical purpose.",
+            "Free local academic paraphrase skill for researchers.",
         )
         self.assertEqual(
             id_page.h1,
-            "Penulisan akademik dan ilmiah berdasarkan tujuan retoris.",
+            "Skill parafrasa akademik lokal dan gratis.",
         )
         for phrase in ("Explore writing skills", "Search phrases", "View on GitHub"):
             self.assertIn(phrase, en.visible_text)
-        for phrase in ("Popular rhetorical moves", "Browse by paper section", "Open dataset"):
+        for phrase in ("Popular writing tasks", "Browse by paper section", "Paraphrase Workbench", "Open dataset"):
             self.assertIn(phrase, en.visible_text)
 
     def test_unique_localized_metadata_and_complete_hreflang(self) -> None:
@@ -378,6 +379,53 @@ class StaticSiteTests(unittest.TestCase):
         self.assertIn("QUERY_ALIASES", script)
         self.assertIn("textContent", script)
         self.assertNotIn('fetch("/data', script)
+
+    def test_paraphrase_workbench_contract_is_installable_and_limited(self) -> None:
+        required_ids = {
+            "paraphrase-form",
+            "paraphrase-source",
+            "paraphrase-mode",
+            "paraphrase-target",
+            "paraphrase-protected",
+            "paraphrase-endpoint",
+            "paraphrase-model",
+            "paraphrase-token",
+            "paraphrase-save",
+            "paraphrase-submit",
+            "paraphrase-draft",
+            "paraphrase-clear",
+            "paraphrase-limit",
+            "paraphrase-status",
+            "paraphrase-invariants",
+            "paraphrase-prompt",
+            "paraphrase-output",
+            "paraphrase-warning",
+        }
+        for path in (
+            DOCS / "en" / "paraphrase-workbench" / "index.html",
+            DOCS / "id" / "alat-parafrasa" / "index.html",
+        ):
+            parser = parse_page(path)
+            html_text = path.read_text(encoding="utf-8")
+            with self.subTest(path=path):
+                self.assertEqual(required_ids - parser.ids, set())
+                self.assertIn("data-paraphrase-workbench", html_text)
+                self.assertIn("<noscript>", html_text)
+                self.assertIn("3", parser.visible_text)
+
+        script = (DOCS / "app.js").read_text(encoding="utf-8")
+        self.assertIn("const REMOTE_CALL_LIMIT = 3", script)
+        self.assertIn("rhetorilex.workbench.usage", script)
+        self.assertIn("Authorization", script)
+        self.assertIn("x-goog-api-key", script)
+        self.assertIn("serviceWorker", script)
+        self.assertIn("data-paraphrase-workbench", script)
+        self.assertNotIn("innerHTML", script)
+
+        manifest = json.loads((DOCS / "site.webmanifest").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["start_url"], "./en/paraphrase-workbench/")
+        self.assertEqual(manifest["display"], "standalone")
+        self.assertTrue((DOCS / "service-worker.js").is_file())
 
     def test_phrase_catalog_is_96_records_across_canonical_and_distributions(self) -> None:
         canonical_dir = ROOT / "data" / "canonical"

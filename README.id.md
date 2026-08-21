@@ -1,25 +1,25 @@
 # RhetoriLex
 
-**Gerakan retoris dan pola tulisan akademik offline yang dikalibrasi terhadap bukti, untuk peneliti, editor, dan agen AI.**
+**Skill parafrasa akademik lokal gratis dan workbench penulisan aman-bukti untuk peneliti, pelajar, editor, dan agen AI.**
 
 [![CI](https://github.com/rezaprama/RhetoriLex/actions/workflows/ci.yml/badge.svg)](https://github.com/rezaprama/RhetoriLex/actions/workflows/ci.yml)
 [![Pages](https://github.com/rezaprama/RhetoriLex/actions/workflows/pages.yml/badge.svg)](https://github.com/rezaprama/RhetoriLex/actions/workflows/pages.yml)
 [![Lisensi kode: Apache-2.0](https://img.shields.io/badge/kode-Apache--2.0-0f766e.svg)](LICENSE)
 [![Lisensi data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-0f766e.svg)](LICENSES/CC-BY-4.0.txt)
 
-[Buka katalog](https://rezaprama.github.io/RhetoriLex/) · [English](README.md) · [Agent Skill](skills/rhetorilex/SKILL.md) · [Riset](docs/discovery-research.md) · [Provenance](PROVENANCE.md)
+[Buka workbench](https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/) · [Buka katalog](https://rezaprama.github.io/RhetoriLex/) · [English](README.md) · [Agent Skill](skills/rhetorilex/SKILL.md) · [Riset](docs/discovery-research.md) · [Provenance](PROVENANCE.md)
 
-RhetoriLex membantu penulis memilih bahasa berdasarkan tujuan komunikasi dan bukti,
+RhetoriLex membantu penulis memparafrasakan, mengaudit, dan merevisi prosa akademik atau teknis berdasarkan tujuan komunikasi dan bukti,
 bukan sekadar kesan akademik. Versi 0.2.0 berisi 96 pola yang ditulis mandiri untuk 24
 fungsi retoris, dengan tingkat klaim, kebutuhan bukti, guard desain kausal, risiko, slot
 bernama, dan provenance yang eksplisit.
 
 Versi 0.2.0 juga mengindeks 144 keterampilan menulis original: 64 akademik, 66 ilmiah,
-dan 14 parafrasa. Situs bilingual menerbitkan 60 rute terlokalisasi: 30 Inggris dan 30
-Indonesia.
+dan 14 parafrasa. Situs bilingual menerbitkan 62 rute terlokalisasi: 31 Inggris dan 31
+Indonesia, termasuk workbench parafrasa local-first yang bisa dipasang.
 
 RhetoriLex tidak membuat bukti atau sitasi. RhetoriLex juga tidak mengubah asosiasi
-menjadi sebab-akibat.
+menjadi sebab-akibat. Pemeriksaan akhir sebelum dikumpulkan tetap menjadi tanggung jawab penulis.
 
 ## Mengapa berbeda
 
@@ -33,10 +33,15 @@ menjadi sebab-akibat.
   pustaka standar Python.
 - **Satu sumber data.** JSONL kanonis membangun JSON, CSV, SQLite, Markdown, resource
   paket, aset Skill, dan checksum secara deterministik.
-- **Empat cara pakai.** Gunakan API/CLI Python, Agent Skill/plugin portabel, explorer web
-  statis, atau artefak data hasil build.
+- **Workbench web yang bisa dipasang.** PWA dapat membuat prompt aman tanpa AI, atau memanggil endpoint OpenAI-compatible atau Gemini-compatible milik pengguna dengan batas harian 3 call di browser.
+- **Lima cara pakai.** Gunakan API/CLI Python, Agent Skill/plugin portabel, explorer web
+  statis, workbench parafrasa local-first, atau artefak data hasil build.
 
 ## Coba cepat
+
+Buka workbench statis di <https://rezaprama.github.io/RhetoriLex/id/alat-parafrasa/>.
+Gunakan mode prompt saja tanpa panggilan AI remote, atau masukkan endpoint dan token lokal/provider milik sendiri.
+Token diproses di browser dan disimpan hanya bila Anda memilih mengingat pengaturan.
 
 ```bash
 git clone https://github.com/rezaprama/RhetoriLex.git
@@ -159,8 +164,7 @@ taxonomy + JSON Schema + kontrak bukti
           +--> validator --> tests --> gate rilis deterministik
 ```
 
-Explorer browser berupa HTML, CSS, dan JavaScript statis. Tidak ada akun, backend,
-dependensi CDN, atau telemetry.
+Explorer browser dan workbench parafrasa berupa HTML, CSS, dan JavaScript statis. Tidak ada akun, backend, dependensi CDN, telemetry, atau database naskah RhetoriLex. Panggilan endpoint berjalan langsung dari browser pengguna ke endpoint yang dimasukkan. Layanan hosted dengan shared key di masa depan membutuhkan backend dengan secret di server, penyimpanan kuota, perlindungan abuse, dan logging naskah mati secara default.
 
 ## Batas sumber dan hak penggunaan
 

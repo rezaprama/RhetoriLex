@@ -3,17 +3,18 @@
 PAGES_ID = {
     "home": {
         "kind": "home",
-        "title": "Penulisan Akademik dan Ilmiah Berdasarkan Tujuan Retoris | RhetoriLex",
-        "description": "Temukan pola frasa bahasa Inggris yang orisinal untuk penulisan akademik dan ilmiah berdasarkan tujuan retoris, bukti, dan kekuatan klaim.",
-        "h1": "Penulisan akademik dan ilmiah berdasarkan tujuan retoris.",
-        "lede": "Temukan dan sesuaikan bahasa akademik untuk artikel ilmiah, tesis, tinjauan pustaka, metode, hasil, pembahasan, tanggapan reviewer, dan berbagai bentuk tulisan ilmiah lainnya.",
+        "title": "Skill Parafrasa Akademik Lokal Gratis | RhetoriLex",
+        "description": "Gunakan skill parafrasa akademik local-first yang gratis, dengan workbench web, dukungan ramah Indonesia, dan pola penulisan orisinal.",
+        "h1": "Skill parafrasa akademik lokal dan gratis.",
+        "lede": "Parafrasakan, audit, dan revisi tulisan akademik, ilmiah, teknis, dan Indonesia-Inggris dengan kontrol local-first, cek bukti eksplisit, dan tanpa kewajiban SaaS berbayar.",
         "body": """
 <section class="section-block" aria-labelledby="purpose-index-title">
   <div class="section-heading">
-    <h2 id="purpose-index-title">Mulai dari pekerjaan yang harus dilakukan kalimat</h2>
-    <p>Pilih masalah penulisan, bukan frasa hiasan. Setiap panduan menghubungkan tujuan, bukti, dan pemeriksaan revisi.</p>
+    <h2 id="purpose-index-title">Mulai dari masalah penulisan</h2>
+    <p>Pilih tugas parafrasa, audit, penulisan, atau revisi. RhetoriLex menghubungkan tujuan, bukti, makna terlindungi, dan pemeriksaan akhir.</p>
   </div>
   <ul class="purpose-index">
+    <li><a href="{{link:paraphrase_workbench}}"><strong>Alat Parafrasa</strong><span>Tool local-first yang bisa dipasang dengan endpoint, token, atau model lokal milik sendiri.</span></a></li>
     <li><a href="{{link:academic_writing}}"><strong>Penulisan Akademik</strong><span>Bangun argumen, sintesis, transisi, dan simpulan yang terbatasi.</span></a></li>
     <li><a href="{{link:scientific_writing}}"><strong>Penulisan Ilmiah</strong><span>Laporkan metode, hasil, ketidakpastian, dan batas kausal secara tepat.</span></a></li>
     <li><a href="{{link:phrase_explorer}}"><strong>Penjelajah Frasa</strong><span>Cari katalog orisinal dengan bahasa alami dan filter berdasarkan bukti.</span></a></li>
@@ -26,8 +27,8 @@ PAGES_ID = {
 </section>
 <section class="section-block" aria-labelledby="popular-moves-title">
   <div class="section-heading">
-    <h2 id="popular-moves-title">Gerakan retoris populer</h2>
-    <p>Buka panduan terarah ketika masalah penulisan sudah jelas.</p>
+    <h2 id="popular-moves-title">Tugas penulisan populer</h2>
+    <p>Buka panduan terarah ketika masalah kalimat sudah jelas.</p>
   </div>
   <ul class="compact-link-index">
     <li><a href="{{link:research_gap}}"><strong>Tetapkan kesenjangan riset</strong><span>Tentukan persoalan spesifik tanpa mengklaim bahwa penelitian tidak ada.</span></a></li>
@@ -64,11 +65,12 @@ PAGES_ID = {
 </section>
 <section class="section-block install-block" aria-labelledby="install-home-title">
   <div>
-    <h2 id="install-home-title">Data terbuka, metode terdokumentasi</h2>
-    <p>Unduh katalog JSON rilis, tinjau provenans clean-room, atau pasang Skill Agen lokal.</p>
+    <h2 id="install-home-title">Gratis, lokal, bisa dipasang</h2>
+    <p>Buka workbench, unduh katalog JSON rilis, tinjau provenans clean-room, atau pasang Skill Agen lokal.</p>
   </div>
   <pre><code>$skill-installer https://github.com/rezaprama/RhetoriLex/tree/main/skills/rhetorilex</code></pre>
   <ul class="resource-links">
+    <li><a href="{{link:paraphrase_workbench}}">Buka Alat Parafrasa</a></li>
     <li><a href="https://rezaprama.github.io/RhetoriLex/data/phrases.json">Buka dataset</a></li>
     <li><a href="https://github.com/rezaprama/RhetoriLex/blob/main/PROVENANCE.md">Baca metodologi dan provenans</a></li>
     <li><a href="{{link:agent_skills}}">Baca instalasi dan contoh prompt</a></li>
@@ -214,6 +216,42 @@ PAGES_ID = {
 <aside class="article-note">
   <h2>Gunakan RhetoriLex dengan aman</h2>
   <p>Minta Skill Agen melindungi sitasi, angka, dan negasi secara eksplisit. Setelah itu, verifikasi keluaran terhadap sumber. Baca pola prompt di <a href="{{link:agent_skills}}">Skill Agen</a>.</p>
+</aside>
+""",
+    },
+    "paraphrase_workbench": {
+        "kind": "workbench",
+        "title": "Alat Parafrasa Lokal Gratis | RhetoriLex",
+        "description": "Gunakan alat parafrasa local-first yang bisa dipasang, memakai endpoint OpenAI-compatible milik sendiri, batas harian browser, dan cek bukti.",
+        "h1": "Alat parafrasa lokal gratis.",
+        "lede": "Gunakan endpoint AI atau model lokal milik sendiri untuk menulis ulang teks akademik, ilmiah, teknis, dan Indonesia-Inggris sambil menjaga bukti dan makna.",
+        "body": """
+<section>
+  <h2>Mengapa local-first penting</h2>
+  <p>Banyak layanan parafrasa meminta penulis menempel draft ke form remote dan membayar untuk batas yang lebih longgar. RhetoriLex memilih jalur berbeda. Aplikasi publik ini statis, bisa dipasang, dan gratis. Aplikasi dapat membuat prompt aman tanpa endpoint, atau memanggil hanya endpoint OpenAI-compatible yang dimasukkan pengguna.</p>
+  <p>Dengan cara ini, alat tetap berguna bagi peneliti, mahasiswa, dosen pembimbing, editor, dan penulis Indonesia yang membutuhkan bahasa Inggris hati-hati tanpa menjadikan setiap kalimat sebagai request berbayar. Aplikasi tidak menyimpan naskah di server RhetoriLex karena versi web saat ini tidak punya database naskah server-side.</p>
+</section>
+<section>
+  <h2>Pilihan setup aman</h2>
+  <div class="reference-table" role="region" aria-label="Pilihan setup alat parafrasa" tabindex="0">
+    <table>
+      <thead><tr><th>Pilihan</th><th>Cara kerja</th><th>Pemeriksaan privasi</th></tr></thead>
+      <tbody>
+        <tr><td>Prompt saja</td><td>RhetoriLex membuat instruksi dan checklist invarian.</td><td>Tidak ada panggilan AI keluar dari browser.</td></tr>
+        <tr><td>Endpoint lokal</td><td>Gunakan server lokal OpenAI-compatible seperti gateway model lokal.</td><td>Jaga endpoint tetap di mesin atau jaringan sendiri.</td></tr>
+        <tr><td>Endpoint provider</td><td>Masukkan endpoint, model, dan token sendiri bila provider mengizinkan panggilan browser.</td><td>Teks dikirim ke provider itu, bukan ke RhetoriLex.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  <h2>Mengapa batas web hosted bersifat lokal</h2>
+  <p>Halaman publik menerapkan batas tiga panggilan harian di storage browser. Ini batas pemakaian ringan, bukan keamanan akun. Tujuannya mencegah pemakaian berlebihan tanpa membuat situs statis kehilangan sifat gratis dan mudah deploy di GitHub Pages.</p>
+  <p>Layanan hosted dengan shared key sungguhan membutuhkan backend. Desain yang direncanakan adalah Worker API kecil, tabel D1 untuk kuota harian anonim, cache KV untuk keputusan rate-limit, Turnstile untuk menahan abuse, token provider hanya sebagai server secret, dan logging naskah mati secara default. Backend itu sengaja dipisahkan dari aplikasi statis saat ini.</p>
+</section>
+<aside class="article-note">
+  <h2>Gunakan hasil sebagai draft</h2>
+  <p>Selalu bandingkan keluaran dengan sumber. Verifikasi sitasi, angka, istilah, negasi, ketidakpastian, kekuatan klaim, dan aturan jurnal atau kampus sebelum dikumpulkan.</p>
 </aside>
 """,
     },
