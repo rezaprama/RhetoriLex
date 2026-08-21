@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 160" role="img" aria-labelledby="title desc">
   <title id="title">RhetoriLex</title>
   <desc id="desc">Bracket-shaped mark followed by the RhetoriLex wordmark.</desc>
-  <rect width="620" height="160" rx="24" fill="#f7f5ef"/>
+  <rect width="620" height="160" rx="4" fill="#f5f3ed"/>
   <g transform="translate(32 32)">
-    <rect width="96" height="96" rx="20" fill="#0b2625"/>
-    <path d="M22 18h18v9h-8v42h8v9H22V18Zm52 0H56v9h8v42h-8v9h18V18Z" fill="#f4f1e9"/>
-    <path d="M40 43h16v10H40z" fill="#2dd4bf"/>
+    <rect width="96" height="96" rx="8" fill="#17202c"/>
+    <path d="M22 18h18v9h-8v42h8v9H22V18Zm52 0H56v9h8v42h-8v9h18V18Z" fill="#f5f3ed"/>
+    <path d="M40 43h16v10H40z" fill="#164f7a"/>
   </g>
-  <text x="154" y="99" fill="#102725" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" letter-spacing="-2">RhetoriLex</text>
+  <text x="154" y="99" fill="#17202c" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="-2">RhetoriLex</text>
 </svg>

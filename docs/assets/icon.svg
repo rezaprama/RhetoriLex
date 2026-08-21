@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title id="title">RhetoriLex mark</title>
-  <rect width="64" height="64" rx="14" fill="#0b2625"/>
-  <path d="M17 15h11v6h-5v22h5v6H17V15Zm30 0H36v6h5v22h-5v6h11V15Z" fill="#f4f1e9"/>
-  <path d="M27 29h10v6H27z" fill="#2dd4bf"/>
+  <rect width="64" height="64" rx="6" fill="#17202c"/>
+  <path d="M17 15h11v6h-5v22h5v6H17V15Zm30 0H36v6h5v22h-5v6h11V15Z" fill="#f5f3ed"/>
+  <path d="M27 29h10v6H27z" fill="#164f7a"/>
 </svg>

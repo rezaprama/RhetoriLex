@@ -14,6 +14,10 @@ from how academic it sounds. Version 0.2.0 contains 96 independently authored pa
 across 24 rhetorical functions, with explicit claim strength, evidence requirements,
 causal-design guards, risk, named slots, and provenance.
 
+Version 0.2.0 also indexes 144 original writing skills: 64 academic, 66 scientific,
+and 14 paraphrasing. The bilingual site publishes 60 localized routes: 30 English and
+30 Indonesian.
+
 It does not write evidence for you. It does not invent citations. It does not turn an
 association into a cause.
 
